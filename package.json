@@ -4,11 +4,23 @@
   "main": "index.js",
   "author": "nathanhleung",
   "scripts": {
-  	"start": "node index"
+    "start": "node index",
+    "dev": "nodemon --ignore public/"
   },
   "dependencies": {
-    "express": "^4.15.5"
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.4",
+    "morgan": "^1.9.0",
+    "nbt": "^0.7.0",
+    "uuid": "^3.1.0",
+    "validator": "^9.0.0"
   },
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }

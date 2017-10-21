@@ -2,7 +2,8 @@
 Frontend for Minecraft Server
 
 ## Running
-`yarn start`
+dev: `yarn dev`
+prod: `NODE_ENV=production yarn start`
 
 ## Potential Uses
 Server status, authentication, etc.

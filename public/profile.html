@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div id="app" class="jumbotron jumbotron-full">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-2">Profile</h1>
+            <p class="lead">Here's your data.</p>
+            <div class="form-group">
+              <small class="text-muted">Email</small>
+              <br>
+              <input type="text" readonly class="form-control-plaintext" v-model="email">
+            </div>
+            <div class="form-group">
+              <small class="text-muted">Username</small>
+              <br>
+              <input type="text" readonly class="form-control-plaintext" v-model="username">
+            </div>
+            <a class="btn btn-danger btn-sm" href="/logout">Log Out</a>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
+    <script src="/profile.js"></script>
+  </body>
+</html>

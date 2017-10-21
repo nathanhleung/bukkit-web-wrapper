@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minecraft</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-full">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-2">Register</h1>
+            <p class="lead">We need to confirm your account before you get full permissions.</p>
+            <form action="/register" method="POST">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+                <small class="form-text text-muted">We'll use your email to confirm your identity. We will not share your email with third parties.</small>
+              </div>
+              <div class="form-group">
+                <label>Server Username</label>
+                <input type="text" name="username" class="form-control" placeholder="Enter server username" required>
+                <small class="form-text text-muted">Type your username exactly as it appears on the server.</small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Password" minlength="8" required>
+                <small class="form-text text-muted">
+                  Please make this at least 8 characters long and secure.
+                  You will use this to log onto this account in case you'd like to
+                  update your settings.
+                </small>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">Register Account</a>
+            </form>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <h1 class="display-4">Sign In</h1>
+            <p class="lead">Already registered and confirmed? Sign in to check your data.</p>
+            <form action="/login" method="POST">
+              <div class="form-group">
+                <label>Server Username</label>
+                <input type="text" name="username" class="form-control" placeholder="Enter server username" required>
+                <small class="form-text text-muted">Type your username exactly as it appears on the server.</small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Password" minlength="8" required>
+                <small class="form-text text-muted">
+                  Please make this at least 8 characters long and secure.
+                  You will use this to log onto this account in case you'd like to
+                  update your settings.
+                </small>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">Sign In</a>
+            </form>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>

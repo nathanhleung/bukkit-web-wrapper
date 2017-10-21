@@ -1,0 +1,8 @@
+html, body {
+  height: 100%;
+}
+
+.jumbotron-full {
+  min-height: 100%;
+  margin-bottom: 0;
+}
