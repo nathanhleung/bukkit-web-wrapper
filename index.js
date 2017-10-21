@@ -7,6 +7,7 @@ const session = require('express-session');
 
 const { startMinecraftServer } = require('./minecraft');
 const { isAuthorized, isAdmin } = require('./helpers');
+const { minecraftLogFile } = require('./constants');
 const routes = require('./routes');
 
 const minecraftServer = startMinecraftServer();
@@ -27,6 +28,19 @@ app.use(session({
 	saveUninitialized: false,
 }));
 
+app.get('/', (req, res) => {
+	if (req.session.userId) {
+		findUserById(req.session.userId, (err, user) => {
+	      if (!err && typeof user !== 'undefined') {
+		    return res.redirect('/profile.html');
+	      }
+	      return res.sendFile(path.join(__dirname, 'public', 'index.html'));
+	    });
+	} else {
+		return res.sendFile(path.join(__dirname, 'public', 'index.html'));
+	}
+})
+
 // Reload minecraft server after user registration, so pass to route
 app.post('/register', (req, res) => {
 	return routes.postRegister(req, res, minecraftServer);
@@ -44,6 +58,33 @@ app.get('/api/user', isAuthorized, routes.getApiUser);
 
 app.get('/admin', isAdmin, (req, res) => {
 	res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+});
+
+app.get('/api/logs',  isAdmin, (req, res) => {
+	const { size } = fs.statSync(minecraftLogFile);
+	// Get last 10000 bytes of logs
+	const stream = fs.createReadStream(minecraftLogFile, {
+		start: size - 10000,
+		end: size,
+	});
+	let logs = '';
+	stream.on('data', (data) => {
+		logs += data;
+	});
+	stream.on('close', () => {
+		return res.json({
+			success: true,
+			data: logs,
+		});
+	});
+});
+
+app.post('/api/command', isAdmin, (req, res) => {
+	const { command } = req.body;
+	minecraftServer.stdin.write(`${command}\n`);
+	return res.json({
+		success: true,
+	});
 });
 
 app.get('*', (req, res) => {

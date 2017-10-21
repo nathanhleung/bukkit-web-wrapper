@@ -10,4 +10,6 @@ module.exports = {
     path.join(__dirname, 'data', 'users.json'),
   minecraftServerJarFile:
     path.join(minecraftServerRoot, 'craftbukkit-1.5.2-R1.0.jar'),
+  minecraftLogFile:
+  	path.join(minecraftServerRoot, 'server.log'),
 };
