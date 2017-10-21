@@ -1,0 +1,14 @@
+{
+  "name": "minecraft-www",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "nathanhleung",
+  "scripts": {
+  	"start": "node index"
+  },
+  "dependencies": {
+    "express": "^4.15.5"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
