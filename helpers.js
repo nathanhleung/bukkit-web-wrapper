@@ -60,8 +60,27 @@ function isAuthorized(req, res, next) {
   })
 }
 
+function isAdmin(req, res, next) {
+  findUserById(req.session.userId, (err, user) => {
+    if (err || typeof user === 'undefined') {
+      return res.json({
+        success: false,
+        message: 'Not logged in.'
+      });
+    }
+    if (user.username !== 'nate') {
+      return res.json({
+        success: false,
+        message: 'Not admin.'
+      });
+    }
+    return next();
+  });
+}
+
 module.exports = {
   isAuthorized,
+  isAdmin,
   readUserData,
   findUserById,
   findUserByKey,

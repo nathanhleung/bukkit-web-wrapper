@@ -1,10 +1,14 @@
 const { spawn } = require('child_process');
 const path = require('path');
-const { serverStartScriptFile } = require('./constants');
+const { minecraftServerRoot, minecraftServerJarFile } = require('./constants');
 
 function startMinecraftServer() {
+  /* The essential option is -nojline! Messes with the stdin, with the option
+  we can pipe in input like "reload" */
   const minecraftServer =
-    spawn('cmd.exe', ['/c', serverStartScriptFile]);
+      spawn('java', ['-Xms512M', '-Xmx1G', '-jar', minecraftServerJarFile, '-nojline'], {
+      	cwd: minecraftServerRoot,
+      });
 
   minecraftServer.stdout.on('data', (data) => {
     console.log(data.toString());

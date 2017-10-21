@@ -6,7 +6,7 @@ const fs = require('fs');
 const session = require('express-session');
 
 const { startMinecraftServer } = require('./minecraft');
-const { isAuthorized } = require('./helpers');
+const { isAuthorized, isAdmin } = require('./helpers');
 const routes = require('./routes');
 
 const minecraftServer = startMinecraftServer();
@@ -41,6 +41,10 @@ app.get('/api/profile', isAuthorized, routes.getApiProfile);
 // this is probably dangerous bc of filesystem access
 // at least its read only
 app.get('/api/user', isAuthorized, routes.getApiUser);
+
+app.get('/admin', isAdmin, (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+});
 
 app.get('*', (req, res) => {
 	res.status(404);
