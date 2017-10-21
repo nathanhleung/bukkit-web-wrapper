@@ -3,9 +3,14 @@ const path = require('path');
 const { serverStartScriptFile } = require('./constants');
 
 function startMinecraftServer() {
-  const minecraftServer =
-    spawn('cmd.exe', ['/c', serverStartScriptFile]);
-  return minecraftServer;
+  try {
+    const minecraftServer =
+      spawn('cmd.exe', ['/c', serverStartScriptFile]);
+    return minecraftServer;
+  } catch (err) {
+    console.log(err);
+    throw err;
+  }
 }
 
 module.exports = {
