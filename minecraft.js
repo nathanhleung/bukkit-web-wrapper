@@ -7,7 +7,7 @@ function startMinecraftServer() {
   /* The essential option is -nojline! Messes with the stdin, with the option
   we can pipe in input like "reload" */
   const minecraftServer =
-      spawn('java', ['-Xms512M', '-Xmx1G', '-jar', minecraftServerJarFile, '-nojline'], {
+      spawn('java', ['-Xms512M', '-Xmx3072M', '-jar', minecraftServerJarFile, '-nojline'], {
       	cwd: minecraftServerRoot,
       });
 

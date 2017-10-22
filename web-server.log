@@ -1137,3 +1137,1685 @@
 [2017-10-22 12:26:47.243] [INFO] default - 2017-10-22 12:26:47 [INFO] Member: MaxK
 
 [2017-10-22 12:26:48.217] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10174 "" "undefined"
+[2017-10-22 12:27:15.048] [INFO] default - App listening on port 80.
+[2017-10-22 12:27:15.411] [INFO] default - 229 recipes
+[2017-10-22 12:27:15.413] [INFO] default - 
+
+[2017-10-22 12:27:15.421] [INFO] default - 27 achievements
+
+[2017-10-22 12:27:15.554] [INFO] default - 2017-10-22 12:27:15 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-22 12:27:15.556] [INFO] default - 2017-10-22 12:27:15 [INFO] Loading properties
+
+[2017-10-22 12:27:15.557] [INFO] default - 2017-10-22 12:27:15 [INFO] Default game type: SURVIVAL
+2017-10-22 12:27:15 [INFO] Generating keypair
+
+[2017-10-22 12:27:15.943] [INFO] default - 2017-10-22 12:27:15 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-22 12:27:16.170] [INFO] default - 2017-10-22 12:27:16 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R1.0-b2788jnks (MC: 1.5.2) (Implementing API version 1.5.2-R1.0)
+
+[2017-10-22 12:27:16.278] [INFO] default - 2017-10-22 12:27:16 [INFO] [PermissionsEx] sql backend registered!
+
+[2017-10-22 12:27:16.279] [INFO] default - 2017-10-22 12:27:16 [INFO] [PermissionsEx] file backend registered!
+2017-10-22 12:27:16 [INFO] [PermissionsEx] PermissionEx plugin initialized.
+
+[2017-10-22 12:27:16.339] [INFO] default - 2017-10-22 12:27:16 [INFO] [CoreProtect] Loading CoreProtect v2.07
+
+[2017-10-22 12:27:16.340] [INFO] default - 2017-10-22 12:27:16 [INFO] [MotdManager] Loading MotdManager v1.41-b20
+2017-10-22 12:27:16 [INFO] [PermissionsEx] Loading PermissionsEx v1.19.5
+
+[2017-10-22 12:27:16.345] [INFO] default - 2017-10-22 12:27:16 [INFO] [PermissionsEx] Initializing file backend
+
+[2017-10-22 12:27:16.350] [INFO] default - 2017-10-22 12:27:16 [INFO] Permissions file successfully reloaded
+
+[2017-10-22 12:27:16.352] [INFO] default - 2017-10-22 12:27:16 [INFO] [Vote] Loading Vote v1.5.2_02
+
+[2017-10-22 12:27:16.353] [INFO] default - 2017-10-22 12:27:16 [INFO] [WorldEdit] Loading WorldEdit v5.5.6
+2017-10-22 12:27:16 [INFO] [Modifyworld] Loading Modifyworld v1.19.4
+2017-10-22 12:27:16 [INFO] [Essentials] Loading Essentials v2.11.1
+2017-10-22 12:27:16 [INFO] [Lockette] Loading Lockette v1.7.12
+2017-10-22 12:27:16 [INFO] [CustomJoin] Loading CustomJoin v1.3.1
+2017-10-22 12:27:16 [INFO] [LoginSecurity] Loading LoginSecurity v2.0.4
+2017-10-22 12:27:16 [INFO] [EssentialsChat] Loading EssentialsChat v2.11.1
+
+[2017-10-22 12:27:16.355] [INFO] default - 2017-10-22 12:27:16 [INFO] [WorldGuard] Loading WorldGuard v5.7.5
+
+[2017-10-22 12:27:16.370] [INFO] default - 2017-10-22 12:27:16 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+
+[2017-10-22 12:27:16.371] [INFO] default - 2017-10-22 12:27:16 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2017-10-22 12:27:16 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2017-10-22 12:27:16 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+
+[2017-10-22 12:27:16.394] [INFO] default - 2017-10-22 12:27:16 [INFO] Preparing level "world"
+
+[2017-10-22 12:27:16.496] [INFO] default - 2017-10-22 12:27:16 [SEVERE] Exception in thread "Thread-6" 
+2017-10-22 12:27:16 [SEVERE] org.bukkit.craftbukkit.libs.com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+
+[2017-10-22 12:27:16.499] [INFO] default - 2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:180)
+2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:755)
+2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:694)
+2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.fetchArtifact(BukkitDLUpdaterService.java:51)
+2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.getArtifact(BukkitDLUpdaterService.java:28)
+2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.AutoUpdater$1.run(AutoUpdater.java:77)
+2017-10-22 12:27:16 [SEVERE] Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.expect(JsonReader.java:339)
+2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.beginObject(JsonReader.java:322)
+2017-10-22 12:27:16 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:168)
+2017-10-22 12:27:16 [SEVERE] 	... 5 more
+
+[2017-10-22 12:27:16.522] [INFO] default - 2017-10-22 12:27:16 [INFO] Preparing start region for level 0 (Seed: 2198106644606297452)
+
+[2017-10-22 12:27:17.191] [INFO] default - 2017-10-22 12:27:17 [INFO] Preparing start region for level 1 (Seed: 755475547169470570)
+
+[2017-10-22 12:27:17.523] [INFO] default - 2017-10-22 12:27:17 [INFO] Preparing spawn area: 83%
+
+[2017-10-22 12:27:17.642] [INFO] default - 2017-10-22 12:27:17 [INFO] Preparing start region for level 2 (Seed: 755475547169470570)
+
+[2017-10-22 12:27:17.765] [INFO] default - 2017-10-22 12:27:17 [INFO] [CoreProtect] Enabling CoreProtect v2.07
+
+[2017-10-22 12:27:17.980] [INFO] default - 2017-10-22 12:27:17 [INFO] CoreProtect version 2.07 is enabled!
+
+[2017-10-22 12:27:17.981] [INFO] default - 2017-10-22 12:27:17 [INFO] [CoreProtect] Using SQLite for data storage.
+
+[2017-10-22 12:27:17.986] [INFO] default - 2017-10-22 12:27:17 [INFO] [MotdManager] Enabling MotdManager v1.41-b20
+
+[2017-10-22 12:27:17.993] [INFO] default - 2017-10-22 12:27:17 [INFO] [MotdManager] version 1.41-b20 is enabled!
+
+[2017-10-22 12:27:17.996] [INFO] default - 2017-10-22 12:27:17 [INFO] [PermissionsEx] Enabling PermissionsEx v1.19.5
+
+[2017-10-22 12:27:18.016] [INFO] default - 2017-10-22 12:27:18 [INFO] [PermissionsEx] Superperms support enabled.
+
+[2017-10-22 12:27:18.025] [INFO] default - 2017-10-22 12:27:18 [INFO] [PermissionsEx] v1.19.5 enabled
+2017-10-22 12:27:18 [INFO] [Vote] Enabling Vote v1.5.2_02
+
+[2017-10-22 12:27:18.032] [INFO] default - 2017-10-22 12:27:18 [INFO] [Vote] Vault not detected for permissions, defaulting to Bukkit Permissions
+2017-10-22 12:27:18 [INFO] [Vote] has been enabled.
+
+[2017-10-22 12:27:18.035] [INFO] default - 2017-10-22 12:27:18 [INFO] [Vote] mimicking aiden
+
+[2017-10-22 12:27:18.038] [INFO] default - 2017-10-22 12:27:18 [INFO] [WorldEdit] Enabling WorldEdit v5.5.6
+
+[2017-10-22 12:27:18.060] [INFO] default - 2017-10-22 12:27:18 [INFO] WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+
+[2017-10-22 12:27:18.115] [INFO] default - 2017-10-22 12:27:18 [INFO] [Modifyworld] Enabling Modifyworld v1.19.4
+
+[2017-10-22 12:27:18.125] [INFO] default - 2017-10-22 12:27:18 [INFO] [Modifyworld] Modifyworld enabled!
+
+[2017-10-22 12:27:18.130] [INFO] default - 2017-10-22 12:27:18 [INFO] [Essentials] Enabling Essentials v2.11.1
+
+[2017-10-22 12:27:18.236] [INFO] default - 2017-10-22 12:27:18 [INFO] Essentials: Using PermissionsEx based permissions.
+
+[2017-10-22 12:27:18.238] [INFO] default - 2017-10-22 12:27:18 [INFO] [Lockette] Enabling Lockette v1.7.12
+2017-10-22 12:27:18 [INFO] [Lockette] Version 1.7.12 is being enabled!  Yay!  (Core version 1.3.7)
+2017-10-22 12:27:18 [INFO] [Lockette] Detected craftbukkit build [2788] ok.
+2017-10-22 12:27:18 [INFO] [Lockette] Custom lockable block list: [116, 84, 57, 145, 154]
+2017-10-22 12:27:18 [INFO] [Lockette] Ignoring linked plugins: [mcMMO]
+
+[2017-10-22 12:27:18.244] [INFO] default - 2017-10-22 12:27:18 [INFO] [Lockette] Loading strings file for English by Acru
+
+[2017-10-22 12:27:18.251] [INFO] default - 2017-10-22 12:27:18 [INFO] [Lockette] Enabled link to plugin PermissionsEx for Groups, version 1.19.5
+
+[2017-10-22 12:27:18.252] [INFO] default - 2017-10-22 12:27:18 [INFO] [Lockette] Using ops file for admin permissions.
+
+[2017-10-22 12:27:18.253] [INFO] default - 2017-10-22 12:27:18 [INFO] [Lockette] Ready to protect your containers.
+
+[2017-10-22 12:27:18.257] [INFO] default - 2017-10-22 12:27:18 [INFO] [CustomJoin] Enabling CustomJoin v1.3.1
+
+[2017-10-22 12:27:18.261] [INFO] default - 2017-10-22 12:27:18 [INFO] [CustomJoin] CustomJoin version 1.3.1 enabled.
+
+[2017-10-22 12:27:18.262] [INFO] default - 2017-10-22 12:27:18 [INFO] [LoginSecurity] Enabling LoginSecurity v2.0.4
+
+[2017-10-22 12:27:18.282] [INFO] default - 2017-10-22 12:27:18 [INFO] [EssentialsChat] Enabling EssentialsChat v2.11.1
+
+[2017-10-22 12:27:18.285] [INFO] default - 2017-10-22 12:27:18 [INFO] [WorldGuard] Enabling WorldGuard v5.7.5
+
+[2017-10-22 12:27:18.303] [INFO] default - 2017-10-22 12:27:18 [INFO] [WorldGuard] (world) TNT ignition is PERMITTED.
+
+[2017-10-22 12:27:18.304] [INFO] default - 2017-10-22 12:27:18 [INFO] [WorldGuard] (world) Lighters are PERMITTED.
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world) Lava fire is blocked.
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world) Fire spread is UNRESTRICTED.
+
+[2017-10-22 12:27:18.305] [INFO] default - 2017-10-22 12:27:18 [INFO] [WorldGuard] Loaded configuration for world 'world'
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world_nether) Lighters are PERMITTED.
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world_nether) Lava fire is blocked.
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+
+[2017-10-22 12:27:18.309] [INFO] default - 2017-10-22 12:27:18 [INFO] [WorldGuard] Loaded configuration for world 'world_nether'
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world_the_end) Lighters are PERMITTED.
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world_the_end) Lava fire is blocked.
+2017-10-22 12:27:18 [INFO] [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+2017-10-22 12:27:18 [INFO] [WorldGuard] Loaded configuration for world 'world_the_end'
+
+[2017-10-22 12:27:18.320] [INFO] default - 2017-10-22 12:27:18 [INFO] [WorldGuard] 0 regions loaded for 'world'
+
+[2017-10-22 12:27:18.321] [INFO] default - 2017-10-22 12:27:18 [INFO] [WorldGuard] 0 regions loaded for 'world_nether'
+2017-10-22 12:27:18 [INFO] [WorldGuard] 0 regions loaded for 'world_the_end'
+
+[2017-10-22 12:27:18.376] [INFO] default - 2017-10-22 12:27:18 [INFO] Done (2.002s)! For help, type "help" or "?"
+
+[2017-10-22 12:27:18.428] [INFO] default - 2017-10-22 12:27:18 [INFO] Accepted EditSessionFactory of type net.coreprotect.worldedit.CoreProtectEditSessionFactory from net.coreprotect.worldedit
+
+[2017-10-22 12:27:19.758] [INFO] default - 2017-10-22 12:27:19 [INFO] MaxK[/76.98.165.89:56700] logged in with entity id 240 at ([world] 180.5, 70.0, 256.5)
+
+[2017-10-22 12:27:19.977] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:27:19.978] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:27:19 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:27:19.984] [INFO] default - 2017-10-22 12:27:19 [INFO] There are 1 out of maximum 20 players online.
+
+[2017-10-22 12:27:19.985] [INFO] default - 2017-10-22 12:27:19 [INFO] Member: MaxK
+
+[2017-10-22 12:27:20.136] [INFO] default - 2017-10-22 12:27:20 [INFO] --------------------
+
+[2017-10-22 12:27:20.137] [INFO] default - 2017-10-22 12:27:20 [INFO] [CoreProtect] Version 2.09 now available.
+2017-10-22 12:27:20 [INFO] [CoreProtect] Download: Type "/co version" in-game.
+2017-10-22 12:27:20 [INFO] --------------------
+2017-10-22 12:27:20 [INFO] [Sponsor] Unlimited MC Hosting: www.hosthorde.com
+2017-10-22 12:27:20 [INFO] --------------------
+
+[2017-10-22 12:27:20.990] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10181 "" "undefined"
+[2017-10-22 12:27:20.990] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:27:20 +0000] "GET /api/logs HTTP/1.1" 200 10181 "-" "-"
+
+[2017-10-22 12:27:20.993] [INFO] default - ::1 - - "GET /api/users-online HTTP/1.1" 200 34 "" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:27:20.994] [DEBUG] default - ::1 - - [22/Oct/2017:16:27:20 +0000] "GET /api/users-online HTTP/1.1" 200 34 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:27:27.397] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:27:27.397] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:27:27 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:27:27.431] [INFO] default - 2017-10-22 12:27:27 [INFO] There are 1 out of maximum 20 players online.
+
+[2017-10-22 12:27:27.432] [INFO] default - 2017-10-22 12:27:27 [INFO] Member: MaxK
+
+[2017-10-22 12:27:28.133] [INFO] default - 2017-10-22 12:27:28 [INFO] MaxK issued server command: /login 783067
+
+[2017-10-22 12:27:28.403] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10182 "" "undefined"
+[2017-10-22 12:27:28.404] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:27:28 +0000] "GET /api/logs HTTP/1.1" 200 10182 "-" "-"
+
+[2017-10-22 12:27:28.407] [INFO] default - ::1 - - "GET /api/users-online HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:27:28.408] [DEBUG] default - ::1 - - [22/Oct/2017:16:27:28 +0000] "GET /api/users-online HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:27:37.982] [INFO] default - 2017-10-22 12:27:37 [INFO] guppies[/69.242.63.233:51643] logged in with entity id 301 at ([world] 58.5, 109.9271205658912, 757.5)
+
+[2017-10-22 12:27:39.436] [INFO] default - 2017-10-22 12:27:39 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 12:27:42.684] [INFO] default - 2017-10-22 12:27:42 [INFO] itsyoboycolinXC[/71.230.68.88:51014] logged in with entity id 1769 at ([world] 186.06537173402737, 38.0, 597.0802338638113)
+
+[2017-10-22 12:27:43.886] [INFO] default - 2017-10-22 12:27:43 [INFO] guppies issued server command: /login Dogdog113
+
+[2017-10-22 12:27:45.434] [INFO] default - 2017-10-22 12:27:45 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:27:46.487] [INFO] default - 2017-10-22 12:27:46 [INFO] Herobrine[/100.14.155.96:57989] logged in with entity id 2321 at ([world] 28.96593767375709, 45.0, 1037.3409059808064)
+
+[2017-10-22 12:27:46.928] [INFO] default - 2017-10-22 12:27:46 [INFO] [MEMBER] MaxK: whats going on
+
+[2017-10-22 12:27:51.678] [INFO] default - 2017-10-22 12:27:51 [INFO] [MOD] guppies: i think i went to far back max lol
+
+[2017-10-22 12:27:51.883] [INFO] default - 2017-10-22 12:27:51 [INFO] itsyoboycolinXC issued server command: /login colin2002
+
+[2017-10-22 12:27:51.885] [INFO] default - 2017-10-22 12:27:51 [INFO] Herobrine issued server command: /login goopyloop
+
+[2017-10-22 12:27:54.684] [INFO] default - 2017-10-22 12:27:54 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:27:58.356] [INFO] default - 2017-10-22 12:27:58 [INFO] [WorldEdit] Using inbuilt NmsBlock for this version.
+
+[2017-10-22 12:27:58.577] [INFO] default - 2017-10-22 12:27:58 [INFO] [MEMBER] Herobrine: what's happening?
+
+[2017-10-22 12:28:01.427] [INFO] default - 2017-10-22 12:28:01 [INFO] [MOD] guppies: nate is working on something
+
+[2017-10-22 12:28:01.586] [INFO] default - 2017-10-22 12:28:01 [INFO] eee[/173.49.196.155:52680] logged in with entity id 2574 at ([world] 35.30628987996357, 45.0, 1031.4741090006632)
+
+[2017-10-22 12:28:01.736] [INFO] default - 2017-10-22 12:28:01 [INFO] [Lockette] itsyoboycolinXC has protected a block or door.
+
+[2017-10-22 12:28:03.628] [INFO] default - 2017-10-22 12:28:03 [INFO] [MOD] guppies: nate is working on something
+
+[2017-10-22 12:28:05.134] [INFO] default - 2017-10-22 12:28:05 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:28:06.284] [INFO] default - 2017-10-22 12:28:06 [INFO] eee issued server command: /login eee
+
+[2017-10-22 12:28:12.927] [INFO] default - 2017-10-22 12:28:12 [INFO] [MEMBER] MaxK: where did i die
+
+[2017-10-22 12:28:36.228] [INFO] default - 2017-10-22 12:28:36 [INFO] [MOD] guppies: what did you have on you ;/
+
+[2017-10-22 12:28:41.078] [INFO] default - 2017-10-22 12:28:41 [INFO] [MEMBER] MaxK: a lot of stuff
+
+[2017-10-22 12:28:52.979] [INFO] default - 2017-10-22 12:28:52 [INFO] [MEMBER] MaxK: i cant even remember
+
+[2017-10-22 12:29:02.328] [INFO] default - 2017-10-22 12:29:02 [INFO] [MOD] guppies: anything good?
+
+[2017-10-22 12:29:06.805] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:29:06.806] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:29:06 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:29:06.836] [INFO] default - 2017-10-22 12:29:06 [INFO] There are 5 out of maximum 20 players online.
+
+[2017-10-22 12:29:06.837] [INFO] default - 2017-10-22 12:29:06 [INFO] Member: eee, Herobrine, itsyoboycolinXC, MaxK
+
+[2017-10-22 12:29:06.838] [INFO] default - 2017-10-22 12:29:06 [INFO] Moderator: guppies
+
+[2017-10-22 12:29:07.811] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10174 "" "undefined"
+[2017-10-22 12:29:07.811] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:29:07 +0000] "GET /api/logs HTTP/1.1" 200 10174 "-" "-"
+
+[2017-10-22 12:29:07.813] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 200 34 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:29:07.814] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:29:07 +0000] "GET /api/users-online HTTP/1.1" 200 34 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:29:21.728] [INFO] default - 2017-10-22 12:29:21 [INFO] [MEMBER] MaxK: yea you rolled back a little too far
+
+[2017-10-22 12:29:29.330] [INFO] default - 2017-10-22 12:29:29 [INFO] [MOD] guppies: what did you lose?
+
+[2017-10-22 12:29:32.378] [INFO] default - 2017-10-22 12:29:32 [INFO] [MOD] guppies: other then your inv
+
+[2017-10-22 12:29:39.834] [INFO] default - 2017-10-22 12:29:39 [INFO] guppies issued server command: /co i
+
+[2017-10-22 12:30:04.478] [INFO] default - 2017-10-22 12:30:04 [INFO] [MEMBER] MaxK: i cant seem to find that prot4 diamond chestplate and power3 bow
+
+[2017-10-22 12:30:20.378] [INFO] default - 2017-10-22 12:30:20 [INFO] [MOD] guppies: what chest would have that been in?
+
+[2017-10-22 12:30:29.078] [INFO] default - 2017-10-22 12:30:29 [INFO] [MEMBER] MaxK: idk i checked all my chests
+
+[2017-10-22 12:30:37.579] [INFO] default - 2017-10-22 12:30:37 [INFO] [MEMBER] MaxK: also if you come where i am
+
+[2017-10-22 12:30:46.728] [INFO] default - 2017-10-22 12:30:46 [INFO] [MOD] guppies: do you remember which one it was in though
+
+[2017-10-22 12:30:47.634] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4034 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:30:47.635] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:30:47 +0000] "GET / HTTP/1.1" 200 4034 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:30:53.634] [INFO] default - 2017-10-22 12:30:53 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:31:00.912] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4034 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:31:00.913] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:31:00 +0000] "GET / HTTP/1.1" 200 4034 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:31:02.884] [INFO] default - 2017-10-22 12:31:02 [INFO] MaxK issued server command: /msg guppy notice how there is an abrupt break in the roof and floor
+
+[2017-10-22 12:31:12.085] [INFO] default - 2017-10-22 12:31:12 [INFO] MaxK issued server command: /msg guppies notice how there is an abrupt break in the roof and floor
+
+[2017-10-22 12:31:28.135] [INFO] default - 2017-10-22 12:31:28 [INFO] Connection reset
+
+[2017-10-22 12:31:28.136] [INFO] default - 2017-10-22 12:31:28 [INFO] eee lost connection: disconnect.quitting
+
+[2017-10-22 12:31:35.535] [INFO] default - 2017-10-22 12:31:35 [INFO] guppies issued server command: /msg max nbo
+
+[2017-10-22 12:31:44.685] [INFO] default - 2017-10-22 12:31:44 [INFO] MaxK issued server command: /msg guppies nbo?
+
+[2017-10-22 12:31:46.078] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4161 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:31:46.079] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:31:46 +0000] "GET / HTTP/1.1" 200 4161 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:31:49.835] [INFO] default - 2017-10-22 12:31:49 [INFO] guppies issued server command: /msg max no*
+
+[2017-10-22 12:32:00.236] [INFO] default - 2017-10-22 12:32:00 [INFO] MaxK issued server command: /msg guppies right where i am standing
+
+[2017-10-22 12:32:07.585] [INFO] default - 2017-10-22 12:32:07 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:32:10.223] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4161 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:32:10.224] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:32:10 +0000] "GET / HTTP/1.1" 200 4161 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:32:10.394] [INFO] default - ::ffff:76.124.120.104 - - "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:32:10.395] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:32:10 +0000] "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:32:10.496] [INFO] default - ::ffff:76.124.120.104 - - "GET /index.js HTTP/1.1" 200 547 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:32:10.498] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:32:10 +0000] "GET /index.js HTTP/1.1" 200 547 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:32:12.218] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:32:12.219] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:32:12 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:32:12.235] [INFO] default - 2017-10-22 12:32:12 [INFO] There are 4 out of maximum 20 players online.
+
+[2017-10-22 12:32:12.235] [INFO] default - 2017-10-22 12:32:12 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK
+2017-10-22 12:32:12 [INFO] Moderator: guppies
+
+[2017-10-22 12:32:13.222] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10167 "" "undefined"
+[2017-10-22 12:32:13.223] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:32:13 +0000] "GET /api/logs HTTP/1.1" 200 10167 "-" "-"
+
+[2017-10-22 12:32:13.225] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:32:13.226] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:32:13 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:32:15.230] [INFO] default - 2017-10-22 12:32:15 [INFO] [MEMBER] MaxK: i can fix this on my own
+
+[2017-10-22 12:32:26.079] [INFO] default - 2017-10-22 12:32:26 [INFO] [MOD] guppies: here was lava there
+
+[2017-10-22 12:32:26.675] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4161 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:32:26.676] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:32:26 +0000] "GET / HTTP/1.1" 200 4161 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:32:26.875] [INFO] default - ::ffff:76.124.120.104 - - "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:32:26.876] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:32:26 +0000] "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:32:26.977] [INFO] default - ::ffff:76.124.120.104 - - "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:32:26.978] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:32:26 +0000] "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:32:28.152] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:32:28.152] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:32:28 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:32:28.184] [INFO] default - 2017-10-22 12:32:28 [INFO] There are 4 out of maximum 20 players online.
+
+[2017-10-22 12:32:28.186] [INFO] default - 2017-10-22 12:32:28 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK
+
+[2017-10-22 12:32:28.186] [INFO] default - 2017-10-22 12:32:28 [INFO] Moderator: guppies
+
+[2017-10-22 12:32:29.158] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10166 "" "undefined"
+[2017-10-22 12:32:29.159] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:32:29 +0000] "GET /api/logs HTTP/1.1" 200 10166 "-" "-"
+
+[2017-10-22 12:32:29.161] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:32:29.162] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:32:29 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:32:39.328] [INFO] default - 2017-10-22 12:32:39 [INFO] [MOD] guppies: ooh wooden slabs?
+
+[2017-10-22 12:32:59.084] [INFO] default - 2017-10-22 12:32:59 [INFO] MaxK issued server command: /msg guppies do you have the permission to op me so i can get my stuff back its too much to say
+
+[2017-10-22 12:33:14.687] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4312 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:33:14.688] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:33:14 +0000] "GET / HTTP/1.1" 200 4312 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:33:15.135] [INFO] default - 2017-10-22 12:33:15 [INFO] guppies issued server command: /msg maxk i dont
+
+[2017-10-22 12:33:15.906] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:33:15.907] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:33:15 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:33:15.935] [INFO] default - 2017-10-22 12:33:15 [INFO] There are 4 out of maximum 20 players online.
+
+[2017-10-22 12:33:15.937] [INFO] default - 2017-10-22 12:33:15 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK
+
+[2017-10-22 12:33:15.938] [INFO] default - 2017-10-22 12:33:15 [INFO] Moderator: guppies
+
+[2017-10-22 12:33:16.912] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10166 "" "undefined"
+[2017-10-22 12:33:16.913] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:33:16 +0000] "GET /api/logs HTTP/1.1" 200 10166 "-" "-"
+
+[2017-10-22 12:33:16.915] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:33:16.916] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:33:16 +0000] "GET /api/users-online HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:33:25.534] [INFO] default - 2017-10-22 12:33:25 [INFO] guppies issued server command: /msg MaxK what good stuff did you lose we can start form there
+
+[2017-10-22 12:33:25.845] [INFO] default - 2017-10-22 12:33:25 [INFO] noahfriendo[/100.14.171.98:56212] logged in with entity id 11197 at ([world] 101.84428190199867, 68.0, 567.3000000119209)
+
+[2017-10-22 12:33:30.334] [INFO] default - 2017-10-22 12:33:30 [INFO] noahfriendo issued server command: /login niggerjew
+
+[2017-10-22 12:33:30.546] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4364 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:33:30.548] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:33:30 +0000] "GET / HTTP/1.1" 200 4364 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:33:31.678] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:33:31.679] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:33:31 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:33:31.685] [INFO] default - 2017-10-22 12:33:31 [INFO] There are 5 out of maximum 20 players online.
+
+[2017-10-22 12:33:31.687] [INFO] default - 2017-10-22 12:33:31 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK, noahfriendo
+2017-10-22 12:33:31 [INFO] Moderator: guppies
+
+[2017-10-22 12:33:31.929] [INFO] default - 2017-10-22 12:33:31 [INFO] [MOD] guppies: noah
+
+[2017-10-22 12:33:32.686] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10164 "" "undefined"
+[2017-10-22 12:33:32.686] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:33:32 +0000] "GET /api/logs HTTP/1.1" 200 10164 "-" "-"
+
+[2017-10-22 12:33:32.688] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:33:32.689] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:33:32 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:33:38.434] [INFO] default - 2017-10-22 12:33:38 [INFO] guppies issued server command: /tp noah
+
+[2017-10-22 12:33:40.840] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4367 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:33:40.841] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:33:40 +0000] "GET / HTTP/1.1" 200 4367 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:33:42.246] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:33:42.247] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:33:42 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:33:42.286] [INFO] default - 2017-10-22 12:33:42 [INFO] There are 5 out of maximum 20 players online.
+
+[2017-10-22 12:33:42.287] [INFO] default - 2017-10-22 12:33:42 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK, noahfriendo
+2017-10-22 12:33:42 [INFO] Moderator: guppies
+
+[2017-10-22 12:33:43.252] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10164 "" "undefined"
+[2017-10-22 12:33:43.253] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:33:43 +0000] "GET /api/logs HTTP/1.1" 200 10164 "-" "-"
+
+[2017-10-22 12:33:43.255] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:33:43.256] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:33:43 +0000] "GET /api/users-online HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:33:45.259] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4367 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:33:45.260] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:33:45 +0000] "GET / HTTP/1.1" 200 4367 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:33:46.661] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:33:46.661] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:33:46 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:33:46.685] [INFO] default - 2017-10-22 12:33:46 [INFO] There are 5 out of maximum 20 players online.
+
+[2017-10-22 12:33:46.688] [INFO] default - 2017-10-22 12:33:46 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK, noahfriendo
+2017-10-22 12:33:46 [INFO] Moderator: guppies
+
+[2017-10-22 12:33:47.667] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10165 "" "undefined"
+[2017-10-22 12:33:47.667] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:33:47 +0000] "GET /api/logs HTTP/1.1" 200 10165 "-" "-"
+
+[2017-10-22 12:33:47.669] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:33:47.670] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:33:47 +0000] "GET /api/users-online HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:33:59.779] [INFO] default - 2017-10-22 12:33:59 [INFO] [MEMBER] noahfriendo: hello
+
+[2017-10-22 12:34:02.490] [INFO] default - 2017-10-22 12:34:02 [INFO] learmantha[/173.59.28.191:51874] logged in with entity id 12616 at ([world] 95.07870542728803, 13.0, 461.0798187226576)
+
+[2017-10-22 12:34:04.635] [INFO] default - 2017-10-22 12:34:04 [INFO] MaxK issued server command: /msg guppies unbreaking3 pick, 20 sticky pistions, 20 iron, 2 stacks of stone, 2 stacks of wood plan
+
+[2017-10-22 12:34:10.435] [INFO] default - 2017-10-22 12:34:10 [INFO] learmantha issued server command: /login 784017
+
+[2017-10-22 12:34:10.579] [INFO] default - 2017-10-22 12:34:10 [INFO] [MOD] guppies: do you know someone that would come on as "ihatenoah"?
+
+[2017-10-22 12:34:12.633] [INFO] default - 2017-10-22 12:34:12 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:34:15.816] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4464 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:34:15.817] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:34:15 +0000] "GET / HTTP/1.1" 200 4464 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:34:17.014] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:34:17.015] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:34:17 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:34:17.035] [INFO] default - 2017-10-22 12:34:17 [INFO] There are 6 out of maximum 20 players online.
+
+[2017-10-22 12:34:17.036] [INFO] default - 2017-10-22 12:34:17 [INFO] Default: learmantha
+2017-10-22 12:34:17 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK, noahfriendo
+2017-10-22 12:34:17 [INFO] Moderator: guppies
+
+[2017-10-22 12:34:18.021] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10165 "" "undefined"
+[2017-10-22 12:34:18.022] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:34:18 +0000] "GET /api/logs HTTP/1.1" 200 10165 "-" "-"
+
+[2017-10-22 12:34:18.024] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:34:18.025] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:34:18 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:34:31.922] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4393 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:34:31.923] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:34:31 +0000] "GET / HTTP/1.1" 200 4393 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:34:33.163] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:34:33.164] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:34:33 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:34:33.184] [INFO] default - 2017-10-22 12:34:33 [INFO] There are 6 out of maximum 20 players online.
+
+[2017-10-22 12:34:33.185] [INFO] default - 2017-10-22 12:34:33 [INFO] Default: learmantha
+2017-10-22 12:34:33 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK, noahfriendo
+2017-10-22 12:34:33 [INFO] Moderator: guppies
+
+[2017-10-22 12:34:34.168] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10165 "" "undefined"
+[2017-10-22 12:34:34.169] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:34:34 +0000] "GET /api/logs HTTP/1.1" 200 10165 "-" "-"
+
+[2017-10-22 12:34:34.171] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:34:34.172] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:34:34 +0000] "GET /api/users-online HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:34:35.478] [INFO] default - 2017-10-22 12:34:35 [INFO] [MEMBER] noahfriendo: no
+
+[2017-10-22 12:34:39.384] [INFO] default - 2017-10-22 12:34:39 [INFO] MaxK issued server command: /msg guppies 15 redstone, 5 steak thats really the bulk of it
+
+[2017-10-22 12:34:45.278] [INFO] default - 2017-10-22 12:34:45 [INFO] [UNVERIFIED] learmantha: guys my thing is glitching again
+
+[2017-10-22 12:34:45.883] [INFO] default - 2017-10-22 12:34:45 [INFO] guppies issued server command: /co i
+
+[2017-10-22 12:34:48.613] [INFO] default - ::ffff:76.124.120.104 - - "POST /login HTTP/1.1" 302 70 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:34:48.614] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:34:48 +0000] "POST /login HTTP/1.1" 302 70 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:34:48.835] [INFO] default - ::ffff:76.124.120.104 - - "GET /profile.html HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:34:48.836] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:34:48 +0000] "GET /profile.html HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:34:49.496] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/profile HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:34:49.497] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:34:49 +0000] "GET /api/profile HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:34:49.829] [INFO] default - 2017-10-22 12:34:49 [INFO] [UNVERIFIED] learmantha: oh okay that's why
+
+[2017-10-22 12:34:53.429] [INFO] default - 2017-10-22 12:34:53 [INFO] [MOD] guppies: do /rules
+
+[2017-10-22 12:34:57.385] [INFO] default - 2017-10-22 12:34:57 [INFO] learmantha issued server command: /rules
+
+[2017-10-22 12:34:58.435] [INFO] default - 2017-10-22 12:34:58 [SEVERE] Could not pass event InventoryClickEvent to Modifyworld v1.19.4
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1358)
+	at net.minecraft.server.v1_5_R3.Packet102WindowClick.handle(SourceFile:31)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:115)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at net.minecraft.server.v1_5_R3.InventorySubcontainer.getItem(InventorySubcontainer.java:21)
+	at org.bukkit.craftbukkit.v1_5_R3.inventory.CraftInventory.getItem(CraftInventory.java:49)
+	at ru.tehkode.modifyworld.handlers.PlayerListener.onPlayerInventoryClick(PlayerListener.java:191)
+	at sun.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 14 more
+
+[2017-10-22 12:35:00.285] [INFO] default - 2017-10-22 12:35:00 [INFO] noahfriendo issued server command: /rules
+
+[2017-10-22 12:35:04.678] [INFO] default - 2017-10-22 12:35:04 [INFO] [UNVERIFIED] learmantha: seriously
+
+[2017-10-22 12:35:07.128] [INFO] default - 2017-10-22 12:35:07 [INFO] [UNVERIFIED] learmantha: this is too much
+
+[2017-10-22 12:35:16.035] [INFO] default - 2017-10-22 12:35:16 [INFO] MaxK issued server command: /msg guppies oh and 2 stacks of dirt, glowstone and leaves to fix the roof
+
+[2017-10-22 12:35:18.635] [INFO] default - 2017-10-22 12:35:18 [INFO] guppies issued server command: /msg max oak planks?
+
+[2017-10-22 12:35:26.833] [INFO] default - 2017-10-22 12:35:26 [INFO] MaxK issued server command: /msg guppies yes
+
+[2017-10-22 12:35:40.481] [INFO] default - ::ffff:173.59.28.191 - - "GET / HTTP/1.1" 200 4393 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:40.482] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:40 +0000] "GET / HTTP/1.1" 200 4393 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:40.655] [INFO] default - ::ffff:173.59.28.191 - - "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:40.656] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:40 +0000] "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:40.965] [INFO] default - ::ffff:173.59.28.191 - - "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:40.966] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:40 +0000] "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:44.573] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:35:44.574] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:35:44 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:35:44.584] [INFO] default - 2017-10-22 12:35:44 [INFO] There are 6 out of maximum 20 players online.
+
+[2017-10-22 12:35:44.585] [INFO] default - 2017-10-22 12:35:44 [INFO] Default: learmantha
+2017-10-22 12:35:44 [INFO] Member: Herobrine, itsyoboycolinXC, MaxK, noahfriendo
+2017-10-22 12:35:44 [INFO] Moderator: guppies
+
+[2017-10-22 12:35:45.579] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10209 "" "undefined"
+[2017-10-22 12:35:45.581] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:35:45 +0000] "GET /api/logs HTTP/1.1" 200 10209 "-" "-"
+
+[2017-10-22 12:35:45.583] [INFO] default - ::ffff:173.59.28.191 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:45.584] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:45 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:47.499] [INFO] default - ::ffff:173.59.28.191 - - "GET /favicon.ico HTTP/1.1" 404 795 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:47.500] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:47 +0000] "GET /favicon.ico HTTP/1.1" 404 795 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:57.050] [INFO] default - ::ffff:173.59.28.191 - - "POST /register HTTP/1.1" 302 70 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:57.051] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:57 +0000] "POST /register HTTP/1.1" 302 70 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:57.090] [INFO] default - 2017-10-22 12:35:57 [INFO] [WorldGuard] Disabling WorldGuard v5.7.5
+
+[2017-10-22 12:35:57.093] [INFO] default - 2017-10-22 12:35:57 [INFO] [EssentialsChat] Disabling EssentialsChat v2.11.1
+2017-10-22 12:35:57 [INFO] [LoginSecurity] Disabling LoginSecurity v2.0.4
+
+[2017-10-22 12:35:57.095] [INFO] default - 2017-10-22 12:35:57 [INFO] [CustomJoin] Disabling CustomJoin v1.3.1
+
+[2017-10-22 12:35:57.096] [INFO] default - 2017-10-22 12:35:57 [INFO] [CustomJoin] CustomJoin disabled.
+2017-10-22 12:35:57 [INFO] [Lockette] Disabling Lockette v1.7.12
+2017-10-22 12:35:57 [INFO] Lockette is being disabled...  ;.;
+2017-10-22 12:35:57 [INFO] [Lockette] Closing all automatic doors.
+
+[2017-10-22 12:35:57.098] [INFO] default - 2017-10-22 12:35:57 [INFO] [Essentials] Disabling Essentials v2.11.1
+2017-10-22 12:35:57 [INFO] [Modifyworld] Disabling Modifyworld v1.19.4
+2017-10-22 12:35:57 [INFO] [Modifyworld] Modifyworld successfully disabled!
+2017-10-22 12:35:57 [INFO] [WorldEdit] Disabling WorldEdit v5.5.6
+2017-10-22 12:35:57 [INFO] [Vote] Disabling Vote v1.5.2_02
+2017-10-22 12:35:57 [INFO] [Vote] has been disabled.
+
+[2017-10-22 12:35:57.102] [INFO] default - 2017-10-22 12:35:57 [INFO] [PermissionsEx] Disabling PermissionsEx v1.19.5
+
+[2017-10-22 12:35:57.105] [INFO] default - 2017-10-22 12:35:57 [INFO] Permissions file successfully reloaded
+
+[2017-10-22 12:35:57.106] [INFO] default - 2017-10-22 12:35:57 [INFO] [PermissionsEx] v1.19.5 disabled successfully.
+
+[2017-10-22 12:35:57.107] [INFO] default - 2017-10-22 12:35:57 [INFO] [MotdManager] Disabling MotdManager v1.41-b20
+2017-10-22 12:35:57 [INFO] [MotdManager] version 1.41-b20 is disabled!
+2017-10-22 12:35:57 [INFO] [CoreProtect] Disabling CoreProtect v2.07
+
+[2017-10-22 12:35:57.393] [INFO] default - ::ffff:173.59.28.191 - - "GET /profile.html HTTP/1.1" 200 1439 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:57.395] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:57 +0000] "GET /profile.html HTTP/1.1" 200 1439 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:57.542] [INFO] default - 2017-10-22 12:35:57 [INFO] 229 recipes
+
+[2017-10-22 12:35:57.554] [INFO] default - ::ffff:173.59.28.191 - - "GET /profile.js HTTP/1.1" 200 476 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:57.556] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:57 +0000] "GET /profile.js HTTP/1.1" 200 476 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:57.588] [INFO] default - 2017-10-22 12:35:57 [INFO] [PermissionsEx] sql backend registered!
+
+[2017-10-22 12:35:57.589] [INFO] default - 2017-10-22 12:35:57 [INFO] [PermissionsEx] file backend registered!
+2017-10-22 12:35:57 [INFO] [PermissionsEx] PermissionEx plugin initialized.
+
+[2017-10-22 12:35:57.654] [INFO] default - 2017-10-22 12:35:57 [INFO] [CoreProtect] Loading CoreProtect v2.07
+
+[2017-10-22 12:35:57.656] [INFO] default - 2017-10-22 12:35:57 [INFO] [MotdManager] Loading MotdManager v1.41-b20
+2017-10-22 12:35:57 [INFO] [PermissionsEx] Loading PermissionsEx v1.19.5
+
+[2017-10-22 12:35:57.660] [INFO] default - 2017-10-22 12:35:57 [INFO] [PermissionsEx] Initializing file backend
+
+[2017-10-22 12:35:57.664] [INFO] default - 2017-10-22 12:35:57 [INFO] Permissions file successfully reloaded
+
+[2017-10-22 12:35:57.665] [INFO] default - 2017-10-22 12:35:57 [INFO] [Vote] Loading Vote v1.5.2_02
+2017-10-22 12:35:57 [INFO] [WorldEdit] Loading WorldEdit v5.5.6
+2017-10-22 12:35:57 [INFO] [Modifyworld] Loading Modifyworld v1.19.4
+2017-10-22 12:35:57 [INFO] [Essentials] Loading Essentials v2.11.1
+2017-10-22 12:35:57 [INFO] [Lockette] Loading Lockette v1.7.12
+
+[2017-10-22 12:35:57.668] [INFO] default - 2017-10-22 12:35:57 [INFO] [CustomJoin] Loading CustomJoin v1.3.1
+2017-10-22 12:35:57 [INFO] [LoginSecurity] Loading LoginSecurity v2.0.4
+2017-10-22 12:35:57 [INFO] [EssentialsChat] Loading EssentialsChat v2.11.1
+2017-10-22 12:35:57 [INFO] [WorldGuard] Loading WorldGuard v5.7.5
+2017-10-22 12:35:57 [INFO] [CoreProtect] Enabling CoreProtect v2.07
+
+[2017-10-22 12:35:57.701] [INFO] default - 2017-10-22 12:35:57 [INFO] CoreProtect version 2.07 is enabled!
+
+[2017-10-22 12:35:57.702] [INFO] default - 2017-10-22 12:35:57 [INFO] [CoreProtect] Using SQLite for data storage.
+
+[2017-10-22 12:35:57.706] [INFO] default - 2017-10-22 12:35:57 [INFO] [MotdManager] Enabling MotdManager v1.41-b20
+
+[2017-10-22 12:35:57.713] [INFO] default - 2017-10-22 12:35:57 [INFO] [MotdManager] version 1.41-b20 is enabled!
+
+[2017-10-22 12:35:57.716] [INFO] default - 2017-10-22 12:35:57 [INFO] [PermissionsEx] Enabling PermissionsEx v1.19.5
+
+[2017-10-22 12:35:57.736] [INFO] default - 2017-10-22 12:35:57 [INFO] [PermissionsEx] Superperms support enabled.
+
+[2017-10-22 12:35:57.740] [INFO] default - 2017-10-22 12:35:57 [INFO] [PermissionsEx] v1.19.5 enabled
+
+[2017-10-22 12:35:57.741] [INFO] default - 2017-10-22 12:35:57 [INFO] [Vote] Enabling Vote v1.5.2_02
+
+[2017-10-22 12:35:57.752] [INFO] default - 2017-10-22 12:35:57 [INFO] [Vote] Vault not detected for permissions, defaulting to Bukkit Permissions
+
+[2017-10-22 12:35:57.753] [INFO] default - 2017-10-22 12:35:57 [INFO] [Vote] has been enabled.
+
+[2017-10-22 12:35:57.754] [INFO] default - 2017-10-22 12:35:57 [INFO] [Vote] mimicking aiden
+
+[2017-10-22 12:35:57.758] [INFO] default - 2017-10-22 12:35:57 [INFO] [WorldEdit] Enabling WorldEdit v5.5.6
+
+[2017-10-22 12:35:57.782] [INFO] default - 2017-10-22 12:35:57 [INFO] WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+
+[2017-10-22 12:35:57.836] [INFO] default - 2017-10-22 12:35:57 [INFO] [Modifyworld] Enabling Modifyworld v1.19.4
+
+[2017-10-22 12:35:57.842] [INFO] default - 2017-10-22 12:35:57 [INFO] [Modifyworld] Modifyworld enabled!
+
+[2017-10-22 12:35:57.848] [INFO] default - 2017-10-22 12:35:57 [INFO] [Essentials] Enabling Essentials v2.11.1
+
+[2017-10-22 12:35:57.857] [INFO] default - ::ffff:173.59.28.191 - - "GET /api/profile HTTP/1.1" 200 419 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+[2017-10-22 12:35:57.859] [DEBUG] default - ::ffff:173.59.28.191 - - [22/Oct/2017:16:35:57 +0000] "GET /api/profile HTTP/1.1" 200 419 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+[2017-10-22 12:35:57.938] [INFO] default - 2017-10-22 12:35:57 [INFO] Essentials: Using PermissionsEx based permissions.
+
+[2017-10-22 12:35:57.941] [INFO] default - 2017-10-22 12:35:57 [INFO] [Lockette] Enabling Lockette v1.7.12
+2017-10-22 12:35:57 [INFO] [Lockette] Version 1.7.12 is being enabled!  Yay!  (Core version 1.3.7)
+2017-10-22 12:35:57 [INFO] [Lockette] Detected craftbukkit build [2788] ok.
+2017-10-22 12:35:57 [INFO] [Lockette] Custom lockable block list: [116, 84, 57, 145, 154]
+2017-10-22 12:35:57 [INFO] [Lockette] Ignoring linked plugins: [mcMMO]
+
+[2017-10-22 12:35:57.945] [INFO] default - 2017-10-22 12:35:57 [INFO] [Lockette] Loading strings file for English by Acru
+
+[2017-10-22 12:35:57.949] [INFO] default - 2017-10-22 12:35:57 [INFO] [Lockette] Enabled link to plugin PermissionsEx for Groups, version 1.19.5
+
+[2017-10-22 12:35:57.951] [INFO] default - 2017-10-22 12:35:57 [INFO] [Lockette] Using ops file for admin permissions.
+2017-10-22 12:35:57 [INFO] [Lockette] Ready to protect your containers.
+
+[2017-10-22 12:35:57.955] [INFO] default - 2017-10-22 12:35:57 [INFO] [CustomJoin] Enabling CustomJoin v1.3.1
+
+[2017-10-22 12:35:57.959] [INFO] default - 2017-10-22 12:35:57 [INFO] [CustomJoin] CustomJoin version 1.3.1 enabled.
+
+[2017-10-22 12:35:57.959] [INFO] default - 2017-10-22 12:35:57 [INFO] [LoginSecurity] Enabling LoginSecurity v2.0.4
+
+[2017-10-22 12:35:57.979] [INFO] default - 2017-10-22 12:35:57 [INFO] [EssentialsChat] Enabling EssentialsChat v2.11.1
+
+[2017-10-22 12:35:57.982] [INFO] default - 2017-10-22 12:35:57 [INFO] [WorldGuard] Enabling WorldGuard v5.7.5
+
+[2017-10-22 12:35:58.003] [INFO] default - 2017-10-22 12:35:58 [INFO] [WorldGuard] (world) TNT ignition is PERMITTED.
+
+[2017-10-22 12:35:58.004] [INFO] default - 2017-10-22 12:35:58 [INFO] [WorldGuard] (world) Lighters are PERMITTED.
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world) Lava fire is blocked.
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world) Fire spread is UNRESTRICTED.
+
+[2017-10-22 12:35:58.005] [INFO] default - 2017-10-22 12:35:58 [INFO] [WorldGuard] Loaded configuration for world 'world'
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world_nether) Lighters are PERMITTED.
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world_nether) Lava fire is blocked.
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+
+[2017-10-22 12:35:58.007] [INFO] default - 2017-10-22 12:35:58 [INFO] [WorldGuard] Loaded configuration for world 'world_nether'
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world_the_end) Lighters are PERMITTED.
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world_the_end) Lava fire is blocked.
+2017-10-22 12:35:58 [INFO] [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+2017-10-22 12:35:58 [INFO] [WorldGuard] Loaded configuration for world 'world_the_end'
+
+[2017-10-22 12:35:58.020] [INFO] default - 2017-10-22 12:35:58 [INFO] [WorldGuard] 0 regions loaded for 'world'
+
+[2017-10-22 12:35:58.020] [INFO] default - 2017-10-22 12:35:58 [INFO] [WorldGuard] 0 regions loaded for 'world_nether'
+2017-10-22 12:35:58 [INFO] [WorldGuard] 0 regions loaded for 'world_the_end'
+
+[2017-10-22 12:35:58.073] [INFO] default - 2017-10-22 12:35:58 [INFO] CONSOLE: Reload complete.
+
+[2017-10-22 12:35:58.075] [INFO] default - 2017-10-22 12:35:58 [INFO] Accepted EditSessionFactory of type net.coreprotect.worldedit.CoreProtectEditSessionFactory from net.coreprotect.worldedit
+
+[2017-10-22 12:35:58.806] [INFO] default - 2017-10-22 12:35:58 [INFO] [WorldEdit] Using inbuilt NmsBlock for this version.
+
+[2017-10-22 12:35:59.903] [INFO] default - 2017-10-22 12:35:59 [INFO] --------------------
+
+[2017-10-22 12:35:59.904] [INFO] default - 2017-10-22 12:35:59 [INFO] [CoreProtect] Version 2.09 now available.
+2017-10-22 12:35:59 [INFO] [CoreProtect] Download: Type "/co version" in-game.
+2017-10-22 12:35:59 [INFO] --------------------
+2017-10-22 12:35:59 [INFO] [Sponsor] Unlimited MC Hosting: www.hosthorde.com
+2017-10-22 12:35:59 [INFO] --------------------
+
+[2017-10-22 12:36:19.095] [INFO] default - 2017-10-22 12:36:19 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 12:36:24.986] [INFO] default - 2017-10-22 12:36:24 [INFO] MaxK issued server command: /msg guppies oh man i had 30 levels and was just about to enchant a sword
+
+[2017-10-22 12:36:29.634] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 200 10214 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:36:29.634] [DEBUG] default - ::1 - - [22/Oct/2017:16:36:29 +0000] "GET /api/logs HTTP/1.1" 200 10214 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:36:47.584] [INFO] default - 2017-10-22 12:36:47 [INFO] guppies issued server command: /msg max you also lost your bow and chest plate?
+
+[2017-10-22 12:36:59.184] [INFO] default - 2017-10-22 12:36:59 [INFO] MaxK issued server command: /msg guppies yes somehow with rolling back
+
+[2017-10-22 12:37:13.535] [INFO] default - 2017-10-22 12:37:13 [INFO] guppies issued server command: /msg maxk power 3 and prot 4?
+
+[2017-10-22 12:37:17.935] [INFO] default - 2017-10-22 12:37:17 [SEVERE] Could not pass event InventoryClickEvent to Modifyworld v1.19.4
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1358)
+	at net.minecraft.server.v1_5_R3.Packet102WindowClick.handle(SourceFile:31)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:115)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at net.minecraft.server.v1_5_R3.InventorySubcontainer.getItem(InventorySubcontainer.java:21)
+	at org.bukkit.craftbukkit.v1_5_R3.inventory.CraftInventory.getItem(CraftInventory.java:49)
+	at ru.tehkode.modifyworld.handlers.PlayerListener.onPlayerInventoryClick(PlayerListener.java:191)
+	at sun.reflect.GeneratedMethodAccessor94.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 14 more
+
+[2017-10-22 12:37:20.834] [INFO] default - 2017-10-22 12:37:20 [INFO] MaxK issued server command: /msg guppies yes thank you so much
+
+[2017-10-22 12:37:32.436] [INFO] default - 2017-10-22 12:37:32 [SEVERE] Could not pass event InventoryClickEvent to Modifyworld v1.19.4
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1358)
+	at net.minecraft.server.v1_5_R3.Packet102WindowClick.handle(SourceFile:31)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:115)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at net.minecraft.server.v1_5_R3.InventorySubcontainer.getItem(InventorySubcontainer.java:21)
+	at org.bukkit.craftbukkit.v1_5_R3.inventory.CraftInventory.getItem(CraftInventory.java:49)
+	at ru.tehkode.modifyworld.handlers.PlayerListener.onPlayerInventoryClick(PlayerListener.java:191)
+	at sun.reflect.GeneratedMethodAccessor94.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 14 more
+
+[2017-10-22 12:37:51.185] [INFO] default - 2017-10-22 12:37:51 [INFO] guppies issued server command: /msg MaxK tell me when you hit 30 levels
+
+[2017-10-22 12:37:52.384] [INFO] default - 2017-10-22 12:37:52 [INFO] guppies issued server command: /xp
+
+[2017-10-22 12:37:52.385] [INFO] default - 2017-10-22 12:37:52 [INFO] �cguppies �4was denied access to command.
+
+[2017-10-22 12:37:55.177] [INFO] default - ::ffff:76.124.120.104 - - "GET /favicon.ico HTTP/1.1" 404 795 "" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:37:55.177] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:37:55 +0000] "GET /favicon.ico HTTP/1.1" 404 795 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:37:59.324] [INFO] default - ::ffff:76.124.120.104 - - "GET / HTTP/1.1" 200 4393 "" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:37:59.324] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:37:59 +0000] "GET / HTTP/1.1" 200 4393 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:37:59.492] [INFO] default - ::ffff:76.124.120.104 - - "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:37:59.493] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:37:59 +0000] "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:37:59.628] [INFO] default - ::ffff:76.124.120.104 - - "GET /styles.css HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:37:59.629] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:37:59 +0000] "GET /styles.css HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:38:00.786] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:38:00.787] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:38:00 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:38:00.837] [INFO] default - 2017-10-22 12:38:00 [INFO] There are 6 out of maximum 20 players online.
+
+[2017-10-22 12:38:00.839] [INFO] default - 2017-10-22 12:38:00 [INFO] Member: Herobrine, itsyoboycolinXC, learmantha, MaxK, noahfriendo
+2017-10-22 12:38:00 [INFO] Moderator: guppies
+
+[2017-10-22 12:38:01.791] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10262 "" "undefined"
+[2017-10-22 12:38:01.792] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:38:01 +0000] "GET /api/logs HTTP/1.1" 200 10262 "-" "-"
+
+[2017-10-22 12:38:01.793] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:38:01.793] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:38:01 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:38:28.943] [INFO] default - 2017-10-22 12:38:28 [INFO] eee[/173.49.196.155:52807] logged in with entity id 17533 at ([world] 24.30000001192093, 45.0, 1022.3000000119209)
+
+[2017-10-22 12:38:31.229] [INFO] default - 2017-10-22 12:38:31 [INFO] [MEMBER] MaxK: almost
+
+[2017-10-22 12:38:33.190] [INFO] default - 2017-10-22 12:38:33 [INFO] Connection reset
+
+[2017-10-22 12:38:33.192] [INFO] default - 2017-10-22 12:38:33 [INFO] eee lost connection: disconnect.quitting
+
+[2017-10-22 12:38:34.580] [INFO] default - 2017-10-22 12:38:34 [INFO] [MEMBER] MaxK: now
+
+[2017-10-22 12:38:37.979] [INFO] default - 2017-10-22 12:38:37 [INFO] [MEMBER] MaxK: wait not now
+
+[2017-10-22 12:38:46.379] [INFO] default - 2017-10-22 12:38:46 [INFO] [MEMBER] MaxK: now
+
+[2017-10-22 12:38:49.079] [INFO] default - 2017-10-22 12:38:49 [INFO] [MEMBER] MaxK: thanks
+
+[2017-10-22 12:38:52.878] [INFO] default - 2017-10-22 12:38:52 [INFO] [MOD] guppies: anything else?
+
+[2017-10-22 12:38:58.487] [INFO] default - 2017-10-22 12:38:58 [INFO] Connection reset
+
+[2017-10-22 12:38:58.501] [INFO] default - 2017-10-22 12:38:58 [INFO] Herobrine lost connection: disconnect.quitting
+
+[2017-10-22 12:38:58.506] [INFO] default - ::ffff:172.58.201.164 - - "POST /login HTTP/1.1" 302 70 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:38:58.506] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:38:58 +0000] "POST /login HTTP/1.1" 302 70 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:38:58.907] [INFO] default - ::ffff:172.58.201.164 - - "GET /profile.html HTTP/1.1" 200 1439 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:38:58.907] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:38:58 +0000] "GET /profile.html HTTP/1.1" 200 1439 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:38:59.146] [INFO] default - ::ffff:172.58.201.164 - - "GET /api/profile HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:38:59.147] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:38:59 +0000] "GET /api/profile HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:39:01.978] [INFO] default - 2017-10-22 12:39:01 [INFO] [MEMBER] MaxK: just a little more glowstone
+
+[2017-10-22 12:39:13.678] [INFO] default - 2017-10-22 12:39:13 [INFO] [MEMBER] MaxK: thanks so much
+
+[2017-10-22 12:39:17.578] [INFO] default - 2017-10-22 12:39:17 [INFO] [MOD] guppies: yup
+
+[2017-10-22 12:39:21.184] [INFO] default - ::ffff:172.58.201.164 - - "GET /admin HTTP/1.1" 304 - "" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:39:21.184] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:39:21 +0000] "GET /admin HTTP/1.1" 304 - "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:39:21.469] [INFO] default - ::ffff:172.58.201.164 - - "GET /api/logs HTTP/1.1" 200 10263 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:39:21.470] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:39:21 +0000] "GET /api/logs HTTP/1.1" 200 10263 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:39:29.679] [INFO] default - 2017-10-22 12:39:29 [INFO] [MOD] guppies: if you notice anything else missing let me know
+
+[2017-10-22 12:39:31.584] [INFO] default - 2017-10-22 12:39:31 [INFO] Connection reset
+
+[2017-10-22 12:39:31.584] [INFO] default - 2017-10-22 12:39:31 [INFO] noahfriendo lost connection: disconnect.quitting
+
+[2017-10-22 12:39:32.429] [INFO] default - 2017-10-22 12:39:32 [INFO] [MEMBER] MaxK: ok
+
+[2017-10-22 12:39:36.577] [INFO] default - 2017-10-22 12:39:36 [INFO] [MOD] guppies: or some other staff member
+
+[2017-10-22 12:39:40.081] [INFO] default - 2017-10-22 12:39:40 [INFO] guppies issued server command: /tp le
+
+[2017-10-22 12:39:40.778] [INFO] default - 2017-10-22 12:39:40 [INFO] [MEMBER] MaxK: thanks
+
+[2017-10-22 12:39:59.077] [INFO] default - 2017-10-22 12:39:59 [WARNING] [LoginSecurity] Task #183 for LoginSecurity v2.0.4 generated an exception
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at com.lenis0012.bukkit.ls.ThreadManager$3.run(ThreadManager.java:78)
+	at org.bukkit.craftbukkit.v1_5_R3.scheduler.CraftTask.run(CraftTask.java:53)
+	at org.bukkit.craftbukkit.v1_5_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:345)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:513)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+
+[2017-10-22 12:40:09.477] [INFO] default - 2017-10-22 12:40:09 [INFO] [MOD] guppies: everyone good?
+
+[2017-10-22 12:40:16.728] [INFO] default - 2017-10-22 12:40:16 [INFO] [MEMBER] itsyoboycolinXC: is anybody willing to help me find some blazes in the nether
+
+[2017-10-22 12:40:35.279] [INFO] default - 2017-10-22 12:40:35 [INFO] [MOD] guppies: i can show you where a spawner is
+
+[2017-10-22 12:40:37.978] [INFO] default - 2017-10-22 12:40:37 [INFO] [MOD] guppies: if it is still there
+
+[2017-10-22 12:40:39.981] [INFO] default - 2017-10-22 12:40:39 [INFO] guppies issued server command: /tp it
+
+[2017-10-22 12:40:41.260] [INFO] default - ::ffff:172.58.201.164 - - "GET /api/logs HTTP/1.1" 200 10285 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:40:41.261] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:40:41 +0000] "GET /api/logs HTTP/1.1" 200 10285 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:40:45.927] [INFO] default - 2017-10-22 12:40:45 [INFO] [MEMBER] itsyoboycolinXC: okay
+
+[2017-10-22 12:40:53.077] [INFO] default - 2017-10-22 12:40:53 [INFO] [MOD] guppies: go to the portal near sams old house
+
+[2017-10-22 12:41:04.542] [INFO] default - ::ffff:172.58.201.164 - - "POST /api/command HTTP/1.1" 200 16 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:41:04.543] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:41:04 +0000] "POST /api/command HTTP/1.1" 200 16 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:41:04.581] [INFO] default - 2017-10-22 12:41:04 [INFO] Unknown command. Type "help" for help.
+
+[2017-10-22 12:41:04.777] [INFO] default - ::ffff:172.58.201.164 - - "GET /api/logs HTTP/1.1" 200 10287 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:41:04.777] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:41:04 +0000] "GET /api/logs HTTP/1.1" 200 10287 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:41:08.536] [INFO] default - ::ffff:172.58.201.164 - - "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:41:08.536] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:41:08 +0000] "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:41:13.646] [INFO] default - ::ffff:172.58.201.164 - - "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:41:13.646] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:41:13 +0000] "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:41:15.255] [INFO] default - ::ffff:172.58.201.164 - - "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 12:41:15.255] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:16:41:15 +0000] "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 12:41:24.027] [INFO] default - 2017-10-22 12:41:24 [INFO] [MEMBER] itsyoboycolinXC: klugherz or forde
+
+[2017-10-22 12:41:25.627] [INFO] default - 2017-10-22 12:41:25 [INFO] [MOD] guppies: rip its not there
+
+[2017-10-22 12:41:34.427] [INFO] default - 2017-10-22 12:41:34 [INFO] [MEMBER] itsyoboycolinXC: crap
+
+[2017-10-22 12:41:36.332] [INFO] default - 2017-10-22 12:41:36 [INFO] learmantha lost connection: disconnect.quitting
+
+[2017-10-22 12:41:36.335] [INFO] default - 2017-10-22 12:41:36 [INFO] Connection reset
+
+[2017-10-22 12:41:37.279] [INFO] default - 2017-10-22 12:41:37 [INFO] [MOD] guppies: just go to sam klugherz old house
+
+[2017-10-22 12:41:46.443] [INFO] default - 2017-10-22 12:41:46 [INFO] learmantha[/173.59.28.191:52340] logged in with entity id 20014 at ([world] 70.16389263742803, 49.0, 417.66704555574864)
+
+[2017-10-22 12:41:51.083] [INFO] default - 2017-10-22 12:41:51 [INFO] learmantha issued server command: /login 784017
+
+[2017-10-22 12:41:51.531] [INFO] default - 2017-10-22 12:41:51 [INFO] guppies issued server command: /gamemode 0
+
+[2017-10-22 12:42:29.428] [INFO] default - 2017-10-22 12:42:29 [INFO] [MOD] guppies: yeah just go to sammy's old house
+
+[2017-10-22 12:43:59.093] [INFO] default - 2017-10-22 12:43:59 [INFO] Herobrine[/100.14.155.96:58404] logged in with entity id 22438 at ([world] 28.30000001192093, 45.0, 1031.8367344856463)
+
+[2017-10-22 12:44:04.492] [INFO] default - 2017-10-22 12:44:04 [INFO] Herobrine issued server command: /login goopyloop
+
+[2017-10-22 12:44:22.027] [INFO] default - 2017-10-22 12:44:22 [INFO] [MOD] guppies: this place is amess
+
+[2017-10-22 12:44:28.678] [INFO] default - 2017-10-22 12:44:28 [INFO] [MEMBER] itsyoboycolinXC: yeah
+
+[2017-10-22 12:46:16.187] [INFO] default - 2017-10-22 12:46:16 [INFO] [Metrics] Read timed out
+
+[2017-10-22 12:47:02.228] [INFO] default - 2017-10-22 12:47:02 [INFO] [MOD] guppies: be careful
+
+[2017-10-22 12:47:32.278] [INFO] default - 2017-10-22 12:47:32 [INFO] [MEMBER] learmantha: am i allowed to use steel + flint anywhere
+
+[2017-10-22 12:47:37.878] [INFO] default - 2017-10-22 12:47:37 [INFO] [MEMBER] learmantha: or is it banned in all locations on the server
+
+[2017-10-22 12:47:38.428] [INFO] default - 2017-10-22 12:47:38 [INFO] [MOD] guppies: how many you need?
+
+[2017-10-22 12:47:46.629] [INFO] default - 2017-10-22 12:47:46 [INFO] [MOD] guppies: wdym learmantha?
+
+[2017-10-22 12:47:46.828] [INFO] default - 2017-10-22 12:47:46 [INFO] [MEMBER] itsyoboycolinXC: this is good
+
+[2017-10-22 12:48:03.278] [INFO] default - 2017-10-22 12:48:03 [INFO] [MEMBER] learmantha: i keep trying to light mobs on fire but i get the "you're not allowed to use this here"
+
+[2017-10-22 12:48:09.128] [INFO] default - 2017-10-22 12:48:09 [INFO] [MOD] guppies: hm
+
+[2017-10-22 12:48:27.879] [INFO] default - 2017-10-22 12:48:27 [INFO] [MOD] guppies: give me a min
+
+[2017-10-22 12:48:33.579] [INFO] default - 2017-10-22 12:48:33 [INFO] [MEMBER] itsyoboycolinXC: ok
+
+[2017-10-22 12:48:44.028] [INFO] default - 2017-10-22 12:48:44 [INFO] [MOD] guppies: im talking to learmantha xd
+
+[2017-10-22 12:48:59.379] [INFO] default - 2017-10-22 12:48:59 [INFO] [MEMBER] itsyoboycolinXC: thx
+
+[2017-10-22 12:49:02.629] [INFO] default - 2017-10-22 12:49:02 [INFO] [MOD] guppies: np
+
+[2017-10-22 12:49:30.192] [INFO] default - 2017-10-22 12:49:30 [INFO] caleb[/69.242.56.82:61742] logged in with entity id 32243 at ([world] 57.404662349204024, 74.0, 757.6999999880791)
+
+[2017-10-22 12:49:56.528] [INFO] default - 2017-10-22 12:49:56 [INFO] [MOD] guppies: you good from here?
+
+[2017-10-22 12:50:00.640] [INFO] default - 2017-10-22 12:50:00 [INFO] Mr. Miyagi[/98.225.228.115:9769] logged in with entity id 33893 at ([world] 142.9782063931838, 68.0, 175.45778380081777)
+
+[2017-10-22 12:50:01.928] [INFO] default - 2017-10-22 12:50:01 [INFO] [MEMBER] itsyoboycolinXC: yeah
+
+[2017-10-22 12:50:04.429] [INFO] default - 2017-10-22 12:50:04 [INFO] [MOD] guppies: alright
+
+[2017-10-22 12:50:08.141] [INFO] default - 2017-10-22 12:50:08 [INFO] guppies issued server command: /gamemode 1
+
+[2017-10-22 12:50:42.029] [INFO] default - 2017-10-22 12:50:42 [INFO] [MOD] guppies: hm i guess they did disable flint and steel
+
+[2017-10-22 12:50:44.588] [INFO] default - 2017-10-22 12:50:44 [INFO] guppies issued server command: /tp l
+
+[2017-10-22 12:50:49.645] [INFO] default - 2017-10-22 12:50:49 [INFO] [MEMBER] learmantha: wow
+
+[2017-10-22 12:50:56.329] [INFO] default - 2017-10-22 12:50:56 [INFO] [MEMBER] itsyoboycolinXC: well then
+
+[2017-10-22 12:50:56.885] [INFO] default - ::ffff:98.225.228.115 - - "POST /register HTTP/1.1" 200 43 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-10-22 12:50:56.886] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:16:50:56 +0000] "POST /register HTTP/1.1" 200 43 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+
+[2017-10-22 12:51:14.630] [INFO] default - 2017-10-22 12:51:14 [INFO] [MOD] guppies: why arent they hitting you learmantha
+
+[2017-10-22 12:51:18.778] [INFO] default - 2017-10-22 12:51:18 [INFO] [MOD] guppies: tf
+
+[2017-10-22 12:51:24.478] [INFO] default - 2017-10-22 12:51:24 [INFO] [MEMBER] learmantha: wdym
+
+[2017-10-22 12:51:38.128] [INFO] default - 2017-10-22 12:51:38 [INFO] [MOD] guppies: the spiders and zombies aret hitting you
+
+[2017-10-22 12:51:55.088] [INFO] default - 2017-10-22 12:51:55 [INFO] Mr. Miyagi lost connection: disconnect.endOfStream
+
+[2017-10-22 12:51:59.128] [INFO] default - 2017-10-22 12:51:59 [INFO] [MEMBER] learmantha: where are you
+
+[2017-10-22 12:52:08.589] [INFO] default - 2017-10-22 12:52:08 [INFO] MaxK was fireballed by Ghast
+
+[2017-10-22 12:52:10.979] [INFO] default - 2017-10-22 12:52:10 [INFO] [MOD] guppies: f
+
+[2017-10-22 12:52:15.429] [INFO] default - 2017-10-22 12:52:15 [INFO] [MEMBER] learmantha: what the heck
+
+[2017-10-22 12:52:16.428] [INFO] default - 2017-10-22 12:52:16 [INFO] [MEMBER] MaxK: all good
+
+[2017-10-22 12:52:20.180] [INFO] default - 2017-10-22 12:52:20 [INFO] [MEMBER] learmantha: why are you invisible
+
+[2017-10-22 12:52:21.146] [INFO] default - 2017-10-22 12:52:21 [INFO] Mr. Miyagi[/98.225.228.115:53700] logged in with entity id 45612 at ([world] 144.06873978106432, 68.0, 177.69999998807907)
+
+[2017-10-22 12:52:32.478] [INFO] default - 2017-10-22 12:52:32 [INFO] [MOD] guppies: because i drank and invis potion
+
+[2017-10-22 12:52:41.388] [INFO] default - 2017-10-22 12:52:41 [INFO] guppies issued server command: /god
+
+[2017-10-22 12:52:41.429] [INFO] default - 2017-10-22 12:52:41 [INFO] [MEMBER] learmantha: ah
+
+[2017-10-22 12:52:42.790] [INFO] default - 2017-10-22 12:52:42 [INFO] guppies issued server command: /god
+
+[2017-10-22 12:52:44.390] [INFO] default - 2017-10-22 12:52:44 [INFO] guppies issued server command: /god learmantha
+
+[2017-10-22 12:52:46.387] [INFO] default - 2017-10-22 12:52:46 [INFO] guppies issued server command: /god
+
+[2017-10-22 12:52:54.438] [INFO] default - 2017-10-22 12:52:54 [INFO] learmantha issued server command: /tell guppies when i was a mod i put myself in god mode for fun
+
+[2017-10-22 12:52:54.880] [INFO] default - 2017-10-22 12:52:54 [INFO] [MOD] guppies: do you take damage?
+
+[2017-10-22 12:53:00.091] [INFO] default - 2017-10-22 12:53:00 [INFO] [UNVERIFIED] Mr. Miyagi: Guys im still unverified
+
+[2017-10-22 12:53:00.742] [INFO] default - 2017-10-22 12:53:00 [INFO] guppies issued server command: /msg learmantha ooooh
+
+[2017-10-22 12:53:02.389] [INFO] default - 2017-10-22 12:53:02 [INFO] learmantha issued server command: /reply and then when i get demoted i was stuck
+
+[2017-10-22 12:53:14.029] [INFO] default - 2017-10-22 12:53:14 [INFO] [MEMBER] MaxK: do /rules
+
+[2017-10-22 12:53:14.139] [INFO] default - 2017-10-22 12:53:14 [INFO] learmantha issued server command: /reply so i've been stuck in god mode bc i dont have access to the command
+
+[2017-10-22 12:53:19.388] [INFO] default - 2017-10-22 12:53:19 [INFO] Mr. Miyagi issued server command: /rules
+
+[2017-10-22 12:53:20.989] [INFO] default - 2017-10-22 12:53:20 [INFO] Connection reset
+2017-10-22 12:53:20 [INFO] Herobrine lost connection: disconnect.quitting
+
+[2017-10-22 12:53:23.686] [INFO] default - 2017-10-22 12:53:23 [INFO] learmantha issued server command: /reply i'd appreciate discretion on this bc i'd like it to stay this way
+
+[2017-10-22 12:53:32.231] [INFO] default - 2017-10-22 12:53:32 [INFO] [UNVERIFIED] Mr. Miyagi: I already went to the link
+
+[2017-10-22 12:53:42.186] [INFO] default - 2017-10-22 12:53:42 [INFO] guppies issued server command: /msg learmantha alright fair enough don abuse it though
+
+[2017-10-22 12:53:42.786] [INFO] default - 2017-10-22 12:53:42 [INFO] MaxK was burnt to a crisp whilst fighting Ghast
+
+[2017-10-22 12:53:57.435] [INFO] default - 2017-10-22 12:53:57 [INFO] guppies issued server command: /tp m
+
+[2017-10-22 12:54:00.491] [INFO] default - 2017-10-22 12:54:00 [INFO] guppies issued server command: /tp MaxK
+
+[2017-10-22 12:54:05.077] [INFO] default - 2017-10-22 12:54:05 [INFO] [UNVERIFIED] Mr. Miyagi: what do i do when im at the link
+
+[2017-10-22 12:54:09.027] [INFO] default - 2017-10-22 12:54:09 [INFO] [MOD] guppies: sign up
+
+[2017-10-22 12:54:10.435] [INFO] default - 2017-10-22 12:54:10 [INFO] guppies issued server command: /tp MaxK
+
+[2017-10-22 12:54:11.084] [INFO] default - 2017-10-22 12:54:11 [WARNING] Mr. Miyagi moved wrongly!
+
+[2017-10-22 12:54:25.478] [INFO] default - 2017-10-22 12:54:25 [INFO] [UNVERIFIED] Mr. Miyagi: Like register
+
+[2017-10-22 12:54:26.327] [INFO] default - 2017-10-22 12:54:26 [INFO] [MOD] guppies: its case sensitive
+
+[2017-10-22 12:54:28.977] [INFO] default - 2017-10-22 12:54:28 [INFO] [MOD] guppies: yea
+
+[2017-10-22 12:54:32.035] [INFO] default - 2017-10-22 12:54:32 [INFO] guppies issued server command: /tp MaxK
+
+[2017-10-22 12:54:35.387] [INFO] default - 2017-10-22 12:54:35 [INFO] guppies issued server command: /tp MaxK
+
+[2017-10-22 12:54:45.739] [INFO] default - ::ffff:98.225.228.115 - - "POST /register HTTP/1.1" 200 43 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-10-22 12:54:45.739] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:16:54:45 +0000] "POST /register HTTP/1.1" 200 43 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+
+[2017-10-22 12:55:00.077] [INFO] default - 2017-10-22 12:55:00 [INFO] [UNVERIFIED] Mr. Miyagi: it just says {"success":false,"message":"Invalid input"}
+
+[2017-10-22 12:55:08.579] [INFO] default - 2017-10-22 12:55:08 [INFO] [MOD] guppies: hm
+
+[2017-10-22 12:55:13.928] [INFO] default - 2017-10-22 12:55:13 [INFO] [UNVERIFIED] Mr. Miyagi: With a blank page
+
+[2017-10-22 12:55:18.537] [INFO] default - 2017-10-22 12:55:18 [INFO] guppies issued server command: /rules
+
+[2017-10-22 12:55:23.295] [INFO] default - ::ffff:69.242.63.233 - - "GET / HTTP/1.1" 200 4393 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:55:23.296] [DEBUG] default - ::ffff:69.242.63.233 - - [22/Oct/2017:16:55:23 +0000] "GET / HTTP/1.1" 200 4393 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:55:23.475] [INFO] default - ::ffff:69.242.63.233 - - "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:55:23.475] [DEBUG] default - ::ffff:69.242.63.233 - - [22/Oct/2017:16:55:23 +0000] "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:55:23.479] [INFO] default - ::ffff:69.242.63.233 - - "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:55:23.479] [DEBUG] default - ::ffff:69.242.63.233 - - [22/Oct/2017:16:55:23 +0000] "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:55:24.833] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:55:24.833] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:55:24 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:55:24.836] [INFO] default - 2017-10-22 12:55:24 [INFO] There are 6 out of maximum 20 players online.
+
+[2017-10-22 12:55:24.837] [INFO] default - 2017-10-22 12:55:24 [INFO] Default: Mr. Miyagi
+
+[2017-10-22 12:55:24.837] [INFO] default - 2017-10-22 12:55:24 [INFO] Member: itsyoboycolinXC, learmantha, MaxK
+
+[2017-10-22 12:55:24.838] [INFO] default - 2017-10-22 12:55:24 [INFO] Moderator: caleb, guppies
+
+[2017-10-22 12:55:24.977] [INFO] default - 2017-10-22 12:55:24 [INFO] [MEMBER] MaxK: I lost all my fing stuf
+
+[2017-10-22 12:55:25.839] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10209 "" "undefined"
+[2017-10-22 12:55:25.839] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:55:25 +0000] "GET /api/logs HTTP/1.1" 200 10209 "-" "-"
+
+[2017-10-22 12:55:25.840] [INFO] default - ::ffff:69.242.63.233 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:55:25.841] [DEBUG] default - ::ffff:69.242.63.233 - - [22/Oct/2017:16:55:25 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:55:33.777] [INFO] default - 2017-10-22 12:55:33 [INFO] [MEMBER] MaxK: UGH
+
+[2017-10-22 12:55:35.577] [INFO] default - 2017-10-22 12:55:35 [INFO] [MOD] guppies: rip ;/
+
+[2017-10-22 12:55:46.077] [INFO] default - 2017-10-22 12:55:46 [INFO] [MOD] guppies: Mr. Miyagi are you using your school computer?
+
+[2017-10-22 12:55:48.935] [INFO] default - 2017-10-22 12:55:48 [INFO] guppies issued server command: /tp MaxK
+
+[2017-10-22 12:55:59.037] [INFO] default - 2017-10-22 12:55:59 [INFO] guppies issued server command: /tp mr
+
+[2017-10-22 12:56:01.427] [INFO] default - 2017-10-22 12:56:01 [INFO] [UNVERIFIED] Mr. Miyagi: Should i use another coputer
+
+[2017-10-22 12:56:06.577] [INFO] default - 2017-10-22 12:56:06 [INFO] [MOD] guppies: to sign up prob
+
+[2017-10-22 12:56:11.329] [INFO] default - 2017-10-22 12:56:11 [INFO] [UNVERIFIED] Mr. Miyagi: K thx
+
+[2017-10-22 12:56:17.386] [INFO] default - 2017-10-22 12:56:17 [INFO] guppies issued server command: /tp cal
+
+[2017-10-22 12:56:18.142] [INFO] default - 2017-10-22 12:56:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 12:56:20.778] [INFO] default - 2017-10-22 12:56:20 [INFO] [MOD] guppies: brb
+
+[2017-10-22 12:56:25.185] [INFO] default - 2017-10-22 12:56:25 [INFO] guppies lost connection: disconnect.quitting
+2017-10-22 12:56:25 [INFO] Connection reset
+
+[2017-10-22 12:56:54.635] [INFO] default - 2017-10-22 12:56:54 [INFO] MaxK was shot by Skeleton
+
+[2017-10-22 12:58:32.835] [INFO] default - 2017-10-22 12:58:32 [INFO] Mr. Miyagi lost connection: disconnect.endOfStream
+
+[2017-10-22 13:00:53.135] [INFO] default - 2017-10-22 13:00:53 [INFO] Connection reset
+2017-10-22 13:00:53 [INFO] learmantha lost connection: disconnect.quitting
+
+[2017-10-22 13:05:26.493] [INFO] default - 2017-10-22 13:05:26 [INFO] 15gorr[/173.59.43.106:54911] logged in with entity id 87084 at ([world] -311.8505511523104, 63.0, 534.5592278255999)
+
+[2017-10-22 13:05:39.236] [INFO] default - 2017-10-22 13:05:39 [INFO] 15gorr issued server command: /login 15gorr
+
+[2017-10-22 13:06:18.133] [INFO] default - 2017-10-22 13:06:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 13:06:44.589] [INFO] default - 2017-10-22 13:06:44 [INFO] Connection reset
+2017-10-22 13:06:44 [INFO] 15gorr lost connection: disconnect.quitting
+
+[2017-10-22 13:10:27.042] [INFO] default - 2017-10-22 13:10:27 [INFO] Sammy K[/76.98.165.89:56633] logged in with entity id 96453 at ([world] 2.008353284548531, 27.0, 774.3000000119209)
+
+[2017-10-22 13:10:34.183] [INFO] default - 2017-10-22 13:10:34 [INFO] Sammy K issued server command: /login firsttouch
+
+[2017-10-22 13:11:36.413] [INFO] default - ::ffff:172.58.200.85 - - "GET / HTTP/1.1" 200 4393 "" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1"
+[2017-10-22 13:11:36.413] [DEBUG] default - ::ffff:172.58.200.85 - - [22/Oct/2017:17:11:36 +0000] "GET / HTTP/1.1" 200 4393 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1"
+
+[2017-10-22 13:11:36.582] [INFO] default - ::ffff:172.58.200.85 - - "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1"
+[2017-10-22 13:11:36.582] [DEBUG] default - ::ffff:172.58.200.85 - - [22/Oct/2017:17:11:36 +0000] "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1"
+
+[2017-10-22 13:11:36.712] [INFO] default - ::ffff:172.58.200.85 - - "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1"
+[2017-10-22 13:11:36.714] [DEBUG] default - ::ffff:172.58.200.85 - - [22/Oct/2017:17:11:36 +0000] "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1"
+
+[2017-10-22 13:11:37.256] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 13:11:37.257] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:17:11:37 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 13:11:37.284] [INFO] default - 2017-10-22 13:11:37 [INFO] There are 4 out of maximum 20 players online.
+
+[2017-10-22 13:11:37.286] [INFO] default - 2017-10-22 13:11:37 [INFO] Co-owner: Sammy K
+2017-10-22 13:11:37 [INFO] Member: itsyoboycolinXC, MaxK
+2017-10-22 13:11:37 [INFO] Moderator: caleb
+
+[2017-10-22 13:11:38.261] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10196 "" "undefined"
+[2017-10-22 13:11:38.262] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:17:11:38 +0000] "GET /api/logs HTTP/1.1" 200 10196 "-" "-"
+
+[2017-10-22 13:11:38.263] [INFO] default - ::ffff:172.58.200.85 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1"
+[2017-10-22 13:11:38.263] [DEBUG] default - ::ffff:172.58.200.85 - - [22/Oct/2017:17:11:38 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1"
+
+[2017-10-22 13:14:51.092] [INFO] default - 2017-10-22 13:14:51 [INFO] guppies[/69.242.63.233:51843] logged in with entity id 104546 at ([world] 10.466739419946439, 80.07218036405818, 775.6954471669256)
+
+[2017-10-22 13:14:57.134] [INFO] default - 2017-10-22 13:14:57 [INFO] guppies issued server command: /login Dogdog113
+
+[2017-10-22 13:15:16.485] [INFO] default - 2017-10-22 13:15:16 [INFO] guppies issued server command: /tp sam
+
+[2017-10-22 13:15:29.934] [INFO] default - 2017-10-22 13:15:29 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 13:15:51.085] [INFO] default - 2017-10-22 13:15:51 [INFO] guppies issued server command: /tp cal
+
+[2017-10-22 13:15:55.434] [INFO] default - 2017-10-22 13:15:55 [INFO] guppies issued server command: /tp it
+
+[2017-10-22 13:16:04.985] [INFO] default - 2017-10-22 13:16:04 [INFO] guppies issued server command: /tp it
+
+[2017-10-22 13:16:17.735] [INFO] default - 2017-10-22 13:16:17 [INFO] guppies issued server command: /tp cal
+
+[2017-10-22 13:16:20.738] [INFO] default - 2017-10-22 13:16:20 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 13:17:47.884] [INFO] default - 2017-10-22 13:17:47 [INFO] guppies issued server command: /up 30
+
+[2017-10-22 13:17:53.134] [INFO] default - 2017-10-22 13:17:53 [INFO] guppies issued server command: /down 1
+
+[2017-10-22 13:17:56.633] [INFO] default - 2017-10-22 13:17:56 [INFO] guppies issued server command: //down
+
+[2017-10-22 13:17:58.084] [INFO] default - 2017-10-22 13:17:58 [INFO] guppies issued server command: //down 1
+
+[2017-10-22 13:17:59.387] [INFO] default - 2017-10-22 13:17:59 [INFO] guppies issued server command: //
+
+[2017-10-22 13:18:49.783] [INFO] default - 2017-10-22 13:18:49 [INFO] guppies issued server command: /thry
+
+[2017-10-22 13:18:52.734] [INFO] default - 2017-10-22 13:18:52 [INFO] guppies issued server command: /thru
+
+[2017-10-22 13:18:53.733] [INFO] default - 2017-10-22 13:18:53 [INFO] guppies issued server command: /thru
+
+[2017-10-22 13:19:20.278] [INFO] default - 2017-10-22 13:19:20 [INFO] [MEMBER] MaxK: whatcha doing?
+
+[2017-10-22 13:20:02.879] [INFO] default - 2017-10-22 13:20:02 [INFO] [MOD] guppies: try putting it on the sides
+
+[2017-10-22 13:20:16.679] [INFO] default - 2017-10-22 13:20:16 [INFO] [MEMBER] MaxK: ive tried that
+
+[2017-10-22 13:20:19.680] [INFO] default - 2017-10-22 13:20:19 [INFO] [MOD] guppies: hm
+
+[2017-10-22 13:20:46.029] [INFO] default - 2017-10-22 13:20:46 [INFO] [MEMBER] MaxK: do pistons even work
+
+[2017-10-22 13:20:52.579] [INFO] default - 2017-10-22 13:20:52 [INFO] [MOD] guppies: thet should
+
+[2017-10-22 13:21:20.183] [INFO] default - 2017-10-22 13:21:20 [INFO] Sammy K issued server command: /home
+
+[2017-10-22 13:21:27.928] [INFO] default - 2017-10-22 13:21:27 [INFO] [MOD] guppies: what are you trying to make?
+
+[2017-10-22 13:21:28.834] [INFO] default - 2017-10-22 13:21:28 [INFO] Sammy K issued server command: /back
+
+[2017-10-22 13:21:36.529] [INFO] default - 2017-10-22 13:21:36 [INFO] [MEMBER] MaxK: melon+pumpkin farm
+
+[2017-10-22 13:21:39.428] [INFO] default - 2017-10-22 13:21:39 [INFO] [MOD] guppies: ah
+
+[2017-10-22 13:21:49.735] [INFO] default - 2017-10-22 13:21:49 [INFO] Sammy K issued server command: /home
+
+[2017-10-22 13:21:57.085] [INFO] default - 2017-10-22 13:21:57 [INFO] Sammy K issued server command: /back
+
+[2017-10-22 13:22:27.695] [INFO] default - 2017-10-22 13:22:27 [INFO] guppies issued server command: /tp cal
+
+[2017-10-22 13:22:30.193] [INFO] default - 2017-10-22 13:22:30 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 13:22:34.635] [INFO] default - 2017-10-22 13:22:34 [INFO] guppies issued server command: /tp sam
+
+[2017-10-22 13:22:40.786] [INFO] default - 2017-10-22 13:22:40 [INFO] guppies issued server command: /tp sam
+
+[2017-10-22 13:22:43.337] [INFO] default - 2017-10-22 13:22:43 [INFO] guppies issued server command: /tp it
+
+[2017-10-22 13:22:53.335] [INFO] default - 2017-10-22 13:22:53 [INFO] guppies issued server command: /Tp MAX
+
+[2017-10-22 13:23:17.028] [INFO] default - 2017-10-22 13:23:17 [INFO] [MOD] caleb: sam i just put on a huge addition to our house
+
+[2017-10-22 13:23:34.236] [INFO] default - 2017-10-22 13:23:34 [INFO] guppies issued server command: /thru
+
+[2017-10-22 13:23:36.336] [INFO] default - 2017-10-22 13:23:36 [INFO] Sammy K issued server command: /tp caleb
+
+[2017-10-22 13:23:53.078] [INFO] default - 2017-10-22 13:23:53 [INFO] [MEMBER] itsyoboycolinXC: does anybody have sugar that they are willing to trade
+
+[2017-10-22 13:24:13.929] [INFO] default - 2017-10-22 13:24:13 [INFO] [MOD] guppies: can i try something?
+
+[2017-10-22 13:24:19.078] [INFO] default - 2017-10-22 13:24:19 [INFO] [MEMBER] MaxK: sure
+
+[2017-10-22 13:24:23.328] [INFO] default - 2017-10-22 13:24:23 [INFO] [CO-OWNER] Sammy K: looks good caleb, but what are we gonna put there
+
+[2017-10-22 13:25:09.579] [INFO] default - 2017-10-22 13:25:09 [INFO] [MOD] guppies: you need to do it like this
+
+[2017-10-22 13:25:14.428] [INFO] default - 2017-10-22 13:25:14 [INFO] [MEMBER] MaxK: guppy that works but i dont have those materials
+
+[2017-10-22 13:25:20.779] [INFO] default - 2017-10-22 13:25:20 [INFO] [MEMBER] MaxK: ill try
+
+[2017-10-22 13:25:22.429] [INFO] default - 2017-10-22 13:25:22 [INFO] [MOD] caleb: idk i just wanted to make our house like twice as big lol
+
+[2017-10-22 13:25:24.978] [INFO] default - 2017-10-22 13:25:24 [INFO] [MOD] guppies: you just need stone and torches
+
+[2017-10-22 13:25:37.328] [INFO] default - 2017-10-22 13:25:37 [INFO] [MOD] guppies: 20 repeaters
+
+[2017-10-22 13:25:44.785] [INFO] default - 2017-10-22 13:25:44 [INFO] Sammy K issued server command: /home
+
+[2017-10-22 13:25:51.980] [INFO] default - 2017-10-22 13:25:51 [INFO] [MOD] guppies: so 3 stone on the bottom and on the middle left and middle right a torch
+
+[2017-10-22 13:25:56.583] [INFO] default - 2017-10-22 13:25:56 [INFO] Connection reset
+
+[2017-10-22 13:25:56.584] [INFO] default - 2017-10-22 13:25:56 [INFO] Sammy K lost connection: disconnect.quitting
+
+[2017-10-22 13:25:58.429] [INFO] default - 2017-10-22 13:25:58 [INFO] [MOD] guppies: and i think in the middle a peice of redstone
+
+[2017-10-22 13:26:00.684] [INFO] default - 2017-10-22 13:26:00 [INFO] guppies issued server command: /tp  cal
+
+[2017-10-22 13:26:02.383] [INFO] default - 2017-10-22 13:26:02 [INFO] guppies issued server command: /tp cal
+
+[2017-10-22 13:26:15.984] [INFO] default - 2017-10-22 13:26:15 [INFO] guppies issued server command: /Tp MAX
+
+[2017-10-22 13:26:18.147] [INFO] default - 2017-10-22 13:26:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 13:26:26.579] [INFO] default - 2017-10-22 13:26:26 [INFO] [MOD] guppies: can i break what i places?
+
+[2017-10-22 13:26:30.979] [INFO] default - 2017-10-22 13:26:30 [INFO] [MOD] guppies: placed*
+
+[2017-10-22 13:26:34.028] [INFO] default - 2017-10-22 13:26:34 [INFO] [MEMBER] MaxK: sure
+
+[2017-10-22 13:28:05.335] [INFO] default - 2017-10-22 13:28:05 [INFO] guppies issued server command: /thru
+
+[2017-10-22 13:28:34.383] [INFO] default - 2017-10-22 13:28:34 [INFO] guppies issued server command: /Tp MAX
+
+[2017-10-22 13:29:01.428] [INFO] default - 2017-10-22 13:29:01 [INFO] [MOD] guppies: i think you set it up wrong
+
+[2017-10-22 13:29:16.878] [INFO] default - 2017-10-22 13:29:16 [INFO] [MOD] guppies: because the seeds would go onto the dirt
+
+[2017-10-22 13:29:38.028] [INFO] default - 2017-10-22 13:29:38 [INFO] [MOD] guppies: and the pumkin grows on a blocks infrot behind left or right of the stem
+
+[2017-10-22 13:29:54.127] [INFO] default - 2017-10-22 13:29:54 [INFO] [MEMBER] MaxK: i know
+
+[2017-10-22 13:29:57.728] [INFO] default - 2017-10-22 13:29:57 [INFO] [MEMBER] MaxK: ill do that
+
+[2017-10-22 13:30:14.734] [INFO] default - 2017-10-22 13:30:14 [INFO] guppies issued server command: /tp ca
+
+[2017-10-22 13:30:22.833] [INFO] default - 2017-10-22 13:30:22 [INFO] guppies issued server command: /tp col
+
+[2017-10-22 13:31:40.687] [INFO] default - 2017-10-22 13:31:40 [INFO] guppies issued server command: /tp cal
+
+[2017-10-22 13:31:41.684] [INFO] default - 2017-10-22 13:31:41 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 13:31:49.483] [INFO] default - 2017-10-22 13:31:49 [INFO] itsyoboycolinXC walked into fire whilst fighting Ghast
+
+[2017-10-22 13:31:52.679] [INFO] default - 2017-10-22 13:31:52 [INFO] [MOD] guppies: rip
+
+[2017-10-22 13:32:17.028] [INFO] default - 2017-10-22 13:32:17 [INFO] [MEMBER] itsyoboycolinXC: dang it
+
+[2017-10-22 13:32:22.229] [INFO] default - 2017-10-22 13:32:22 [INFO] [MEMBER] MaxK: rip
+
+[2017-10-22 13:32:26.328] [INFO] default - 2017-10-22 13:32:26 [INFO] [MOD] guppies: f
+
+[2017-10-22 13:32:38.129] [INFO] default - 2017-10-22 13:32:38 [INFO] [MEMBER] itsyoboycolinXC: does anyone have nether warts
+
+[2017-10-22 13:32:55.630] [INFO] default - 2017-10-22 13:32:55 [INFO] [MOD] guppies: yeah
+
+[2017-10-22 13:33:09.330] [INFO] default - 2017-10-22 13:33:09 [INFO] [MEMBER] itsyoboycolinXC: how many
+
+[2017-10-22 13:33:16.728] [INFO] default - 2017-10-22 13:33:16 [INFO] [MOD] guppies: like over a stack
+
+[2017-10-22 13:33:20.279] [INFO] default - 2017-10-22 13:33:20 [INFO] [MEMBER] itsyoboycolinXC: i can trade you something
+
+[2017-10-22 13:33:24.578] [INFO] default - 2017-10-22 13:33:24 [INFO] [MOD] guppies: sure
+
+[2017-10-22 13:33:31.578] [INFO] default - 2017-10-22 13:33:31 [INFO] [MOD] guppies: what do you have?
+
+[2017-10-22 13:34:02.629] [INFO] default - 2017-10-22 13:34:02 [INFO] [MEMBER] itsyoboycolinXC: hold on a second. i need to get back to my house
+
+[2017-10-22 13:35:37.929] [INFO] default - 2017-10-22 13:35:37 [INFO] [MEMBER] itsyoboycolinXC: i have a ton of slime, iron, cookies, some gold, etc.
+
+[2017-10-22 13:36:00.279] [INFO] default - 2017-10-22 13:36:00 [INFO] [MEMBER] itsyoboycolinXC: and a ton of redstone of course
+
+[2017-10-22 13:36:18.138] [INFO] default - 2017-10-22 13:36:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 13:36:24.879] [INFO] default - 2017-10-22 13:36:24 [INFO] [MEMBER] itsyoboycolinXC: redstone lanterns
+
+[2017-10-22 13:36:57.478] [INFO] default - 2017-10-22 13:36:57 [INFO] [MEMBER] itsyoboycolinXC: what do you need/want for the warts?
+
+[2017-10-22 13:37:35.530] [INFO] default - 2017-10-22 13:37:35 [INFO] [MEMBER] itsyoboycolinXC: reed
+
+[2017-10-22 13:38:52.128] [INFO] default - 2017-10-22 13:38:52 [INFO] [MOD] guppies: im back my bad
+
+[2017-10-22 13:38:59.478] [INFO] default - 2017-10-22 13:38:59 [INFO] [MOD] guppies: ill just give you like 8 for free
+
+[2017-10-22 13:39:06.834] [INFO] default - 2017-10-22 13:39:06 [INFO] MaxK lost connection: disconnect.quitting
+
+[2017-10-22 13:39:06.835] [INFO] default - 2017-10-22 13:39:06 [INFO] Connection reset
+
+[2017-10-22 13:39:20.179] [INFO] default - 2017-10-22 13:39:20 [INFO] [MEMBER] itsyoboycolinXC: no, i can give you something
+
+[2017-10-22 13:39:24.978] [INFO] default - 2017-10-22 13:39:24 [INFO] [MOD] guppies: its fine
+
+[2017-10-22 13:39:31.128] [INFO] default - 2017-10-22 13:39:31 [INFO] [MEMBER] itsyoboycolinXC: okay
+
+[2017-10-22 13:39:42.728] [INFO] default - 2017-10-22 13:39:42 [INFO] [MOD] guppies: where do you wanna meet up?
+
+[2017-10-22 13:39:45.014] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 13:39:45.014] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:17:39:45 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 13:39:45.035] [INFO] default - 2017-10-22 13:39:45 [INFO] There are 3 out of maximum 20 players online.
+2017-10-22 13:39:45 [INFO] Member: itsyoboycolinXC
+2017-10-22 13:39:45 [INFO] Moderator: caleb, guppies
+
+[2017-10-22 13:39:46.021] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10181 "" "undefined"
+[2017-10-22 13:39:46.022] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:17:39:46 +0000] "GET /api/logs HTTP/1.1" 200 10181 "-" "-"
+
+[2017-10-22 13:39:46.023] [INFO] default - ::ffff:172.58.201.164 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+[2017-10-22 13:39:46.023] [DEBUG] default - ::ffff:172.58.201.164 - - [22/Oct/2017:17:39:46 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/15A432 Safari/602.1"
+
+[2017-10-22 13:40:01.028] [INFO] default - 2017-10-22 13:40:01 [INFO] [MEMBER] itsyoboycolinXC: well, i'm in the nether right now
+
+[2017-10-22 13:40:04.679] [INFO] default - 2017-10-22 13:40:04 [INFO] [MOD] guppies: oh ok
+
+[2017-10-22 13:40:13.234] [INFO] default - 2017-10-22 13:40:13 [INFO] guppies issued server command: /tp cal
+
+[2017-10-22 13:40:30.359] [INFO] default - ::ffff:141.212.122.48 - - "GET /x HTTP/1.1" 404 795 "" "Telesphoreo"
+[2017-10-22 13:40:30.359] [DEBUG] default - ::ffff:141.212.122.48 - - [22/Oct/2017:17:40:30 +0000] "GET /x HTTP/1.1" 404 795 "-" "Telesphoreo"
+
+[2017-10-22 13:40:42.978] [INFO] default - 2017-10-22 13:40:42 [INFO] [MOD] guppies: brb
+
+[2017-10-22 13:40:49.053] [INFO] default - 2017-10-22 13:40:49 [INFO] Herobrine[/100.14.155.96:61471] logged in with entity id 138173 at ([world] 30.84350805974103, 45.5625, 1040.235544547554)
+
+[2017-10-22 13:40:56.786] [INFO] default - 2017-10-22 13:40:56 [INFO] Herobrine issued server command: /login goopyloop
+
+[2017-10-22 13:41:01.687] [INFO] default - 2017-10-22 13:41:01 [INFO] Connection reset
+2017-10-22 13:41:01 [INFO] guppies lost connection: disconnect.quitting
+
+[2017-10-22 13:50:21.335] [INFO] default - 2017-10-22 13:50:21 [INFO] /208.102.64.94:56861 lost connection
+
+[2017-10-22 13:56:18.149] [INFO] default - 2017-10-22 13:56:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 13:57:35.234] [INFO] default - 2017-10-22 13:57:35 [INFO] Herobrine was shot by Skeleton
+
+[2017-10-22 13:58:46.684] [INFO] default - 2017-10-22 13:58:46 [WARNING] Herobrine moved wrongly!
+
+[2017-10-22 14:01:27.399] [INFO] default - 2017-10-22 14:01:27 [INFO] eee[/173.49.196.155:54208] logged in with entity id 159989 at ([world] 24.30000001192093, 45.0, 1022.3000000119209)
+
+[2017-10-22 14:01:32.133] [INFO] default - 2017-10-22 14:01:32 [INFO] eee issued server command: /login eee
+
+[2017-10-22 14:01:46.033] [INFO] default - 2017-10-22 14:01:46 [INFO] Connection reset
+2017-10-22 14:01:46 [INFO] eee lost connection: disconnect.quitting
+
+[2017-10-22 14:01:46.085] [INFO] default - 2017-10-22 14:01:46 [INFO] Herobrine issued server command: /tell ee thanks
+
+[2017-10-22 14:06:18.138] [INFO] default - 2017-10-22 14:06:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 14:08:25.907] [INFO] default - 2601:46:c600:4d3f:3429:8447:3618:a39d - - "GET /admin HTTP/1.1" 200 44 "" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon"
+[2017-10-22 14:08:25.908] [DEBUG] default - ::ffff:66.249.83.89 - - [22/Oct/2017:18:08:25 +0000] "GET /admin HTTP/1.1" 200 44 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon"
+
+[2017-10-22 14:08:26.061] [INFO] default - 2601:46:c600:4d3f:3429:8447:3618:a39d - - "GET /favicon.ico HTTP/1.1" 404 795 "" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon"
+[2017-10-22 14:08:26.061] [DEBUG] default - ::ffff:66.249.83.91 - - [22/Oct/2017:18:08:26 +0000] "GET /favicon.ico HTTP/1.1" 404 795 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon"
+
+[2017-10-22 14:09:38.242] [INFO] default - 2017-10-22 14:09:38 [INFO] guppies[/69.242.63.233:52161] logged in with entity id 169777 at ([world] 160.66621660439148, 103.60611175058129, 573.5404911056143)
+
+[2017-10-22 14:09:45.141] [INFO] default - 2017-10-22 14:09:45 [INFO] MaxK[/76.98.165.89:57031] logged in with entity id 170437 at ([world] 52.196159576838404, 50.0, 350.68658857397884)
+
+[2017-10-22 14:09:50.837] [INFO] default - 2017-10-22 14:09:50 [INFO] MaxK issued server command: /login 783067
+
+[2017-10-22 14:09:50.936] [INFO] default - 2017-10-22 14:09:50 [INFO] guppies issued server command: /login Dogdog113
+
+[2017-10-22 14:10:03.630] [INFO] default - 2017-10-22 14:10:03 [INFO] [MOD] guppies: colin do you still need the nether warts?
+
+[2017-10-22 14:10:09.738] [INFO] default - 2017-10-22 14:10:09 [INFO] guppies issued server command: /tp it
+
+[2017-10-22 14:10:23.529] [INFO] default - 2017-10-22 14:10:23 [INFO] [MEMBER] itsyoboycolinXC: yeah
+
+[2017-10-22 14:10:31.086] [INFO] default - 2017-10-22 14:10:31 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 14:10:33.787] [INFO] default - 2017-10-22 14:10:33 [INFO] caleb lost connection: disconnect.quitting
+2017-10-22 14:10:33 [INFO] Connection reset
+
+[2017-10-22 14:11:11.585] [INFO] default - 2017-10-22 14:11:11 [INFO] Connection reset
+
+[2017-10-22 14:11:11.588] [INFO] default - 2017-10-22 14:11:11 [INFO] MaxK lost connection: disconnect.quitting
+
+[2017-10-22 14:11:17.782] [INFO] default - 2017-10-22 14:11:17 [INFO] guppies issued server command: /tp hewr
+
+[2017-10-22 14:11:19.632] [INFO] default - 2017-10-22 14:11:19 [INFO] guppies issued server command: /tp h
+
+[2017-10-22 14:12:11.078] [INFO] default - 2017-10-22 14:12:11 [INFO] [MEMBER] Herobrine: whos in our base
+
+[2017-10-22 14:12:19.610] [INFO] default - ::ffff:76.124.120.104 - - "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:19.611] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:19 +0000] "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:22.801] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 14:12:22.801] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:18:12:22 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 14:12:22.834] [INFO] default - 2017-10-22 14:12:22 [INFO] There are 3 out of maximum 20 players online.
+2017-10-22 14:12:22 [INFO] Member: Herobrine, itsyoboycolinXC
+2017-10-22 14:12:22 [INFO] Moderator: guppies
+
+[2017-10-22 14:12:23.806] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10171 "" "undefined"
+[2017-10-22 14:12:23.806] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:18:12:23 +0000] "GET /api/logs HTTP/1.1" 200 10171 "-" "-"
+
+[2017-10-22 14:12:23.809] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:23.810] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:23 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:25.428] [INFO] default - 2017-10-22 14:12:25 [INFO] [MEMBER] Herobrine: can you please stop snooping around here it's getting fucking annoying
+
+[2017-10-22 14:12:44.887] [INFO] default - ::ffff:76.124.120.104 - - "POST /login HTTP/1.1" 302 70 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:44.888] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:44 +0000] "POST /login HTTP/1.1" 302 70 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:45.102] [INFO] default - ::ffff:76.124.120.104 - - "GET /profile.html HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:45.102] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:45 +0000] "GET /profile.html HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:45.718] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/profile HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:45.719] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:45 +0000] "GET /api/profile HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:49.809] [INFO] default - ::ffff:76.124.120.104 - - "GET /profile.html HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:49.810] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:49 +0000] "GET /profile.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:50.299] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/profile HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:50.300] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:50 +0000] "GET /api/profile HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/profile.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:52.126] [INFO] default - ::ffff:76.124.120.104 - - "GET /admin HTTP/1.1" 200 2083 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:52.127] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:52 +0000] "GET /admin HTTP/1.1" 200 2083 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:52.309] [INFO] default - ::ffff:76.124.120.104 - - "GET /admin.js HTTP/1.1" 200 885 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:52.310] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:52 +0000] "GET /admin.js HTTP/1.1" 200 885 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:12:52.493] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/logs HTTP/1.1" 200 10171 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:12:52.493] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:12:52 +0000] "GET /api/logs HTTP/1.1" 200 10171 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:13:07.435] [INFO] default - 2017-10-22 14:13:07 [INFO] guppies issued server command: /silk
+
+[2017-10-22 14:13:08.735] [INFO] default - 2017-10-22 14:13:08 [INFO] guppies issued server command: /spawner
+
+[2017-10-22 14:13:08.737] [INFO] default - 2017-10-22 14:13:08 [INFO] �cguppies �4was denied access to command.
+
+[2017-10-22 14:13:53.114] [INFO] default - ::ffff:76.124.120.104 - - "POST /api/command HTTP/1.1" 200 16 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:13:53.115] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:13:53 +0000] "POST /api/command HTTP/1.1" 200 16 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:13:53.135] [INFO] default - 2017-10-22 14:13:53 [INFO] [Server] Language!
+
+[2017-10-22 14:13:53.325] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/logs HTTP/1.1" 200 10175 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:13:53.325] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:13:53 +0000] "GET /api/logs HTTP/1.1" 200 10175 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:13:59.580] [INFO] default - 2017-10-22 14:13:59 [INFO] [MOD] guppies: xd
+
+[2017-10-22 14:14:03.028] [INFO] default - 2017-10-22 14:14:03 [INFO] [MEMBER] Herobrine: lol
+
+[2017-10-22 14:14:07.090] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/logs HTTP/1.1" 200 10176 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:14:07.090] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:14:07 +0000] "GET /api/logs HTTP/1.1" 200 10176 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:14:11.635] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:14:11.636] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:14:11 +0000] "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:14:16.333] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:14:16.333] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:18:14:16 +0000] "GET /api/logs HTTP/1.1" 304 - "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:14:37.283] [INFO] default - 2017-10-22 14:14:37 [INFO] guppies issued server command: /thru
+
+[2017-10-22 14:14:42.783] [INFO] default - 2017-10-22 14:14:42 [INFO] Connection reset
+2017-10-22 14:14:42 [INFO] guppies lost connection: disconnect.quitting
+
+[2017-10-22 14:16:18.142] [INFO] default - 2017-10-22 14:16:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 14:20:14.815] [INFO] default - ::ffff:76.124.120.89 - - "GET / HTTP/1.1" 200 4393 "" "okhttp/3.3.1"
+[2017-10-22 14:20:14.815] [DEBUG] default - ::ffff:76.124.120.89 - - [22/Oct/2017:18:20:14 +0000] "GET / HTTP/1.1" 200 4393 "-" "okhttp/3.3.1"
+
+[2017-10-22 14:21:01.284] [INFO] default - 2017-10-22 14:21:01 [INFO] Connection reset
+
+[2017-10-22 14:21:01.284] [INFO] default - 2017-10-22 14:21:01 [INFO] itsyoboycolinXC lost connection: disconnect.quitting
+
+[2017-10-22 14:22:16.182] [INFO] default - ::ffff:76.124.120.89 - - "GET / HTTP/1.1" 200 4393 "" "okhttp/3.3.1"
+[2017-10-22 14:22:16.182] [DEBUG] default - ::ffff:76.124.120.89 - - [22/Oct/2017:18:22:16 +0000] "GET / HTTP/1.1" 200 4393 "-" "okhttp/3.3.1"
+
+[2017-10-22 14:26:18.136] [INFO] default - 2017-10-22 14:26:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 14:32:17.295] [INFO] default - 2017-10-22 14:32:17 [INFO] Sam40[/76.124.120.89:54181] logged in with entity id 191489 at ([world] 666.9794844167789, 50.0, 366.3221740201886)
+
+[2017-10-22 14:32:25.484] [INFO] default - 2017-10-22 14:32:25 [INFO] Connection reset
+
+[2017-10-22 14:32:25.485] [INFO] default - 2017-10-22 14:32:25 [INFO] Sam40 lost connection: disconnect.quitting
+
+[2017-10-22 14:35:56.689] [INFO] default - ::ffff:98.225.228.115 - - "GET / HTTP/1.1" 200 4393 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:35:56.689] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:18:35:56 +0000] "GET / HTTP/1.1" 200 4393 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:35:56.978] [INFO] default - ::ffff:98.225.228.115 - - "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:35:56.979] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:18:35:56 +0000] "GET /index.js HTTP/1.1" 200 520 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:35:56.979] [INFO] default - ::ffff:98.225.228.115 - - "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:35:56.979] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:18:35:56 +0000] "GET /styles.css HTTP/1.1" 200 100 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:35:59.257] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 14:35:59.257] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:18:35:59 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 14:35:59.281] [INFO] default - 2017-10-22 14:35:59 [INFO] There are 1 out of maximum 20 players online.
+
+[2017-10-22 14:35:59.281] [INFO] default - 2017-10-22 14:35:59 [INFO] Member: Herobrine
+
+[2017-10-22 14:36:00.261] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10177 "" "undefined"
+[2017-10-22 14:36:00.261] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:18:36:00 +0000] "GET /api/logs HTTP/1.1" 200 10177 "-" "-"
+
+[2017-10-22 14:36:00.262] [INFO] default - ::ffff:98.225.228.115 - - "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:36:00.262] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:18:36:00 +0000] "GET /api/users-online HTTP/1.1" 200 34 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:36:02.668] [INFO] default - ::ffff:98.225.228.115 - - "GET /favicon.ico HTTP/1.1" 404 795 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:36:02.668] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:18:36:02 +0000] "GET /favicon.ico HTTP/1.1" 404 795 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:36:18.146] [INFO] default - 2017-10-22 14:36:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 14:37:50.723] [INFO] default - ::ffff:98.225.228.115 - - "POST /register HTTP/1.1" 200 43 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:37:50.723] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:18:37:50 +0000] "POST /register HTTP/1.1" 200 43 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:40:16.362] [INFO] default - ::ffff:98.225.228.115 - - "POST /register HTTP/1.1" 200 43 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:40:16.362] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:18:40:16 +0000] "POST /register HTTP/1.1" 200 43 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:40:42.872] [INFO] default - ::ffff:98.225.228.115 - - "POST /login HTTP/1.1" 200 59 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 14:40:42.872] [DEBUG] default - ::ffff:98.225.228.115 - - [22/Oct/2017:18:40:42 +0000] "POST /login HTTP/1.1" 200 59 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 14:46:18.150] [INFO] default - 2017-10-22 14:46:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 14:48:47.181] [INFO] default - 2017-10-22 14:48:47 [WARNING] Herobrine moved wrongly!
+
+[2017-10-22 14:49:08.132] [INFO] default - 2017-10-22 14:49:08 [INFO] /69.242.63.233:52367 lost connection
+
+[2017-10-22 14:49:56.290] [INFO] default - 2017-10-22 14:49:56 [INFO] MaxK[/76.98.165.89:57079] logged in with entity id 205448 at ([world] 50.30000001192093, 50.0, 348.5712884930662)
+
+[2017-10-22 14:50:04.633] [INFO] default - 2017-10-22 14:50:04 [INFO] MaxK issued server command: /login 783067
+
+[2017-10-22 14:50:16.632] [INFO] default - 2017-10-22 14:50:16 [INFO] /69.242.63.233:52480 lost connection
+
+[2017-10-22 14:51:18.531] [INFO] default - 2017-10-22 14:51:18 [INFO] /69.242.63.233:52556 lost connection
+
+[2017-10-22 14:52:19.631] [INFO] default - 2017-10-22 14:52:19 [INFO] /69.242.63.233:52625 lost connection
+
+[2017-10-22 14:55:38.282] [INFO] default - 2017-10-22 14:55:38 [INFO] Connection reset
+
+[2017-10-22 14:55:38.282] [INFO] default - 2017-10-22 14:55:38 [INFO] MaxK lost connection: disconnect.quitting
+
+[2017-10-22 14:56:18.187] [INFO] default - 2017-10-22 14:56:18 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 15:01:01.349] [INFO] default - 2017-10-22 15:01:01 [INFO] nate[/76.124.120.104:58246] logged in with entity id 216415 at ([world] 182.5, 70.0, 255.5)
+
+[2017-10-22 15:01:09.881] [INFO] default - 2017-10-22 15:01:09 [INFO] nate issued server command: /login ohyeahmean
+
+[2017-10-22 15:01:22.831] [INFO] default - 2017-10-22 15:01:22 [INFO] nate issued server command: /downfall
+
+[2017-10-22 15:01:26.085] [INFO] default - 2017-10-22 15:01:26 [INFO] nate issued server command: /help
+
+[2017-10-22 15:01:31.282] [INFO] default - 2017-10-22 15:01:31 [INFO] nate issued server command: /time 0
+
+[2017-10-22 15:01:34.681] [INFO] default - 2017-10-22 15:01:34 [INFO] nate issued server command: /time day
+
+[2017-10-22 15:01:59.132] [INFO] default - 2017-10-22 15:01:59 [INFO] nate issued server command: /toggle
+
+[2017-10-22 15:02:01.631] [INFO] default - 2017-10-22 15:02:01 [INFO] nate issued server command: /toggledownfall
+
+[2017-10-22 15:02:01.631] [INFO] default - 2017-10-22 15:02:01 [INFO] nate: Toggling downfall off for world 'world'
+
+[2017-10-22 15:02:53.808] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 200 10174 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 15:02:53.809] [DEBUG] default - ::1 - - [22/Oct/2017:19:02:53 +0000] "GET /api/logs HTTP/1.1" 200 10174 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 15:05:39.140] [INFO] default - 2017-10-22 15:05:39 [INFO] caleb[/69.242.56.82:57630] logged in with entity id 220868 at ([world] 46.31407044121301, 96.0, 755.9729830998281)
+
+[2017-10-22 15:06:18.141] [INFO] default - 2017-10-22 15:06:18 [INFO] [Metrics] Connection timed out: connect
+

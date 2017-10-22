@@ -132,5 +132,15 @@
     "ip": "::ffff:71.185.28.21",
     "ips": [],
     "fingerprint": "{\"hash\":\"8e7fb5e35769422c57a3dea6722c9d71\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36\"}"
+  },
+  "f2b0b1a4-076b-4866-9fca-a8b09f82e637": {
+    "id": "f2b0b1a4-076b-4866-9fca-a8b09f82e637",
+    "email": "18lshen@gmail.com",
+    "username": "learmantha",
+    "password": "$2a$10$KxL4Sw4v8gzzLAo9OQFg7Ow3vRw.ffkNe3Aah5RXpBXGGR3M3YSSa",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:173.59.28.191",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"8444d2d1fe59208ffbb0ffe2dc5ba9e9\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"}"
   }
 }
