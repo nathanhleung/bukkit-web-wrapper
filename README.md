@@ -1,9 +1,11 @@
 # Web Server
-Frontend for Minecraft Server
+Node.js wrapper and authentication frontend for Minecraft server.
+
+Starting this starts both the web app and the Minecraft server.
 
 ## Running
 dev: `yarn dev`
-prod: `NODE_ENV=production yarn start`
+prod: `yarn start`
 
 ## Potential Uses
 Server status, authentication, etc.

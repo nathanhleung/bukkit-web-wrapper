@@ -68,13 +68,13 @@ function isAdmin(req, res, next) {
         message: 'Not logged in.'
       });
     }
-    if (user.username !== 'nate') {
-      return res.json({
-        success: false,
-        message: 'Not admin.'
-      });
+    if (user.username === 'nate' || user.username === 'wil') {
+      return next();
     }
-    return next();
+    return res.json({
+      success: false,
+      message: 'Not admin.'
+    });
   });
 }
 

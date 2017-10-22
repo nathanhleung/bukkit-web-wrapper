@@ -16,6 +16,7 @@ function postRegister(req, res, minecraftServer) {
 	let valid = true;
 	valid = valid && validator.isEmail(email)
 	valid = valid && validator.isLength(username, { min: 1 });
+	valid = valid && validator.isAlphanumeric(username);
 	valid = valid && validator.isLength(password, { min: 8 });
 	if (!valid) {
 		return res.json({
