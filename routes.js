@@ -6,6 +6,8 @@ const uuid = require('uuid/v4');
 const validator = require('validator');
 const _ = require('lodash');
 const nbt = require('nbt');
+const request = require('request');
+
 const logger = require('./logger');
 
 const { userDataFile, permissionsDataFile } = require('./constants');
@@ -226,10 +228,71 @@ function getApiUser(req, res) {
 	}
 }
 
+function getApiUsersOnline(req, res) {
+	request.post({
+		url: 'http://localhost/api/command',
+		form: { command: 'list' }
+	}, function(err, httpResponse, body) {
+		if (err) {
+			logger.error(err);
+			throw err;
+		}
+		try {
+			const json = JSON.parse(body);
+			if (!json.success) {
+				logger.error(json.message);
+				return;
+			}
+			// Wait a moment so server can run command
+			setTimeout(getLogs, 1000);
+		} catch (err) {
+			logger.error(err);
+			throw err;
+		}
+	});
+
+	function getLogs() {
+		request.get({
+			url: 'http://localhost/api/logs',
+		}, function (err, httpResponse, body) {
+			if (err) {
+				logger.error(err);
+				throw err;
+			}
+			try {
+				const json = JSON.parse(body);
+				if (!json.success) {
+					logger.error(json.message);
+					return;
+				}
+				const logs = json.data;
+				const lines = logs.split('\n');
+				const index = _.findLastIndex(lines, (line) => {
+					return line.match(/There are \d+ out of maximum \d+ players online.$/) !== null;
+				});
+				let online = 0;
+				if (index >= 0) {
+					// First captured group will be number of players online
+					online =
+						lines[index].match(/There are (\d+) out of maximum \d+ players online.$/)[1];
+				}
+				return res.json({
+					success: true,
+					onlineCount: online,
+				});
+			} catch (err) {
+				logger.error(err);
+				throw err;
+			}
+		});
+	}
+}
+
 module.exports = {
 	postRegister,
 	postLogin,
 	getLogout,
 	getApiProfile,
 	getApiUser,
+	getApiUsersOnline,
 };

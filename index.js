@@ -8,7 +8,6 @@ const log4js = require('log4js');
 
 const { startMinecraftServer } = require('./minecraft');
 const { isAuthorized, isAdmin } = require('./helpers');
-const { minecraftLogFile } = require('./constants');
 const routes = require('./routes');
 const adminRoutes = require('./admin-routes');
 const logger = require('./logger');
@@ -19,10 +18,11 @@ const app = express();
 app.set('port', process.env.PORT || 80);
 app.use(log4js.connectLogger(logger));
 
-app.use(morgan({
-	format: 'combined',
-	stream: (data) => {
-		logger.debug(data);
+app.use(morgan('combined', {
+	stream: {
+		write: (data) => {
+			logger.debug(data);
+		},
 	},
 }));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -59,6 +59,8 @@ app.post('/login', routes.postLogin);
 
 app.get('/logout', routes.getLogout);
 
+app.get('/api/users-online', routes.getApiUsersOnline);
+
 app.get('/api/profile', isAuthorized, routes.getApiProfile);
 
 // this is probably dangerous bc of filesystem access
@@ -69,7 +71,9 @@ app.get('/admin', isAdmin, adminRoutes.getAdmin);
 
 app.get('/api/logs', isAdmin, adminRoutes.getApiLogs);
 
-app.post('/api/command', isAdmin, adminRoutes.postApiCommand);
+app.post('/api/command', isAdmin, (req, res) => {
+	return adminRoutes.postApiCommand(req, res, minecraftServer);
+});
 
 app.get('*', (req, res) => {
 	res.status(404);

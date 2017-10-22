@@ -1,0 +1,1139 @@
+[2017-10-22 12:15:54.944] [INFO] default - App listening on port 80.
+[2017-10-22 12:15:55.291] [INFO] default - 229 recipes
+[2017-10-22 12:15:55.293] [INFO] default - 
+
+[2017-10-22 12:15:55.300] [INFO] default - 27 achievements
+
+[2017-10-22 12:15:55.429] [INFO] default - 2017-10-22 12:15:55 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-22 12:15:55.429] [INFO] default - 2017-10-22 12:15:55 [INFO] Loading properties
+
+[2017-10-22 12:15:55.430] [INFO] default - 2017-10-22 12:15:55 [INFO] Default game type: SURVIVAL
+
+[2017-10-22 12:15:55.431] [INFO] default - 2017-10-22 12:15:55 [INFO] Generating keypair
+
+[2017-10-22 12:15:55.669] [INFO] default - 2017-10-22 12:15:55 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-22 12:15:55.886] [INFO] default - 2017-10-22 12:15:55 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R1.0-b2788jnks (MC: 1.5.2) (Implementing API version 1.5.2-R1.0)
+
+[2017-10-22 12:15:55.998] [INFO] default - 2017-10-22 12:15:55 [INFO] [PermissionsEx] sql backend registered!
+
+[2017-10-22 12:15:55.999] [INFO] default - 2017-10-22 12:15:55 [INFO] [PermissionsEx] file backend registered!
+2017-10-22 12:15:56 [INFO] [PermissionsEx] PermissionEx plugin initialized.
+
+[2017-10-22 12:15:56.056] [INFO] default - 2017-10-22 12:15:56 [INFO] [CoreProtect] Loading CoreProtect v2.07
+
+[2017-10-22 12:15:56.057] [INFO] default - 2017-10-22 12:15:56 [INFO] [MotdManager] Loading MotdManager v1.41-b20
+2017-10-22 12:15:56 [INFO] [PermissionsEx] Loading PermissionsEx v1.19.5
+
+[2017-10-22 12:15:56.063] [INFO] default - 2017-10-22 12:15:56 [INFO] [PermissionsEx] Initializing file backend
+
+[2017-10-22 12:15:56.068] [INFO] default - 2017-10-22 12:15:56 [INFO] Permissions file successfully reloaded
+
+[2017-10-22 12:15:56.070] [INFO] default - 2017-10-22 12:15:56 [INFO] [Vote] Loading Vote v1.5.2_02
+
+[2017-10-22 12:15:56.071] [INFO] default - 2017-10-22 12:15:56 [INFO] [WorldEdit] Loading WorldEdit v5.5.6
+2017-10-22 12:15:56 [INFO] [Modifyworld] Loading Modifyworld v1.19.4
+2017-10-22 12:15:56 [INFO] [Essentials] Loading Essentials v2.11.1
+2017-10-22 12:15:56 [INFO] [Lockette] Loading Lockette v1.7.12
+2017-10-22 12:15:56 [INFO] [CustomJoin] Loading CustomJoin v1.3.1
+2017-10-22 12:15:56 [INFO] [LoginSecurity] Loading LoginSecurity v2.0.4
+2017-10-22 12:15:56 [INFO] [EssentialsChat] Loading EssentialsChat v2.11.1
+
+[2017-10-22 12:15:56.072] [INFO] default - 2017-10-22 12:15:56 [INFO] [WorldGuard] Loading WorldGuard v5.7.5
+
+[2017-10-22 12:15:56.088] [INFO] default - 2017-10-22 12:15:56 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+
+[2017-10-22 12:15:56.089] [INFO] default - 2017-10-22 12:15:56 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2017-10-22 12:15:56 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2017-10-22 12:15:56 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+
+[2017-10-22 12:15:56.114] [INFO] default - 2017-10-22 12:15:56 [INFO] Preparing level "world"
+
+[2017-10-22 12:15:56.243] [INFO] default - 2017-10-22 12:15:56 [INFO] Preparing start region for level 0 (Seed: 2198106644606297452)
+
+[2017-10-22 12:15:56.246] [INFO] default - 2017-10-22 12:15:56 [SEVERE] Exception in thread "Thread-6" 
+
+[2017-10-22 12:15:56.247] [INFO] default - 2017-10-22 12:15:56 [SEVERE] org.bukkit.craftbukkit.libs.com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:180)
+2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:755)
+2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:694)
+2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.fetchArtifact(BukkitDLUpdaterService.java:51)
+
+[2017-10-22 12:15:56.249] [INFO] default - 2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.getArtifact(BukkitDLUpdaterService.java:28)
+2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.AutoUpdater$1.run(AutoUpdater.java:77)
+2017-10-22 12:15:56 [SEVERE] Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.expect(JsonReader.java:339)
+2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.beginObject(JsonReader.java:322)
+2017-10-22 12:15:56 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:168)
+2017-10-22 12:15:56 [SEVERE] 	... 5 more
+
+[2017-10-22 12:15:56.904] [INFO] default - 2017-10-22 12:15:56 [INFO] Preparing start region for level 1 (Seed: 755475547169470570)
+
+[2017-10-22 12:15:57.244] [INFO] default - 2017-10-22 12:15:57 [INFO] Preparing spawn area: 83%
+
+[2017-10-22 12:15:57.365] [INFO] default - 2017-10-22 12:15:57 [INFO] Preparing start region for level 2 (Seed: 755475547169470570)
+
+[2017-10-22 12:15:57.490] [INFO] default - 2017-10-22 12:15:57 [INFO] [CoreProtect] Enabling CoreProtect v2.07
+
+[2017-10-22 12:15:57.712] [INFO] default - 2017-10-22 12:15:57 [INFO] CoreProtect version 2.07 is enabled!
+
+[2017-10-22 12:15:57.714] [INFO] default - 2017-10-22 12:15:57 [INFO] [CoreProtect] Using SQLite for data storage.
+
+[2017-10-22 12:15:57.718] [INFO] default - 2017-10-22 12:15:57 [INFO] [MotdManager] Enabling MotdManager v1.41-b20
+
+[2017-10-22 12:15:57.724] [INFO] default - 2017-10-22 12:15:57 [INFO] [MotdManager] version 1.41-b20 is enabled!
+
+[2017-10-22 12:15:57.727] [INFO] default - 2017-10-22 12:15:57 [INFO] [PermissionsEx] Enabling PermissionsEx v1.19.5
+
+[2017-10-22 12:15:57.748] [INFO] default - 2017-10-22 12:15:57 [INFO] [PermissionsEx] Superperms support enabled.
+
+[2017-10-22 12:15:57.750] [INFO] default - 2017-10-22 12:15:57 [INFO] [PermissionsEx] v1.19.5 enabled
+
+[2017-10-22 12:15:57.750] [INFO] default - 2017-10-22 12:15:57 [INFO] [Vote] Enabling Vote v1.5.2_02
+
+[2017-10-22 12:15:57.762] [INFO] default - 2017-10-22 12:15:57 [INFO] [Vote] Vault not detected for permissions, defaulting to Bukkit Permissions
+
+[2017-10-22 12:15:57.764] [INFO] default - 2017-10-22 12:15:57 [INFO] [Vote] has been enabled.
+
+[2017-10-22 12:15:57.772] [INFO] default - 2017-10-22 12:15:57 [INFO] [Vote] mimicking aiden
+2017-10-22 12:15:57 [INFO] [WorldEdit] Enabling WorldEdit v5.5.6
+
+[2017-10-22 12:15:57.793] [INFO] default - 2017-10-22 12:15:57 [INFO] WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+
+[2017-10-22 12:15:57.848] [INFO] default - 2017-10-22 12:15:57 [INFO] [Modifyworld] Enabling Modifyworld v1.19.4
+
+[2017-10-22 12:15:57.859] [INFO] default - 2017-10-22 12:15:57 [INFO] [Modifyworld] Modifyworld enabled!
+
+[2017-10-22 12:15:57.863] [INFO] default - 2017-10-22 12:15:57 [INFO] [Essentials] Enabling Essentials v2.11.1
+
+[2017-10-22 12:15:57.968] [INFO] default - 2017-10-22 12:15:57 [INFO] Essentials: Using PermissionsEx based permissions.
+
+[2017-10-22 12:15:57.969] [INFO] default - 2017-10-22 12:15:57 [INFO] [Lockette] Enabling Lockette v1.7.12
+2017-10-22 12:15:57 [INFO] [Lockette] Version 1.7.12 is being enabled!  Yay!  (Core version 1.3.7)
+2017-10-22 12:15:57 [INFO] [Lockette] Detected craftbukkit build [2788] ok.
+
+[2017-10-22 12:15:57.971] [INFO] default - 2017-10-22 12:15:57 [INFO] [Lockette] Custom lockable block list: [116, 84, 57, 145, 154]
+2017-10-22 12:15:57 [INFO] [Lockette] Ignoring linked plugins: [mcMMO]
+
+[2017-10-22 12:15:57.976] [INFO] default - 2017-10-22 12:15:57 [INFO] [Lockette] Loading strings file for English by Acru
+
+[2017-10-22 12:15:57.983] [INFO] default - 2017-10-22 12:15:57 [INFO] [Lockette] Enabled link to plugin PermissionsEx for Groups, version 1.19.5
+
+[2017-10-22 12:15:57.984] [INFO] default - 2017-10-22 12:15:57 [INFO] [Lockette] Using ops file for admin permissions.
+
+[2017-10-22 12:15:57.985] [INFO] default - 2017-10-22 12:15:57 [INFO] [Lockette] Ready to protect your containers.
+
+[2017-10-22 12:15:57.990] [INFO] default - 2017-10-22 12:15:57 [INFO] [CustomJoin] Enabling CustomJoin v1.3.1
+
+[2017-10-22 12:15:57.993] [INFO] default - 2017-10-22 12:15:57 [INFO] [CustomJoin] CustomJoin version 1.3.1 enabled.
+
+[2017-10-22 12:15:57.994] [INFO] default - 2017-10-22 12:15:57 [INFO] [LoginSecurity] Enabling LoginSecurity v2.0.4
+
+[2017-10-22 12:15:58.020] [INFO] default - 2017-10-22 12:15:58 [INFO] [EssentialsChat] Enabling EssentialsChat v2.11.1
+2017-10-22 12:15:58 [INFO] [WorldGuard] Enabling WorldGuard v5.7.5
+
+[2017-10-22 12:15:58.036] [INFO] default - 2017-10-22 12:15:58 [INFO] [WorldGuard] (world) TNT ignition is PERMITTED.
+
+[2017-10-22 12:15:58.037] [INFO] default - 2017-10-22 12:15:58 [INFO] [WorldGuard] (world) Lighters are PERMITTED.
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world) Lava fire is blocked.
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world) Fire spread is UNRESTRICTED.
+2017-10-22 12:15:58 [INFO] [WorldGuard] Loaded configuration for world 'world'
+
+[2017-10-22 12:15:58.039] [INFO] default - 2017-10-22 12:15:58 [INFO] [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world_nether) Lighters are PERMITTED.
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world_nether) Lava fire is blocked.
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+2017-10-22 12:15:58 [INFO] [WorldGuard] Loaded configuration for world 'world_nether'
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world_the_end) Lighters are PERMITTED.
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world_the_end) Lava fire is blocked.
+2017-10-22 12:15:58 [INFO] [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+
+[2017-10-22 12:15:58.044] [INFO] default - 2017-10-22 12:15:58 [INFO] [WorldGuard] Loaded configuration for world 'world_the_end'
+
+[2017-10-22 12:15:58.056] [INFO] default - 2017-10-22 12:15:58 [INFO] [WorldGuard] 0 regions loaded for 'world'
+
+[2017-10-22 12:15:58.057] [INFO] default - 2017-10-22 12:15:58 [INFO] [WorldGuard] 0 regions loaded for 'world_nether'
+
+[2017-10-22 12:15:58.058] [INFO] default - 2017-10-22 12:15:58 [INFO] [WorldGuard] 0 regions loaded for 'world_the_end'
+
+[2017-10-22 12:15:58.114] [INFO] default - 2017-10-22 12:15:58 [INFO] Done (2.022s)! For help, type "help" or "?"
+
+[2017-10-22 12:15:58.165] [INFO] default - 2017-10-22 12:15:58 [INFO] Accepted EditSessionFactory of type net.coreprotect.worldedit.CoreProtectEditSessionFactory from net.coreprotect.worldedit
+
+[2017-10-22 12:15:59.148] [INFO] default - 2017-10-22 12:15:59 [INFO] itsyoboycolinXC[/71.230.68.88:50917] logged in with entity id 249 at ([world] 186.06537173402737, 38.0, 597.0802338638113)
+
+[2017-10-22 12:15:59.907] [INFO] default - 2017-10-22 12:15:59 [INFO] --------------------
+
+[2017-10-22 12:15:59.909] [INFO] default - 2017-10-22 12:15:59 [INFO] [CoreProtect] Version 2.09 now available.
+2017-10-22 12:15:59 [INFO] [CoreProtect] Download: Type "/co version" in-game.
+2017-10-22 12:15:59 [INFO] --------------------
+2017-10-22 12:15:59 [INFO] [Sponsor] Unlimited MC Hosting: www.hosthorde.com
+2017-10-22 12:15:59 [INFO] --------------------
+
+[2017-10-22 12:16:01.674] [INFO] default - 2017-10-22 12:16:01 [INFO] guppies[/69.242.63.233:51355] logged in with entity id 680 at ([world] 58.5, 109.9271205658912, 757.5)
+
+[2017-10-22 12:16:08.849] [INFO] default - 2017-10-22 12:16:07 [INFO] guppies issued server command: /login Dogdog113
+2017-10-22 12:16:08 [INFO] eee[/173.49.196.155:52438] logged in with entity id 1745 at ([world] 35.30628987996357, 45.0, 1031.4741090006632)
+
+[2017-10-22 12:16:09.922] [INFO] default - 2017-10-22 12:16:09 [INFO] guppies issued server command: /tp it
+
+[2017-10-22 12:16:16.470] [INFO] default - 2017-10-22 12:16:16 [INFO] itsyoboycolinXC issued server command: /login colin2002
+
+[2017-10-22 12:16:16.921] [INFO] default - 2017-10-22 12:16:16 [INFO] eee issued server command: /login eee
+
+[2017-10-22 12:16:17.444] [INFO] default - 2017-10-22 12:16:17 [INFO] [WorldEdit] Using inbuilt NmsBlock for this version.
+
+[2017-10-22 12:16:19.190] [INFO] default - 2017-10-22 12:16:19 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 12:16:19.921] [INFO] default - 2017-10-22 12:16:19 [INFO] guppies issued server command: /tp eee
+
+[2017-10-22 12:16:47.780] [INFO] default - App listening on port 80.
+[2017-10-22 12:16:48.131] [INFO] default - 229 recipes
+
+[2017-10-22 12:16:48.139] [INFO] default - 27 achievements
+
+[2017-10-22 12:16:48.271] [INFO] default - 2017-10-22 12:16:48 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-22 12:16:48.272] [INFO] default - 2017-10-22 12:16:48 [INFO] Loading properties
+
+[2017-10-22 12:16:48.274] [INFO] default - 2017-10-22 12:16:48 [INFO] Default game type: SURVIVAL
+
+[2017-10-22 12:16:48.275] [INFO] default - 2017-10-22 12:16:48 [INFO] Generating keypair
+
+[2017-10-22 12:16:48.577] [INFO] default - 2017-10-22 12:16:48 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-22 12:16:48.789] [INFO] default - 2017-10-22 12:16:48 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R1.0-b2788jnks (MC: 1.5.2) (Implementing API version 1.5.2-R1.0)
+
+[2017-10-22 12:16:48.897] [INFO] default - 2017-10-22 12:16:48 [INFO] [PermissionsEx] sql backend registered!
+
+[2017-10-22 12:16:48.898] [INFO] default - 2017-10-22 12:16:48 [INFO] [PermissionsEx] file backend registered!
+
+[2017-10-22 12:16:48.899] [INFO] default - 2017-10-22 12:16:48 [INFO] [PermissionsEx] PermissionEx plugin initialized.
+
+[2017-10-22 12:16:48.957] [INFO] default - 2017-10-22 12:16:48 [INFO] [CoreProtect] Loading CoreProtect v2.07
+
+[2017-10-22 12:16:48.958] [INFO] default - 2017-10-22 12:16:48 [INFO] [MotdManager] Loading MotdManager v1.41-b20
+2017-10-22 12:16:48 [INFO] [PermissionsEx] Loading PermissionsEx v1.19.5
+
+[2017-10-22 12:16:48.964] [INFO] default - 2017-10-22 12:16:48 [INFO] [PermissionsEx] Initializing file backend
+
+[2017-10-22 12:16:48.969] [INFO] default - 2017-10-22 12:16:48 [INFO] Permissions file successfully reloaded
+
+[2017-10-22 12:16:48.972] [INFO] default - 2017-10-22 12:16:48 [INFO] [Vote] Loading Vote v1.5.2_02
+
+[2017-10-22 12:16:48.973] [INFO] default - 2017-10-22 12:16:48 [INFO] [WorldEdit] Loading WorldEdit v5.5.6
+2017-10-22 12:16:48 [INFO] [Modifyworld] Loading Modifyworld v1.19.4
+
+[2017-10-22 12:16:48.974] [INFO] default - 2017-10-22 12:16:48 [INFO] [Essentials] Loading Essentials v2.11.1
+2017-10-22 12:16:48 [INFO] [Lockette] Loading Lockette v1.7.12
+
+[2017-10-22 12:16:48.975] [INFO] default - 2017-10-22 12:16:48 [INFO] [CustomJoin] Loading CustomJoin v1.3.1
+2017-10-22 12:16:48 [INFO] [LoginSecurity] Loading LoginSecurity v2.0.4
+2017-10-22 12:16:48 [INFO] [EssentialsChat] Loading EssentialsChat v2.11.1
+2017-10-22 12:16:48 [INFO] [WorldGuard] Loading WorldGuard v5.7.5
+
+[2017-10-22 12:16:48.994] [INFO] default - 2017-10-22 12:16:48 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+
+[2017-10-22 12:16:48.997] [INFO] default - 2017-10-22 12:16:48 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2017-10-22 12:16:48 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2017-10-22 12:16:48 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+
+[2017-10-22 12:16:49.018] [INFO] default - 2017-10-22 12:16:49 [INFO] Preparing level "world"
+
+[2017-10-22 12:16:49.121] [INFO] default - 2017-10-22 12:16:49 [SEVERE] Exception in thread "Thread-6" 
+
+[2017-10-22 12:16:49.122] [INFO] default - 2017-10-22 12:16:49 [SEVERE] org.bukkit.craftbukkit.libs.com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+
+[2017-10-22 12:16:49.123] [INFO] default - 2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:180)
+2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:755)
+2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:694)
+2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.fetchArtifact(BukkitDLUpdaterService.java:51)
+2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.getArtifact(BukkitDLUpdaterService.java:28)
+2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.AutoUpdater$1.run(AutoUpdater.java:77)
+
+[2017-10-22 12:16:49.125] [INFO] default - 2017-10-22 12:16:49 [SEVERE] Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.expect(JsonReader.java:339)
+2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.beginObject(JsonReader.java:322)
+2017-10-22 12:16:49 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:168)
+2017-10-22 12:16:49 [SEVERE] 	... 5 more
+
+[2017-10-22 12:16:49.155] [INFO] default - 2017-10-22 12:16:49 [INFO] Preparing start region for level 0 (Seed: 2198106644606297452)
+
+[2017-10-22 12:16:49.809] [INFO] default - 2017-10-22 12:16:49 [INFO] Preparing start region for level 1 (Seed: 755475547169470570)
+
+[2017-10-22 12:16:50.156] [INFO] default - 2017-10-22 12:16:50 [INFO] Preparing spawn area: 87%
+
+[2017-10-22 12:16:50.270] [INFO] default - 2017-10-22 12:16:50 [INFO] Preparing start region for level 2 (Seed: 755475547169470570)
+
+[2017-10-22 12:16:50.392] [INFO] default - 2017-10-22 12:16:50 [INFO] [CoreProtect] Enabling CoreProtect v2.07
+
+[2017-10-22 12:16:50.605] [INFO] default - 2017-10-22 12:16:50 [INFO] CoreProtect version 2.07 is enabled!
+
+[2017-10-22 12:17:00.152] [INFO] default - 2017-10-22 12:16:50 [INFO] [CoreProtect] Using SQLite for data storage.
+2017-10-22 12:16:50 [INFO] [MotdManager] Enabling MotdManager v1.41-b20
+2017-10-22 12:16:50 [INFO] [MotdManager] version 1.41-b20 is enabled!
+2017-10-22 12:16:50 [INFO] [PermissionsEx] Enabling PermissionsEx v1.19.5
+2017-10-22 12:16:50 [INFO] [PermissionsEx] Superperms support enabled.
+2017-10-22 12:16:50 [INFO] [PermissionsEx] v1.19.5 enabled
+2017-10-22 12:16:50 [INFO] [Vote] Enabling Vote v1.5.2_02
+2017-10-22 12:16:50 [INFO] [Vote] Vault not detected for permissions, defaulting to Bukkit Permissions
+2017-10-22 12:16:50 [INFO] [Vote] has been enabled.
+2017-10-22 12:16:50 [INFO] [Vote] mimicking aiden
+2017-10-22 12:16:50 [INFO] [WorldEdit] Enabling WorldEdit v5.5.6
+2017-10-22 12:16:50 [INFO] WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+2017-10-22 12:16:50 [INFO] [Modifyworld] Enabling Modifyworld v1.19.4
+2017-10-22 12:16:50 [INFO] [Modifyworld] Modifyworld enabled!
+2017-10-22 12:16:50 [INFO] [Essentials] Enabling Essentials v2.11.1
+2017-10-22 12:16:50 [INFO] Essentials: Using PermissionsEx based permissions.
+2017-10-22 12:16:50 [INFO] [Lockette] Enabling Lockette v1.7.12
+2017-10-22 12:16:50 [INFO] [Lockette] Version 1.7.12 is being enabled!  Yay!  (Core version 1.3.7)
+2017-10-22 12:16:50 [INFO] [Lockette] Detected craftbukkit build [2788] ok.
+2017-10-22 12:16:50 [INFO] [Lockette] Custom lockable block list: [116, 84, 57, 145, 154]
+2017-10-22 12:16:50 [INFO] [Lockette] Ignoring linked plugins: [mcMMO]
+2017-10-22 12:16:50 [INFO] [Lockette] Loading strings file for English by Acru
+2017-10-22 12:16:50 [INFO] [Lockette] Enabled link to plugin PermissionsEx for Groups, version 1.19.5
+2017-10-22 12:16:50 [INFO] [Lockette] Using ops file for admin permissions.
+2017-10-22 12:16:50 [INFO] [Lockette] Ready to protect your containers.
+2017-10-22 12:16:50 [INFO] [CustomJoin] Enabling CustomJoin v1.3.1
+2017-10-22 12:16:50 [INFO] [CustomJoin] CustomJoin version 1.3.1 enabled.
+2017-10-22 12:16:50 [INFO] [LoginSecurity] Enabling LoginSecurity v2.0.4
+2017-10-22 12:16:50 [INFO] [EssentialsChat] Enabling EssentialsChat v2.11.1
+2017-10-22 12:16:50 [INFO] [WorldGuard] Enabling WorldGuard v5.7.5
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world) TNT ignition is PERMITTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world) Lighters are PERMITTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world) Lava fire is blocked.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world) Fire spread is UNRESTRICTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] Loaded configuration for world 'world'
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world_nether) Lighters are PERMITTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world_nether) Lava fire is blocked.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] Loaded configuration for world 'world_nether'
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world_the_end) Lighters are PERMITTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world_the_end) Lava fire is blocked.
+2017-10-22 12:16:50 [INFO] [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+2017-10-22 12:16:50 [INFO] [WorldGuard] Loaded configuration for world 'world_the_end'
+2017-10-22 12:16:50 [INFO] [WorldGuard] 0 regions loaded for 'world'
+2017-10-22 12:16:50 [INFO] [WorldGuard] 0 regions loaded for 'world_nether'
+2017-10-22 12:16:50 [INFO] [WorldGuard] 0 regions loaded for 'world_the_end'
+2017-10-22 12:16:51 [INFO] Done (2.007s)! For help, type "help" or "?"
+2017-10-22 12:16:51 [INFO] Accepted EditSessionFactory of type net.coreprotect.worldedit.CoreProtectEditSessionFactory from net.coreprotect.worldedit
+2017-10-22 12:16:52 [INFO] --------------------
+2017-10-22 12:16:52 [INFO] [CoreProtect] Version 2.09 now available.
+2017-10-22 12:16:52 [INFO] [CoreProtect] Download: Type "/co version" in-game.
+2017-10-22 12:16:52 [INFO] --------------------
+2017-10-22 12:16:52 [INFO] [Sponsor] Unlimited MC Hosting: www.hosthorde.com
+2017-10-22 12:16:52 [INFO] --------------------
+2017-10-22 12:16:54 [INFO] itsyoboycolinXC[/71.230.68.88:50929] logged in with entity id 249 at ([world] 186.06537173402737, 38.0, 597.0802338638113)
+
+[2017-10-22 12:17:03.359] [INFO] default - 2017-10-22 12:17:03 [INFO] itsyoboycolinXC issued server command: /login colin2002
+
+[2017-10-22 12:17:11.482] [INFO] default - 2017-10-22 12:17:11 [INFO] [WorldEdit] Using inbuilt NmsBlock for this version.
+
+[2017-10-22 12:17:12.212] [INFO] default - 2017-10-22 12:17:12 [INFO] eee[/173.49.196.155:52461] logged in with entity id 860 at ([world] 35.30628987996357, 45.0, 1031.4741090006632)
+
+[2017-10-22 12:17:14.012] [INFO] default - 2017-10-22 12:17:14 [INFO] [Lockette] itsyoboycolinXC has protected a block or door.
+
+[2017-10-22 12:17:17.561] [INFO] default - 2017-10-22 12:17:17 [INFO] eee issued server command: /login eee
+
+[2017-10-22 12:17:29.114] [INFO] default - 2017-10-22 12:17:29 [INFO] guppies[/69.242.63.233:51454] logged in with entity id 1059 at ([world] 58.5, 109.9271205658912, 757.5)
+
+[2017-10-22 12:17:41.142] [INFO] default - 2017-10-22 12:17:33 [INFO] guppies issued server command: /login Dogdog113
+2017-10-22 12:17:35 [INFO] [MOD] guppies: oof
+2017-10-22 12:17:37 [INFO] guppies issued server command: /tp ee
+
+[2017-10-22 12:18:07.510] [INFO] default - 2017-10-22 12:18:07 [INFO] guppies issued server command: /co i
+
+[2017-10-22 12:18:32.607] [INFO] default - 2017-10-22 12:18:32 [INFO] [MEMBER] eee: invisible person get out
+
+[2017-10-22 12:18:36.114] [INFO] default - 2017-10-22 12:18:36 [INFO] Herobrine[/100.14.155.96:57288] logged in with entity id 2349 at ([world] 28.96593767375709, 45.0, 1037.3409059808064)
+
+[2017-10-22 12:18:44.406] [INFO] default - 2017-10-22 12:18:44 [INFO] [MEMBER] eee: theres an invisible person in the base
+
+[2017-10-22 12:18:48.812] [INFO] default - 2017-10-22 12:18:48 [INFO] Herobrine issued server command: /login goopyloop
+
+[2017-10-22 12:18:58.057] [INFO] default - 2017-10-22 12:18:58 [INFO] [MEMBER] eee: they were holding cobblestone
+
+[2017-10-22 12:18:59.114] [INFO] default - 2017-10-22 12:18:59 [INFO] MaxK[/76.98.165.89:56569] logged in with entity id 2823 at ([world] 51.69999998807918, 48.0, 343.0787382891431)
+
+[2017-10-22 12:19:03.462] [INFO] default - 2017-10-22 12:19:03 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:19:07.312] [INFO] default - 2017-10-22 12:19:07 [INFO] MaxK issued server command: /login 783067
+
+[2017-10-22 12:19:08.078] [INFO] default - 2017-10-22 12:19:08 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:19:11.511] [INFO] default - 2017-10-22 12:19:11 [INFO] guppies issued server command: /thru
+
+[2017-10-22 12:19:13.612] [INFO] default - 2017-10-22 12:19:13 [INFO] guppies issued server command: /thru
+
+[2017-10-22 12:19:13.769] [INFO] default - ::1 - - "GET /admin HTTP/1.1" 500 1330 "" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:20:45.340] [INFO] default - App listening on port 80.
+[2017-10-22 12:20:45.687] [INFO] default - 229 recipes
+[2017-10-22 12:20:45.688] [INFO] default - 
+
+[2017-10-22 12:20:45.695] [INFO] default - 27 achievements
+
+[2017-10-22 12:20:45.826] [INFO] default - 2017-10-22 12:20:45 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-22 12:20:45.827] [INFO] default - 2017-10-22 12:20:45 [INFO] Loading properties
+
+[2017-10-22 12:20:45.828] [INFO] default - 2017-10-22 12:20:45 [INFO] Default game type: SURVIVAL
+
+[2017-10-22 12:20:45.828] [INFO] default - 2017-10-22 12:20:45 [INFO] Generating keypair
+
+[2017-10-22 12:20:45.966] [INFO] default - 2017-10-22 12:20:45 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-22 12:20:46.180] [INFO] default - 2017-10-22 12:20:46 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R1.0-b2788jnks (MC: 1.5.2) (Implementing API version 1.5.2-R1.0)
+
+[2017-10-22 12:20:46.290] [INFO] default - 2017-10-22 12:20:46 [INFO] [PermissionsEx] sql backend registered!
+
+[2017-10-22 12:20:46.291] [INFO] default - 2017-10-22 12:20:46 [INFO] [PermissionsEx] file backend registered!
+
+[2017-10-22 12:20:46.292] [INFO] default - 2017-10-22 12:20:46 [INFO] [PermissionsEx] PermissionEx plugin initialized.
+
+[2017-10-22 12:20:46.351] [INFO] default - 2017-10-22 12:20:46 [INFO] [CoreProtect] Loading CoreProtect v2.07
+
+[2017-10-22 12:20:46.352] [INFO] default - 2017-10-22 12:20:46 [INFO] [MotdManager] Loading MotdManager v1.41-b20
+2017-10-22 12:20:46 [INFO] [PermissionsEx] Loading PermissionsEx v1.19.5
+
+[2017-10-22 12:20:46.358] [INFO] default - 2017-10-22 12:20:46 [INFO] [PermissionsEx] Initializing file backend
+
+[2017-10-22 12:20:46.365] [INFO] default - 2017-10-22 12:20:46 [INFO] Permissions file successfully reloaded
+
+[2017-10-22 12:20:46.376] [INFO] default - 2017-10-22 12:20:46 [INFO] [Vote] Loading Vote v1.5.2_02
+
+[2017-10-22 12:20:46.376] [INFO] default - 2017-10-22 12:20:46 [INFO] [WorldEdit] Loading WorldEdit v5.5.6
+2017-10-22 12:20:46 [INFO] [Modifyworld] Loading Modifyworld v1.19.4
+2017-10-22 12:20:46 [INFO] [Essentials] Loading Essentials v2.11.1
+2017-10-22 12:20:46 [INFO] [Lockette] Loading Lockette v1.7.12
+2017-10-22 12:20:46 [INFO] [CustomJoin] Loading CustomJoin v1.3.1
+2017-10-22 12:20:46 [INFO] [LoginSecurity] Loading LoginSecurity v2.0.4
+2017-10-22 12:20:46 [INFO] [EssentialsChat] Loading EssentialsChat v2.11.1
+2017-10-22 12:20:46 [INFO] [WorldGuard] Loading WorldGuard v5.7.5
+
+[2017-10-22 12:20:46.394] [INFO] default - 2017-10-22 12:20:46 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+
+[2017-10-22 12:20:46.395] [INFO] default - 2017-10-22 12:20:46 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2017-10-22 12:20:46 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2017-10-22 12:20:46 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+
+[2017-10-22 12:20:46.418] [INFO] default - 2017-10-22 12:20:46 [INFO] Preparing level "world"
+
+[2017-10-22 12:20:46.519] [INFO] default - 2017-10-22 12:20:46 [SEVERE] Exception in thread "Thread-6" 
+
+[2017-10-22 12:20:46.520] [INFO] default - 2017-10-22 12:20:46 [SEVERE] org.bukkit.craftbukkit.libs.com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:180)
+2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:755)
+2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:694)
+2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.fetchArtifact(BukkitDLUpdaterService.java:51)
+2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.getArtifact(BukkitDLUpdaterService.java:28)
+
+[2017-10-22 12:20:46.523] [INFO] default - 2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.AutoUpdater$1.run(AutoUpdater.java:77)
+2017-10-22 12:20:46 [SEVERE] Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.expect(JsonReader.java:339)
+2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.beginObject(JsonReader.java:322)
+2017-10-22 12:20:46 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:168)
+2017-10-22 12:20:46 [SEVERE] 	... 5 more
+
+[2017-10-22 12:20:46.551] [INFO] default - 2017-10-22 12:20:46 [INFO] Preparing start region for level 0 (Seed: 2198106644606297452)
+
+[2017-10-22 12:20:47.205] [INFO] default - 2017-10-22 12:20:47 [INFO] Preparing start region for level 1 (Seed: 755475547169470570)
+
+[2017-10-22 12:20:47.552] [INFO] default - 2017-10-22 12:20:47 [INFO] Preparing spawn area: 87%
+
+[2017-10-22 12:20:47.659] [INFO] default - 2017-10-22 12:20:47 [INFO] Preparing start region for level 2 (Seed: 755475547169470570)
+
+[2017-10-22 12:20:47.785] [INFO] default - 2017-10-22 12:20:47 [INFO] [CoreProtect] Enabling CoreProtect v2.07
+
+[2017-10-22 12:20:48.003] [INFO] default - 2017-10-22 12:20:48 [INFO] CoreProtect version 2.07 is enabled!
+
+[2017-10-22 12:20:48.004] [INFO] default - 2017-10-22 12:20:48 [INFO] [CoreProtect] Using SQLite for data storage.
+
+[2017-10-22 12:20:48.010] [INFO] default - 2017-10-22 12:20:48 [INFO] [MotdManager] Enabling MotdManager v1.41-b20
+
+[2017-10-22 12:20:48.016] [INFO] default - 2017-10-22 12:20:48 [INFO] [MotdManager] version 1.41-b20 is enabled!
+
+[2017-10-22 12:20:48.018] [INFO] default - 2017-10-22 12:20:48 [INFO] [PermissionsEx] Enabling PermissionsEx v1.19.5
+
+[2017-10-22 12:20:48.039] [INFO] default - 2017-10-22 12:20:48 [INFO] [PermissionsEx] Superperms support enabled.
+
+[2017-10-22 12:20:48.041] [INFO] default - 2017-10-22 12:20:48 [INFO] [PermissionsEx] v1.19.5 enabled
+
+[2017-10-22 12:20:48.042] [INFO] default - 2017-10-22 12:20:48 [INFO] [Vote] Enabling Vote v1.5.2_02
+
+[2017-10-22 12:20:48.058] [INFO] default - 2017-10-22 12:20:48 [INFO] [Vote] Vault not detected for permissions, defaulting to Bukkit Permissions
+
+[2017-10-22 12:20:48.059] [INFO] default - 2017-10-22 12:20:48 [INFO] [Vote] has been enabled.
+
+[2017-10-22 12:20:48.063] [INFO] default - 2017-10-22 12:20:48 [INFO] [Vote] mimicking aiden
+
+[2017-10-22 12:20:48.066] [INFO] default - 2017-10-22 12:20:48 [INFO] [WorldEdit] Enabling WorldEdit v5.5.6
+
+[2017-10-22 12:20:54.787] [INFO] default - 2017-10-22 12:20:48 [INFO] WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+2017-10-22 12:20:48 [INFO] [Modifyworld] Enabling Modifyworld v1.19.4
+2017-10-22 12:20:48 [INFO] [Modifyworld] Modifyworld enabled!
+2017-10-22 12:20:48 [INFO] [Essentials] Enabling Essentials v2.11.1
+2017-10-22 12:20:48 [INFO] Essentials: Using PermissionsEx based permissions.
+2017-10-22 12:20:48 [INFO] [Lockette] Enabling Lockette v1.7.12
+2017-10-22 12:20:48 [INFO] [Lockette] Version 1.7.12 is being enabled!  Yay!  (Core version 1.3.7)
+2017-10-22 12:20:48 [INFO] [Lockette] Detected craftbukkit build [2788] ok.
+2017-10-22 12:20:48 [INFO] [Lockette] Custom lockable block list: [116, 84, 57, 145, 154]
+2017-10-22 12:20:48 [INFO] [Lockette] Ignoring linked plugins: [mcMMO]
+2017-10-22 12:20:48 [INFO] [Lockette] Loading strings file for English by Acru
+2017-10-22 12:20:48 [INFO] [Lockette] Enabled link to plugin PermissionsEx for Groups, version 1.19.5
+2017-10-22 12:20:48 [INFO] [Lockette] Using ops file for admin permissions.
+2017-10-22 12:20:48 [INFO] [Lockette] Ready to protect your containers.
+2017-10-22 12:20:48 [INFO] [CustomJoin] Enabling CustomJoin v1.3.1
+2017-10-22 12:20:48 [INFO] [CustomJoin] CustomJoin version 1.3.1 enabled.
+2017-10-22 12:20:48 [INFO] [LoginSecurity] Enabling LoginSecurity v2.0.4
+2017-10-22 12:20:48 [INFO] [EssentialsChat] Enabling EssentialsChat v2.11.1
+2017-10-22 12:20:48 [INFO] [WorldGuard] Enabling WorldGuard v5.7.5
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world) TNT ignition is PERMITTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world) Lighters are PERMITTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world) Lava fire is blocked.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world) Fire spread is UNRESTRICTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] Loaded configuration for world 'world'
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world_nether) Lighters are PERMITTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world_nether) Lava fire is blocked.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] Loaded configuration for world 'world_nether'
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world_the_end) Lighters are PERMITTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world_the_end) Lava fire is blocked.
+2017-10-22 12:20:48 [INFO] [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+2017-10-22 12:20:48 [INFO] [WorldGuard] Loaded configuration for world 'world_the_end'
+2017-10-22 12:20:48 [INFO] [WorldGuard] 0 regions loaded for 'world'
+2017-10-22 12:20:48 [INFO] [WorldGuard] 0 regions loaded for 'world_nether'
+2017-10-22 12:20:48 [INFO] [WorldGuard] 0 regions loaded for 'world_the_end'
+2017-10-22 12:20:48 [INFO] Done (2.012s)! For help, type "help" or "?"
+2017-10-22 12:20:48 [INFO] Accepted EditSessionFactory of type net.coreprotect.worldedit.CoreProtectEditSessionFactory from net.coreprotect.worldedit
+2017-10-22 12:20:50 [INFO] --------------------
+2017-10-22 12:20:50 [INFO] [CoreProtect] Version 2.09 now available.
+2017-10-22 12:20:50 [INFO] [CoreProtect] Download: Type "/co version" in-game.
+2017-10-22 12:20:50 [INFO] --------------------
+2017-10-22 12:20:50 [INFO] [Sponsor] Unlimited MC Hosting: www.hosthorde.com
+2017-10-22 12:20:50 [INFO] --------------------
+2017-10-22 12:20:51 [INFO] MaxK[/76.98.165.89:56619] logged in with entity id 239 at ([world] 51.69999998807918, 48.0, 343.0787382891431)
+2017-10-22 12:20:51 [INFO] guppies[/69.242.63.233:51563] logged in with entity id 291 at ([world] 58.5, 109.9271205658912, 757.5)
+
+[2017-10-22 12:20:55.870] [INFO] default - 2017-10-22 12:20:55 [INFO] eee[/173.49.196.155:52569] logged in with entity id 1549 at ([world] 35.30628987996357, 45.0, 1031.4741090006632)
+
+[2017-10-22 12:20:57.120] [INFO] default - 2017-10-22 12:20:57 [INFO] MaxK issued server command: /login 783067
+
+[2017-10-22 12:20:59.091] [INFO] default - 2017-10-22 12:20:59 [INFO] [WorldEdit] Using inbuilt NmsBlock for this version.
+
+[2017-10-22 12:20:59.519] [INFO] default - 2017-10-22 12:20:59 [INFO] guppies issued server command: /login Dogdog113
+
+[2017-10-22 12:21:00.818] [INFO] default - 2017-10-22 12:21:00 [INFO] eee issued server command: /login eee
+
+[2017-10-22 12:21:01.015] [INFO] default - ::1 - - "GET /admin HTTP/1.1" 200 2083 "" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:21:01.017] [DEBUG] default - ::1 - - [22/Oct/2017:16:21:01 +0000] "GET /admin HTTP/1.1" 200 2083 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:21:01.028] [INFO] default - ::1 - - "GET /admin.js HTTP/1.1" 200 885 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:21:01.029] [DEBUG] default - ::1 - - [22/Oct/2017:16:21:01 +0000] "GET /admin.js HTTP/1.1" 200 885 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:21:01.132] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 200 10172 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:21:01.133] [DEBUG] default - ::1 - - [22/Oct/2017:16:21:01 +0000] "GET /api/logs HTTP/1.1" 200 10172 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:21:03.468] [INFO] default - 2017-10-22 12:21:03 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:21:09.487] [INFO] default - 2017-10-22 12:21:09 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 12:21:13.470] [INFO] default - 2017-10-22 12:21:13 [INFO] itsyoboycolinXC[/71.230.68.88:51001] logged in with entity id 1768 at ([world] 186.06537173402737, 38.0, 597.0802338638113)
+
+[2017-10-22 12:21:15.120] [INFO] default - 2017-10-22 12:21:15 [INFO] guppies issued server command: /thru
+
+[2017-10-22 12:21:15.380] [INFO] default - ::1 - - "GET /api/players-online HTTP/1.1" 404 795 "" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:21:15.381] [DEBUG] default - ::1 - - [22/Oct/2017:16:21:15 +0000] "GET /api/players-online HTTP/1.1" 404 795 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:21:18.368] [INFO] default - 2017-10-22 12:21:18 [INFO] guppies issued server command: /thru
+
+[2017-10-22 12:21:20.367] [INFO] default - 2017-10-22 12:21:20 [INFO] guppies issued server command: /thru
+
+[2017-10-22 12:21:28.166] [INFO] default - 2017-10-22 12:21:28 [INFO] itsyoboycolinXC issued server command: /login colin2002
+
+[2017-10-22 12:21:36.012] [INFO] default - 2017-10-22 12:21:36 [INFO] [MEMBER] MaxK: guppy are you here
+
+[2017-10-22 12:21:37.394] [INFO] default - ::1 - - "GET /api/users-online HTTP/1.1" 500 1061 "" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:21:37.395] [DEBUG] default - ::1 - - [22/Oct/2017:16:21:37 +0000] "GET /api/users-online HTTP/1.1" 500 1061 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:21:38.513] [INFO] default - 2017-10-22 12:21:38 [INFO] [MOD] guppies: yeah
+
+[2017-10-22 12:21:43.313] [INFO] default - 2017-10-22 12:21:43 [INFO] [MEMBER] MaxK: wait
+
+[2017-10-22 12:21:44.068] [INFO] default - 2017-10-22 12:21:44 [INFO] guppies issued server command: /co i
+
+[2017-10-22 12:21:49.812] [INFO] default - 2017-10-22 12:21:49 [INFO] [MEMBER] MaxK: it was fine as it was
+
+[2017-10-22 12:22:02.011] [INFO] default - 2017-10-22 12:22:02 [INFO] [MOD] guppies: i didnt change anything
+
+[2017-10-22 12:22:04.419] [INFO] default - 2017-10-22 12:22:04 [INFO] Herobrine[/100.14.155.96:57399] logged in with entity id 3191 at ([world] 28.96593767375709, 45.0, 1037.3409059808064)
+
+[2017-10-22 12:22:05.412] [INFO] default - 2017-10-22 12:22:05 [INFO] [MEMBER] MaxK: roll back to midnight
+
+[2017-10-22 12:22:08.220] [INFO] default - 2017-10-22 12:22:08 [INFO] Herobrine issued server command: /login goopyloop
+
+[2017-10-22 12:22:10.162] [INFO] default - 2017-10-22 12:22:10 [INFO] [MOD] guppies: ?
+
+[2017-10-22 12:22:16.263] [INFO] default - 2017-10-22 12:22:16 [INFO] [MEMBER] MaxK: can you just rollback
+
+[2017-10-22 12:22:19.463] [INFO] default - 2017-10-22 12:22:19 [INFO] [MEMBER] MaxK: wait
+
+[2017-10-22 12:22:24.312] [INFO] default - 2017-10-22 12:22:24 [INFO] [MEMBER] eee: no dont roll back to midnight ill lose a bunch of shit
+
+[2017-10-22 12:22:24.712] [INFO] default - 2017-10-22 12:22:24 [INFO] [MEMBER] MaxK: rollback to 1 hour ago
+
+[2017-10-22 12:22:33.261] [INFO] default - 2017-10-22 12:22:33 [INFO] [MEMBER] eee: just fix in creative
+
+[2017-10-22 12:22:35.862] [INFO] default - 2017-10-22 12:22:35 [INFO] [MOD] guppies: its not in your area
+
+[2017-10-22 12:22:39.762] [INFO] default - 2017-10-22 12:22:39 [INFO] [MEMBER] MaxK: he can rollback in just a certain radius
+
+[2017-10-22 12:22:43.936] [INFO] default - ::ffff:76.124.120.104 - - "GET /api/logs HTTP/1.1" 200 44 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:22:43.937] [DEBUG] default - ::ffff:76.124.120.104 - - [22/Oct/2017:16:22:43 +0000] "GET /api/logs HTTP/1.1" 200 44 "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:22:47.113] [INFO] default - 2017-10-22 12:22:47 [INFO] [MEMBER] eee: oh
+
+[2017-10-22 12:22:49.893] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 200 10174 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:22:49.894] [DEBUG] default - ::1 - - [22/Oct/2017:16:22:49 +0000] "GET /api/logs HTTP/1.1" 200 10174 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:22:51.868] [INFO] default - 2017-10-22 12:22:51 [INFO] guppies issued server command: /co rollback r:20 T:1hour
+
+[2017-10-22 12:22:57.070] [INFO] default - 2017-10-22 12:22:57 [INFO] Latch[/98.225.228.115:55038] logged in with entity id 4567 at ([world] 232.86507068219413, 62.0, 155.09610520104178)
+
+[2017-10-22 12:23:02.011] [INFO] default - 2017-10-22 12:23:02 [INFO] [MEMBER] MaxK: this is so weird
+
+[2017-10-22 12:23:02.961] [INFO] default - 2017-10-22 12:23:02 [INFO] [MOD] guppies: this was an hour ago
+
+[2017-10-22 12:23:18.012] [INFO] default - 2017-10-22 12:23:18 [INFO] [MOD] guppies: did you lose anything?
+
+[2017-10-22 12:23:19.833] [INFO] default - ::1 - - "POST /api/command HTTP/1.1" 200 16 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:23:19.834] [DEBUG] default - ::1 - - [22/Oct/2017:16:23:19 +0000] "POST /api/command HTTP/1.1" 200 16 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:23:19.839] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 200 10172 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:23:19.840] [DEBUG] default - ::1 - - [22/Oct/2017:16:23:19 +0000] "GET /api/logs HTTP/1.1" 200 10172 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:23:20.670] [INFO] default - 2017-10-22 12:23:20 [INFO] Latch lost connection: disconnect.quitting
+2017-10-22 12:23:20 [INFO] Connection reset
+
+[2017-10-22 12:23:22.100] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 200 10173 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:23:22.101] [DEBUG] default - ::1 - - [22/Oct/2017:16:23:22 +0000] "GET /api/logs HTTP/1.1" 200 10173 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:23:23.513] [INFO] default - 2017-10-22 12:23:23 [INFO] [MEMBER] MaxK: did you rollback last night
+
+[2017-10-22 12:23:23.779] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 200 10173 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:23:23.780] [DEBUG] default - ::1 - - [22/Oct/2017:16:23:23 +0000] "GET /api/logs HTTP/1.1" 200 10173 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:23:25.380] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 304 - "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:23:25.381] [DEBUG] default - ::1 - - [22/Oct/2017:16:23:25 +0000] "GET /api/logs HTTP/1.1" 304 - "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:23:26.279] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 304 - "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:23:26.281] [DEBUG] default - ::1 - - [22/Oct/2017:16:23:26 +0000] "GET /api/logs HTTP/1.1" 304 - "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:23:33.062] [INFO] default - 2017-10-22 12:23:33 [INFO] [MOD] guppies: dont think so
+
+[2017-10-22 12:23:36.662] [INFO] default - 2017-10-22 12:23:36 [INFO] [MEMBER] MaxK: or this morning
+
+[2017-10-22 12:23:38.461] [INFO] default - 2017-10-22 12:23:38 [INFO] [MOD] guppies: did you lose anything
+
+[2017-10-22 12:23:45.361] [INFO] default - 2017-10-22 12:23:45 [INFO] [MEMBER] MaxK: just an hour ago
+
+[2017-10-22 12:23:51.413] [INFO] default - 2017-10-22 12:23:51 [INFO] [MEMBER] MaxK: i was working on a section right here
+
+[2017-10-22 12:23:51.967] [INFO] default - 2017-10-22 12:23:51 [INFO] guppies issued server command: /co rollback r:20 T:3hour
+
+[2017-10-22 12:23:57.319] [INFO] default - 2017-10-22 12:23:57 [INFO] [Lockette] itsyoboycolinXC has protected a block or door.
+
+[2017-10-22 12:24:03.913] [INFO] default - 2017-10-22 12:24:03 [INFO] [MOD] guppies: this was 3 hours ago
+
+[2017-10-22 12:24:11.011] [INFO] default - 2017-10-22 12:24:11 [INFO] [MEMBER] MaxK: too far
+
+[2017-10-22 12:24:11.269] [INFO] default - 2017-10-22 12:24:11 [INFO] guppies issued server command: /co i
+
+[2017-10-22 12:24:13.167] [INFO] default - 2017-10-22 12:24:13 [INFO] guppies issued server command: /co i
+
+[2017-10-22 12:24:18.917] [INFO] default - 2017-10-22 12:24:18 [INFO] guppies issued server command: /co rollback r:20 T:2hour
+
+[2017-10-22 12:24:23.921] [INFO] default - 2017-10-22 12:24:23 [INFO] guppies issued server command: /co rollback r:20 T:1.5hour
+
+[2017-10-22 12:24:28.270] [INFO] default - 2017-10-22 12:24:28 [INFO] guppies issued server command: /co rollback r:20 T:1hour
+
+[2017-10-22 12:24:36.718] [INFO] default - 2017-10-22 12:24:36 [INFO] guppies issued server command: /co rollback r:20 T:30mhour
+
+[2017-10-22 12:24:45.616] [INFO] default - 2017-10-22 12:24:45 [INFO] guppies issued server command: /co rollback r:20 T:30m
+
+[2017-10-22 12:24:48.362] [INFO] default - 2017-10-22 12:24:48 [INFO] [MOD] guppies: h,
+
+[2017-10-22 12:24:50.212] [INFO] default - 2017-10-22 12:24:50 [INFO] [MOD] guppies: hm
+
+[2017-10-22 12:25:01.618] [INFO] default - 2017-10-22 12:25:01 [INFO] guppies issued server command: /co i
+
+[2017-10-22 12:25:04.512] [INFO] default - 2017-10-22 12:25:04 [INFO] [MEMBER] MaxK: ok this is weird
+
+[2017-10-22 12:25:14.267] [INFO] default - 2017-10-22 12:25:14 [INFO] eee issued server command: /tpa
+
+[2017-10-22 12:25:14.269] [INFO] default - 2017-10-22 12:25:14 [INFO] �ceee �4was denied access to command.
+
+[2017-10-22 12:25:20.111] [INFO] default - 2017-10-22 12:25:20 [INFO] [MEMBER] MaxK: can you try rolling back 12 hours ago before i was greifed at all?
+
+[2017-10-22 12:25:28.919] [INFO] default - 2017-10-22 12:25:28 [INFO] guppies issued server command: /co rollback r:20 T:12h
+
+[2017-10-22 12:25:33.225] [INFO] default - App listening on port 80.
+[2017-10-22 12:25:33.572] [INFO] default - 229 recipes
+
+[2017-10-22 12:25:33.581] [INFO] default - 27 achievements
+
+[2017-10-22 12:25:33.711] [INFO] default - 2017-10-22 12:25:33 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-22 12:25:33.712] [INFO] default - 2017-10-22 12:25:33 [INFO] Loading properties
+
+[2017-10-22 12:25:33.714] [INFO] default - 2017-10-22 12:25:33 [INFO] Default game type: SURVIVAL
+
+[2017-10-22 12:25:33.715] [INFO] default - 2017-10-22 12:25:33 [INFO] Generating keypair
+
+[2017-10-22 12:25:33.911] [INFO] default - 2017-10-22 12:25:33 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-22 12:25:34.126] [INFO] default - 2017-10-22 12:25:34 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R1.0-b2788jnks (MC: 1.5.2) (Implementing API version 1.5.2-R1.0)
+
+[2017-10-22 12:25:34.233] [INFO] default - 2017-10-22 12:25:34 [INFO] [PermissionsEx] sql backend registered!
+
+[2017-10-22 12:25:34.234] [INFO] default - 2017-10-22 12:25:34 [INFO] [PermissionsEx] file backend registered!
+
+[2017-10-22 12:25:34.235] [INFO] default - 2017-10-22 12:25:34 [INFO] [PermissionsEx] PermissionEx plugin initialized.
+
+[2017-10-22 12:25:34.293] [INFO] default - 2017-10-22 12:25:34 [INFO] [CoreProtect] Loading CoreProtect v2.07
+
+[2017-10-22 12:25:34.294] [INFO] default - 2017-10-22 12:25:34 [INFO] [MotdManager] Loading MotdManager v1.41-b20
+2017-10-22 12:25:34 [INFO] [PermissionsEx] Loading PermissionsEx v1.19.5
+
+[2017-10-22 12:25:34.300] [INFO] default - 2017-10-22 12:25:34 [INFO] [PermissionsEx] Initializing file backend
+
+[2017-10-22 12:25:34.305] [INFO] default - 2017-10-22 12:25:34 [INFO] Permissions file successfully reloaded
+
+[2017-10-22 12:25:34.307] [INFO] default - 2017-10-22 12:25:34 [INFO] [Vote] Loading Vote v1.5.2_02
+
+[2017-10-22 12:25:34.308] [INFO] default - 2017-10-22 12:25:34 [INFO] [WorldEdit] Loading WorldEdit v5.5.6
+
+[2017-10-22 12:25:34.309] [INFO] default - 2017-10-22 12:25:34 [INFO] [Modifyworld] Loading Modifyworld v1.19.4
+2017-10-22 12:25:34 [INFO] [Essentials] Loading Essentials v2.11.1
+2017-10-22 12:25:34 [INFO] [Lockette] Loading Lockette v1.7.12
+2017-10-22 12:25:34 [INFO] [CustomJoin] Loading CustomJoin v1.3.1
+
+[2017-10-22 12:25:34.310] [INFO] default - 2017-10-22 12:25:34 [INFO] [LoginSecurity] Loading LoginSecurity v2.0.4
+2017-10-22 12:25:34 [INFO] [EssentialsChat] Loading EssentialsChat v2.11.1
+2017-10-22 12:25:34 [INFO] [WorldGuard] Loading WorldGuard v5.7.5
+
+[2017-10-22 12:25:34.328] [INFO] default - 2017-10-22 12:25:34 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+
+[2017-10-22 12:25:34.329] [INFO] default - 2017-10-22 12:25:34 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2017-10-22 12:25:34 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2017-10-22 12:25:34 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+
+[2017-10-22 12:25:34.354] [INFO] default - 2017-10-22 12:25:34 [INFO] Preparing level "world"
+
+[2017-10-22 12:25:34.482] [INFO] default - 2017-10-22 12:25:34 [SEVERE] Exception in thread "Thread-6" 
+
+[2017-10-22 12:25:34.483] [INFO] default - 2017-10-22 12:25:34 [SEVERE] org.bukkit.craftbukkit.libs.com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+
+[2017-10-22 12:25:34.484] [INFO] default - 2017-10-22 12:25:34 [INFO] Preparing start region for level 0 (Seed: 2198106644606297452)
+2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:180)
+
+[2017-10-22 12:25:34.485] [INFO] default - 2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:755)
+2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:694)
+
+[2017-10-22 12:25:34.486] [INFO] default - 2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.fetchArtifact(BukkitDLUpdaterService.java:51)
+2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.getArtifact(BukkitDLUpdaterService.java:28)
+
+[2017-10-22 12:25:34.488] [INFO] default - 2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.AutoUpdater$1.run(AutoUpdater.java:77)
+
+[2017-10-22 12:25:34.489] [INFO] default - 2017-10-22 12:25:34 [SEVERE] Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.expect(JsonReader.java:339)
+2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.beginObject(JsonReader.java:322)
+
+[2017-10-22 12:25:34.490] [INFO] default - 2017-10-22 12:25:34 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:168)
+
+[2017-10-22 12:25:34.491] [INFO] default - 2017-10-22 12:25:34 [SEVERE] 	... 5 more
+
+[2017-10-22 12:25:35.148] [INFO] default - 2017-10-22 12:25:35 [INFO] Preparing start region for level 1 (Seed: 755475547169470570)
+
+[2017-10-22 12:25:35.484] [INFO] default - 2017-10-22 12:25:35 [INFO] Preparing spawn area: 83%
+
+[2017-10-22 12:25:35.608] [INFO] default - 2017-10-22 12:25:35 [INFO] Preparing start region for level 2 (Seed: 755475547169470570)
+
+[2017-10-22 12:25:35.729] [INFO] default - 2017-10-22 12:25:35 [INFO] [CoreProtect] Enabling CoreProtect v2.07
+
+[2017-10-22 12:25:35.949] [INFO] default - 2017-10-22 12:25:35 [INFO] CoreProtect version 2.07 is enabled!
+
+[2017-10-22 12:25:35.950] [INFO] default - 2017-10-22 12:25:35 [INFO] [CoreProtect] Using SQLite for data storage.
+
+[2017-10-22 12:25:35.956] [INFO] default - 2017-10-22 12:25:35 [INFO] [MotdManager] Enabling MotdManager v1.41-b20
+
+[2017-10-22 12:25:35.963] [INFO] default - 2017-10-22 12:25:35 [INFO] [MotdManager] version 1.41-b20 is enabled!
+
+[2017-10-22 12:25:35.966] [INFO] default - 2017-10-22 12:25:35 [INFO] [PermissionsEx] Enabling PermissionsEx v1.19.5
+
+[2017-10-22 12:25:35.987] [INFO] default - 2017-10-22 12:25:35 [INFO] [PermissionsEx] Superperms support enabled.
+
+[2017-10-22 12:25:35.989] [INFO] default - 2017-10-22 12:25:35 [INFO] [PermissionsEx] v1.19.5 enabled
+
+[2017-10-22 12:25:35.990] [INFO] default - 2017-10-22 12:25:35 [INFO] [Vote] Enabling Vote v1.5.2_02
+
+[2017-10-22 12:25:36.002] [INFO] default - 2017-10-22 12:25:36 [INFO] [Vote] Vault not detected for permissions, defaulting to Bukkit Permissions
+
+[2017-10-22 12:25:36.004] [INFO] default - 2017-10-22 12:25:36 [INFO] [Vote] has been enabled.
+
+[2017-10-22 12:25:36.008] [INFO] default - 2017-10-22 12:25:36 [INFO] [Vote] mimicking aiden
+
+[2017-10-22 12:25:36.011] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldEdit] Enabling WorldEdit v5.5.6
+
+[2017-10-22 12:25:36.034] [INFO] default - 2017-10-22 12:25:36 [INFO] WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+
+[2017-10-22 12:25:36.088] [INFO] default - 2017-10-22 12:25:36 [INFO] [Modifyworld] Enabling Modifyworld v1.19.4
+
+[2017-10-22 12:25:36.099] [INFO] default - 2017-10-22 12:25:36 [INFO] [Modifyworld] Modifyworld enabled!
+
+[2017-10-22 12:25:36.103] [INFO] default - 2017-10-22 12:25:36 [INFO] [Essentials] Enabling Essentials v2.11.1
+
+[2017-10-22 12:25:36.210] [INFO] default - 2017-10-22 12:25:36 [INFO] Essentials: Using PermissionsEx based permissions.
+
+[2017-10-22 12:25:36.211] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Enabling Lockette v1.7.12
+
+[2017-10-22 12:25:36.212] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Version 1.7.12 is being enabled!  Yay!  (Core version 1.3.7)
+
+[2017-10-22 12:25:36.213] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Detected craftbukkit build [2788] ok.
+
+[2017-10-22 12:25:36.214] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Custom lockable block list: [116, 84, 57, 145, 154]
+
+[2017-10-22 12:25:36.215] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Ignoring linked plugins: [mcMMO]
+
+[2017-10-22 12:25:36.220] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Loading strings file for English by Acru
+
+[2017-10-22 12:25:36.227] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Enabled link to plugin PermissionsEx for Groups, version 1.19.5
+
+[2017-10-22 12:25:36.228] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Using ops file for admin permissions.
+
+[2017-10-22 12:25:36.229] [INFO] default - 2017-10-22 12:25:36 [INFO] [Lockette] Ready to protect your containers.
+
+[2017-10-22 12:25:36.235] [INFO] default - 2017-10-22 12:25:36 [INFO] [CustomJoin] Enabling CustomJoin v1.3.1
+
+[2017-10-22 12:25:36.238] [INFO] default - 2017-10-22 12:25:36 [INFO] [CustomJoin] CustomJoin version 1.3.1 enabled.
+
+[2017-10-22 12:25:36.240] [INFO] default - 2017-10-22 12:25:36 [INFO] [LoginSecurity] Enabling LoginSecurity v2.0.4
+
+[2017-10-22 12:25:36.262] [INFO] default - 2017-10-22 12:25:36 [INFO] [EssentialsChat] Enabling EssentialsChat v2.11.1
+
+[2017-10-22 12:25:36.267] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldGuard] Enabling WorldGuard v5.7.5
+
+[2017-10-22 12:25:36.285] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldGuard] (world) TNT ignition is PERMITTED.
+
+[2017-10-22 12:25:36.286] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldGuard] (world) Lighters are PERMITTED.
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world) Lava fire is blocked.
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world) Fire spread is UNRESTRICTED.
+
+[2017-10-22 12:25:36.287] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldGuard] Loaded configuration for world 'world'
+
+[2017-10-22 12:25:36.293] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world_nether) Lighters are PERMITTED.
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world_nether) Lava fire is blocked.
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+2017-10-22 12:25:36 [INFO] [WorldGuard] Loaded configuration for world 'world_nether'
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world_the_end) Lighters are PERMITTED.
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world_the_end) Lava fire is blocked.
+2017-10-22 12:25:36 [INFO] [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+2017-10-22 12:25:36 [INFO] [WorldGuard] Loaded configuration for world 'world_the_end'
+
+[2017-10-22 12:25:36.306] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldGuard] 0 regions loaded for 'world'
+
+[2017-10-22 12:25:36.307] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldGuard] 0 regions loaded for 'world_nether'
+
+[2017-10-22 12:25:36.308] [INFO] default - 2017-10-22 12:25:36 [INFO] [WorldGuard] 0 regions loaded for 'world_the_end'
+
+[2017-10-22 12:25:36.364] [INFO] default - 2017-10-22 12:25:36 [INFO] Done (2.032s)! For help, type "help" or "?"
+
+[2017-10-22 12:25:36.417] [INFO] default - 2017-10-22 12:25:36 [INFO] Accepted EditSessionFactory of type net.coreprotect.worldedit.CoreProtectEditSessionFactory from net.coreprotect.worldedit
+
+[2017-10-22 12:25:37.903] [INFO] default - 2017-10-22 12:25:37 [INFO] MaxK[/76.98.165.89:56644] logged in with entity id 245 at ([world] 51.69999998807918, 48.0, 343.0787382891431)
+
+[2017-10-22 12:25:38.201] [INFO] default - 2017-10-22 12:25:38 [INFO] --------------------
+
+[2017-10-22 12:25:38.202] [INFO] default - 2017-10-22 12:25:38 [INFO] [CoreProtect] Version 2.09 now available.
+2017-10-22 12:25:38 [INFO] [CoreProtect] Download: Type "/co version" in-game.
+2017-10-22 12:25:38 [INFO] --------------------
+2017-10-22 12:25:38 [INFO] [Sponsor] Unlimited MC Hosting: www.hosthorde.com
+2017-10-22 12:25:38 [INFO] --------------------
+
+[2017-10-22 12:25:42.224] [INFO] default - 2017-10-22 12:25:42 [INFO] itsyoboycolinXC[/71.230.68.88:51009] logged in with entity id 705 at ([world] 186.06537173402737, 38.0, 597.0802338638113)
+
+[2017-10-22 12:25:46.994] [INFO] default - ::1 - - "GET /api/logs HTTP/1.1" 200 10179 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:25:46.996] [DEBUG] default - ::1 - - [22/Oct/2017:16:25:46 +0000] "GET /api/logs HTTP/1.1" 200 10179 "http://localhost/admin" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:25:49.272] [INFO] default - 2017-10-22 12:25:49 [INFO] MaxK suffocated in a wall
+
+[2017-10-22 12:25:50.175] [INFO] default - 2017-10-22 12:25:50 [INFO] eee[/173.49.196.155:52639] logged in with entity id 1335 at ([world] 35.30628987996357, 45.0, 1031.4741090006632)
+
+[2017-10-22 12:25:50.232] [ERROR] default - Error: Invalid URI "localhost/api/command"
+    at Request.init (C:\Users\nathan\Documents\Web Server\node_modules\request\request.js:274:31)
+    at new Request (C:\Users\nathan\Documents\Web Server\node_modules\request\request.js:128:8)
+    at request (C:\Users\nathan\Documents\Web Server\node_modules\request\index.js:53:10)
+    at Function.post (C:\Users\nathan\Documents\Web Server\node_modules\request\index.js:61:12)
+    at getApiUsersOnline (C:\Users\nathan\Documents\Web Server\routes.js:232:10)
+    at Layer.handle [as handle_request] (C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\index.js:281:22
+[2017-10-22 12:25:50.241] [INFO] default - ::1 - - "GET /api/users-online HTTP/1.1" 500 1319 "" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:25:50.242] [DEBUG] default - ::1 - - [22/Oct/2017:16:25:50 +0000] "GET /api/users-online HTTP/1.1" 500 1319 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:25:50.675] [INFO] default - 2017-10-22 12:25:50 [INFO] guppies[/69.242.63.233:51605] logged in with entity id 1887 at ([world] 58.5, 109.9271205658912, 757.5)
+
+[2017-10-22 12:25:51.549] [INFO] default - 2017-10-22 12:25:51 [INFO] [WorldEdit] Using inbuilt NmsBlock for this version.
+
+[2017-10-22 12:25:55.198] [ERROR] default - Error: Invalid URI "localhost/api/command"
+    at Request.init (C:\Users\nathan\Documents\Web Server\node_modules\request\request.js:274:31)
+    at new Request (C:\Users\nathan\Documents\Web Server\node_modules\request\request.js:128:8)
+    at request (C:\Users\nathan\Documents\Web Server\node_modules\request\index.js:53:10)
+    at Function.post (C:\Users\nathan\Documents\Web Server\node_modules\request\index.js:61:12)
+    at getApiUsersOnline (C:\Users\nathan\Documents\Web Server\routes.js:232:10)
+    at Layer.handle [as handle_request] (C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nathan\Documents\Web Server\node_modules\express\lib\router\index.js:281:22
+[2017-10-22 12:25:55.202] [INFO] default - ::1 - - "GET /api/users-online HTTP/1.1" 500 1319 "" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+[2017-10-22 12:25:55.203] [DEBUG] default - ::1 - - [22/Oct/2017:16:25:55 +0000] "GET /api/users-online HTTP/1.1" 500 1319 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+
+[2017-10-22 12:25:55.326] [INFO] default - 2017-10-22 12:25:55 [INFO] eee issued server command: /login eee
+
+[2017-10-22 12:25:57.503] [INFO] default - 2017-10-22 12:25:57 [INFO] [Metrics] Connection timed out: connect
+
+[2017-10-22 12:25:57.874] [INFO] default - 2017-10-22 12:25:57 [INFO] guppies issued server command: /login Dogdog113
+
+[2017-10-22 12:25:58.623] [INFO] default - 2017-10-22 12:25:58 [INFO] itsyoboycolinXC issued server command: /login colin2002
+
+[2017-10-22 12:26:00.124] [INFO] default - 2017-10-22 12:26:00 [INFO] guppies issued server command: /tp max
+
+[2017-10-22 12:26:04.216] [INFO] default - 2017-10-22 12:26:04 [INFO] [MOD] guppies: oof
+
+[2017-10-22 12:26:13.023] [INFO] default - 2017-10-22 12:26:13 [INFO] [Lockette] itsyoboycolinXC has protected a block or door.
+
+[2017-10-22 12:26:15.816] [INFO] default - 2017-10-22 12:26:15 [INFO] [MOD] guppies: i think i went to far
+
+[2017-10-22 12:26:16.975] [INFO] default - 2017-10-22 12:26:16 [INFO] Herobrine[/100.14.155.96:57920] logged in with entity id 2771 at ([world] 28.96593767375709, 45.0, 1037.3409059808064)
+
+[2017-10-22 12:26:21.371] [INFO] default - 2017-10-22 12:26:21 [INFO] guppies issued server command: /god
+
+[2017-10-22 12:26:22.121] [INFO] default - 2017-10-22 12:26:22 [INFO] Herobrine issued server command: /login goopyloop
+
+[2017-10-22 12:26:22.821] [INFO] default - 2017-10-22 12:26:22 [INFO] guppies issued server command: /god
+
+[2017-10-22 12:26:27.271] [INFO] default - 2017-10-22 12:26:27 [INFO] Connection reset
+2017-10-22 12:26:27 [INFO] MaxK lost connection: disconnect.quitting
+
+[2017-10-22 12:26:29.272] [INFO] default - 2017-10-22 12:26:29 [INFO] MaxK[/76.98.165.89:56660] logged in with entity id 3035 at ([world] 180.5, 70.0, 256.5)
+
+[2017-10-22 12:26:34.871] [INFO] default - 2017-10-22 12:26:34 [INFO] MaxK issued server command: /login 783067
+
+[2017-10-22 12:26:41.970] [INFO] default - App listening on port 80.
+[2017-10-22 12:26:42.319] [INFO] default - 229 recipes
+
+[2017-10-22 12:26:42.331] [INFO] default - 27 achievements
+
+[2017-10-22 12:26:42.460] [INFO] default - 2017-10-22 12:26:42 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-22 12:26:42.460] [INFO] default - 2017-10-22 12:26:42 [INFO] Loading properties
+
+[2017-10-22 12:26:42.463] [INFO] default - 2017-10-22 12:26:42 [INFO] Default game type: SURVIVAL
+
+[2017-10-22 12:26:42.464] [INFO] default - 2017-10-22 12:26:42 [INFO] Generating keypair
+
+[2017-10-22 12:26:42.676] [INFO] default - 2017-10-22 12:26:42 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-22 12:26:42.889] [INFO] default - 2017-10-22 12:26:42 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R1.0-b2788jnks (MC: 1.5.2) (Implementing API version 1.5.2-R1.0)
+
+[2017-10-22 12:26:43.005] [INFO] default - 2017-10-22 12:26:43 [INFO] [PermissionsEx] sql backend registered!
+
+[2017-10-22 12:26:43.006] [INFO] default - 2017-10-22 12:26:43 [INFO] [PermissionsEx] file backend registered!
+
+[2017-10-22 12:26:43.007] [INFO] default - 2017-10-22 12:26:43 [INFO] [PermissionsEx] PermissionEx plugin initialized.
+
+[2017-10-22 12:26:43.066] [INFO] default - 2017-10-22 12:26:43 [INFO] [CoreProtect] Loading CoreProtect v2.07
+
+[2017-10-22 12:26:43.067] [INFO] default - 2017-10-22 12:26:43 [INFO] [MotdManager] Loading MotdManager v1.41-b20
+2017-10-22 12:26:43 [INFO] [PermissionsEx] Loading PermissionsEx v1.19.5
+
+[2017-10-22 12:26:43.073] [INFO] default - 2017-10-22 12:26:43 [INFO] [PermissionsEx] Initializing file backend
+
+[2017-10-22 12:26:43.078] [INFO] default - 2017-10-22 12:26:43 [INFO] Permissions file successfully reloaded
+
+[2017-10-22 12:26:43.080] [INFO] default - 2017-10-22 12:26:43 [INFO] [Vote] Loading Vote v1.5.2_02
+
+[2017-10-22 12:26:43.081] [INFO] default - 2017-10-22 12:26:43 [INFO] [WorldEdit] Loading WorldEdit v5.5.6
+2017-10-22 12:26:43 [INFO] [Modifyworld] Loading Modifyworld v1.19.4
+
+[2017-10-22 12:26:43.082] [INFO] default - 2017-10-22 12:26:43 [INFO] [Essentials] Loading Essentials v2.11.1
+2017-10-22 12:26:43 [INFO] [Lockette] Loading Lockette v1.7.12
+2017-10-22 12:26:43 [INFO] [CustomJoin] Loading CustomJoin v1.3.1
+2017-10-22 12:26:43 [INFO] [LoginSecurity] Loading LoginSecurity v2.0.4
+2017-10-22 12:26:43 [INFO] [EssentialsChat] Loading EssentialsChat v2.11.1
+
+[2017-10-22 12:26:43.084] [INFO] default - 2017-10-22 12:26:43 [INFO] [WorldGuard] Loading WorldGuard v5.7.5
+
+[2017-10-22 12:26:43.101] [INFO] default - 2017-10-22 12:26:43 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+
+[2017-10-22 12:26:43.106] [INFO] default - 2017-10-22 12:26:43 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2017-10-22 12:26:43 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2017-10-22 12:26:43 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+
+[2017-10-22 12:26:43.127] [INFO] default - 2017-10-22 12:26:43 [INFO] Preparing level "world"
+
+[2017-10-22 12:26:43.228] [INFO] default - 2017-10-22 12:26:43 [SEVERE] Exception in thread "Thread-6" 
+
+[2017-10-22 12:26:43.229] [INFO] default - 2017-10-22 12:26:43 [SEVERE] org.bukkit.craftbukkit.libs.com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+
+[2017-10-22 12:26:43.230] [INFO] default - 2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:180)
+
+[2017-10-22 12:26:43.231] [INFO] default - 2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:755)
+2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.Gson.fromJson(Gson.java:694)
+
+[2017-10-22 12:26:43.233] [INFO] default - 2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.fetchArtifact(BukkitDLUpdaterService.java:51)
+2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.BukkitDLUpdaterService.getArtifact(BukkitDLUpdaterService.java:28)
+
+[2017-10-22 12:26:43.234] [INFO] default - 2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.v1_5_R3.updater.AutoUpdater$1.run(AutoUpdater.java:77)
+
+[2017-10-22 12:26:43.235] [INFO] default - 2017-10-22 12:26:43 [SEVERE] Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 7
+2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.expect(JsonReader.java:339)
+
+[2017-10-22 12:26:43.236] [INFO] default - 2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.stream.JsonReader.beginObject(JsonReader.java:322)
+2017-10-22 12:26:43 [SEVERE] 	at org.bukkit.craftbukkit.libs.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:168)
+
+[2017-10-22 12:26:43.238] [INFO] default - 2017-10-22 12:26:43 [SEVERE] 	... 5 more
+
+[2017-10-22 12:26:43.265] [INFO] default - 2017-10-22 12:26:43 [INFO] Preparing start region for level 0 (Seed: 2198106644606297452)
+
+[2017-10-22 12:26:43.916] [INFO] default - 2017-10-22 12:26:43 [INFO] Preparing start region for level 1 (Seed: 755475547169470570)
+
+[2017-10-22 12:26:44.265] [INFO] default - 2017-10-22 12:26:44 [INFO] Preparing spawn area: 87%
+
+[2017-10-22 12:26:44.369] [INFO] default - 2017-10-22 12:26:44 [INFO] Preparing start region for level 2 (Seed: 755475547169470570)
+
+[2017-10-22 12:26:44.490] [INFO] default - 2017-10-22 12:26:44 [INFO] [CoreProtect] Enabling CoreProtect v2.07
+
+[2017-10-22 12:26:44.713] [INFO] default - 2017-10-22 12:26:44 [INFO] CoreProtect version 2.07 is enabled!
+
+[2017-10-22 12:26:44.714] [INFO] default - 2017-10-22 12:26:44 [INFO] [CoreProtect] Using SQLite for data storage.
+
+[2017-10-22 12:26:44.720] [INFO] default - 2017-10-22 12:26:44 [INFO] [MotdManager] Enabling MotdManager v1.41-b20
+
+[2017-10-22 12:26:44.727] [INFO] default - 2017-10-22 12:26:44 [INFO] [MotdManager] version 1.41-b20 is enabled!
+
+[2017-10-22 12:26:44.730] [INFO] default - 2017-10-22 12:26:44 [INFO] [PermissionsEx] Enabling PermissionsEx v1.19.5
+
+[2017-10-22 12:26:44.751] [INFO] default - 2017-10-22 12:26:44 [INFO] [PermissionsEx] Superperms support enabled.
+
+[2017-10-22 12:26:44.754] [INFO] default - 2017-10-22 12:26:44 [INFO] [PermissionsEx] v1.19.5 enabled
+
+[2017-10-22 12:26:44.755] [INFO] default - 2017-10-22 12:26:44 [INFO] [Vote] Enabling Vote v1.5.2_02
+
+[2017-10-22 12:26:44.767] [INFO] default - 2017-10-22 12:26:44 [INFO] [Vote] Vault not detected for permissions, defaulting to Bukkit Permissions
+
+[2017-10-22 12:26:44.768] [INFO] default - 2017-10-22 12:26:44 [INFO] [Vote] has been enabled.
+
+[2017-10-22 12:26:44.772] [INFO] default - 2017-10-22 12:26:44 [INFO] [Vote] mimicking aiden
+
+[2017-10-22 12:26:44.778] [INFO] default - 2017-10-22 12:26:44 [INFO] [WorldEdit] Enabling WorldEdit v5.5.6
+
+[2017-10-22 12:26:44.798] [INFO] default - 2017-10-22 12:26:44 [INFO] WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+
+[2017-10-22 12:26:44.852] [INFO] default - 2017-10-22 12:26:44 [INFO] [Modifyworld] Enabling Modifyworld v1.19.4
+
+[2017-10-22 12:26:44.864] [INFO] default - 2017-10-22 12:26:44 [INFO] [Modifyworld] Modifyworld enabled!
+
+[2017-10-22 12:26:44.869] [INFO] default - 2017-10-22 12:26:44 [INFO] [Essentials] Enabling Essentials v2.11.1
+
+[2017-10-22 12:26:44.977] [INFO] default - 2017-10-22 12:26:44 [INFO] Essentials: Using PermissionsEx based permissions.
+
+[2017-10-22 12:26:44.978] [INFO] default - 2017-10-22 12:26:44 [INFO] [Lockette] Enabling Lockette v1.7.12
+
+[2017-10-22 12:26:44.979] [INFO] default - 2017-10-22 12:26:44 [INFO] [Lockette] Version 1.7.12 is being enabled!  Yay!  (Core version 1.3.7)
+
+[2017-10-22 12:26:44.980] [INFO] default - 2017-10-22 12:26:44 [INFO] [Lockette] Detected craftbukkit build [2788] ok.
+
+[2017-10-22 12:26:44.981] [INFO] default - 2017-10-22 12:26:44 [INFO] [Lockette] Custom lockable block list: [116, 84, 57, 145, 154]
+2017-10-22 12:26:44 [INFO] [Lockette] Ignoring linked plugins: [mcMMO]
+
+[2017-10-22 12:26:44.987] [INFO] default - 2017-10-22 12:26:44 [INFO] [Lockette] Loading strings file for English by Acru
+
+[2017-10-22 12:26:44.995] [INFO] default - 2017-10-22 12:26:44 [INFO] [Lockette] Enabled link to plugin PermissionsEx for Groups, version 1.19.5
+
+[2017-10-22 12:26:44.996] [INFO] default - 2017-10-22 12:26:44 [INFO] [Lockette] Using ops file for admin permissions.
+
+[2017-10-22 12:26:44.997] [INFO] default - 2017-10-22 12:26:44 [INFO] [Lockette] Ready to protect your containers.
+
+[2017-10-22 12:26:45.003] [INFO] default - 2017-10-22 12:26:45 [INFO] [CustomJoin] Enabling CustomJoin v1.3.1
+
+[2017-10-22 12:26:45.007] [INFO] default - 2017-10-22 12:26:45 [INFO] [CustomJoin] CustomJoin version 1.3.1 enabled.
+
+[2017-10-22 12:26:45.008] [INFO] default - 2017-10-22 12:26:45 [INFO] [LoginSecurity] Enabling LoginSecurity v2.0.4
+
+[2017-10-22 12:26:45.029] [INFO] default - 2017-10-22 12:26:45 [INFO] [EssentialsChat] Enabling EssentialsChat v2.11.1
+
+[2017-10-22 12:26:45.032] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] Enabling WorldGuard v5.7.5
+
+[2017-10-22 12:26:45.051] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] (world) TNT ignition is PERMITTED.
+
+[2017-10-22 12:26:45.052] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] (world) Lighters are PERMITTED.
+
+[2017-10-22 12:26:45.053] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] (world) Lava fire is blocked.
+
+[2017-10-22 12:26:45.054] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] (world) Fire spread is UNRESTRICTED.
+
+[2017-10-22 12:26:45.056] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] Loaded configuration for world 'world'
+
+[2017-10-22 12:26:45.057] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+
+[2017-10-22 12:26:45.058] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] (world_nether) Lighters are PERMITTED.
+2017-10-22 12:26:45 [INFO] [WorldGuard] (world_nether) Lava fire is blocked.
+2017-10-22 12:26:45 [INFO] [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+
+[2017-10-22 12:26:45.059] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] Loaded configuration for world 'world_nether'
+
+[2017-10-22 12:26:45.060] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+2017-10-22 12:26:45 [INFO] [WorldGuard] (world_the_end) Lighters are PERMITTED.
+2017-10-22 12:26:45 [INFO] [WorldGuard] (world_the_end) Lava fire is blocked.
+
+[2017-10-22 12:26:45.061] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+2017-10-22 12:26:45 [INFO] [WorldGuard] Loaded configuration for world 'world_the_end'
+
+[2017-10-22 12:26:45.075] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] 0 regions loaded for 'world'
+
+[2017-10-22 12:26:45.076] [INFO] default - 2017-10-22 12:26:45 [INFO] [WorldGuard] 0 regions loaded for 'world_nether'
+2017-10-22 12:26:45 [INFO] [WorldGuard] 0 regions loaded for 'world_the_end'
+
+[2017-10-22 12:26:45.131] [INFO] default - 2017-10-22 12:26:45 [INFO] Done (2.027s)! For help, type "help" or "?"
+
+[2017-10-22 12:26:45.183] [INFO] default - 2017-10-22 12:26:45 [INFO] Accepted EditSessionFactory of type net.coreprotect.worldedit.CoreProtectEditSessionFactory from net.coreprotect.worldedit
+
+[2017-10-22 12:26:46.213] [INFO] default - 2017-10-22 12:26:46 [INFO] MaxK[/76.98.165.89:56670] logged in with entity id 240 at ([world] 180.5, 70.0, 256.5)
+
+[2017-10-22 12:26:46.911] [INFO] default - 2017-10-22 12:26:46 [INFO] --------------------
+
+[2017-10-22 12:26:46.912] [INFO] default - 2017-10-22 12:26:46 [INFO] [CoreProtect] Version 2.09 now available.
+2017-10-22 12:26:46 [INFO] [CoreProtect] Download: Type "/co version" in-game.
+2017-10-22 12:26:46 [INFO] --------------------
+2017-10-22 12:26:46 [INFO] [Sponsor] Unlimited MC Hosting: www.hosthorde.com
+2017-10-22 12:26:46 [INFO] --------------------
+
+[2017-10-22 12:26:47.205] [INFO] default - ::ffff:127.0.0.1 - - "POST /api/command HTTP/1.1" 200 16 "" "undefined"
+[2017-10-22 12:26:47.206] [DEBUG] default - ::ffff:127.0.0.1 - - [22/Oct/2017:16:26:47 +0000] "POST /api/command HTTP/1.1" 200 16 "-" "-"
+
+[2017-10-22 12:26:47.241] [INFO] default - 2017-10-22 12:26:47 [INFO] There are 1 out of maximum 20 players online.
+
+[2017-10-22 12:26:47.243] [INFO] default - 2017-10-22 12:26:47 [INFO] Member: MaxK
+
+[2017-10-22 12:26:48.217] [INFO] default - ::ffff:127.0.0.1 - - "GET /api/logs HTTP/1.1" 200 10174 "" "undefined"

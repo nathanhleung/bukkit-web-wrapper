@@ -1,3 +1,8 @@
+const path = require('path');
+const fs =  require('fs');
+
+const { minecraftLogFile } = require('./constants');
+
 function getAdmin(req, res) {
 	res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 }
@@ -21,7 +26,7 @@ function getApiLogs(req, res) {
 	});
 }
 
-function postApiCommand(req, res) {
+function postApiCommand(req, res, minecraftServer) {
 	const { command } = req.body;
 	minecraftServer.stdin.write(`${command}\n`);
 	return res.json({

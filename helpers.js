@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const _ = require('lodash');
+
 const { userDataFile } = require('./constants');
 
 function readUserData(cb) {
@@ -61,6 +63,13 @@ function isAuthorized(req, res, next) {
 }
 
 function isAdmin(req, res, next) {
+  // Check if localhost
+  // From https://github.com/expressjs/express/issues/2518
+  const { remoteAddress } = req.connection;
+  if (_.includes(['127.0.0.1', '::ffff:127.0.0.1', '::1'], remoteAddress)) {
+    return next();
+  }
+
   findUserById(req.session.userId, (err, user) => {
     if (err || typeof user === 'undefined') {
       return res.json({
