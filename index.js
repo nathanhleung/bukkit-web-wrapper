@@ -4,18 +4,27 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const session = require('express-session');
+const log4js = require('log4js');
 
 const { startMinecraftServer } = require('./minecraft');
 const { isAuthorized, isAdmin } = require('./helpers');
 const { minecraftLogFile } = require('./constants');
 const routes = require('./routes');
+const adminRoutes = require('./admin-routes');
+const logger = require('./logger');
 
 const minecraftServer = startMinecraftServer();
 
 const app = express();
 app.set('port', process.env.PORT || 80);
+app.use(log4js.connectLogger(logger));
 
-app.use(morgan('dev'));
+app.use(morgan({
+	format: 'combined',
+	stream: (data) => {
+		logger.debug(data);
+	},
+}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public'), {
@@ -56,36 +65,11 @@ app.get('/api/profile', isAuthorized, routes.getApiProfile);
 // at least its read only
 app.get('/api/user', isAuthorized, routes.getApiUser);
 
-app.get('/admin', isAdmin, (req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'admin.html'));
-});
+app.get('/admin', isAdmin, adminRoutes.getAdmin);
 
-app.get('/api/logs',  isAdmin, (req, res) => {
-	const { size } = fs.statSync(minecraftLogFile);
-	// Get last 10000 bytes of logs
-	const stream = fs.createReadStream(minecraftLogFile, {
-		start: size - 10000,
-		end: size,
-	});
-	let logs = '';
-	stream.on('data', (data) => {
-		logs += data;
-	});
-	stream.on('close', () => {
-		return res.json({
-			success: true,
-			data: logs,
-		});
-	});
-});
+app.get('/api/logs', isAdmin, adminRoutes.getApiLogs);
 
-app.post('/api/command', isAdmin, (req, res) => {
-	const { command } = req.body;
-	minecraftServer.stdin.write(`${command}\n`);
-	return res.json({
-		success: true,
-	});
-});
+app.post('/api/command', isAdmin, adminRoutes.postApiCommand);
 
 app.get('*', (req, res) => {
 	res.status(404);
@@ -93,5 +77,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(app.get('port'), () => {
-	console.log(`App listening on port ${app.get('port')}.`);
+	logger.info(`App listening on port ${app.get('port')}.`);
 });

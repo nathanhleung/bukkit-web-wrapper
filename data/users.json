@@ -1,82 +1,136 @@
 {
-	"554e50e3-9bd3-42e2-a874-3a6f92bd0f1b": {
-		"id": "554e50e3-9bd3-42e2-a874-3a6f92bd0f1b",
-		"email": "me@nathanhleung.com",
-		"username": "nate",
-		"password": "$2a$10$pkLECtRvOc9FDJ7W0cCDI.78ZL2aNx8sAGMSXaGdWO9x8026aFcCm"
-	},
-	"5f78bd49-3243-4d8f-ac68-1d9c29f29c80": {
-		"id": "5f78bd49-3243-4d8f-ac68-1d9c29f29c80",
-		"email": "maxnili7@gmail.com",
-		"username": "MaxK",
-		"password": "$2a$10$THC.wSxP7iyhf0ZASE8wvuR7PlqXds5qPEVsOQJe5Iv0Gzm3e37ye"
-	},
-	"475adb50-f30b-4880-9aed-3197e62305a1": {
-		"id": "475adb50-f30b-4880-9aed-3197e62305a1",
-		"email": "xshadowbudderx@gmail.com",
-		"username": "Sonicboom_",
-		"password": "$2a$10$aAAT0XEAC4H6yWGKOE.ILefB19qz.yE22Pj6bMGZmyKUMWaOlENmm"
-	},
-	"2a632153-c346-43f8-9513-34acc57ef7d7": {
-		"id": "2a632153-c346-43f8-9513-34acc57ef7d7",
-		"email": "pancakeincmc@gmail.com",
-		"username": "guppies",
-		"password": "$2a$10$BZRkyEUel1.ljJovZnGbce74jJ4Gay9YHXxJv5v0AyyFv0xsJpUAa"
-	},
-	"0149a7b5-21d8-4f4f-9203-ff7ef69330d0": {
-		"id": "0149a7b5-21d8-4f4f-9203-ff7ef69330d0",
-		"email": "jackquinn@me.com",
-		"username": "Allah",
-		"password": "$2a$10$tH3J4TvKZeyMAwZzC57MNeu95WxVWKPISAV2f.d858lj/vYUn1Oc."
-	},
-	"418b22d1-87ef-4d13-92c6-9d8904e85df7": {
-		"id": "418b22d1-87ef-4d13-92c6-9d8904e85df7",
-		"email": "fliplettuce6776@gmail.com",
-		"username": "Sam40",
-		"password": "$2a$10$PXFWb/LW3BwRZFTbU480u.Mm9UWiZPqyb5lDgF.667SRXd0/lCkK."
-	},
-	"c7e1b09b-5bc7-4a75-a245-b1fe69e44de7": {
-		"id": "c7e1b09b-5bc7-4a75-a245-b1fe69e44de7",
-		"email": "acstes9@gmail.com",
-		"username": "Acstes",
-		"password": "$2a$10$sP8WSqgL0.WUy9TXuBjc8uJENrAgRc8Ux099Jvh./c5TtItYJWZg."
-	},
-	"f390e12a-aefd-484d-a970-17f75cc93a45": {
-		"id": "f390e12a-aefd-484d-a970-17f75cc93a45",
-		"email": "erictranx13@gmail.com",
-		"username": "http://ec2-34-215-95-18.us-west-2.compute.amazonaws.com/",
-		"password": "$2a$10$JU3IQliuE0pZsDtTgyFa1OPjyEzk.azRE9NoxH9ChB6X6rLuF1936"
-	},
-	"6401491b-d977-47e7-81bd-4b229d1cdca8": {
-		"id": "6401491b-d977-47e7-81bd-4b229d1cdca8",
-		"email": "tranman1327@gmail.com",
-		"username": "theCoonMan",
-		"password": "$2a$10$uFxzCFcoav/eqGe/ThZ1deHAGUlvUcfHbYarwE.Y1a3mgJLmouQ4C"
-	},
-	"29c67b21-12ab-49ba-aaae-a85607aa05c4": {
-		"id": "29c67b21-12ab-49ba-aaae-a85607aa05c4",
-		"email": "10samk@gmail.com",
-		"username": "Sammy K",
-		"password": "$2a$10$kw08qKJfxyr7dFE6nIHhce7fS2Va4P8WcUbYn58kelz9Ujp2foP8m"
-	},
-	"878ae2f1-0613-4fa5-8745-676c17d91602": {
-		"id": "878ae2f1-0613-4fa5-8745-676c17d91602",
-		"email": "wgaboury@gmail.com",
-		"username": "wil",
-		"password": "$2a$10$V6SDiqNdvuolhDqJFvZ4ZeXud5Qms.5XqH3Oo/MohV7DpXBfZuFyi"
-	},
-	"43932e0d-66c8-4ff3-b141-20e395678054": {
-		"id": "43932e0d-66c8-4ff3-b141-20e395678054",
-		"email": "calebgold3@gmail.com",
-		"username": "caleb ",
-		"password": "$2a$10$RVmxbLPGnfDW6pl/Nb0ERel809AOefthA39WE7w3T/BpZGerhRwKW"
-	},
-	"90056901-de0a-4e78-9eb9-fb5a599ed2e3": {
-		"id": "90056901-de0a-4e78-9eb9-fb5a599ed2e3",
-		"email": "colincahil4@gmail.com",
-		"username": "itsyoboycolinXC",
-		"password": "$2a$10$GsP4mmeWRoRQBc8gimyRAOUHrh6y./7RtKCiwzSYWBduULrUyhP0C",
-		"hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
-		"ip": "::ffff:71.230.68.88"
-	}
+  "554e50e3-9bd3-42e2-a874-3a6f92bd0f1b": {
+    "id": "554e50e3-9bd3-42e2-a874-3a6f92bd0f1b",
+    "email": "me@nathanhleung.com",
+    "username": "nate",
+    "password": "$2a$10$pkLECtRvOc9FDJ7W0cCDI.78ZL2aNx8sAGMSXaGdWO9x8026aFcCm"
+  },
+  "5f78bd49-3243-4d8f-ac68-1d9c29f29c80": {
+    "id": "5f78bd49-3243-4d8f-ac68-1d9c29f29c80",
+    "email": "maxnili7@gmail.com",
+    "username": "MaxK",
+    "password": "$2a$10$THC.wSxP7iyhf0ZASE8wvuR7PlqXds5qPEVsOQJe5Iv0Gzm3e37ye"
+  },
+  "2a632153-c346-43f8-9513-34acc57ef7d7": {
+    "id": "2a632153-c346-43f8-9513-34acc57ef7d7",
+    "email": "pancakeincmc@gmail.com",
+    "username": "guppies",
+    "password": "$2a$10$BZRkyEUel1.ljJovZnGbce74jJ4Gay9YHXxJv5v0AyyFv0xsJpUAa"
+  },
+  "0149a7b5-21d8-4f4f-9203-ff7ef69330d0": {
+    "id": "0149a7b5-21d8-4f4f-9203-ff7ef69330d0",
+    "email": "jackquinn@me.com",
+    "username": "Allah",
+    "password": "$2a$10$tH3J4TvKZeyMAwZzC57MNeu95WxVWKPISAV2f.d858lj/vYUn1Oc."
+  },
+  "418b22d1-87ef-4d13-92c6-9d8904e85df7": {
+    "id": "418b22d1-87ef-4d13-92c6-9d8904e85df7",
+    "email": "fliplettuce6776@gmail.com",
+    "username": "Sam40",
+    "password": "$2a$10$PXFWb/LW3BwRZFTbU480u.Mm9UWiZPqyb5lDgF.667SRXd0/lCkK."
+  },
+  "29c67b21-12ab-49ba-aaae-a85607aa05c4": {
+    "id": "29c67b21-12ab-49ba-aaae-a85607aa05c4",
+    "email": "10samk@gmail.com",
+    "username": "Sammy K",
+    "password": "$2a$10$kw08qKJfxyr7dFE6nIHhce7fS2Va4P8WcUbYn58kelz9Ujp2foP8m"
+  },
+  "878ae2f1-0613-4fa5-8745-676c17d91602": {
+    "id": "878ae2f1-0613-4fa5-8745-676c17d91602",
+    "email": "wgaboury@gmail.com",
+    "username": "wil",
+    "password": "$2a$10$V6SDiqNdvuolhDqJFvZ4ZeXud5Qms.5XqH3Oo/MohV7DpXBfZuFyi"
+  },
+  "43932e0d-66c8-4ff3-b141-20e395678054": {
+    "id": "43932e0d-66c8-4ff3-b141-20e395678054",
+    "email": "calebgold3@gmail.com",
+    "username": "caleb ",
+    "password": "$2a$10$RVmxbLPGnfDW6pl/Nb0ERel809AOefthA39WE7w3T/BpZGerhRwKW"
+  },
+  "90056901-de0a-4e78-9eb9-fb5a599ed2e3": {
+    "id": "90056901-de0a-4e78-9eb9-fb5a599ed2e3",
+    "email": "colincahil4@gmail.com",
+    "username": "itsyoboycolinXC",
+    "password": "$2a$10$GsP4mmeWRoRQBc8gimyRAOUHrh6y./7RtKCiwzSYWBduULrUyhP0C",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:71.230.68.88"
+  },
+  "7f619a22-3307-405c-8de6-11eea28067a3": {
+    "id": "7f619a22-3307-405c-8de6-11eea28067a3",
+    "email": "everysinglepersoninpa@gmail.com",
+    "username": "eee",
+    "password": "$2a$10$aHDV8KTUWU46Aq6Nm8ofdu4KGJ0q9jBeMseRu7Dls/pDjhfMgKm2e",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:173.49.196.155",
+    "ips": []
+  },
+  "45292454-3ea0-4757-9f26-b482e68855ad": {
+    "id": "45292454-3ea0-4757-9f26-b482e68855ad",
+    "email": "a@22.com",
+    "username": "Herobrine",
+    "password": "$2a$10$Rd3MG4Pu6fNyc1.plL2eXe6.Uw.zmdRy45l63ypzaGUI9P/DbkHmO",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:100.14.155.96",
+    "ips": []
+  },
+  "e2657707-a1d7-4cf8-ae02-b9259999834c": {
+    "id": "e2657707-a1d7-4cf8-ae02-b9259999834c",
+    "email": "kill@cianigge.rs",
+    "username": "aaaa",
+    "password": "$2a$10$.0H6e//7vNify.bT5U6JkeyENbCSVOW/aTN2cvFRf/Yh22R93SX2W",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:100.14.171.98",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"04f4d01b6a52d6585b31290d64262ed8\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36\"}"
+  },
+  "00cd2f79-3d6a-4df4-8125-82116e09004e": {
+    "id": "00cd2f79-3d6a-4df4-8125-82116e09004e",
+    "email": "nmhunn8@gmail.com",
+    "username": "NoahFriendo",
+    "password": "$2a$10$SN0566fFHdIAh0KGB8WnkOJP1h4zwKDGXi99oZqieotar.JikZ0sq",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:173.49.44.12",
+    "ips": [],
+    "fingerprint": ""
+  },
+  "754a7043-53f5-47b4-b0d8-a6b44c3e8a60": {
+    "id": "754a7043-53f5-47b4-b0d8-a6b44c3e8a60",
+    "email": "i@hate.rs",
+    "username": "ihatenoah",
+    "password": "$2a$10$DNrNbEHvF/vXDWPykvxJPOEgv.5o0baSuj2EgJgg.Wte8Br9bBIay",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:185.104.120.4",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"20c00240527691e2a48f02fec9eba765\",\"user_agent\":\"Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0\"}"
+  },
+  "d812f226-e8f5-454c-ad05-7935990fd1cf": {
+    "id": "d812f226-e8f5-454c-ad05-7935990fd1cf",
+    "email": "nddestroyer31@gmail.com",
+    "username": "NDdEStRoYeR",
+    "password": "$2a$10$.PemESD0aP.64wtWJ1X4i.IJF6l/4j802pFoHcbpr/Q5WX1b55VD2",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:108.46.31.228",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"8f05a15af4407f2c850ff913582afcd2\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36\"}"
+  },
+  "10e44b46-ff87-4b30-abf0-9f0b5ffca47a": {
+    "id": "10e44b46-ff87-4b30-abf0-9f0b5ffca47a",
+    "email": "gtdecker2012@gmail.com",
+    "username": "Yaysies",
+    "password": "$2a$10$VL6kik1FJmsTinsowSNCAuoLOVk0AJ04PMd9Lnteu86cd.jgbbzcq",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:173.59.117.161",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"d9dafa42378aa1f1d0e077f6714c0ca8\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36\"}"
+  },
+  "ec09907f-6b43-4c79-a6a2-5e3499d4f179": {
+    "id": "ec09907f-6b43-4c79-a6a2-5e3499d4f179",
+    "email": "cpc329@gmail.com",
+    "username": "cpc329",
+    "password": "$2a$10$f3u75pVxOJMwhuxFQz6iiOmtxLXyjocWM.rtayX2h5Oe20vpZnUCu",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:71.185.28.21",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"8e7fb5e35769422c57a3dea6722c9d71\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36\"}"
+  }
 }

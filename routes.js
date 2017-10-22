@@ -6,6 +6,7 @@ const uuid = require('uuid/v4');
 const validator = require('validator');
 const _ = require('lodash');
 const nbt = require('nbt');
+const logger = require('./logger');
 
 const { userDataFile, permissionsDataFile } = require('./constants');
 const { findUserById, findUserByKey } = require('./helpers');
@@ -27,7 +28,7 @@ function postRegister(req, res, minecraftServer) {
 
 	findUserByKey('username', username, (err, user) => {
 		if (err) {
-			console.log(err);
+			logger.error(err);
 			throw err;
 		}
 		if (user && typeof user !== 'undefined') {
@@ -43,7 +44,7 @@ function postRegister(req, res, minecraftServer) {
 	function checkEmail() {
 		findUserByKey('email', email, (err, user) => {
 			if (err) {
-				console.log(err);
+				logger.error(err);
 				throw err;
 			}
 			if (user && typeof user !== 'undefined') {
@@ -62,7 +63,7 @@ function postRegister(req, res, minecraftServer) {
 
 		bcrypt.hash(password, 10, (err, hashed) => {
 			if (err) {
-				console.log(err);
+				logger.error(err);
 				throw err;
 			}
 			addToDataFile(email, username, hashed);
@@ -71,7 +72,7 @@ function postRegister(req, res, minecraftServer) {
 		function addToDataFile(email, username, hashed) {
 			fs.readFile(userDataFile, (err, raw) => {
 				if (err) {
-					console.log(err);
+					logger.error(err);
 					throw err;
 				}
 				const data = JSON.parse(raw);
@@ -93,7 +94,7 @@ function postRegister(req, res, minecraftServer) {
 		function saveDataFile(newRaw) {
 			fs.writeFile(userDataFile, newRaw, (err) => {
 				if (err) {
-					console.log(err);
+					logger.error(err);
 					throw err;
 				}
 				registerOnServer(username);
@@ -123,7 +124,7 @@ function postRegister(req, res, minecraftServer) {
 				req.session.userId = userId;
 				res.redirect('/profile.html');
 			} catch (err) {
-				console.log(err);
+				logger.error(err);
 				throw err;
 			}
 		}
@@ -145,7 +146,7 @@ function postLogin(req, res) {
 
 	findUserByKey('username', username, (err, user) => {
 		if (err) {
-			console.log(err);
+			logger.error(err);
 			throw err;
 		}
 
@@ -158,7 +159,7 @@ function postLogin(req, res) {
 
 		bcrypt.compare(password, user.password, (err, matches) => {
 			if (err) {
-				console.log(err);
+				logger.error(err);
 				throw err;
 			}
 			if (!matches) {
@@ -177,7 +178,7 @@ function getLogout(req, res) {
 	if (req.session) {
 		req.session.destroy((err) => {
 			if (err) {
-				console.log(err);
+				logger.error(err);
 				throw err;
 			}
 			return res.redirect('/');
@@ -188,7 +189,7 @@ function getLogout(req, res) {
 function getApiProfile(req, res) {
 	findUserById(req.session.userId, (err, user) => {
 		if (err) {
-			console.log(err);
+			logger.error(err);
 			throw err;
 		}
 		return res.json({
@@ -201,7 +202,7 @@ function getApiProfile(req, res) {
 function getApiUser(req, res) {
 	findUserById(req.session.userId, (err, user) => {
 		if (err) {
-			console.log(err);
+			logger.error(err);
 			throw err;
 		}
 		const { username } = user;
@@ -211,12 +212,12 @@ function getApiUser(req, res) {
 	function readDataFile(username) {
 		fs.readFile(path.join(__dirname, 'nate.dat'), (err, raw) => {
 			if (err) {
-				console.log(err);
+				logger.error(err);
 				throw err;
 			}
 			nbt.parse(raw, (err, data) => {
 				if (err) {
-					console.log(err);
+					logger.error(err);
 					throw err;
 				}
 				return res.json(data);

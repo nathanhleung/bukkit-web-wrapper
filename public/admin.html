@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+      #logs {
+        max-height: 500px;
+        overflow-x: scroll;
+        color: #eee;
+        background: #333;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="admin-app" class="jumbotron jumbotron-full">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="display-2">Admin</h1>
+            <p class="lead">Edit the server from here.</p>
+            <pre id="logs"><code>{{logs}}</code></pre>
+            <form class="form-inline" v-on:submit.prevent="runCommand">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Command" v-model="command">
+                <button type="submit" class="btn btn-primary">
+                  Send command
+                </button>
+              </div>
+            </form>
+            <p class="form-help text-muted">
+              Please be patient as your commands may take a few seconds to go through.
+            </p>
+            <button type="button" class="btn btn-secondary" v-on:click="refreshLogs">
+              Refresh Logs
+            </button>
+            <p class="form-help text-muted">
+              Logs do not refresh automatically, click the above button to update.
+            </p>
+            <br>
+            <br>
+            <a class="btn btn-danger btn-sm" href="/logout">Log Out</a>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
+    <script src="/admin.js"></script>
+  </body>
+</html>
