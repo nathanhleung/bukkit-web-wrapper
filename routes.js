@@ -24,7 +24,7 @@ function postRegister(req, res, minecraftServer) {
 	if (!valid) {
 		return res.json({
 			success: false,
-			message: 'Invalid input',
+			message: 'Invalid input. Perhaps your username is not alphanumeric?',
 		});
 	}
 

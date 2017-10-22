@@ -142,5 +142,35 @@
     "ip": "::ffff:173.59.28.191",
     "ips": [],
     "fingerprint": "{\"hash\":\"8444d2d1fe59208ffbb0ffe2dc5ba9e9\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"}"
+  },
+  "b5898708-ba3a-48cc-92f4-878a8f6c2d89": {
+    "id": "b5898708-ba3a-48cc-92f4-878a8f6c2d89",
+    "email": "baklycki@gmail.com",
+    "username": "CyrilFiggis",
+    "password": "$2a$10$lpeedsn9j0HU.hYn6d0MpuliGkv/AEoQGi0VhoRL9LIEKGSRio7ny",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:100.11.35.238",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"3c006de43b436c5d93a1e6dc97ab8cb1\",\"user_agent\":\"Mozilla/5.0 (Linux; Android 7.1.1; XT1650 Build/NCLS26.118-23-1-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36\"}"
+  },
+  "e8df9b01-5d8e-42da-8ecc-e922fa2640b3": {
+    "id": "e8df9b01-5d8e-42da-8ecc-e922fa2640b3",
+    "email": "ctollok3@gmail.com",
+    "username": "underagesorcery",
+    "password": "$2a$10$/TuCpMOI72pvFTelekiL3uXKMbz0YoAHN9zfq6niY0EMQKBtrOyxC",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:173.49.44.16",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"8444d2d1fe59208ffbb0ffe2dc5ba9e9\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"}"
+  },
+  "1b0e238c-088e-497e-b66f-0f12b9340c2c": {
+    "id": "1b0e238c-088e-497e-b66f-0f12b9340c2c",
+    "email": "phidalgodiblasio@gmail.com",
+    "username": "UncleTio49",
+    "password": "$2a$10$o4zJ8SF1b6hSsWkZZBTtH.cphLhl03cfPN2wItVBWvcqr98Se0zaC",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:100.14.164.140",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"ccd8fb1211e2650051efca3a40df358b\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"}"
   }
 }

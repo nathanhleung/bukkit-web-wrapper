@@ -3042,3 +3042,9 @@ Please install the desired version.
 
 [2017-10-22 15:15:17.854] [INFO] default - 2017-10-22 15:15:17 [INFO] [Metrics] Connection timed out: connect
 
+[2017-10-22 15:15:35.591] [INFO] default - 2017-10-22 15:15:35 [INFO] [WorldEdit] Using inbuilt NmsBlock for this version.
+
+[2017-10-22 15:15:39.823] [INFO] default - 2017-10-22 15:15:39 [INFO] itsyoboycolinXC[/71.230.68.88:50802] logged in with entity id 794 at ([world] 186.02860636793224, 38.0, 597.4854623994601)
+
+[2017-10-22 15:15:47.914] [INFO] default - 2017-10-22 15:15:47 [INFO] itsyoboycolinXC issued server command: /login colin2002
+
