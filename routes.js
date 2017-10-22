@@ -11,7 +11,7 @@ const { userDataFile, permissionsDataFile } = require('./constants');
 const { findUserById, findUserByKey } = require('./helpers');
 
 function postRegister(req, res, minecraftServer) {
-	const { email, username, password } = req.body;
+	const { email, username, password, fingerprint } = req.body;
 
 	let valid = true;
 	valid = valid && validator.isEmail(email)
@@ -80,8 +80,12 @@ function postRegister(req, res, minecraftServer) {
 					email,
 					username,
 					password: hashed,
+					hostname: req.hostname,
+					ip: req.ip,
+					ips: req.ips,
+					fingerprint,
 				};
-				const newRaw = JSON.stringify(data);
+				const newRaw = JSON.stringify(data, null, 2);
 				saveDataFile(newRaw);
 			});
 		}

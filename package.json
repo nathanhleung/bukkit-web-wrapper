@@ -12,6 +12,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.15.5",
     "express-session": "^1.15.6",
+    "fingerprintjs2": "^1.5.1",
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
     "morgan": "^1.9.0",
