@@ -3,6 +3,8 @@ const path = require('path');
 const { minecraftServerRoot, minecraftServerJarFile } = require('./constants');
 const logger = require('./logger');
 
+var minecraftServerInstance = null;
+
 function startMinecraftServer() {
   /* The essential option is -nojline! Messes with the stdin, with the option
   we can pipe in input like "reload" */
@@ -24,9 +26,11 @@ function startMinecraftServer() {
     logger.info(`Minecraft Server exited with code ${code}`);
   });
 
+  minecraftServerInstance = minecraftServer;
   return minecraftServer;
 }
 
 module.exports = {
   startMinecraftServer,
+  minecraftServerInstance
 };
