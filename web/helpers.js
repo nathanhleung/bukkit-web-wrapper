@@ -1,8 +1,8 @@
-const fs = require('fs');
-const path = require('path');
-const _ = require('lodash');
+const fs = require("fs");
+const path = require("path");
+const _ = require("lodash");
 
-const { userDataFile } = require('./constants');
+const { userDataFile } = require("./constants");
 
 function readUserData(cb) {
   fs.readFile(userDataFile, (err, raw) => {
@@ -20,7 +20,7 @@ function findUserById(userId, cb) {
       return cb(err);
     }
     const user = data[userId];
-    if (typeof user === 'undefined') {
+    if (typeof user === "undefined") {
       return cb(null, undefined);
     }
     return cb(null, user);
@@ -28,7 +28,7 @@ function findUserById(userId, cb) {
 }
 
 function findUserByKey(key, value, cb) {
-  if (key !== 'email' && key !== 'username') {
+  if (key !== "email" && key !== "username") {
     return cb(new Error("Invalid key"));
   }
 
@@ -52,37 +52,37 @@ function findUserByKey(key, value, cb) {
 // Express middleware
 function isAuthorized(req, res, next) {
   findUserById(req.session.userId, (err, user) => {
-    if (err || typeof user === 'undefined') {
+    if (err || typeof user === "undefined") {
       return res.json({
         success: false,
-        message: 'Not logged in.'
+        message: "Not logged in."
       });
     }
     return next();
-  })
+  });
 }
 
 function isAdmin(req, res, next) {
   // Check if localhost
   // From https://github.com/expressjs/express/issues/2518
   const { remoteAddress } = req.connection;
-  if (_.includes(['127.0.0.1', '::ffff:127.0.0.1', '::1'], remoteAddress)) {
+  if (_.includes(["127.0.0.1", "::ffff:127.0.0.1", "::1"], remoteAddress)) {
     return next();
   }
 
   findUserById(req.session.userId, (err, user) => {
-    if (err || typeof user === 'undefined') {
+    if (err || typeof user === "undefined") {
       return res.json({
         success: false,
-        message: 'Not logged in.'
+        message: "Not logged in."
       });
     }
-    if (user.username === 'nate' || user.username === 'wil') {
+    if (user.username === "nate" || user.username === "wil") {
       return next();
     }
     return res.json({
       success: false,
-      message: 'Not admin.'
+      message: "Not admin."
     });
   });
 }
@@ -92,5 +92,5 @@ module.exports = {
   isAdmin,
   readUserData,
   findUserById,
-  findUserByKey,
+  findUserByKey
 };

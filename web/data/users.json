@@ -692,5 +692,15 @@
     "ip": "::ffff:100.14.181.147",
     "ips": [],
     "fingerprint": "{\"hash\":\"8444d2d1fe59208ffbb0ffe2dc5ba9e9\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"}"
+  },
+  "7f487668-9f08-474b-a512-47a8788e48b7": {
+    "id": "7f487668-9f08-474b-a512-47a8788e48b7",
+    "email": "hello@hello.tk",
+    "username": "nate2",
+    "password": "$2a$10$72fe3murDApqlr2KSX6XtujgSaUeNq8tKiUH8PivpjUJ9Rfo2tvsa",
+    "hostname": "ec2-34-215-95-18.us-west-2.compute.amazonaws.com",
+    "ip": "::ffff:76.124.120.104",
+    "ips": [],
+    "fingerprint": "{\"hash\":\"c693af6ec27b5aa921e9d867cf4b86ce\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36\"}"
   }
 }

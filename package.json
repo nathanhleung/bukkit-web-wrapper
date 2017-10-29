@@ -1,0 +1,50 @@
+{
+  "name": "minecraft-www",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nathan Leung <me@nathanhleung.com>",
+  "contributors": [
+    {
+      "name": "Wil Gaboury",
+      "email": "thecreamedcorn@users.noreply.github.com"
+    }
+  ],
+  "scripts": {
+    "start": "node web/index.js",
+    "watch": "nodemon --ignore web/public/",
+    "format": "prettier --write \"web/**/*.js\"",
+    "lint": "eslint \"web/**/*.js\" --fix",
+    "test": ""
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "express-session": "^1.15.6",
+    "fingerprintjs2": "^1.5.1",
+    "js-yaml": "^3.10.0",
+    "lodash": "^4.17.4",
+    "log4js": "^2.3.7",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "nbt": "^0.7.0",
+    "request": "^2.83.0",
+    "uuid": "^3.1.0",
+    "validator": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "7.4.0",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1",
+    "prettier": "1.7.4"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

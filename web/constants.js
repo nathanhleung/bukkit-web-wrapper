@@ -1,15 +1,19 @@
-const path = require('path');
+const path = require("path");
 
-const minecraftServerRoot = path.join(__dirname, '..', 'Bukkit Server');
+const minecraftServerRoot = path.join(__dirname, "..", "bukkit");
 
 module.exports = {
   minecraftServerRoot,
-  permissionsDataFile:
-    path.join(minecraftServerRoot, 'plugins', 'PermissionsEx', 'permissions.yml'),
-  userDataFile:
-    path.join(__dirname, 'data', 'users.json'),
-  minecraftServerJarFile:
-    path.join(minecraftServerRoot, 'craftbukkit-1.5.2-R1.0.jar'),
-  minecraftLogFile:
-  	path.join(minecraftServerRoot, 'server.log'),
+  permissionsDataFile: path.join(
+    minecraftServerRoot,
+    "plugins",
+    "PermissionsEx",
+    "permissions.yml"
+  ),
+  userDataFile: path.join(__dirname, "data", "users.json"),
+  minecraftServerJarFile: path.join(
+    minecraftServerRoot,
+    "craftbukkit-1.5.2-R1.0.jar"
+  ),
+  minecraftLogFile: path.join(minecraftServerRoot, "server.log")
 };

@@ -1,2 +1,0 @@
-# Bukkit Server
-This folder holds the Minecraft server data. To run it, though, you must run the Node.js wrapper. Change the current working directory to the "Web Server" directory and run `yarn start`.

@@ -1,23 +1,22 @@
 (async () => {
   const app = new Vue({
-    el: '#app',
+    el: "#app",
     data: {
-      email: '',
-      username: '',
-    },
+      email: "",
+      username: ""
+    }
   });
 
-  const res = await fetch('/api/profile', {
+  const res = await fetch("/api/profile", {
     // Send cookies along so we don't get a "not logged in" error
-    credentials: 'include',
+    credentials: "include"
   });
   const json = await res.json();
   if (!json.success) {
-    window.location.replace('/');
+    window.location.replace("/");
   }
 
   const { email, username } = json.data;
   app.email = email;
   app.username = username;
-
 })();

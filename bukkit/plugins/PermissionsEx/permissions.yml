@@ -276,3 +276,6 @@ users:
   NewDave:
     group:
       - member
+  nate2:
+    group:
+      - member
