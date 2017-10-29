@@ -17,15 +17,20 @@ Preferred version in parentheses.
 ## Usage
 `yarn start` will start both the web server and Bukkit Minecraft server.
 
-The web server listens on port 80, and the Bukkit server listens on port 8080.
+By default, the web server listens on port 80, and the Bukkit server listens on port 8080, although this can be changed setting the `PORT` and `MINECRAFT_PORT` environment variables.
 
 ## Development
 `yarn watch` will start both the web server and the Bukkit Minecraft server, and will restart both when changes are made to server-side JavaScript files.
 
 Before committing to git, please format, lint, and test your code.
 
-```
-yarn format # Runs Prettier
-yarn lint # Runs ESLint
-yarn test # Runs Jest
+```sh
+# Runs Prettier
+yarn format
+
+# Runs ESLint
+yarn lint
+
+# Runs Jest
+yarn test
 ```

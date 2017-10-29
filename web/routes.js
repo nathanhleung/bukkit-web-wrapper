@@ -44,123 +44,117 @@ function postRegister(req, res) {
 */
 
 function postRegister(req, res) {
-	const { email, username, password, fingerprint } = req.body;
+  const { email, username, password, fingerprint } = req.body;
 
-	let valid = true;
-	valid = valid && validator.isEmail(email)
-	valid = valid && validator.isLength(username, { min: 1 });
-	valid = valid && validator.isAlphanumeric(username);
-	valid = valid && validator.isLength(password, { min: 8 });
-	if (!valid) {
-		return res.json({
-			success: false,
-			message: 'Invalid input. Perhaps your username is not alphanumeric?',
-		});
-	}
+  let valid = true;
+  valid = valid && validator.isEmail(email);
+  valid = valid && validator.isLength(username, { min: 1 });
+  valid = valid && validator.isAlphanumeric(username);
+  valid = valid && validator.isLength(password, { min: 8 });
+  if (!valid) {
+    return res.json({
+      success: false,
+      message: "Invalid input. Perhaps your username is not alphanumeric?"
+    });
+  }
 
-	findUserByKey('username', username, (err, user) => {
-		if (err) {
-			logger.error(err);
-			throw err;
-		}
-		if (user && typeof user !== 'undefined') {
-			return res.json({
-				success: false,
-				message: 'User with that username already exists.'
-			});
-		}
+  findUserByKey("username", username, (err, user) => {
+    if (err) {
+      logger.error(err);
+      throw err;
+    }
+    if (user && typeof user !== "undefined") {
+      return res.json({
+        success: false,
+        message: "User with that username already exists."
+      });
+    }
 
-		checkEmail();
-	});
+    checkEmail();
+  });
 
-	function checkEmail() {
-		findUserByKey('email', email, (err, user) => {
-			if (err) {
-				logger.error(err);
-				throw err;
-			}
-			if (user && typeof user !== 'undefined') {
-				return res.json({
-					success: false,
-					message: 'User with that email already exists.'
-				});
-			}
+  function checkEmail() {
+    findUserByKey("email", email, (err, user) => {
+      if (err) {
+        logger.error(err);
+        throw err;
+      }
+      if (user && typeof user !== "undefined") {
+        return res.json({
+          success: false,
+          message: "User with that email already exists."
+        });
+      }
 
-			registerUser();
-		});
-	}
+      registerUser();
+    });
+  }
 
-	function registerUser() {
-		const userId = uuid();
+  function registerUser() {
+    const userId = uuid();
 
-		bcrypt.hash(password, 10, (err, hashed) => {
-			if (err) {
-				logger.error(err);
-				throw err;
-			}
-			addToDataFile(email, username, hashed);
-		});
+    bcrypt.hash(password, 10, (err, hashed) => {
+      if (err) {
+        logger.error(err);
+        throw err;
+      }
+      addToDataFile(email, username, hashed);
+    });
 
-		function addToDataFile(email, username, hashed) {
-			fs.readFile(userDataFile, (err, raw) => {
-				if (err) {
-					logger.error(err);
-					throw err;
-				}
-				const data = JSON.parse(raw);
-				data[userId] = {
-					id: userId,
-					email,
-					username,
-					password: hashed,
-					hostname: req.hostname,
-					ip: req.ip,
-					ips: req.ips,
-					fingerprint,
-				};
-				const newRaw = JSON.stringify(data, null, 2);
-				saveDataFile(newRaw);
-			});
-		}
+    function addToDataFile(email, username, hashed) {
+      fs.readFile(userDataFile, (err, raw) => {
+        if (err) {
+          logger.error(err);
+          throw err;
+        }
+        const data = JSON.parse(raw);
+        data[userId] = {
+          id: userId,
+          email,
+          username,
+          password: hashed,
+          hostname: req.hostname,
+          ip: req.ip,
+          ips: req.ips,
+          fingerprint
+        };
+        const newRaw = JSON.stringify(data, null, 2);
+        saveDataFile(newRaw);
+      });
+    }
 
-		function saveDataFile(newRaw) {
-			fs.writeFile(userDataFile, newRaw, (err) => {
-				if (err) {
-					logger.error(err);
-					throw err;
-				}
-				registerOnServer(username);
-			});
-		}
+    function saveDataFile(newRaw) {
+      fs.writeFile(userDataFile, newRaw, err => {
+        if (err) {
+          logger.error(err);
+          throw err;
+        }
+        registerOnServer(username);
+      });
+    }
 
-		function registerOnServer(username) {
-			try {
-				const permissionsData = yaml.safeLoad(
-					fs.readFileSync(
-						permissionsDataFile,
-						'utf8'
-					)
-				);
-				if (typeof permissionsData.users[username] === 'undefined') {
-					permissionsData.users[username] = {};
-					permissionsData.users[username].group = ['member'];
-				}
-				fs.writeFileSync(
-					permissionsDataFile,
-					yaml.safeDump(permissionsData)
-				);
+    function registerOnServer(username) {
+      try {
+        const permissionsData = yaml.safeLoad(
+          fs.readFileSync(permissionsDataFile, "utf8")
+        );
+        if (typeof permissionsData.users[username] === "undefined") {
+          permissionsData.users[username] = {};
+          permissionsData.users[username].group = ["member"];
+        }
+        fs.writeFileSync(permissionsDataFile, yaml.safeDump(permissionsData));
 
-				// Reload server so new permissions are stored
-				minecraftServer.stdin.write('reload\n');
-				// Set auth data in session
-				req.session.userId = userId;
-				res.redirect('/profile.html');
-			} catch (err) {
-				logger.error(err);
-				throw err;
-			}
-		}
-	}
+        // Reload server so new permissions are stored
+        minecraftServer.stdin.write("reload\n");
+        // Set auth data in session
+        req.session.userId = userId;
+        res.redirect("/profile.html");
+      } catch (err) {
+        logger.error(err);
+        throw err;
+      }
+    }
+  }
 }
 
 function postLogin(req, res) {

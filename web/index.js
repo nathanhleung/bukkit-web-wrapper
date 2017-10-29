@@ -34,7 +34,7 @@ app.use(
 app.use(
   session({
     // keyboard mash
-    secret: "wertyhuiln fuh2849t85&^TO&(*POAS^S&Yxtruyfgkjg r32r",
+    secret: process.env.SESSION_SECRET,
     resave: true,
     saveUninitialized: false
   })

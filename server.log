@@ -55294,3 +55294,224 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
 
 [2017-10-29 17:26:49.981] [INFO] default - 2017-10-29 17:26:49 [INFO] [MEMBER] nate2: yo
 
+[2017-10-29 17:41:15.425] [INFO] default - App listening on port 80.
+[2017-10-29 17:41:15.641] [INFO] default - 229 recipes
+[2017-10-29 17:41:15.643] [INFO] default - 
+
+[2017-10-29 17:41:15.654] [INFO] default - 27 achievements
+
+[2017-10-29 17:41:15.987] [INFO] default - 2017-10-29 17:41:15 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-29 17:41:15.987] [INFO] default - 2017-10-29 17:41:15 [INFO] Loading properties
+
+[2017-10-29 17:41:15.990] [INFO] default - 2017-10-29 17:41:15 [INFO] Default game type: SURVIVAL
+
+[2017-10-29 17:41:15.991] [INFO] default - 2017-10-29 17:41:15 [INFO] Generating keypair
+
+[2017-10-29 17:41:16.207] [INFO] default - 2017-10-29 17:41:16 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-29 17:42:26.681] [INFO] default - App listening on port 80.
+[2017-10-29 17:42:27.052] [INFO] default - 229 recipes
+[2017-10-29 17:42:27.053] [INFO] default - 
+
+[2017-10-29 17:42:27.066] [INFO] default - 27 achievements
+
+[2017-10-29 17:42:27.386] [INFO] default - 2017-10-29 17:42:27 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-29 17:42:27.387] [INFO] default - 2017-10-29 17:42:27 [INFO] Loading properties
+
+[2017-10-29 17:42:27.389] [INFO] default - 2017-10-29 17:42:27 [INFO] Default game type: SURVIVAL
+
+[2017-10-29 17:42:27.389] [INFO] default - 2017-10-29 17:42:27 [INFO] Generating keypair
+
+[2017-10-29 17:42:27.593] [INFO] default - 2017-10-29 17:42:27 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-29 17:42:27.693] [ERROR] default - { Error: connect ECONNREFUSED 127.0.0.1:3306
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+    --------------------
+    at Protocol._enqueue (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Protocol.handshake (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:52:23)
+    at Connection.connect (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\Connection.js:130:18)
+    at Object.<anonymous> (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\web\db.js:15:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+[2017-10-29 17:44:21.327] [INFO] default - App listening on port 80.
+[2017-10-29 17:44:21.882] [INFO] default - 229 recipes
+[2017-10-29 17:44:21.889] [INFO] default - 
+
+[2017-10-29 17:44:21.897] [INFO] default - 27 achievements
+[2017-10-29 17:44:21.899] [INFO] default - 
+
+[2017-10-29 17:44:22.348] [INFO] default - 2017-10-29 17:44:22 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-29 17:44:22.349] [INFO] default - 2017-10-29 17:44:22 [INFO] Loading properties
+
+[2017-10-29 17:44:22.352] [INFO] default - 2017-10-29 17:44:22 [INFO] Default game type: SURVIVAL
+
+[2017-10-29 17:44:22.353] [INFO] default - 2017-10-29 17:44:22 [INFO] Generating keypair
+
+[2017-10-29 17:44:22.366] [ERROR] default - { Error: connect ECONNREFUSED 127.0.0.1:3306
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+    --------------------
+    at Protocol._enqueue (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Protocol.handshake (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:52:23)
+    at Connection.connect (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\Connection.js:130:18)
+    at Object.<anonymous> (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\web\db.js:15:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+[2017-10-29 17:44:51.342] [INFO] default - App listening on port 80.
+[2017-10-29 17:44:52.164] [INFO] default - 229 recipes
+
+[2017-10-29 17:44:52.200] [INFO] default - 27 achievements
+
+[2017-10-29 17:44:52.412] [ERROR] default - { Error: connect ECONNREFUSED 127.0.0.1:3306
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+    --------------------
+    at Protocol._enqueue (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Protocol.handshake (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:52:23)
+    at Connection.connect (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\Connection.js:130:18)
+    at Object.<anonymous> (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\web\db.js:15:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+[2017-10-29 17:46:28.678] [INFO] default - App listening on port 80.
+[2017-10-29 17:46:29.040] [INFO] default - 229 recipes
+[2017-10-29 17:46:29.043] [INFO] default - 
+
+[2017-10-29 17:46:29.055] [INFO] default - 27 achievements
+
+[2017-10-29 17:46:29.340] [INFO] default - 2017-10-29 17:46:29 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-29 17:46:29.341] [INFO] default - 2017-10-29 17:46:29 [INFO] Loading properties
+
+[2017-10-29 17:46:29.344] [INFO] default - 2017-10-29 17:46:29 [INFO] Default game type: SURVIVAL
+
+[2017-10-29 17:46:29.344] [INFO] default - 2017-10-29 17:46:29 [INFO] Generating keypair
+
+[2017-10-29 17:46:29.633] [INFO] default - 2017-10-29 17:46:29 [INFO] Starting Minecraft server on *:8080
+
+[2017-10-29 17:46:29.689] [ERROR] default - { Error: connect ECONNREFUSED 127.0.0.1:3306
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+    --------------------
+    at Protocol._enqueue (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Protocol.handshake (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:52:23)
+    at Connection.connect (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\Connection.js:130:18)
+    at Object.<anonymous> (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\web\db.js:15:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+[2017-10-29 17:46:54.728] [INFO] default - App listening on port 80.
+[2017-10-29 17:46:55.218] [INFO] default - 229 recipes
+
+[2017-10-29 17:46:55.230] [INFO] default - 27 achievements
+
+[2017-10-29 17:46:55.563] [INFO] default - 2017-10-29 17:46:55 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-29 17:46:55.564] [INFO] default - 2017-10-29 17:46:55 [INFO] Loading properties
+
+[2017-10-29 17:46:55.566] [INFO] default - 2017-10-29 17:46:55 [INFO] Default game type: SURVIVAL
+
+[2017-10-29 17:46:55.567] [INFO] default - 2017-10-29 17:46:55 [INFO] Generating keypair
+
+[2017-10-29 17:46:55.742] [ERROR] default - { Error: connect ECONNREFUSED 127.0.0.1:3306
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+    --------------------
+    at Protocol._enqueue (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Protocol.handshake (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:52:23)
+    at Connection.connect (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\Connection.js:130:18)
+    at Object.<anonymous> (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\web\db.js:15:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }
+[2017-10-29 17:48:06.737] [INFO] default - App listening on port 80.
+[2017-10-29 17:48:07.197] [INFO] default - 229 recipes
+[2017-10-29 17:48:07.199] [INFO] default - 
+
+[2017-10-29 17:48:07.214] [INFO] default - 27 achievements
+
+[2017-10-29 17:48:07.519] [INFO] default - 2017-10-29 17:48:07 [INFO] Starting minecraft server version 1.5.2
+
+[2017-10-29 17:48:07.519] [INFO] default - 2017-10-29 17:48:07 [INFO] Loading properties
+
+[2017-10-29 17:48:07.521] [INFO] default - 2017-10-29 17:48:07 [INFO] Default game type: SURVIVAL
+
+[2017-10-29 17:48:07.522] [INFO] default - 2017-10-29 17:48:07 [INFO] Generating keypair
+
+[2017-10-29 17:48:07.754] [ERROR] default - { Error: connect ECONNREFUSED 127.0.0.1:3306
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+    --------------------
+    at Protocol._enqueue (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Protocol.handshake (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\protocol\Protocol.js:52:23)
+    at Connection.connect (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\node_modules\mysql\lib\Connection.js:130:18)
+    at Object.<anonymous> (C:\Users\Nathan\Documents\CodeProjects\minecraft-www\web\db.js:15:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3306,
+  fatal: true }

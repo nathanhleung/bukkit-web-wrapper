@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const minecraftServer = require('./minecraft-server');
+const minecraftServer = require("./minecraft-server");
 
 const { minecraftLogFile } = require("./constants");
 

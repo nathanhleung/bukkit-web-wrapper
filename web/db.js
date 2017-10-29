@@ -6,18 +6,18 @@ const minecraftServer = require("./minecraft-server");
 const logger = require("./logger");
 
 const con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "Reed123!",
-  database: "minecraft"
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 con.connect(err => {
   if (err) {
-    logger.log(err);
+    logger.error(err);
     throw err;
   } else {
-    console.log("connected sucessfully to mysql server");
+    logger.info("Sucessfully connected to MySQL Server!");
   }
 });
 
@@ -36,7 +36,7 @@ function addUser(name, email, mc_user, pass) {
           logger.error(err);
           throw err;
         }
-        console.log("inserted row 1 row into users table");
+        logger.info("Inserted 1 row into users table");
       }
     );
   });
@@ -183,9 +183,7 @@ function queryUserByMCUser(mc_user, callback) {
 }
 
 function changeBukkitPermissions(mc_user, perm_level) {
-  minecraftServer.stdin.write(
-    `pex user ${mc_user} group add ${perm_level}\n`
-  );
+  minecraftServer.stdin.write(`pex user ${mc_user} group add ${perm_level}\n`);
 }
 
 function changeUserPermissionLevel(user_id, new_perm_level) {

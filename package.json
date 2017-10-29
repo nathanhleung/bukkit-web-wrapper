@@ -10,19 +10,18 @@
     }
   ],
   "scripts": {
-    "start": "node web/index.js",
-    "watch": "nodemon --ignore web/public/",
+    "start": "node -r dotenv/config web/index.js",
+    "watch": "nodemon --ignore web/public/ --exec \"yarn start\"",
     "format": "prettier --write \"web/**/*.js\"",
     "lint": "eslint \"web/**/*.js\" --fix",
-    "test": ""
+    "test": "jest"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
     "express": "^4.15.5",
     "express-session": "^1.15.6",
-    "fingerprintjs2": "^1.5.1",
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
     "log4js": "^2.3.7",
