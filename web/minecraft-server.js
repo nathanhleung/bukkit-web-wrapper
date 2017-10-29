@@ -6,7 +6,7 @@ const logger = require("./logger");
 function startMinecraftServer() {
   const serverArgs = [
     "-Xms1G",
-    "-Xmx3G",
+    "-Xmx1G",
     "-jar",
     minecraftServerJarFile,
     "-nojline"
