@@ -10,7 +10,7 @@ const request = require("request");
 
 const minecraftServer = require("./minecraft-server");
 const logger = require("./logger");
-const db = require("./db");
+const db = require("./db/");
 
 const { userDataFile, permissionsDataFile } = require("./constants");
 const { findUserById, findUserByKey } = require("./helpers");

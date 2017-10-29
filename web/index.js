@@ -4,7 +4,6 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const session = require("express-session");
-const log4js = require("log4js");
 
 const { isAuthorized, isAdmin } = require("./helpers");
 const routes = require("./routes");
@@ -13,7 +12,6 @@ const logger = require("./logger");
 
 const app = express();
 app.set("port", process.env.PORT || 80);
-app.use(log4js.connectLogger(logger));
 
 app.use(
   morgan("combined", {

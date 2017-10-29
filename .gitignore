@@ -1,5 +1,9 @@
 # Project-Specific .gitignore
 
+# Logs are sent to Papertrail
+server.log
+bukkit/server.log
+
 # CoreProtect DB is over 300MB as of this writing
 # GitHub rejects pushes containing files >100MB
 # Also, CoreProtect DB is not essential to

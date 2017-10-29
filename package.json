@@ -24,13 +24,14 @@
     "express-session": "^1.15.6",
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
-    "log4js": "^2.3.7",
     "morgan": "^1.9.0",
     "mysql": "^2.15.0",
     "nbt": "^0.7.0",
     "request": "^2.83.0",
     "uuid": "^3.1.0",
-    "validator": "^9.0.0"
+    "validator": "^9.0.0",
+    "winston": "^3.0.0-rc1",
+    "winston-papertrail": "^1.0.5"
   },
   "devDependencies": {
     "eslint": "^4.10.0",
