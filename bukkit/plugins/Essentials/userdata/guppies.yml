@@ -1,0 +1,27 @@
+timestamps:
+  login: 1509053236065
+  logout: 1509053239308
+  lastteleport: 1509038600977
+  kits:
+    color: 1508701105361
+    notch: 1508701110961
+    dtools: 1508701120960
+ipAddress: 69.242.63.233
+logoutlocation:
+  world: world
+  x: 260.68954539544205
+  y: 72.0
+  z: 462.32258032684416
+  yaw: 118.71028
+  pitch: 15.184285
+godmode: false
+lastlocation:
+  world: world
+  x: 1426.44699106375
+  y: 94.0
+  z: 1395.082954925716
+  yaw: -321.0343
+  pitch: 22.349995
+socialspy: true
+afk: false
+money: '0'

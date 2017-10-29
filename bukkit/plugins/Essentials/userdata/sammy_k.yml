@@ -1,0 +1,37 @@
+timestamps:
+  login: 1509299659429
+  logout: 1509299859607
+  lastteleport: 1509299839611
+ipAddress: 76.98.165.89
+logoutlocation:
+  world: world
+  x: 51.0147996068203
+  y: 96.0
+  z: 753.88237790359
+  yaw: -253.4881
+  pitch: 18.599987
+lastlocation:
+  world: world
+  x: 123.82381582713359
+  y: 71.0
+  z: 320.4863972543535
+  yaw: 209.84985
+  pitch: 24.150002
+money: '5'
+afk: false
+godmode: false
+homes:
+  15gorr:
+    world: world
+    x: -314.0219647336152
+    y: 66.0
+    z: 532.2751123767415
+    yaw: -283.78775
+    pitch: 20.699991
+  home:
+    world: world
+    x: 52.059460096355316
+    y: 96.0
+    z: 755.0332585693504
+    yaw: -265.78772
+    pitch: 10.199959

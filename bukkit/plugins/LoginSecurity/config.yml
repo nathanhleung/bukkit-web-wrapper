@@ -1,0 +1,21 @@
+settings:
+  password-required: false
+  encryption: MD5
+  encoder: UTF-8
+  PHP_VERSION: 4
+  messager-api: true
+  blindness: true
+  session:
+    use: true
+    timeout (sec): 60
+  timeout:
+    use: true
+    timeout (sec): 60
+  table prefix: ls_
+MySQL:
+  use: false
+  host: localhost
+  port: 3306
+  database: LoginSecurity
+  username: root
+  password: password

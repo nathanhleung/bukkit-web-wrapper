@@ -1,0 +1,13 @@
+# Always put your messages in single-quotes! Otherwise the
+# YAML parser will not be able to parse the messages correctly!
+# Also, if you want to use special characters, remember to save
+# the file with the UTF-8 encoding.
+# 
+# This will force the plugin to use the actual player name instead of the
+# display name. Set this to true if you are getting problems with changing
+# names in login- and logout-messages.
+force-real-name: false
+format:
+  join: '&e%player joined the game'
+  quit: '&e%player left the game'
+  kick: '&e%player was kicked: %reason'

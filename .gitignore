@@ -1,4 +1,13 @@
-# From https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
+# Project-Specific .gitignore
+
+# CoreProtect DB is over 300MB as of this writing
+# GitHub rejects pushes containing files >100MB
+# Also, CoreProtect DB is not essential to
+# development
+bukkit/plugins/CoreProtect/database.db
+
+# Node.js-Specific .gitignore
+# Based on https://github.com/github/gitignore/blob/master/Node.gitignore
 
 # Logs
 logs

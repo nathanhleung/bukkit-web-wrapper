@@ -1,0 +1,278 @@
+groups:
+  default:
+    default: true
+    permissions:
+      - modifyworld.chat
+      - essentials.rules
+      - essentials.motd
+  member:
+    default: false
+    inheritance:
+      - default
+    permissions:
+      - essentials.msg
+      - essentials.suicide
+      - essentials.home
+      - essentials.sethome
+      - essentials.speed
+      - essentials.tppos
+      - essentials.tpa
+      - essentials.tpahere
+      - essentials.tpaccept
+      - essentials.tpdeny
+      - essentials.help
+      - essentials.help.*
+      - modifyworld.*
+      - lockette.user.*
+      - loginsecurity.*
+  protector:
+    default: false
+    inheritance:
+      - member
+    permissions:
+      - bukkit.command.reload
+      - essentials.god
+      - essentials.fly
+      - essentials.tp
+      - essentials.kill
+      - permissions.manage.membership.member
+      - essentials.kick
+      - essentials.kick.*
+      - coreprotect.*
+  co-owner:
+    default: false
+    permissions:
+      - '*'
+  owner:
+    default: false
+    permissions:
+      - '*'
+  members:
+    permissions:
+      - Hood_Rat
+users:
+  wil:
+    group:
+      - co-owner
+  nate:
+    group:
+      - owner
+  aiden:
+    group:
+      - protector
+  Sammy K:
+    group:
+      - protector
+  guppies:
+    group:
+      - member
+  caleb:
+    group:
+      - por
+  MaxK:
+    group:
+      - member
+  15gorr:
+    group:
+      - member
+  Allah:
+    group:
+      - member
+  Sam40:
+    group:
+      - member
+  itsyoboycolinXC:
+    group:
+      - member
+  eee:
+    group:
+      - member
+  Herobrine:
+    group:
+      - member
+  aaaa:
+    group:
+      - member
+  NoahFriendo:
+    group:
+      - member
+  ihatenoah:
+    group:
+      - member
+  NDdEStRoYeR:
+    group:
+      - member
+  Yaysies:
+    group:
+      - member
+  cpc329:
+    group:
+      - member
+  learmantha:
+    group:
+      - member
+  CyrilFiggis:
+    group:
+      - member
+  underagesorcery:
+    group:
+      - member
+  UncleTio49:
+    group:
+      - member
+  Hyun:
+    group:
+      - member
+  question:
+    group:
+      - member
+  jthippen:
+    group:
+      - member
+  justin:
+    group:
+      - member
+  colete:
+    group:
+      - member
+  Sonicboom:
+    group:
+      - member
+  Sonicbooom:
+    group:
+      - member
+  CaptainCrunch:
+    group:
+      - member
+  bsos:
+    group:
+      - member
+  theCoonMan:
+    group:
+      - member
+  Yo:
+    group:
+      - member
+  MrMiyagi:
+    group:
+      - member
+  FidgetSpinner:
+    group:
+      - member
+  ec2342159518uswest2computeamazonawscom8080:
+    group:
+      - member
+  steve:
+    group:
+      - member
+  bhoyer:
+    group:
+      - member
+  Trick2God:
+    group:
+      - member
+  PioPark1:
+    group:
+      - member
+  josh:
+    group:
+      - member
+  Hood_Rat:
+    permissions:
+      - member
+  senorpapi:
+    group:
+      - member
+  Santo:
+    group:
+      - member
+  kiwi:
+    group:
+      - member
+  bpstang:
+    group:
+      - member
+  bs:
+    group:
+      - member
+  eVAN:
+    group:
+      - member
+  phyloc:
+    group:
+      - member
+  johnnyjohnny:
+    group:
+      - member
+  M2xC:
+    group:
+      - member
+  Slater:
+    group:
+      - member
+  trycheck:
+    group:
+      - member
+  breh:
+    group:
+      - member
+  Rayool:
+    group:
+      - member
+  Parker:
+    group:
+      - member
+  John:
+    group:
+      - member
+  Alex:
+    group:
+      - member
+  Ketchup:
+    group:
+      - member
+  HoodRat:
+    group:
+      - member
+  hoodrat:
+    group:
+      - member
+  JackS:
+    group:
+      - member
+  nickelodeon:
+    group:
+      - member
+  pelvis:
+    group:
+      - member
+  ZanderBoss:
+    group:
+      - member
+  Polar:
+    group:
+      - member
+  TempleDave:
+    group:
+      - member
+  Notch:
+    group:
+      - member
+  Caleb1:
+    group:
+      - member
+  charex:
+    group:
+      - member
+  SkythekidRS:
+    group:
+      - member
+  squid:
+    group:
+      - member
+  PeePeePooPooMan:
+    group:
+      - member
+  NewDave:
+    group:
+      - member
