@@ -20,13 +20,18 @@
             <p class="lead">We need to confirm your account before you get full permissions.</p>
             <form action="/register" method="POST">
               <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" class="form-control" placeholder="<first name> <last name>" pattern="[a-zA-Z]+ [a-zA-Z]+" required>
+                <small class="form-text text-muted">Please enter your first and last name seperated by a space</small>
+              </div>
+              <div class="form-group">
                 <label>Email</label>
                 <input type="email" name="email" class="form-control" placeholder="Enter email" required>
                 <small class="form-text text-muted">We'll use your email to confirm your identity. We will not share your email with third parties.</small>
               </div>
               <div class="form-group">
                 <label>Server Username</label>
-                <input type="text" name="username" class="form-control" placeholder="Enter server username" pattern="[a-zA-Z0-9]+" required>
+                <input type="text" name="username" class="form-control" placeholder="Enter server username" pattern="[\_a-zA-Z0-9]+" required>
                 <small class="form-text text-muted">Type your username exactly as it appears on the server. Only alphanumeric usernames can be verified (i.e. no spaces, underscores, or special characters), so if your username isn't alphanumeric, you'll need to choose a different username. Restart the client and instead log in with an alphanumeric username.</small>
               </div>
               <div class="form-group">

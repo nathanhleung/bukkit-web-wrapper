@@ -6,13 +6,13 @@ const fs = require('fs');
 const session = require('express-session');
 const log4js = require('log4js');
 
-const { startMinecraftServer } = require('./minecraft');
+const minecraft = require('./minecraft');
 const { isAuthorized, isAdmin } = require('./helpers');
 const routes = require('./routes');
 const adminRoutes = require('./admin-routes');
 const logger = require('./logger');
 
-const minecraftServer = startMinecraftServer();
+//const minecraftServer = startMinecraftServer();
 
 const app = express();
 app.set('port', process.env.PORT || 80);
@@ -52,7 +52,7 @@ app.get('/', (req, res) => {
 
 // Reload minecraft server after user registration, so pass to route
 app.post('/register', (req, res) => {
-	return routes.postRegister(req, res, minecraftServer);
+	return routes.postRegister(req, res); //, minecraftServer);
 });
 
 app.post('/login', routes.postLogin);
@@ -72,7 +72,7 @@ app.get('/admin', isAdmin, adminRoutes.getAdmin);
 app.get('/api/logs', isAdmin, adminRoutes.getApiLogs);
 
 app.post('/api/command', isAdmin, (req, res) => {
-	return adminRoutes.postApiCommand(req, res, minecraftServer);
+	return adminRoutes.postApiCommand(req, res, minecraft.minecraftServer);
 });
 
 app.get('*', (req, res) => {

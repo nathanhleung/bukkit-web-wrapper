@@ -1,5 +1,6 @@
 const mysql = require('mysql');
 const bcrypt = require('bcrypt');
+const validator = require('validator');
 
 const minecraft = require('./minecraft');
 const logger = require('./logger');
@@ -7,121 +8,147 @@ const logger = require('./logger');
 const con = mysql.createConnection({
 	host: "localhost",
 	user: "root",
-	password: "Reed123!"
+	password: "Reed123!",
 	database: "minecraft"
 });
 
-function addUser(first, last, email, mc_user, pass){
-	bcrypt.hash('myPassword', 10, (err, hash) => {
+con.connect((err) => {
+  	if (err) {
+  		logger.log(err);
+  		throw err;
+  	} else {
+  		console.log('connected sucessfully to mysql server');
+  	}
+});
+
+function addUser(name, email, mc_user, pass) {
+	bcrypt.hash(pass, 10, (err, hash) => {
 		con.query(	"INSERT INTO users " +
-					"(first_name, last_name, email, minecraft_user, pass, perm_level) VALUES " +
-					"(?, ?, ?, ?, ?, ?)",
-					first, last, email, mc_user, hash, perm_level,
+					"(name, email, minecraft_user, pass) VALUES " +
+					"(?, ?, ?, ?)",
+					name, email, mc_user, hash,
 					(err, res) => {
 						if (err) {
 							logger.error(err);
 							throw err;
 						}
+					console.log('inserted row 1 row into users table');
 					}
 		);}
 	);
 
-	con.query(
-		"INSERT INTO membership_status_hist (minecraft_user, status, comment) VALUES (?, 'pending', 'application submission')",
-		mc_user,
-		(err, res) => {
-			if (err) {
-				logger.error(err);
-				throw err;
-			}
+	queryUserByMCUser(mc_user, (err, user) => {
+		if (err) {
+			logger.error(err);
+			throw err;
 		}
-	);
+		console.log(res.toString());
+		con.query(
+			"INSERT INTO membership_status_hist (user_id, status, comment) VALUES (?, 'pending', 'application submission')",
+			user.user_id,
+			(err, res) => {
+				if (err) {
+					logger.error(err);
+					throw err;
+				}
+			}
+		);
+	});
 }
 
-function isUniqueUser(first, last, email, mc_user){
+function isValidUser(name, email, mc_user){
 	var valid = "";
-	if ( 	valid = hasUniqueName(first, last) ||
-			valid = hasUniqueEmail(email) ||
-			valid = hasUniqueMCUser(mc_user)) {
+
+	valid = isValidName(name);
+	if (valid) {
 		return valid;
 	}
+	valid = isValidEmail(email);
+	if (valid) {
+		return valid;
+	}
+	valid = isValidMCUser(mc_user);
+	if (valid) {
+		return valid;
+	}
+
 	return valid;
 }
 
-function hasUniqueName(first, last){
+function isValidName(name){
 	var valid = "";
 
-	con.query(	"SELECT * FROM users WHERE first_name = ? AND last_name = ?",
-		first,
-		last,
-		(err, result) => {
-			if (err) {
-				logger.error(err);
-				throw err;
-			} else if (result.length > 0){
-				valid = "there is already an account with this name";
+	if (validator.isLength(name, { min: 500})) {
+		valid = "name is too long";
+	} else {
+		con.query(	"SELECT * FROM users WHERE name = ?",
+			name,
+			(err, result) => {
+				if (err) {
+					logger.error(err);
+					throw err;
+				} else if (result.length > 0){
+					valid = "there is already an account with this name";
+				}
 			}
-		})
+		);
+	}
 
 	return valid;
 }
 
-function hasUniqueEmail(email){
+function isValidEmail(email){
 	var valid = "";
 
-	con.query(	"SELECT * FROM users WHERE email = ?",
-		email,
-		(err, result) => {
-			if (err) {
-				logger.error(err);
-				throw err;
-			} else if (result.length > 0){
-				valid = "there is already an account with this email";
-			}
-		})
+	if (!validator.isEmail(email)) {
+		valid = "email is not actually an email";
+	} else if (validator.isLength(email, { min: 100 })) {
+		valid = "email is too long";
+	} else {
+		con.query(	"SELECT * FROM users WHERE email = ?",
+			email,
+			(err, result) => {
+				if (err) {
+					logger.error(err);
+					throw err;
+				} else if (result.length > 0){
+					valid = "there is already an account with this email";
+				}
+			})
+	}
 
 	return valid;
 }
 
-function hasUniqueMCUser(mc_user){
+function isValidMCUser(mc_user) {
 	var valid = "";
 
-	con.query(	"SELECT * FROM users WHERE minecraft_user = ?",
-		mc_user,
-		(err, result) => {
-			if (err) {
-				logger.error(err);
-				throw err;
-			} else if (result.length > 0){
-				valid = "there is already an account with this minecraft username";
-			}
-		})
+	if (validator.isLength(mc_user, { min: 100})) {
+		valid = "username is too long";
+	} else {
+		con.query(	"SELECT * FROM users WHERE minecraft_user = ?",
+			mc_user,
+			(err, result) => {
+				if (err) {
+					logger.error(err);
+					throw err;
+				} else if (result.length > 0){
+					valid = "there is already an account with this minecraft username";
+				}
+			})
+	}
 
 	return valid;
 }
 
-function queryUserByName(first, last, callback) {
-	con.query(	"SELECT * FROM users WHERE first_name = ? AND last_name = ?",
-		first, last,
+function queryUserByUserID(user_id, callback){
+	con.query(	"SELECT * FROM users WHERE user_id = ?",
+		user_id,
 		(err, users) => {
 			if (err) {
 				callback(err);
 			} else if (result.length == 0){
-				callback("there are no users with this name");
-			} else {
-				callback(null, users[0]);
-			}
-		})
-}
-
-function queryUserByMCUser(mc_user, callback){
-	con.query(	"SELECT * FROM users WHERE minecraft_user = ?",
-		mc_user,
-		(err, users) => {
-			if (err) {
-				callback(err);
-			} else if (result.length == 0){
-				callback("there are no users with this username");
+				callback("there are no users with this id");
 			} else {
 				callback(null, users[0]);
 			}
@@ -142,16 +169,28 @@ function queryUserByEmail(email, callback) {
 		})
 }
 
-var { permissionsDataFile } = require('./constants');
-
-function registerOnServer(mc_user, perm_level) {
-	minecraft.minecraftServerIntstance.stdin.write('pex user ' + mc_user + ' group add ' perm_level + '\n');
+function queryUserByMCUser(mc_user, callback){
+	con.query(	"SELECT * FROM users WHERE minecraft_user = ?",
+		mc_user,
+		(err, users) => {
+			if (err) {
+				callback(err);
+			} else if (result.length == 0){
+				callback("there are no users with this username");
+			} else {
+				callback(null, users[0]);
+			}
+		})
 }
 
-function changeUserPermissionLevel(mc_user, new_perm_level) {
-	registerOnServer(mc_user, new_perm_level);
+function changeBukkitPermissions(mc_user, perm_level) {
+	minecraft.minecraftServer.stdin.write('pex user ' + mc_user + ' group add ' + perm_level + '\n');
+}
 
-	con.query("UPDATE users SET perm_level = ? WHERE minecraft_user = ?", new_perm_level, mc_user, (err, result) => {
+function changeUserPermissionLevel(user_id, new_perm_level) {
+	changeBukkitPermissions(mc_user, new_perm_level);
+
+	con.query("UPDATE users SET perm_level = ? WHERE user_id = ?", new_perm_level, user_id, (err, result) => {
 	    if (err) {
 	    	logger.error(err);
 	    	throw err;
@@ -172,9 +211,9 @@ function getAllUsers() {
 	return result;
 }
 
-function logUserInfo(mc_user, fingerprint, ip_address) {
-	con.query("INSERT INTO user_info (minecraft_user, fingerprint, ip_address) VALUES (?, ?, ?)",
-		mc_user,
+function logUserInfo(user_id, fingerprint, ip_address) {
+	con.query("INSERT INTO user_info (user_id, fingerprint, ip_address) VALUES (?, ?, ?)",
+		user_id,
 		fingerprint,
 		ip_address,
 		(err, qresult) => {
@@ -186,8 +225,8 @@ function logUserInfo(mc_user, fingerprint, ip_address) {
 	);
 }
 
-function changeMemberShipStatus(mc_user, mem_status, comment) {
-	con.query("UPDATE users SET membership_status = ? WHERE minecraft_user = ?", mem_status, mc_user, 
+function changeMembershipStatus(user_id, mem_status, comment) {
+	con.query("UPDATE users SET membership_status = ? WHERE user_id = ?", mem_status, user_id, 
 		(err, result) => {
 		    if (err) {
 		    	logger.error(err);
@@ -197,8 +236,8 @@ function changeMemberShipStatus(mc_user, mem_status, comment) {
   	);
 
   	con.query(
-		"INSERT INTO membership_status_hist (minecraft_user, status, comment) VALUES (?, ?, ?)",
-		mc_user, mem_status, comment,
+		"INSERT INTO membership_status_hist (user_id, status, comment) VALUES (?, ?, ?)",
+		user_id, mem_status, comment,
 		(err, res) => {
 			if (err) {
 				logger.error(err);
@@ -211,14 +250,15 @@ function changeMemberShipStatus(mc_user, mem_status, comment) {
 module.exports = {
 	con,
 	addUser,
-	isUniqueUser,
-	hasUniqueName,
-	hasUniqueMCUser,
-	hasUniqueEmail,
+	isValidUser,
+	isValidName,
+	isValidMCUser,
+	isValidEmail,
+	queryUserByUserID,
 	queryUserByEmail,
 	queryUserByMCUser,
-	queryUserByName,
 	changeUserPermissionLevel,
 	getAllUsers,
-	logUserInfo
+	logUserInfo,
+	changeMembershipStatus,
 }

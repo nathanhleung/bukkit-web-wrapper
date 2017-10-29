@@ -8,12 +8,42 @@ const _ = require('lodash');
 const nbt = require('nbt');
 const request = require('request');
 
+const minecraft = require('./minecraft');
 const logger = require('./logger');
+const db = require('./db')
 
 const { userDataFile, permissionsDataFile } = require('./constants');
 const { findUserById, findUserByKey } = require('./helpers');
 
-function postRegister(req, res, minecraftServer) {
+function postRegister(req, res) {
+	const { name, email, username, password, fingerprint } = req.body;
+
+	let valid = db.isValidUser(name, email, username, password);
+	if (valid) {
+		return res.json({
+			success: false,
+			message: valid,
+		});
+	} else {
+		console.log("got to user add");
+		db.addUser(name, email, username, password);
+		let user = null;
+		db.queryUserByMCUser(username, (err, res) => {
+			if (err) {
+				logger.log(err);
+				throw err;
+			}
+			user = res;
+			console.log(res.toString());
+		});
+		db.logUserInfo(user.user_id, fingerprint, req.ip);
+		req.session.userId = user.user_id;
+		res.redirect('/profile.html');
+	}
+}
+
+/*
+function postRegister(req, res) {
 	const { email, username, password, fingerprint } = req.body;
 
 	let valid = true;
@@ -121,7 +151,7 @@ function postRegister(req, res, minecraftServer) {
 				);
 
 				// Reload server so new permissions are stored
-				minecraftServer.stdin.write('reload\n');
+				minecraft.minecraftServer.stdin.write('reload\n');
 				// Set auth data in session
 				req.session.userId = userId;
 				res.redirect('/profile.html');
@@ -132,6 +162,7 @@ function postRegister(req, res, minecraftServer) {
 		}
 	}
 }
+*/
 
 function postLogin(req, res) {
 	const { username, password } = req.body;

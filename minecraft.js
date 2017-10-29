@@ -3,7 +3,7 @@ const path = require('path');
 const { minecraftServerRoot, minecraftServerJarFile } = require('./constants');
 const logger = require('./logger');
 
-var minecraftServerInstance = null;
+const minecraftServer = startMinecraftServer();
 
 function startMinecraftServer() {
   /* The essential option is -nojline! Messes with the stdin, with the option
@@ -31,6 +31,5 @@ function startMinecraftServer() {
 }
 
 module.exports = {
-  startMinecraftServer,
-  minecraftServerInstance
+  minecraftServer
 };
