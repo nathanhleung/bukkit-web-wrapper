@@ -113,12 +113,13 @@ function postApiUserHashWithdraw(req, res) {
     const userDataFile = path.join(essentialsUserDataDir, `${username}.yml`);
     try {
       const userData = yaml.safeLoad(fs.readFileSync(userDataFile, "utf8"));
-
+      const { money } = userData;
+      
       // 1000:1 ratio for hash to dollar conversion
-      if (typeof userData.money === "undefined") {
-        userData.money = Number((amount / 1000).toFixed(3));
+      if (typeof money === "undefined") {
+        userData.money = Number(money) + Number((amount / 1000).toFixed(3));
       } else {
-        userData.money += Number((amount / 1000).toFixed(3));
+        userData.money = Number(money) + Number((amount / 1000).toFixed(3));
       }
       fs.writeFileSync(userDataFile, yaml.safeDump(userData));
 
