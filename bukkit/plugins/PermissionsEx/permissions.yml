@@ -47,9 +47,6 @@ groups:
     default: false
     permissions:
       - '*'
-  members:
-    permissions:
-      - Hood_Rat
 users:
   wil:
     group:
@@ -157,9 +154,6 @@ users:
     group:
       - member
   FidgetSpinner:
-    group:
-      - member
-  ec2342159518uswest2computeamazonawscom8080:
     group:
       - member
   steve:

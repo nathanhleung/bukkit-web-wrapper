@@ -1,3 +1,9 @@
+/**
+ * Helper functions
+ * Generally contains functions that have
+ * to do with user authentication
+ */
+
 const fs = require("fs");
 const path = require("path");
 const _ = require("lodash");

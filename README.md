@@ -19,6 +19,9 @@ Preferred version in parentheses.
 
 By default, the web server listens on port 80, and the Bukkit server listens on port 8080, although this can be changed setting the `PORT` and `MINECRAFT_PORT` environment variables.
 
+### Environment Variables
+`.env.example` contains an example environment file. To set environment variables, copy `.env.example` to `.env` and fill in desired environment variables.
+
 ## Development
 `yarn watch` will start both the web server and the Bukkit Minecraft server, and will restart both when changes are made to server-side JavaScript files.
 

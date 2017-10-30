@@ -1,3 +1,8 @@
+/**
+ * Routes
+ * Route handlers.
+ */
+
 const fs = require("fs");
 const yaml = require("js-yaml");
 const path = require("path");
@@ -10,9 +15,12 @@ const request = require("request");
 
 const minecraftServer = require("./minecraft-server");
 const logger = require("./logger");
-const db = require("./db/");
 
-const { userDataFile, permissionsDataFile } = require("./constants");
+const {
+  userDataFile,
+  permissionsDataFile,
+  essentialsUserDataDir
+} = require("./constants");
 const { findUserById, findUserByKey } = require("./helpers");
 
 /*
@@ -43,6 +51,12 @@ function postRegister(req, res) {
 }
 */
 
+/**
+ * POST /register
+ * Checks if the user has valid information and doesn't already
+ * exist, and registers them into the web system and on the
+ * Bukkit server.
+ */
 function postRegister(req, res) {
   const { email, username, password, fingerprint } = req.body;
 
@@ -200,6 +214,11 @@ function postLogin(req, res) {
   });
 }
 
+/**
+ * GET /logout
+ * Destroys the user's current active
+ * session, forcing them to log in again
+ */
 function getLogout(req, res) {
   if (req.session) {
     req.session.destroy(err => {
@@ -212,6 +231,11 @@ function getLogout(req, res) {
   }
 }
 
+/**
+ * GET /api/profile
+ * Gets the currently logged in user's data
+ * and returns it in JSON format
+ */
 function getApiProfile(req, res) {
   findUserById(req.session.userId, (err, user) => {
     if (err) {
@@ -220,11 +244,16 @@ function getApiProfile(req, res) {
     }
     return res.json({
       success: true,
+      // Don't send back the hashed password
       data: _.omit(user, ["password"])
     });
   });
 }
 
+/**
+ * GET /api/user
+ * Reads the user's Minecraft player data file
+ */
 function getApiUser(req, res) {
   findUserById(req.session.userId, (err, user) => {
     if (err) {
@@ -236,23 +265,35 @@ function getApiUser(req, res) {
   });
 
   function readDataFile(username) {
-    fs.readFile(path.join(__dirname, "nate.dat"), (err, raw) => {
-      if (err) {
-        logger.error(err);
-        throw err;
-      }
-      nbt.parse(raw, (err, data) => {
-        if (err) {
-          logger.error(err);
-          throw err;
-        }
-        return res.json(data);
+    const userDataFile = path.join(
+      essentialsUserDataDir,
+      `${username}.yml`
+    );
+    try {
+      const userData = yaml.safeLoad(
+        fs.readFileSync(userDataFile, "utf8")
+      );
+      res.json({
+        success: true,
+        data: userData,
       });
-    });
+    } catch (err) {
+      logger.error(err);
+      res.json({
+        success: false,
+      });
+    }
   }
 }
 
+/**
+ * GET /api/users-online
+ * Sends the "list" command to the
+ * Bukkit server and gets the number
+ * of users online
+ */
 function getApiUsersOnline(req, res) {
+  // POST command to server
   request.post(
     {
       url: "http://localhost/api/command",
@@ -269,7 +310,8 @@ function getApiUsersOnline(req, res) {
           logger.error(json.message);
           return;
         }
-        // Wait a moment so server can run command
+        // Wait a moment so server can run command,
+        // then get logs
         setTimeout(getLogs, 1000);
       } catch (err) {
         logger.error(err);
@@ -279,6 +321,7 @@ function getApiUsersOnline(req, res) {
   );
 
   function getLogs() {
+    // Get logs after running command
     request.get(
       {
         url: "http://localhost/api/logs"
@@ -295,19 +338,27 @@ function getApiUsersOnline(req, res) {
             return;
           }
           const logs = json.data;
+          // Split logs into lines
           const lines = logs.split("\n");
+          // The result of the latest "list" command
+          // will be the last line that matches the
+          // expected output of the list command (i.e.
+          // the regex)
           const index = _.findLastIndex(
             lines,
             line =>
               line.match(
-                /There are \d+ out of maximum \d+ players online.$/
+                /There are (\d+)(\/\d+)? out of maximum \d+ players online.$/
               ) !== null
           );
+          // 0 online is the default return
           let online = 0;
+          // Index will be -1 if the command didn't end up running
+          // or if the log never showed up
           if (index >= 0) {
             // First captured group will be number of players online
             online = lines[index].match(
-              /There are (\d+) out of maximum \d+ players online.$/
+              /There are (\d+)(\/\d+)? out of maximum \d+ players online.$/
             )[1];
           }
           return res.json({
@@ -327,7 +378,7 @@ module.exports = {
   postRegister,
   postLogin,
   getLogout,
-  getApiProfile,
   getApiUser,
+  getApiProfile,
   getApiUsersOnline
 };

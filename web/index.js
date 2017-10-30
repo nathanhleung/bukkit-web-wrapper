@@ -1,6 +1,12 @@
+/**
+ * Main app file
+ * This code starts the entire app; both
+ * the web server and the Bukkit server
+ */
+
 const express = require("express");
 const path = require("path");
-const morgan = require("morgan");
+const morgan = require("morgan"); // Logging utility
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const session = require("express-session");
@@ -8,11 +14,14 @@ const session = require("express-session");
 const { isAuthorized, isAdmin } = require("./helpers");
 const routes = require("./routes");
 const adminRoutes = require("./admin-routes");
-const logger = require("./logger");
+const logger = require("./logger"); // custom logger function
 
 const app = express();
 app.set("port", process.env.PORT || 80);
 
+// Tell Morgan to generate Apache-style logs,
+// and send those logs to our custom logger
+// function
 app.use(
   morgan("combined", {
     stream: {
@@ -76,6 +85,8 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "404.html"));
 });
 
+// Start the server on the port set above
+// (in app.set("port"))
 app.listen(app.get("port"), () => {
   logger.info(`App listening on port ${app.get("port")}.`);
 });
