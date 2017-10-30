@@ -117,7 +117,7 @@ function postApiUserHashWithdraw(req, res) {
       
       // 1000:1 ratio for hash to dollar conversion
       if (typeof money === "undefined") {
-        userData.money = Number(money) + Number((amount / 1000).toFixed(3));
+        userData.money = Number((amount / 1000).toFixed(3));
       } else {
         userData.money = Number(money) + Number((amount / 1000).toFixed(3));
       }
