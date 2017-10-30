@@ -1,4 +1,0 @@
-&6Welcome, {PLAYER}&6!
-&6Type &c/help&6 for a list of commands.
-&6Currently online:&r {PLAYERLIST}
-Are you &7[UNVERIFIED]&r? Visit &Ahttps://tinyurl.com/lowercaf&r in your browser to register. Make sure you have an alphanumeric username.

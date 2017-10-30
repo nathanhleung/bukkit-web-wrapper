@@ -10,6 +10,24 @@ bukkit/server.log
 # development
 bukkit/plugins/CoreProtect/database.db
 
+# Committing world data to source control
+# makes it tough to merge. Authoritative
+# world is always on the server.
+bukkit/world*
+
+# Plugin config is changed by server sometimes,
+# so ignore that too -- only commit .jar files
+bukkit/plugins/
+!bukkit/plugins/*.jar
+
+# Server config is also changed by server sometimes
+bukkit/banned-ips.txt
+bukkit/banned-players.txt
+bukkit/server.properties
+
+# Ad-hoc Users Database is changed by server
+web/data/users.json
+
 # Node.js-Specific .gitignore
 # Based on https://github.com/github/gitignore/blob/master/Node.gitignore
 
