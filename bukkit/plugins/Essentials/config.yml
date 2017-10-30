@@ -256,7 +256,7 @@ kits:
 enabledSigns:
   #- color
   #- balance
-  #- buy
+  - buy
   #- sell
   #- trade
   #- free

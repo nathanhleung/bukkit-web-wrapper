@@ -22,6 +22,7 @@ groups:
       - essentials.tpdeny
       - essentials.help
       - essentials.help.*
+      - essentials.signs.use.buy
       - modifyworld.*
       - lockette.user.*
       - loginsecurity.*
