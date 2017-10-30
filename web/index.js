@@ -10,12 +10,15 @@ const morgan = require("morgan"); // Logging utility
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const session = require("express-session");
+const readline = require("readline");
 
 const { isAuthorized, isAdmin } = require("./helpers");
 const routes = require("./routes");
 const adminRoutes = require("./admin-routes");
 const minerRoutes = require("./miner-routes");
 const logger = require("./logger"); // custom logger function
+
+const minecraftServer = require('./minecraft-server');
 
 const app = express();
 app.set("port", process.env.PORT || 80);
@@ -103,3 +106,15 @@ app.get("*", (req, res) => {
 app.listen(app.get("port"), () => {
   logger.info(`App listening on port ${app.get("port")}.`);
 });
+
+// Accept input and send commands to server
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.on('line', (line) => {
+  minecraftServer.stdin.write(`${line.trim()}\n`);
+});
+
+rl.prompt();

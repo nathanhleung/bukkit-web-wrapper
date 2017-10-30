@@ -123,8 +123,6 @@ function postApiUserHashWithdraw(req, res) {
       }
       fs.writeFileSync(userDataFile, yaml.safeDump(userData));
 
-      // Reload server so new data comes into effect
-      minecraftServer.stdin.write("reload\n");
       return res.json({
         success: true
       });
