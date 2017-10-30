@@ -25,19 +25,19 @@ const logger = new winston.Logger({
   // "transports" specifies the destinations for our logs
   transports: [
     new winston.transports.Console({
-      handleExceptions: true,
+      handleExceptions: true
     }),
     new winston.transports.File({
       filename: path.join(__dirname, "..", "server.log"),
-      handleExceptions: true,
+      handleExceptions: true
     }),
     new winston.transports.Syslog({
-      app_name: 'Bukkit Web Wrapper',
+      app_name: "Bukkit Web Wrapper",
       host: process.env.PAPERTRAIL_HOST,
       port: process.env.PAPERTRAIL_PORT
-    }),
+    })
   ],
-  exitOnError: false,
+  exitOnError: false
 });
 
 module.exports = logger;

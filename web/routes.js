@@ -265,22 +265,17 @@ function getApiUser(req, res) {
   });
 
   function readDataFile(username) {
-    const userDataFile = path.join(
-      essentialsUserDataDir,
-      `${username}.yml`
-    );
+    const userDataFile = path.join(essentialsUserDataDir, `${username}.yml`);
     try {
-      const userData = yaml.safeLoad(
-        fs.readFileSync(userDataFile, "utf8")
-      );
+      const userData = yaml.safeLoad(fs.readFileSync(userDataFile, "utf8"));
       res.json({
         success: true,
-        data: userData,
+        data: userData
       });
     } catch (err) {
       logger.error(err);
       res.json({
-        success: false,
+        success: false
       });
     }
   }

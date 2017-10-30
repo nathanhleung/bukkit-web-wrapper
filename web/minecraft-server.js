@@ -53,22 +53,22 @@ function startMinecraftServer() {
   // Log server messages using custom logger
   minecraftServer.stdout.on("data", data => {
     // Log line by line
-    const lines = data.toString().split('\n');
-    lines.forEach((line) => {
+    const lines = data.toString().split("\n");
+    lines.forEach(line => {
       // Each Bukkit message starts with a date,
       // followed by a severity tag surrounded
       // by square brackets
       // However, the timestamp is already being saved
       // separately, so we can remove it
-      const msgStart = line.indexOf('[');
+      const msgStart = line.indexOf("[");
       logger.info(line.substring(msgStart));
     });
   });
 
   minecraftServer.stderr.on("data", data => {
-    const lines = data.toString().split('\n');
-    lines.forEach((line) => {
-      const msgStart = line.indexOf('[');
+    const lines = data.toString().split("\n");
+    lines.forEach(line => {
+      const msgStart = line.indexOf("[");
       // Bukkit sends info messages to stderr for some reason,
       // so just log as info
       logger.info(line.substring(msgStart));

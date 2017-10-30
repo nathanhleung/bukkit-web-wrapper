@@ -10,10 +10,70 @@
   <body>
     <div id="app" class="jumbotron jumbotron-full">
       <div class="container">
+        <h1 class="display-2">
+          Profile
+          <a class="btn btn-danger btn-sm pull-right" href="/logout">Log Out</a>
+        </h1>
         <div class="row">
           <div class="col-md-6">
-            <h1 class="display-2">Profile</h1>
-            <p class="lead">Here's your data.</p>
+            <p class="lead">Here's your game data.</p>
+            <div class="form-group">
+              <small class="text-muted">Last Login</small>
+              <br>
+              <p>{{ lastLogin }}</p>
+            </div>
+            <h2 class="display-3">Money</h2>
+            <p class="lead">
+              When you click "get money," your computer will
+              run calculations, or "Hs". Each calculation your computer
+              solves will earn you 1/1000 of an in-game dollar.
+            </p>
+            <div class="form-group">
+              <small class="text-muted">In-Game Balance</small>
+              <br>
+              <p>${{ money }}</p>
+            </div>
+            <div class="form-group">
+              <small class="text-muted">Earned Balance</small>
+              <br>
+              <p>H {{ hashBalance }}</p>
+              <small class="text-muted">Exchange Rate is 1000 H = $1</small>
+              <br>
+              <br>
+              <button
+                class="btn"
+                type="button"
+                v-bind:class="{
+                  'btn-success': !isMining,
+                  'btn-danger': isMining,
+                }"
+                v-bind:disabled="id === ''"
+                v-on:click="toggleMining"
+              >
+                {{ isMining ? 'Stop' : 'Get Money' }}
+              </button>
+              <br>
+              <div v-if="isMining">
+                <br>
+                <small class="text-muted">Earned This Session</small>
+                <br>
+                <p>H {{ minerData.totalHashes }}</p>
+                <small class="text-muted">Earning Speed<br>H {{ minerData.hashrate }}/sec</small>
+              </div>
+              <br>
+              <button
+                type="button"
+                class="btn btn-primary"
+                v-on:click="transferEarnedBalance"
+                v-bind:disabled="transferring"
+              >
+                {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
+              </button>
+              <p>{{ error }}</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="lead">Here's your account data.</p>
             <div class="form-group">
               <small class="text-muted">Email</small>
               <br>
@@ -24,13 +84,15 @@
               <br>
               <input type="text" readonly class="form-control-plaintext" v-model="username">
             </div>
-            <a class="btn btn-danger btn-sm" href="/logout">Log Out</a>
           </div>
         </div>
         <br>
       </div>
     </div>
     <script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
     <script src="/profile.js"></script>
   </body>
 </html>

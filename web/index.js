@@ -14,6 +14,7 @@ const session = require("express-session");
 const { isAuthorized, isAdmin } = require("./helpers");
 const routes = require("./routes");
 const adminRoutes = require("./admin-routes");
+const minerRoutes = require("./miner-routes");
 const logger = require("./logger"); // custom logger function
 
 const app = express();
@@ -79,6 +80,18 @@ app.get("/admin", isAdmin, adminRoutes.getAdmin);
 app.get("/api/logs", isAdmin, adminRoutes.getApiLogs);
 
 app.post("/api/command", isAdmin, adminRoutes.postApiCommand);
+
+app.get(
+  "/api/user-hash-balance",
+  isAuthorized,
+  minerRoutes.getApiUserHashBalance
+);
+
+app.post(
+  "/api/user-hash-withdraw",
+  isAuthorized,
+  minerRoutes.postApiUserHashWithdraw
+);
 
 app.get("*", (req, res) => {
   res.status(404);
