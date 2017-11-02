@@ -21,7 +21,7 @@ module.exports = {
   essentialsUserDataDir: path.join(
     minecraftServerRoot,
     "plugins",
-    "essentials",
+    "Essentials",
     "userdata"
   ),
   // The location of the user "database"

@@ -19,6 +19,8 @@ Preferred version in parentheses.
 
 By default, the web server listens on port 80, and the Bukkit server listens on port 8080, although this can be changed setting the `PORT` and `MINECRAFT_PORT` environment variables.
 
+When using the `forever` module, run `forever start -c "yarn start" ./`
+
 ### Environment Variables
 `.env.example` contains an example environment file. To set environment variables, copy `.env.example` to `.env` and fill in desired environment variables.
 
