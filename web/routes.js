@@ -265,7 +265,8 @@ function getApiUser(req, res) {
   });
 
   function readDataFile(username) {
-    const userDataFile = path.join(essentialsUserDataDir, `${username}.yml`);
+    const normalizedUsername = username.toLowerCase();
+    const userDataFile = path.join(essentialsUserDataDir, `${normalizedUsername}.yml`);
     try {
       const userData = yaml.safeLoad(fs.readFileSync(userDataFile, "utf8"));
       res.json({
