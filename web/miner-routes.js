@@ -110,11 +110,13 @@ function postApiUserHashWithdraw(req, res) {
   }
 
   function updateUserBalance(username) {
-    const userDataFile = path.join(essentialsUserDataDir, `${username}.yml`);
+    // Essentials makes all usernames lowercase in data files
+    const normalizedUsername = username.toLowerCase();
+    const userDataFile = path.join(essentialsUserDataDir, `${normalizedUsername}.yml`);
     try {
       const userData = yaml.safeLoad(fs.readFileSync(userDataFile, "utf8"));
       const { money } = userData;
-      
+
       // 1000:1 ratio for hash to dollar conversion
       if (typeof money === "undefined") {
         userData.money = Number((amount / 1000).toFixed(3));
