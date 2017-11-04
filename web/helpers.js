@@ -47,6 +47,12 @@ function findUserByKey(key, value, cb) {
     for (let i = 0; i < length; i += 1) {
       const userId = userIds[i];
       const user = data[userId];
+      // Do a case-insensitive search for username
+      if (key === "username") {
+        if (user.username.toLowerCase() === value.toLowerCase()) {
+          return cb(null, user);
+        }
+      }
       if (user[key] === value) {
         return cb(null, user);
       }
