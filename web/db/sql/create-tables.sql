@@ -1,23 +1,5 @@
 # Separate each CREATE TABLE query by a newline
 # because each statement is split by the triple newline
-CREATE TABLE IF NOT EXISTS membership_status_hist (
-  user_id int(11) NOT NULL,
-  db_time timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  status varchar(100) DEFAULT NULL,
-  comment mediumtext,
-  PRIMARY KEY (user_id),
-  FOREIGN KEY (user_id) REFERENCES users(user_id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS user_info (
-  user_id int(11) NOT NULL,
-  fingerprint mediumtext,
-  ip_address varchar(45) DEFAULT NULL,
-  log_time timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (user_id),
-  FOREIGN KEY (user_id) REFERENCES users(user_id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 CREATE TABLE IF NOT EXISTS users (
   user_id int(11) NOT NULL AUTO_INCREMENT,
   uuid char(36) NOT NULL,
@@ -32,3 +14,21 @@ CREATE TABLE IF NOT EXISTS users (
   UNIQUE KEY UC_MC_USER (minecraft_user),
   UNIQUE KEY UC_NAME (name)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='this table will be used to store data about each user';
+
+CREATE TABLE IF NOT EXISTS user_info (
+  user_id int(11) NOT NULL,
+  fingerprint mediumtext,
+  ip_address varchar(45) DEFAULT NULL,
+  log_time timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (user_id),
+  FOREIGN KEY (user_id) REFERENCES users(user_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS membership_status_hist (
+  user_id int(11) NOT NULL,
+  db_time timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  status varchar(100) DEFAULT NULL,
+  comment mediumtext,
+  PRIMARY KEY (user_id),
+  FOREIGN KEY (user_id) REFERENCES users(user_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
