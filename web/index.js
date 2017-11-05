@@ -30,9 +30,12 @@ app.set("views", path.join(__dirname, "views"));
 // Add "sendView" function to Response object
 // (Don't want to override "render")
 app.use((req, res, next) => {
+  console.log(res.headersSent);
   res.sendView = viewName =>
     res.sendFile(path.join(app.get("views"), `${viewName}.html`));
-  next();
+
+  console.log(res.headersSent);
+  return next();
 });
 
 // Tell Morgan to generate Apache-style logs,

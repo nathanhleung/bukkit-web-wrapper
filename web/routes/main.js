@@ -64,7 +64,14 @@ function postRegister(req, res) {
   }
 
   function addUserToDb(err, hashedPassword) {
-    return addUser(name, email, username, hashedPassword, user_uuid, logUserInfoToDb);
+    return addUser(
+      name,
+      email,
+      username,
+      hashedPassword,
+      user_uuid,
+      logUserInfoToDb
+    );
   }
 
   function logUserInfoToDb(err, new_user_id) {
@@ -116,7 +123,16 @@ function postRegister(req, res) {
       });
     }
     req.session.user_id = user_id;
-    return res.redirect("/profile");
+    req.session.save(err => {
+      if (err) {
+        logger.error(err);
+        return res.json({
+          success: false,
+          message: "Failed to set session cookie."
+        });
+      }
+      res.redirect("/profile");
+    });
   }
 }
 
@@ -156,7 +172,7 @@ function postLogin(req, res) {
         return res.json({
           success: false,
           message: "An error occurred."
-        })
+        });
       }
       if (!matches) {
         return res.json({
@@ -167,13 +183,13 @@ function postLogin(req, res) {
       req.session.userId = user.user_id;
       // Don't redirect until after the session in-memory
       // has been saved to the session store
-      req.session.save((err) => {
+      req.session.save(err => {
         if (err) {
           logger.error(err);
           return res.json({
             success: false,
             message: "Failed to save session cookie."
-          })
+          });
         }
         return res.redirect("/profile");
       });
