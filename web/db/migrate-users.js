@@ -2,10 +2,18 @@ const fs = require("fs");
 const path = require("path");
 const async = require("async");
 
-const { isValidUser, addUserToDb, logUserInfoToDb, addMembershipStatusToDb } = require('./queries');
+const logger = require("../logger");
+const {
+  isValidUser,
+  addUser,
+  logUserInfo,
+  changeMembershipStatus
+} = require("./queries");
 
 function migrateUsers(finalCallback) {
-  const userData = Object.values(fs.readFileSync(path.join(__dirname, '..', 'data', 'users.json'));
+  const userData = Object.values(
+    fs.readFileSync(path.join(__dirname, "..", "data", "users.json"))
+  );
 
   async.map(userData, migrateUser, (err, results) => {
     if (err) {
@@ -13,7 +21,7 @@ function migrateUsers(finalCallback) {
     }
     logger.debug("All users migrated!");
     finalCallback();
-  })
+  });
 
   function migrateUser(user, cb) {
     const { id, email, username, password, ip, fingerprint } = user;
@@ -21,7 +29,7 @@ function migrateUsers(finalCallback) {
     // Store user_id in upper scope so we can access it throughout
     // the function after it's been set
     let user_id;
-
+    const name = "N/A";
     isValidUser(name, email, username, password, addUserToDb);
 
     function addUserToDb(err, status) {
@@ -62,7 +70,5 @@ function migrateUsers(finalCallback) {
     }
   }
 }
-
-
 
 module.exports = migrateUsers;

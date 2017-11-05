@@ -1,5 +1,5 @@
 const createTables = require("./db/create-tables");
-const migrateUsers = require('./migrate-users');
+const migrateUsers = require("./db/migrate-users");
 
 createTables(() => {
   migrateUsers(() => {

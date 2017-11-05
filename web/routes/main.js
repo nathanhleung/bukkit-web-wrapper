@@ -5,7 +5,7 @@
 
 const bcrypt = require("bcrypt");
 const validator = require("validator");
-const uuid = require('uuid/v4');
+const uuid = require("uuid/v4");
 
 const logger = require("../logger");
 const {
