@@ -25,7 +25,7 @@
             <h2 class="display-3">Money</h2>
             <p class="lead">
               When you click "get money," your computer will
-              run calculations, or "Hs". Each calculation your computer
+              run calculations, or "Ƶs". Each calculation your computer
               solves will earn you 1/1000 of an in-game dollar. You can run
               this in the background while you're playing to earn even more
               money, although please note it may slow down your computer.
@@ -40,7 +40,7 @@
               <small class="text-muted">This may not exactly match the amount earned.</small>
               <br>
               <p>H {{ hashBalance }}</p>
-              <small class="text-muted">Exchange Rate is 1000 H = $1</small>
+              <small class="text-muted">Exchange Rate is Ƶ1000 = $1</small>
               <br>
               <br>
               <button
@@ -60,19 +60,20 @@
                 <br>
                 <small class="text-muted">Earned This Session</small>
                 <br>
-                <p>H {{ minerData.totalHashes }}</p>
-                <small class="text-muted">Earning Speed<br>H {{ minerData.hashrate }}/sec</small>
+                <p>Ƶ{{ minerData.totalHashes }}</p>
+                <small class="text-muted">Earning Speed<br>Ƶ{{ minerData.hashrate }}/sec</small>
               </div>
               <br>
               <button
                 type="button"
                 class="btn btn-primary"
                 v-on:click="transferEarnedBalance"
-                v-bind:disabled="transferring"
+                v-bind:disabled="transferring || mining || hashBalance === 0"
               >
                 {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
               </button>
               <p>{{ error }}</p>
+              <small class="text-muted">After you finish a mining session, you can click this button to transfer your Ƶ's to your in-game balance.</small>
             </div>
           </div>
           <div class="col-md-6">
