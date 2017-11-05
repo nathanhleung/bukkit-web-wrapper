@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS user_info (
   user_id int(11) NOT NULL,
   fingerprint mediumtext,
   ip_address varchar(45) DEFAULT NULL,
-  log_time timestamp NULL DEFAULT CURRENT_TIMESTAMP
+  log_time timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (user_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
