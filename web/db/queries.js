@@ -56,7 +56,7 @@ function addUser(name, email, mc_user, pass, cb) {
         if (err) {
           return cb(err);
         }
-        return cb();
+        return cb(null, user.user_id);
       }
     );
   }

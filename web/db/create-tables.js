@@ -5,16 +5,15 @@
 
 const fs = require("fs");
 const path = require("path");
-const async = require('async');
+const async = require("async");
 
 const logger = require("../logger");
 const db = require("./db");
 
 function createTables() {
-  const createTablesSqlStatements = fs.readFileSync(
-    path.join(__dirname, "sql", "create-tables.sql"),
-    "utf-8"
-  ).split("\n\n");
+  const createTablesSqlStatements = fs
+    .readFileSync(path.join(__dirname, "sql", "create-tables.sql"), "utf-8")
+    .split("\n\n");
 
   async.map(createTablesSqlStatements, createTable, (err, results) => {
     if (err) {

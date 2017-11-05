@@ -11,6 +11,7 @@ const validator = require("validator");
 
 const minecraftServer = require("../minecraft-server");
 const logger = require("../logger");
+const { isValidUser, addUser, logUserInfo } = require("./db/queries");
 const { userDataFile, permissionsDataFile } = require("../constants");
 const { findUserById, findUserByKey } = require("../helpers");
 
@@ -31,33 +32,47 @@ function getProfile(req, res) {
   return res.render("profile");
 }
 
-/*
 function postRegister(req, res) {
   const { name, email, username, password, fingerprint } = req.body;
 
-  const valid = db.isValidUser(name, email, username, password);
-  if (valid) {
-    return res.json({
-      success: false,
-      message: valid
-    });
-  }
-  console.log("got to user add");
-  db.addUser(name, email, username, password);
-  let user = null;
-  db.queryUserByMCUser(username, (err, res) => {
+  // Store user_id in upper scope so we can access it throughout
+  // the function after it's been set
+  let user_id;
+
+  isValidUser(name, email, username, password, addUserToDb);
+
+  function addUserToDb(err, status) {
     if (err) {
-      logger.log(err);
-      throw err;
+      return res.json({
+        success: false,
+        message: "An error occurred."
+      });
     }
-    user = res;
-    console.log(res.toString());
-  });
-  db.logUserInfo(user.user_id, fingerprint, req.ip);
-  req.session.userId = user.user_id;
-  res.redirect("/profile");
+    if (!status.valid) {
+      return res.json({
+        success: false,
+        message: status.message
+      });
+    }
+    addUser(name, email, username, password, logUserInfoToDb);
+  }
+
+  function logUserInfoToDb(err, new_user_id) {
+    user_id = new_user_id;
+    if (err) {
+      return res.json({
+        success: false,
+        message: "An error occurred."
+      });
+    }
+    logUserInfo(user_id, fingerprint, req.ip, setSessionCookie);
+  }
+
+  function setSessionCookie(err) {
+    req.session.user_id = user_id;
+    res.redirect("/profile");
+  }
 }
-*/
 
 /**
  * POST /register
@@ -65,6 +80,7 @@ function postRegister(req, res) {
  * exist, and registers them into the web system and on the
  * Bukkit server.
  */
+/*
 function postRegister(req, res) {
   const { email, username, password, fingerprint } = req.body;
 
@@ -178,6 +194,7 @@ function postRegister(req, res) {
     }
   }
 }
+*/
 
 function postLogin(req, res) {
   const { username, password } = req.body;
