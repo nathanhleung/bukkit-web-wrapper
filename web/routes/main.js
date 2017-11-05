@@ -95,16 +95,17 @@ function postLogin(req, res) {
   }
 
   queryUserByMCUser(username, (err, user) => {
+    if (err instanceof NoUserExistsError) {
+      return res.json({
+        success: false,
+        message: "That account is not registered yet. Try signing up!"
+      });
+    }
+
     if (err) {
       return res.json({
         success: false,
         message: "An error occurred."
-      });
-    }
-    if (err instanceof NoUserExistsError) {
-      return res.json({
-        success: false,
-        message: "Invalid username or password."
       });
     }
 
