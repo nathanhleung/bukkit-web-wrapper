@@ -1,6 +1,5 @@
 const bcrypt = require("bcrypt");
 const validator = require("validator");
-const uuid = require("uuid/v4");
 
 const minecraftServer = require("../minecraft-server");
 
@@ -8,8 +7,7 @@ const db = require("./db");
 
 class NoUserExistsError extends Error {}
 
-function addUser(name, email, mc_user, pass, cb) {
-  const user_uuid = uuid();
+function addUser(name, email, mc_user, pass, user_uuid, cb) {
   bcrypt.hash(pass, 10, insertUser);
 
   const normalizedEmail = email.toLowerCase();

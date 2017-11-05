@@ -1,6 +1,9 @@
 const createTables = require("./db/create-tables");
+const migrateUsers = require('./migrate-users');
 
 createTables(() => {
-  // Exit after finishing
-  process.exit(0);
+  migrateUsers(() => {
+    // Exit after finishing
+    process.exit(0);
+  });
 });

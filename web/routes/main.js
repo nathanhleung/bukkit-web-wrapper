@@ -5,6 +5,7 @@
 
 const bcrypt = require("bcrypt");
 const validator = require("validator");
+const uuid = require('uuid/v4');
 
 const logger = require("../logger");
 const {
@@ -13,6 +14,8 @@ const {
   logUserInfo,
   queryUserByMCUser,
   queryUserByUserID,
+  changeUserPermissionLevel,
+  changeMembershipStatus,
   NoUserExistsError
 } = require("../db/queries");
 
@@ -40,6 +43,7 @@ function postRegister(req, res) {
   // the function after it's been set
   let user_id;
 
+  const user_uuid = uuid();
   isValidUser(name, email, username, password, addUserToDb);
 
   function addUserToDb(err, status) {
@@ -56,7 +60,7 @@ function postRegister(req, res) {
         message: status.message
       });
     }
-    addUser(name, email, username, password, logUserInfoToDb);
+    addUser(name, email, username, password, user_uuid, logUserInfoToDb);
   }
 
   function logUserInfoToDb(err, new_user_id) {
@@ -79,7 +83,12 @@ function postRegister(req, res) {
         message: "An error occurred."
       });
     }
-    changeMembershipStatus(user_id, 'approved', 'auto-approval', updateBukkitPerms);
+    changeMembershipStatus(
+      user_id,
+      "approved",
+      "auto-approval",
+      updateBukkitPerms
+    );
   }
 
   function updateBukkitPerms(err) {
@@ -91,7 +100,7 @@ function postRegister(req, res) {
       });
     }
 
-    changeUserPermissionLevel(user_id, 'member', setSessionCookie);
+    changeUserPermissionLevel(user_id, "member", setSessionCookie);
   }
 
   function setSessionCookie(err) {

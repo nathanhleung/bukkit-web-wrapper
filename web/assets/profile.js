@@ -82,7 +82,7 @@
         });
         const json = await res.json();
         const { balance } = json;
-        if (typeof balance !== 'undefined') {
+        if (typeof balance !== "undefined") {
           this.hashBalance = balance;
           if (originalBalance === -1) {
             originalBalance = balance;
@@ -124,7 +124,14 @@
     credentials: "include"
   });
   const json = await res.json();
-  const { user_id, name, email, minecraft_user, perm_level, membership_status } = json.data;
+  const {
+    user_id,
+    name,
+    email,
+    minecraft_user,
+    perm_level,
+    membership_status
+  } = json.data;
   app.name = name;
   app.user_id = user_id;
   app.email = email;
