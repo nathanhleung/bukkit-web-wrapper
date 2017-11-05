@@ -44,6 +44,7 @@ function postRegister(req, res) {
 
   function addUserToDb(err, status) {
     if (err) {
+      logger.error(err);
       return res.json({
         success: false,
         message: "An error occurred."
@@ -61,6 +62,7 @@ function postRegister(req, res) {
   function logUserInfoToDb(err, new_user_id) {
     user_id = new_user_id;
     if (err) {
+      logger.error(err);
       return res.json({
         success: false,
         message: "An error occurred."
@@ -71,6 +73,7 @@ function postRegister(req, res) {
 
   function setSessionCookie(err) {
     if (err) {
+      logger.error(err);
       return res.json({
         success: false,
         message: "An error occurred."
@@ -103,6 +106,7 @@ function postLogin(req, res) {
     }
 
     if (err) {
+      logger.error(err);
       return res.json({
         success: false,
         message: "An error occurred."
