@@ -88,11 +88,11 @@
             <br>
             <div>
               <h2 class="display-4">Transfer Balance</h2>
-              <p class="lead" v-if="hashBalance === 0">
+              <p class="lead" v-if="hashBalance !== 0">
                 You've got a positive Ƶ balance, so you can transfer it to the game
                 with the button below.
               </p>
-              <p class="lead" v-if="hashBalance !== 0">
+              <p class="lead" v-if="hashBalance === 0">
                 You don't have any Ƶs! Mine until you have at least 300, and you'll
                 earn in-game currency.
               </p>
