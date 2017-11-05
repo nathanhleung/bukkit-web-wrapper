@@ -60,11 +60,11 @@ function postRegister(req, res) {
         message: status.message
       });
     }
-    bcrypt.hash(password, 10, addUserToDb);
+    return bcrypt.hash(password, 10, addUserToDb);
   }
 
   function addUserToDb(err, hashedPassword) {
-    addUser(name, email, username, hashedPassword, user_uuid, logUserInfoToDb);
+    return addUser(name, email, username, hashedPassword, user_uuid, logUserInfoToDb);
   }
 
   function logUserInfoToDb(err, new_user_id) {
@@ -76,7 +76,7 @@ function postRegister(req, res) {
         message: "An error occurred."
       });
     }
-    logUserInfo(user_id, fingerprint, req.ip, addMembershipStatusToDb);
+    return logUserInfo(user_id, fingerprint, req.ip, addMembershipStatusToDb);
   }
 
   function addMembershipStatusToDb(err) {
@@ -87,7 +87,7 @@ function postRegister(req, res) {
         message: "An error occurred."
       });
     }
-    changeMembershipStatus(
+    return changeMembershipStatus(
       user_id,
       "approved",
       "auto-approval",
@@ -104,7 +104,7 @@ function postRegister(req, res) {
       });
     }
 
-    changeUserPermissionLevel(user_id, "member", setSessionCookie);
+    return changeUserPermissionLevel(user_id, "member", setSessionCookie);
   }
 
   function setSessionCookie(err) {
@@ -116,7 +116,7 @@ function postRegister(req, res) {
       });
     }
     req.session.user_id = user_id;
-    res.redirect("/profile");
+    return res.redirect("/profile");
   }
 }
 
@@ -153,7 +153,10 @@ function postLogin(req, res) {
     bcrypt.compare(password, user.pass, (err, matches) => {
       if (err) {
         logger.error(err);
-        throw err;
+        return res.json({
+          success: false,
+          message: "An error occurred."
+        })
       }
       if (!matches) {
         return res.json({
