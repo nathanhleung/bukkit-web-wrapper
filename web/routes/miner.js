@@ -105,7 +105,7 @@ function postApiUserHashWithdraw(req, res) {
   }
 
   function updateUserBalance(username) {
-    minecraftServer.stdin.write(`eco give ${username} ${amount / 1000}`);
+    minecraftServer.stdin.write(`eco give ${username} ${amount / 1000}\n`);
     return res.json({
       success: true
     });
