@@ -22,15 +22,8 @@ function addUser(name, email, mc_user, pass, cb) {
     db.query(
       "INSERT INTO users (uuid, name, email, minecraft_user, pass) VALUES (?, ?, ?, ?, ?)",
       [user_uuid, name, normalizedEmail, normalizedMcUser, hash],
-      getLastUserId
+      getLastUser
     );
-  }
-
-  function getLastUserId(err) {
-    if (err) {
-      return cb(err);
-    }
-    db.query("LAST_INSERT_ID()", getLastUser);
   }
 
   function getLastUser(err, results) {
@@ -38,7 +31,7 @@ function addUser(name, email, mc_user, pass, cb) {
       return cb(err);
     }
 
-    const lastUserId = results[0];
+    const lastUserId = results.insertId;
 
     queryUserByUserID(lastUserId, insertMembershipHistory);
   }
