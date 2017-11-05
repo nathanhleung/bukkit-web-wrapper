@@ -19,6 +19,8 @@ Preferred version in parentheses.
 
 By default, the web server listens on port 80, and the Bukkit server listens on port 8080, although this can be changed setting the `PORT` and `MINECRAFT_PORT` environment variables.
 
+To run the server as a daemon (in the background), run `yarn forever`.
+
 When using the `forever` module, run `forever start -c "yarn start" ./`
 
 ### Environment Variables

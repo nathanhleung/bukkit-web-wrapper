@@ -20,24 +20,33 @@ require("winston-syslog").Syslog;
 // Required to use syslog
 winston.setLevels(winston.config.syslog.levels);
 
-const logger = new winston.Logger({
-  level: "debug", // this level means pretty much everything is being logged
-  // "transports" specifies the destinations for our logs
-  transports: [
-    new winston.transports.Console({
-      handleExceptions: true
-    }),
-    new winston.transports.File({
-      filename: path.join(__dirname, "..", "server.log"),
-      handleExceptions: true
-    }),
-    new winston.transports.Syslog({
-      app_name: "Bukkit Web Wrapper",
-      host: process.env.PAPERTRAIL_HOST,
-      port: process.env.PAPERTRAIL_PORT
-    })
-  ],
-  exitOnError: false
-});
+let logger;
+
+if (process.env.NODE_ENV === 'test') {
+  // Supress all logs in test environment
+  logger = new winston.Logger({
+    transports: null,
+  });
+} else {
+  logger = new winston.Logger({
+    level: "debug", // this level means pretty much everything is being logged
+    // "transports" specifies the destinations for our logs
+    transports: [
+      new winston.transports.Console({
+        handleExceptions: true
+      }),
+      new winston.transports.File({
+        filename: path.join(__dirname, "..", "server.log"),
+        handleExceptions: true
+      }),
+      new winston.transports.Syslog({
+        app_name: "Bukkit Web Wrapper",
+        host: process.env.PAPERTRAIL_HOST,
+        port: process.env.PAPERTRAIL_PORT
+      })
+    ],
+    exitOnError: false
+  });
+}
 
 module.exports = logger;

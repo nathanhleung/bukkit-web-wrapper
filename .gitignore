@@ -1,8 +1,9 @@
 # Project-Specific .gitignore
 
 # Logs are sent to Papertrail
-server.log
+server.log*
 bukkit/server.log
+bukkit/crash-reports/
 
 # CoreProtect DB is over 300MB as of this writing
 # GitHub rejects pushes containing files >100MB
@@ -21,9 +22,12 @@ bukkit/plugins/
 !bukkit/plugins/*.jar
 
 # Server config is also changed by server sometimes
+bukkit/ops.txt
 bukkit/banned-ips.txt
 bukkit/banned-players.txt
 bukkit/server.properties
+# Same with WorldEdit config
+bukkit/wepif.yml
 
 # Ad-hoc Users Database is changed by server
 web/data/users.json

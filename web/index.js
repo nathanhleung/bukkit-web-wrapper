@@ -118,3 +118,6 @@ rl.on('line', (line) => {
 });
 
 rl.prompt();
+
+// Export for testing
+module.exports = app;
