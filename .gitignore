@@ -1,5 +1,8 @@
 # Project-Specific .gitignore
 
+# Ignore the Bukkit .jar
+bukkit/craftbukkit-1.5.2-R1.0.jar
+
 # Logs are sent to Papertrail
 server.log*
 bukkit/server.log
