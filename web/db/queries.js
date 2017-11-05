@@ -36,20 +36,20 @@ function addUser(name, email, mc_user, pass, cb) {
     queryUserByUserID(lastUserId, insertMembershipHistory);
   }
 
-  function insertMembershipHistory(err, results) {
+  function insertMembershipHistory(err, user) {
     if (err) {
       return cb(err);
     }
 
-    const user = results[0];
+    const { user_id } = user;
     db.query(
       "INSERT INTO membership_status_hist (user_id, status, comment) VALUES (?, 'pending', 'application submission')",
-      user.user_id,
+      [user_id],
       err => {
         if (err) {
           return cb(err);
         }
-        return cb(null, user.user_id);
+        return cb(null, user_id);
       }
     );
   }
