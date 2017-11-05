@@ -11,8 +11,7 @@ CREATE TABLE IF NOT EXISTS users (
   membership_status varchar(100) DEFAULT 'pending',
   PRIMARY KEY (user_id),
   UNIQUE KEY UC_EMAIL (email),
-  UNIQUE KEY UC_MC_USER (minecraft_user),
-  UNIQUE KEY UC_NAME (name)
+  UNIQUE KEY UC_MC_USER (minecraft_user)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='this table will be used to store data about each user';
 
 CREATE TABLE IF NOT EXISTS user_info (
@@ -21,7 +20,9 @@ CREATE TABLE IF NOT EXISTS user_info (
   ip_address varchar(45) DEFAULT NULL,
   log_time timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (user_id),
-  FOREIGN KEY (user_id) REFERENCES users(user_id)
+  FOREIGN KEY (user_id)
+    REFERENCES users(user_id)
+    ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS membership_status_hist (
@@ -30,5 +31,7 @@ CREATE TABLE IF NOT EXISTS membership_status_hist (
   status varchar(100) DEFAULT NULL,
   comment mediumtext,
   PRIMARY KEY (user_id),
-  FOREIGN KEY (user_id) REFERENCES users(user_id)
+  FOREIGN KEY (user_id)
+    REFERENCES users(user_id)
+    ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
