@@ -37,6 +37,7 @@ function getProfile(req, res) {
 }
 
 function postRegister(req, res) {
+  console.log("1. Post Register " + res.headersSent)
   const { name, email, username, password, fingerprint } = req.body;
 
   // Store user_id in upper scope so we can access it throughout
@@ -47,6 +48,7 @@ function postRegister(req, res) {
   isValidUser(name, email, username, password, checkStatus);
 
   function checkStatus(err, status) {
+    console.log("2. Check Valid " + res.headersSent)
     if (err) {
       logger.error(err);
       return res.json({
@@ -64,10 +66,12 @@ function postRegister(req, res) {
   }
 
   function addUserToDb(err, hashedPassword) {
+    console.log("3. Hashed Password " + res.headersSent)
     return addUser(name, email, username, hashedPassword, user_uuid, logUserInfoToDb);
   }
 
   function logUserInfoToDb(err, new_user_id) {
+    console.log("4. User added to DB " + res.headersSent)
     user_id = new_user_id;
     if (err) {
       logger.error(err);
@@ -80,6 +84,7 @@ function postRegister(req, res) {
   }
 
   function addMembershipStatusToDb(err) {
+    console.log("5. Added user info to db " + res.headersSent)
     if (err) {
       logger.error(err);
       return res.json({
@@ -96,6 +101,7 @@ function postRegister(req, res) {
   }
 
   function updateBukkitPerms(err) {
+    console.log("6. Updated bukkit perms " + res.headersSent)
     if (err) {
       logger.error(err);
       return res.json({
@@ -108,6 +114,7 @@ function postRegister(req, res) {
   }
 
   function setSessionCookie(err) {
+    console.log("7. Changed user permission level " + res.headersSent)
     if (err) {
       logger.error(err);
       return res.json({
@@ -115,7 +122,10 @@ function postRegister(req, res) {
         message: "An error occurred."
       });
     }
+
+    console.log("8. Setting session " + res.headersSent)
     req.session.user_id = user_id;
+    console.log("9. Session is set " + res.headersSent)
     return res.redirect("/profile");
   }
 }
