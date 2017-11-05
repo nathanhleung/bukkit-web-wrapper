@@ -1,4 +1,4 @@
-CREATE TABLE `membership_status_hist` (
+CREATE TABLE IF NOT EXISTS `membership_status_hist` (
   `user_id` int(11) NOT NULL,
   `db_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(100) DEFAULT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE `membership_status_hist` (
   CONSTRAINT `FK_MEM_STATUS_HIST_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `user_info` (
+CREATE TABLE IF NOT EXISTS `user_info` (
   `user_id` int(11) NOT NULL,
   `fingerprint` mediumtext,
   `ip_address` varchar(45) DEFAULT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE `user_info` (
   CONSTRAINT `FK_USER_INFO_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(500) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
