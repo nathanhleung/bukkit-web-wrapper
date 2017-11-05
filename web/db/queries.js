@@ -4,7 +4,7 @@ const uuid = require("uuid/v4");
 
 const minecraftServer = require("../minecraft-server");
 
-const connection = require("./connection");
+const db = require("./db");
 
 class NoUserExistsError extends Error {}
 
@@ -19,7 +19,7 @@ function addUser(name, email, mc_user, pass, cb) {
     if (err) {
       return cb(err);
     }
-    connection.query(
+    db.query(
       "INSERT INTO users (uuid, name, email, minecraft_user, pass) VALUES (?, ?, ?, ?, ?)",
       [user_uuid, name, normalizedEmail, normalizedMcUser, hash],
       getLastUserId
@@ -30,7 +30,7 @@ function addUser(name, email, mc_user, pass, cb) {
     if (err) {
       return cb(err);
     }
-    connection.query("LAST_INSERT_ID();", getLastUser);
+    db.query("LAST_INSERT_ID();", getLastUser);
   }
 
   function getLastUser(err, results) {
@@ -49,7 +49,7 @@ function addUser(name, email, mc_user, pass, cb) {
     }
 
     const user = results[0];
-    connection.query(
+    db.query(
       "INSERT INTO membership_status_hist (user_id, status, comment) VALUES (?, 'pending', 'application submission')",
       user.user_id,
       err => {
@@ -110,7 +110,7 @@ function isValidName(name, cb) {
     return cb(null, status);
   }
 
-  connection.query(
+  db.query(
     "SELECT * FROM users WHERE name = ?",
     name,
     (err, result) => {
@@ -206,7 +206,7 @@ function isValidMCUser(mc_user, cb) {
 }
 
 function queryUserByUserID(user_id, callback) {
-  connection.query(
+  db.query(
     "SELECT * FROM users WHERE user_id = ?",
     user_id,
     (err, result) => {
@@ -227,7 +227,7 @@ function queryUserByUserID(user_id, callback) {
 function queryUserByEmail(email, callback) {
   const normalizedEmail = email.toLowerCase();
 
-  connection.query(
+  db.query(
     "SELECT * FROM users WHERE email = ?",
     normalizedEmail,
     (err, result) => {
@@ -254,7 +254,7 @@ function queryUserByEmail(email, callback) {
 function queryUserByMCUser(mc_user, callback) {
   const normalizedMcUser = mc_user.toLowerCase();
 
-  connection.query(
+  db.query(
     "SELECT * FROM users WHERE minecraft_user = ?",
     normalizedMcUser,
     (err, result) => {
@@ -287,7 +287,7 @@ function changeUserPermissionLevel(user_id, new_perm_level, cb) {
       `pex user ${minecraft_user} group add ${new_perm_level}\n`
     );
 
-    connection.query(
+    db.query(
       "UPDATE users SET perm_level = ? WHERE user_id = ?",
       [new_perm_level, user_id],
       cb
@@ -296,11 +296,11 @@ function changeUserPermissionLevel(user_id, new_perm_level, cb) {
 }
 
 function getAllUsers(cb) {
-  connection.query("SELECT * FROM users", cb);
+  db.query("SELECT * FROM users", cb);
 }
 
 function logUserInfo(user_id, fingerprint, ip_address, cb) {
-  connection.query(
+  db.query(
     "INSERT INTO user_info (user_id, fingerprint, ip_address) VALUES (?, ?, ?)",
     [user_id, fingerprint, ip_address],
     cb
@@ -308,7 +308,7 @@ function logUserInfo(user_id, fingerprint, ip_address, cb) {
 }
 
 function changeMembershipStatus(user_id, mem_status, comment, cb) {
-  connection.query(
+  db.query(
     "UPDATE users SET membership_status = ? WHERE user_id = ?",
     [mem_status, user_id],
     insertIntoHistory
@@ -319,7 +319,7 @@ function changeMembershipStatus(user_id, mem_status, comment, cb) {
       return cb(err);
     }
 
-    connection.query(
+    db.query(
       "INSERT INTO membership_status_hist (user_id, status, comment) VALUES (?, ?, ?)",
       [user_id, mem_status, comment],
       cb
