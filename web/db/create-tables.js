@@ -14,7 +14,7 @@ function createTables() {
   const createTablesSqlStatements = fs.readFileSync(
     path.join(__dirname, "sql", "create-tables.sql"),
     "utf-8"
-  ).split("\n\n\n");
+  ).split("\n\n");
 
   async.map(createTablesSqlStatements, createTable, (err, results) => {
     if (err) {
