@@ -12,7 +12,9 @@ const {
 
 function migrateUsers(finalCallback) {
   const userData = Object.values(
-    JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data", "users.json")))
+    JSON.parse(
+      fs.readFileSync(path.join(__dirname, "..", "data", "users.json"))
+    )
   );
 
   async.map(userData, migrateUser, (err, results) => {
@@ -34,7 +36,7 @@ function migrateUsers(finalCallback) {
       isValidUser(name, email, username, password, addUserToDb);
     } catch (err) {
       if (err) {
-        logger.error("Tried inserting user " + user);
+        logger.error(`Tried inserting user ${user}`);
         return logger.error(err);
       }
     }
