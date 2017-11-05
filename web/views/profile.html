@@ -21,71 +21,7 @@
               <small class="text-muted">Last Login</small>
               <br>
               <p>{{ lastLogin }}</p>
-              <br>
-              <div v-if="isMining">
-                <br>
-                <small class="text-muted">Earned This Session</small>
-                <br>
-                <p>Ƶ{{ minerData.totalHashes }}</p>
-                <small class="text-muted">Earning Speed<br>Ƶ{{ minerData.hashrate }}/sec</small>
-              </div>
-              <br>
-              <div v-if="!isMining && hashBalance !== 0">
-                <h2 class="display-4">Transfer Balance</h2>
-                <p class="lead">
-                  You've got a positive Ƶ balance, so you can transfer it to the game
-                  with the button below.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-
-                  v-on:click="transferEarnedBalance"
-                  v-bind:disabled="transferring"
-                >
-                  {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
-                </button>
-                <p>{{ error }}</p>
-              </div>
             </div>
-            <h2 class="display-3">Money</h2>
-            <p class="lead">
-              When you click "get money," your computer will
-              run calculations, or "Ƶs". Each calculation your computer
-              solves will earn you 1/1000 of an in-game dollar. You can run
-              this in the background while you're playing to earn even more
-              money, although please note it may slow down your computer.
-            </p>
-            <div class="form-group">
-              <small class="text-muted">In-Game Balance</small>
-              <br>
-              <p>${{ money }}</p>
-            </div>
-            <div class="form-group">
-              <small class="text-muted">Earned Balance (Rounded to the nearest 256)</small>
-              <br>
-              <small class="text-muted">This may not exactly match the amount earned. Run the miner until you have at least 300 Ƶs to ensure they register.</small>
-              <br>
-              <p>H {{ hashBalance }}</p>
-              <small class="text-muted">Exchange Rate is Ƶ1000 = $1</small>
-              <br>
-              <br>
-              <button
-                class="btn"
-                type="button"
-                v-bind:class="{
-                  'btn-success': !isMining,
-                  'btn-danger': isMining,
-                }"
-                v-bind:disabled="user_id === ''"
-                v-on:click="toggleMining"
-              >
-                {{ isMining ? 'Stop' : 'Get Money' }}
-              </button>
-              <br>
-            </div>
-          </div>
-          <div class="col-md-6">
             <p class="lead">Here's your account data.</p>
             <div class="form-group">
               <small class="text-muted">Name</small>
@@ -102,6 +38,54 @@
               <br>
               <input type="text" readonly class="form-control-plaintext" v-model="minecraft_user">
             </div>
+          </div>
+          <div class="col-md-6">
+
+            <h2 class="display-3">Money</h2>
+            <p class="lead">
+              When you click "get money," your computer will
+              run calculations, or "Ƶs". Each calculation your computer
+              solves will earn you 1/1000 of an in-game dollar. You can run
+              this in the background while you're playing to earn even more
+              money, although please note it may slow down your computer.
+            </p>
+            <div class="form-group">
+              <small class="text-muted">In-Game Balance</small>
+              <br>
+              <p>${{ money }}</p>
+              <small class="text-muted">After you finish mining, scroll down to the "transfer" sction below to transfer your Ƶs</small>
+            </div>
+            <div class="form-group">
+              <small class="text-muted">Earned Balance (Rounded to the nearest 256)</small>
+              <br>
+              <p>H {{ hashBalance }}</p>
+              <small class="text-muted">Exchange Rate is Ƶ1000 = $1</small>
+              <br>
+              <small class="text-muted">This may not exactly match the amount earned. Run the miner until you have at least 300 Ƶs to ensure they register.</small>
+              <br>
+              <br>
+              <button
+                class="btn"
+                type="button"
+                v-bind:class="{
+                  'btn-success': !isMining,
+                  'btn-danger': isMining,
+                }"
+                v-bind:disabled="user_id === ''"
+                v-on:click="toggleMining"
+              >
+                {{ isMining ? 'Stop' : 'Get Money' }}
+              </button>
+              <br>
+              <div v-if="isMining">
+                <br>
+                <small class="text-muted">Earned This Session</small>
+                <br>
+                <p>Ƶ{{ minerData.totalHashes }}</p>
+                <small class="text-muted">Earning Speed<br>Ƶ{{ minerData.hashrate }}/sec</small>
+              </div>
+            </div>
+            <br>
             <!--
             <div class="form-group">
               <small class="text-muted">Current Permission Level</small>

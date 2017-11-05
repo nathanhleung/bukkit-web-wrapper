@@ -65,8 +65,10 @@
             acceptedHashes: 0,
             totalHashes: 0
           };
-          this.getEarnedBalance();
           clearInterval(interval);
+          await this.getEarnedBalance();
+          // Automatically transfer on Miner stop?
+          // this.transferEarnedBalance();
         }
       },
       async getUserData() {
