@@ -30,7 +30,6 @@ CREATE TABLE IF NOT EXISTS membership_status_hist (
   db_time timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   status varchar(100) DEFAULT NULL,
   comment mediumtext,
-  PRIMARY KEY (user_id),
   FOREIGN KEY (user_id)
     REFERENCES users(user_id)
     ON DELETE CASCADE
