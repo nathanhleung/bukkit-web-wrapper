@@ -13,7 +13,10 @@
     data: {
       user_id: "",
       email: "",
+      name: "",
       minecraft_user: "",
+      perm_level: "",
+      membership_status: "",
       userData: {},
       isMining: false,
       minerData: {
@@ -121,10 +124,13 @@
     credentials: "include"
   });
   const json = await res.json();
-  const { user_id, email, minecraft_user } = json.data;
+  const { user_id, name, email, minecraft_user, perm_level, membership_status } = json.data;
+  app.name = name;
   app.user_id = user_id;
   app.email = email;
   app.minecraft_user = minecraft_user;
+  app.perm_level = perm_level;
+  app.membership_status = membership_status;
 
   // Initialize miner once user ID is available
   miner = new CoinHive.User("P17PsORp5ZyjfEX9Gy1Zcmpoh13ixmQd", app.user_id);

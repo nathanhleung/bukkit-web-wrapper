@@ -78,6 +78,11 @@
           <div class="col-md-6">
             <p class="lead">Here's your account data.</p>
             <div class="form-group">
+              <small class="text-muted">Name</small>
+              <br>
+              <input type="text" readonly class="form-control-plaintext" v-model="name">
+            </div>
+            <div class="form-group">
               <small class="text-muted">Email</small>
               <br>
               <input type="text" readonly class="form-control-plaintext" v-model="email">
@@ -85,8 +90,20 @@
             <div class="form-group">
               <small class="text-muted">Username</small>
               <br>
-              <input type="text" readonly class="form-control-plaintext" v-model="username">
+              <input type="text" readonly class="form-control-plaintext" v-model="minecraft_user">
             </div>
+            <!--
+            <div class="form-group">
+              <small class="text-muted">Current Permission Level</small>
+              <br>
+              <input type="text" readonly class="form-control-plaintext" v-model="perm_level">
+            </div>
+            <div class="form-group">
+              <small class="text-muted">Membership Status</small>
+              <br>
+              <input type="text" readonly class="form-control-plaintext" v-model="membership_status">
+            </div>
+          -->
           </div>
         </div>
         <br>
