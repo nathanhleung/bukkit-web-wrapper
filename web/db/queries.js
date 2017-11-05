@@ -1,4 +1,3 @@
-const bcrypt = require("bcrypt");
 const validator = require("validator");
 
 const minecraftServer = require("../minecraft-server");
@@ -7,22 +6,15 @@ const db = require("./db");
 
 class NoUserExistsError extends Error {}
 
-function addUser(name, email, mc_user, pass, user_uuid, cb) {
-  bcrypt.hash(pass, 10, insertUser);
-
+function addUser(name, email, mc_user, hashedPassword, user_uuid, cb) {
   const normalizedEmail = email.toLowerCase();
   const normalizedMcUser = mc_user.toLowerCase();
 
-  function insertUser(err, hash) {
-    if (err) {
-      return cb(err);
-    }
-    db.query(
-      "INSERT INTO users (uuid, name, email, minecraft_user, pass) VALUES (?, ?, ?, ?, ?)",
-      [user_uuid, name, normalizedEmail, normalizedMcUser, hash],
-      getLastUser
-    );
-  }
+  db.query(
+    "INSERT INTO users (uuid, name, email, minecraft_user, pass) VALUES (?, ?, ?, ?, ?)",
+    [user_uuid, name, normalizedEmail, normalizedMcUser, hashedPassword],
+    getLastUser
+  );
 
   function getLastUser(err, results) {
     if (err) {

@@ -44,9 +44,9 @@ function postRegister(req, res) {
   let user_id;
 
   const user_uuid = uuid();
-  isValidUser(name, email, username, password, addUserToDb);
+  isValidUser(name, email, username, password, checkStatus);
 
-  function addUserToDb(err, status) {
+  function checkStatus(err, status) {
     if (err) {
       logger.error(err);
       return res.json({
@@ -60,7 +60,11 @@ function postRegister(req, res) {
         message: status.message
       });
     }
-    addUser(name, email, username, password, user_uuid, logUserInfoToDb);
+    bcrypt.hash(password, 10, addUserToDb);
+  }
+
+  function addUserToDb(err, hashedPassword) {
+    addUser(name, email, username, hashedPassword, user_uuid, logUserInfoToDb);
   }
 
   function logUserInfoToDb(err, new_user_id) {
