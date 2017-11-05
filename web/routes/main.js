@@ -68,7 +68,30 @@ function postRegister(req, res) {
         message: "An error occurred."
       });
     }
-    logUserInfo(user_id, fingerprint, req.ip, setSessionCookie);
+    logUserInfo(user_id, fingerprint, req.ip, addMembershipStatusToDb);
+  }
+
+  function addMembershipStatusToDb(err) {
+    if (err) {
+      logger.error(err);
+      return res.json({
+        success: false,
+        message: "An error occurred."
+      });
+    }
+    changeMembershipStatus(user_id, 'approved', 'auto-approval', updateBukkitPerms);
+  }
+
+  function updateBukkitPerms(err) {
+    if (err) {
+      logger.error(err);
+      return res.json({
+        success: false,
+        message: "An error occurred."
+      });
+    }
+
+    changeUserPermissionLevel(user_id, 'member', setSessionCookie);
   }
 
   function setSessionCookie(err) {
