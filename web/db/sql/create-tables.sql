@@ -1,3 +1,5 @@
+# Separate each CREATE TABLE query by a newline
+# because each statement is split by the triple newline
 CREATE TABLE IF NOT EXISTS membership_status_hist (
   user_id int(11) NOT NULL,
   db_time timestamp NULL DEFAULT CURRENT_TIMESTAMP,

@@ -5,27 +5,31 @@
 
 const fs = require("fs");
 const path = require("path");
+const async = require('async');
 
 const logger = require("../logger");
 const db = require("./db");
 
-const createTablesSql = fs.readFileSync(
+const createTablesSqlStatements = fs.readFileSync(
   path.join(__dirname, "sql", "create-tables.sql"),
   "utf-8"
-);
+).split("\n\n\n");
 
+async.map(createTablesSqlStatements, createTable, (err, results) => {
+  if (err) {
+    return logger.error("There was an error creating the database tables.");
+  }
+  return logger.debug("All database tables created!");
+});
 
-
-async function createTables() {
-  return new Promise((resolve, reject) => {
-    db.query(createTablesSql, err => {
-      if (err) {
-        logger.error(err);
-        return reject(err);
-      }
-      logger.info("Database tables created!");
-      return resolve();
-    });
+async function createTable(createTableSql, cb) {
+  db.query(createTableSql, err => {
+    if (err) {
+      logger.error(err);
+      return cb(err);
+    }
+    logger.info("Database table created!");
+    return cb();
   });
 }
 
