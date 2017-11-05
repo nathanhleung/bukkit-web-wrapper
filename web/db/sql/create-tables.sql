@@ -24,7 +24,9 @@ CREATE TABLE IF NOT EXISTS users (
   name varchar(500) DEFAULT NULL,
   email varchar(100) DEFAULT NULL,
   minecraft_user varchar(16) DEFAULT NULL,
-  pass char(56) DEFAULT NULL,
+  # Bcrypt is 60 chars long
+  # https://stackoverflow.com/questions/5881169/what-column-type-length-should-i-use-for-storing-a-bcrypt-hashed-password-in-a-d
+  pass char(60) DEFAULT NULL,
   perm_level varchar(100) DEFAULT 'default',
   membership_status varchar(100) DEFAULT 'pending',
   PRIMARY KEY (user_id),
