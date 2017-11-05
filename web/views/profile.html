@@ -67,8 +67,9 @@
               <button
                 type="button"
                 class="btn btn-primary"
+                v-if="mining || hashBalance === 0"
                 v-on:click="transferEarnedBalance"
-                v-bind:disabled="transferring || mining || hashBalance === 0"
+                v-bind:disabled="transferring"
               >
                 {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
               </button>
