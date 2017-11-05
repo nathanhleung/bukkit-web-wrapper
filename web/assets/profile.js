@@ -44,7 +44,7 @@
       }
     },
     methods: {
-      toggleMining() {
+      async toggleMining() {
         let interval;
         if (!this.isMining) {
           miner.start();
