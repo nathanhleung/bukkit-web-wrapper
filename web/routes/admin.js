@@ -13,7 +13,7 @@ const { minecraftLogFile } = require("../constants");
  * Sends back the admin view
  */
 function getAdmin(req, res) {
-  return res.render("admin");
+  return res.sendView("admin");
 }
 
 /**

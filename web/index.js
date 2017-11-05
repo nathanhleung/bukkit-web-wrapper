@@ -27,9 +27,10 @@ app.set("port", process.env.PORT || 80);
 // (We're not using a template engine, so this isn't actually required,
 // but we're using it in the middleware below)
 app.set("views", path.join(__dirname, "views"));
-// Add "render" function to Response object
+// Add "sendView" function to Response object
+// (Don't want to override "render")
 app.use((req, res, next) => {
-  res.render = viewName =>
+  res.sendView = viewName =>
     res.sendFile(path.join(app.get("views"), `${viewName}.html`));
   next();
 });
@@ -88,7 +89,7 @@ app.post(
 );
 app.get("*", (req, res) => {
   res.status(404);
-  return res.render("404");
+  return res.sendView("404");
 });
 
 // Start the server on the port set above
