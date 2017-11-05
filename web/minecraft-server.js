@@ -76,6 +76,8 @@ function startMinecraftServer() {
 
   minecraftServer.on("exit", code => {
     logger.info(`Minecraft Server exited with code ${code}`);
+    // Stop everything once server stops
+    process.exit(0);
   });
 
   return minecraftServer;
