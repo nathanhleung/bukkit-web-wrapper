@@ -63,44 +63,32 @@ app.use(
 );
 
 app.get("/", mainRoutes.getHome);
-
+app.get("/profile", isAuthorized, mainRoutes.getProfile);
 app.post("/register", mainRoutes.postRegister);
-
 app.post("/login", mainRoutes.postLogin);
-
 app.get("/logout", mainRoutes.getLogout);
-
 app.get("/api/version", apiRoutes.getApiVersion);
-
 app.get("/api/users-online", apiRoutes.getApiUsersOnline);
-
 app.get("/api/profile", isAuthorized, apiRoutes.getApiProfile);
-
 // this is probably dangerous bc of filesystem access
 // at least its read only
 app.get("/api/user", isAuthorized, apiRoutes.getApiUser);
-
 app.get("/admin", isAdmin, adminRoutes.getAdmin);
-
 app.get("/api/logs", isAdmin, adminRoutes.getApiLogs);
-
 app.post("/api/command", isAdmin, adminRoutes.postApiCommand);
-
 app.get(
   "/api/user-hash-balance",
   isAuthorized,
   minerRoutes.getApiUserHashBalance
 );
-
 app.post(
   "/api/user-hash-withdraw",
   isAuthorized,
   minerRoutes.postApiUserHashWithdraw
 );
-
 app.get("*", (req, res) => {
   res.status(404);
-  return res.render("home");
+  return res.render("404");
 });
 
 // Start the server on the port set above

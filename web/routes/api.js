@@ -12,7 +12,7 @@ const request = require("request");
 const pkg = require("../../package.json");
 const logger = require("../logger");
 
-const { findUserById } = "../helpers";
+const { findUserById } = require("../helpers");
 const { essentialsUserDataDir } = require("../constants");
 
 /**

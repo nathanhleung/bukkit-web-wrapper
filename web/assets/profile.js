@@ -118,9 +118,6 @@
     credentials: "include"
   });
   const json = await res.json();
-  if (!json.success) {
-    window.location.replace("/");
-  }
   const { id, email, username } = json.data;
   app.id = id;
   app.email = email;

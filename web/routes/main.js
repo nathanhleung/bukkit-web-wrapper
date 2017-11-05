@@ -27,6 +27,10 @@ function getHome(req, res) {
   }
 }
 
+function getProfile(req, res) {
+  return res.render('profile');
+}
+
 /*
 function postRegister(req, res) {
   const { name, email, username, password, fingerprint } = req.body;
@@ -237,6 +241,7 @@ function getLogout(req, res) {
 
 module.exports = {
   getHome,
+  getProfile,
   postRegister,
   postLogin,
   getLogout

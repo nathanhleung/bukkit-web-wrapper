@@ -64,10 +64,14 @@ function findUserByKey(key, value, cb) {
 function isAuthorized(req, res, next) {
   findUserById(req.session.userId, (err, user) => {
     if (err || typeof user === "undefined") {
+      // Redirect to home if not logged in
+      res.redirect("/");
+      /*
       return res.json({
         success: false,
         message: "Not logged in."
       });
+      */
     }
     return next();
   });
