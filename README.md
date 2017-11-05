@@ -19,7 +19,7 @@ Preferred version in parentheses.
 
 By default, the web server listens on port 80, and the Bukkit server listens on port 8080, although this can be changed setting the `PORT` and `MINECRAFT_PORT` environment variables.
 
-On a first run, run `yarn start -- --create-tables` to create the database tables.
+On a first run, run `yarn setup` to create the database tables.
 
 To run the server as a daemon (in the background), run `yarn forever`.
 

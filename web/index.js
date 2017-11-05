@@ -10,7 +10,6 @@ const morgan = require("morgan"); // Logging utility
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const readline = require("readline");
-const minimize = require("minimist");
 
 const { isAuthorized, isAdmin } = require("./helpers");
 const mainRoutes = require("./routes/main");
@@ -20,13 +19,6 @@ const apiRoutes = require("./routes/api");
 const logger = require("./logger"); // custom logger function
 
 const minecraftServer = require("./minecraft-server");
-const createTables = require('./db/create-tables');
-
-// Parse command line arguments
-const argv = minimist(process.argv.slice(2));
-if (argv['create-tables']) {
-  createTables();
-}
 
 const app = express();
 app.set("port", process.env.PORT || 80);

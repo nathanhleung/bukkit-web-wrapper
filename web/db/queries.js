@@ -110,23 +110,19 @@ function isValidName(name, cb) {
     return cb(null, status);
   }
 
-  db.query(
-    "SELECT * FROM users WHERE name = ?",
-    name,
-    (err, result) => {
-      if (err) {
-        return cb(err);
-      }
+  db.query("SELECT * FROM users WHERE name = ?", name, (err, result) => {
+    if (err) {
+      return cb(err);
+    }
 
-      if (result.length > 0) {
-        status.valid = false;
-        status.message = "An account with that name already exists.";
-        return cb(null, status);
-      }
-
+    if (result.length > 0) {
+      status.valid = false;
+      status.message = "An account with that name already exists.";
       return cb(null, status);
     }
-  );
+
+    return cb(null, status);
+  });
 }
 
 function isValidEmail(email, cb) {
@@ -206,22 +202,16 @@ function isValidMCUser(mc_user, cb) {
 }
 
 function queryUserByUserID(user_id, callback) {
-  db.query(
-    "SELECT * FROM users WHERE user_id = ?",
-    user_id,
-    (err, result) => {
-      if (err) {
-        return callback(err);
-      }
-      if (result.length === 0) {
-        return callback(
-          new NoUserExistsError("There are no users with this id")
-        );
-      }
-
-      return callback(null, result[0]);
+  db.query("SELECT * FROM users WHERE user_id = ?", user_id, (err, result) => {
+    if (err) {
+      return callback(err);
     }
-  );
+    if (result.length === 0) {
+      return callback(new NoUserExistsError("There are no users with this id"));
+    }
+
+    return callback(null, result[0]);
+  });
 }
 
 function queryUserByEmail(email, callback) {

@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "start": "node -r dotenv/config web/index.js",
+    "setup": "node -r dotenv/config web/setup.js",
     "forever": "forever start -c \"yarn start\" ./",
     "watch": "nodemon --ignore web/public/ --exec \"yarn start\"",
     "format": "prettier --write \"web/**/*.js\"",
@@ -26,7 +27,6 @@
     "forever": "^0.15.3",
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
-    "minimist": "^1.2.0",
     "morgan": "^1.9.0",
     "mysql": "^2.15.0",
     "nbt": "^0.7.0",

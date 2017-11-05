@@ -10,7 +10,7 @@ const logger = require("../logger");
 const db = require("./db");
 
 const createTablesSql = fs.readFileSync(
-  path.join(__dirname, "sql", "createTables.sql")
+  path.join(__dirname, "sql", "create-tables.sql")
 );
 
 async function createTables() {
