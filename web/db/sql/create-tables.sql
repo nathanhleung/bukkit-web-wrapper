@@ -3,22 +3,22 @@ CREATE TABLE IF NOT EXISTS `membership_status_hist` (
   `db_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(100) DEFAULT NULL,
   `comment` mediumtext,
-  KEY `FK_MEM_STATUS_HIST_USER_ID_idx` (`user_id`),
-  CONSTRAINT `FK_MEM_STATUS_HIST_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  PRIMARY KEY (`user_id`),
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `user_info` (
   `user_id` int(11) NOT NULL,
   `fingerprint` mediumtext,
   `ip_address` varchar(45) DEFAULT NULL,
-  `log_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  KEY `FK_USER_INFO_USER_ID_idx` (`user_id`),
-  CONSTRAINT `FK_USER_INFO_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  `log_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+  PRIMARY KEY (`user_id`),
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` int(11) NOT NULL,
+  `uuid` char(36) NOT NULL,
   `name` varchar(500) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   `minecraft_user` varchar(16) DEFAULT NULL,
