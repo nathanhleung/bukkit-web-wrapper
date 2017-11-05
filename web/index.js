@@ -30,11 +30,11 @@ app.set("views", path.join(__dirname, "views"));
 // Add "sendView" function to Response object
 // (Don't want to override "render")
 app.use((req, res, next) => {
-  console.log(res.headersSent);
-  res.sendView = viewName =>
+  res.sendView = viewName => {
+    console.log('2. sending file ' + res.headersSent);
     res.sendFile(path.join(app.get("views"), `${viewName}.html`));
-
-  console.log(res.headersSent);
+    console.log('3. sent file ' + res.headersSent);
+  }
   return next();
 });
 

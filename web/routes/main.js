@@ -33,6 +33,7 @@ function getHome(req, res) {
 }
 
 function getProfile(req, res) {
+  console.log('1. Get profile: ' + res.headersSent);
   return res.sendView("profile");
 }
 
