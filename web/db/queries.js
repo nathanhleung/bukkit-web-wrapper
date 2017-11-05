@@ -30,7 +30,7 @@ function addUser(name, email, mc_user, pass, cb) {
     if (err) {
       return cb(err);
     }
-    db.query("LAST_INSERT_ID();", getLastUser);
+    db.query("LAST_INSERT_ID()", getLastUser);
   }
 
   function getLastUser(err, results) {
