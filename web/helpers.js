@@ -22,12 +22,10 @@ function readUserData(cb) {
 
 // Express middleware
 function isAuthorized(req, res, next) {
-  console.log("Is Authorized?" + JSON.stringify(req.session));
-
   queryUserByUserID(req.session.userId, (err, user) => {
     if (err || typeof user === "undefined") {
       // Redirect to home if not logged in
-      res.redirect("/");
+      return res.redirect("/");
     }
     return next();
   });

@@ -32,7 +32,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use((req, res, next) => {
   res.sendView = viewName => {
     res.sendFile(path.join(app.get("views"), `${viewName}.html`));
-  }
+  };
   return next();
 });
 

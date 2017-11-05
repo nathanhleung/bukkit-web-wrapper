@@ -122,7 +122,7 @@ function postRegister(req, res) {
         message: "An error occurred."
       });
     }
-    req.session.user_id = user_id;
+    req.session.userId = user_id;
     req.session.save(err => {
       if (err) {
         logger.error(err);
