@@ -21,6 +21,32 @@
               <small class="text-muted">Last Login</small>
               <br>
               <p>{{ lastLogin }}</p>
+              <br>
+              <div v-if="isMining">
+                <br>
+                <small class="text-muted">Earned This Session</small>
+                <br>
+                <p>Ƶ{{ minerData.totalHashes }}</p>
+                <small class="text-muted">Earning Speed<br>Ƶ{{ minerData.hashrate }}/sec</small>
+              </div>
+              <br>
+              <div v-if="!isMining && hashBalance !== 0">
+                <h2 class="display-4">Transfer Balance</h2>
+                <p class="lead">
+                  You've got a positive Ƶ balance, so you can transfer it to the game
+                  with the button below.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+
+                  v-on:click="transferEarnedBalance"
+                  v-bind:disabled="transferring"
+                >
+                  {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
+                </button>
+                <p>{{ error }}</p>
+              </div>
             </div>
             <h2 class="display-3">Money</h2>
             <p class="lead">
@@ -57,31 +83,6 @@
                 {{ isMining ? 'Stop' : 'Get Money' }}
               </button>
               <br>
-              <div v-if="isMining">
-                <br>
-                <small class="text-muted">Earned This Session</small>
-                <br>
-                <p>Ƶ{{ minerData.totalHashes }}</p>
-                <small class="text-muted">Earning Speed<br>Ƶ{{ minerData.hashrate }}/sec</small>
-              </div>
-              <br>
-              <div v-if="!isMining && hashBalance !== 0">
-                <h2 class="display-4">Transfer Balance</h2>
-                <p class="lead">
-                  You've got a positive Ƶ balance, so you can transfer it to the game
-                  with the button below.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-
-                  v-on:click="transferEarnedBalance"
-                  v-bind:disabled="transferring"
-                >
-                  {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
-                </button>
-                <p>{{ error }}</p>
-              </div>
             </div>
           </div>
           <div class="col-md-6">
