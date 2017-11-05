@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "start": "node -r dotenv/config web/index.js",
-    "forever": "forever -c \"yarn start\" ./",
+    "forever": "forever start -c \"yarn start\" ./",
     "watch": "nodemon --ignore web/public/ --exec \"yarn start\"",
     "format": "prettier --write \"web/**/*.js\"",
     "lint": "eslint \"web/**/*.js\" --fix",
