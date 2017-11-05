@@ -65,6 +65,11 @@
               </div>
               <br>
               <div v-if="!isMining && hashBalance !== 0">
+                <p>
+                  You've got a positive Ƶ balance, so you can transfer it to the game
+                  with the button below.
+                </p>
+                <br>
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -75,7 +80,6 @@
                   {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
                 </button>
                 <p>{{ error }}</p>
-                <small class="text-muted">After you finish a mining session, you can click this button to transfer your Ƶ's to your in-game balance.</small>
               </div>
             </div>
           </div>
