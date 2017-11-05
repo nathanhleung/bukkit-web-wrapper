@@ -63,12 +63,11 @@ function addUser(name, email, mc_user, pass, cb) {
 }
 
 function isValidUser(name, email, mc_user, password, cb) {
-
   // Check password synchronously
   if (!validator.isLength(password, { min: 8 })) {
     cb(null, {
       valid: false,
-      message: 'Password must be at least 8 characters.',
+      message: "Password must be at least 8 characters."
     });
   }
 

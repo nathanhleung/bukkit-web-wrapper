@@ -8,7 +8,7 @@ const fs = require("fs");
 const _ = require("lodash");
 
 const { userDataFile } = require("./constants");
-const { queryUserByUserID } = require('./db/queries');
+const { queryUserByUserID } = require("./db/queries");
 
 function readUserData(cb) {
   fs.readFile(userDataFile, (err, raw) => {
@@ -22,7 +22,7 @@ function readUserData(cb) {
 
 // Express middleware
 function isAuthorized(req, res, next) {
-  queryUserByUserID(req.sessionuserId, (err, user) => {
+  queryUserByUserID(req.session.userId, (err, user) => {
     if (err || typeof user === "undefined") {
       // Redirect to home if not logged in
       res.redirect("/");
@@ -59,5 +59,5 @@ function isAdmin(req, res, next) {
 module.exports = {
   isAuthorized,
   isAdmin,
-  readUserData,
+  readUserData
 };
