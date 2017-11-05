@@ -11,9 +11,9 @@
       this.getEarnedBalance();
     },
     data: {
-      id: "",
+      user_id: "",
       email: "",
-      username: "",
+      minecraft_user: "",
       userData: {},
       isMining: false,
       minerData: {
@@ -78,9 +78,12 @@
           credentials: "include"
         });
         const json = await res.json();
-        this.hashBalance = json.balance;
-        if (originalBalance === -1) {
-          originalBalance = json.balance;
+        const { balance } = json;
+        if (typeof balance !== 'undefined') {
+          this.hashBalance = balance;
+          if (originalBalance === -1) {
+            originalBalance = balance;
+          }
         }
       },
       async transferEarnedBalance() {
@@ -118,11 +121,11 @@
     credentials: "include"
   });
   const json = await res.json();
-  const { id, email, username } = json.data;
-  app.id = id;
+  const { user_id, email, minecraft_user } = json.data;
+  app.user_id = user_id;
   app.email = email;
-  app.username = username;
+  app.minecraft_user = minecraft_user;
 
   // Initialize miner once user ID is available
-  miner = new CoinHive.User("P17PsORp5ZyjfEX9Gy1Zcmpoh13ixmQd", app.id);
+  miner = new CoinHive.User("P17PsORp5ZyjfEX9Gy1Zcmpoh13ixmQd", app.user_id);
 })();

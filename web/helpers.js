@@ -46,7 +46,7 @@ function isAdmin(req, res, next) {
         message: "Not logged in."
       });
     }
-    if (user.username === "nate" || user.username === "wil") {
+    if (user.minecraft_user === "nate") {
       return next();
     }
     return res.json({
