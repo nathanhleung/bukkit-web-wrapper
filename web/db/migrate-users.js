@@ -30,7 +30,14 @@ function migrateUsers(finalCallback) {
     // the function after it's been set
     let user_id;
     const name = "N/A";
-    isValidUser(name, email, username, password, addUserToDb);
+    try {
+      isValidUser(name, email, username, password, addUserToDb);
+    } catch (err) {
+      if (err) {
+        logger.error("Tried inserting user " + user);
+        return logger.error(err);
+      }
+    }
 
     function addUserToDb(err, status) {
       if (err) {
