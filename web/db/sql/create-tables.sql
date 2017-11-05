@@ -18,9 +18,10 @@ CREATE TABLE IF NOT EXISTS `user_info` (
 
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `uuid` int(11) NOT NULL,
   `name` varchar(500) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
-  `minecraft_user` varchar(100) DEFAULT NULL,
+  `minecraft_user` varchar(16) DEFAULT NULL,
   `pass` char(56) DEFAULT NULL,
   `perm_level` varchar(100) DEFAULT 'default',
   `membership_status` varchar(100) DEFAULT 'pending',

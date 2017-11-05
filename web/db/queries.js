@@ -1,261 +1,330 @@
 const bcrypt = require("bcrypt");
 const validator = require("validator");
+const uuid = require("uuid/v4");
 
-const logger = require("../logger");
 const minecraftServer = require("../minecraft-server");
 
 const connection = require("./connection");
 
-function addUser(name, email, mc_user, pass) {
-  bcrypt.hash(pass, 10, (err, hash) => {
-    connection.query(
-      "INSERT INTO users " +
-        "(name, email, minecraft_user, pass) VALUES " +
-        "(?, ?, ?, ?)",
-      name,
-      email,
-      mc_user,
-      hash,
-      (err, res) => {
-        if (err) {
-          logger.error(err);
-          throw err;
-        }
-        logger.info("Inserted 1 row into users table");
-      }
-    );
-  });
+class NoUserExistsError extends Error {}
 
-  queryUserByMCUser(mc_user, (err, user) => {
+function addUser(name, email, mc_user, pass, cb) {
+  const user_uuid = uuid();
+  bcrypt.hash(pass, 10, insertUser);
+
+  const normalizedEmail = email.toLowerCase();
+  const normalizedMcUser = mc_user.toLowerCase();
+
+  function insertUser(err, hash) {
     if (err) {
-      logger.error(err);
-      throw err;
+      return cb(err);
     }
-    console.log(res.toString());
+    connection.query(
+      "INSERT INTO users (uuid, name, email, minecraft_user, pass) VALUES (?, ?, ?, ?, ?)",
+      [user_uuid, name, normalizedEmail, normalizedMcUser, hash],
+      getLastUserId
+    );
+  }
+
+  function getLastUserId(err) {
+    if (err) {
+      return cb(err);
+    }
+    connection.query("LAST_INSERT_ID();", getLastUser);
+  }
+
+  function getLastUser(err, results) {
+    if (err) {
+      return cb(err);
+    }
+
+    const lastUserId = results[0];
+
+    queryUserByUserID(lastUserId, insertMembershipHistory);
+  }
+
+  function insertMembershipHistory(err, results) {
+    if (err) {
+      return cb(err);
+    }
+
+    const user = results[0];
     connection.query(
       "INSERT INTO membership_status_hist (user_id, status, comment) VALUES (?, 'pending', 'application submission')",
       user.user_id,
-      (err, res) => {
+      err => {
         if (err) {
-          logger.error(err);
-          throw err;
+          return cb(err);
         }
-      }
-    );
-  });
-}
-
-function isValidUser(name, email, mc_user) {
-  let valid = "";
-
-  valid = isValidName(name);
-  if (valid) {
-    return valid;
-  }
-  valid = isValidEmail(email);
-  if (valid) {
-    return valid;
-  }
-  valid = isValidMCUser(mc_user);
-  if (valid) {
-    return valid;
-  }
-
-  return valid;
-}
-
-function isValidName(name) {
-  let valid = "";
-
-  if (validator.isLength(name, { min: 500 })) {
-    valid = "name is too long";
-  } else {
-    connection.query(
-      "SELECT * FROM users WHERE name = ?",
-      name,
-      (err, result) => {
-        if (err) {
-          logger.error(err);
-          throw err;
-        } else if (result.length > 0) {
-          valid = "there is already an account with this name";
-        }
+        return cb();
       }
     );
   }
-
-  return valid;
 }
 
-function isValidEmail(email) {
-  let valid = "";
+function isValidUser(name, email, mc_user, cb) {
+  isValidName(name, returnNameStatus);
+
+  function returnNameStatus(err, status) {
+    if (err) {
+      return cb(err);
+    }
+    if (!status.valid) {
+      return cb(null, status);
+    }
+    return isValidEmail(email, returnEmailStatus);
+  }
+
+  function returnEmailStatus(err, status) {
+    if (err) {
+      return cb(err);
+    }
+    if (!status.valid) {
+      return cb(null, status);
+    }
+    return isValidMCUser(mc_user, returnMcUserStatus);
+  }
+
+  function returnMcUserStatus(err, status) {
+    if (err) {
+      return cb(err);
+    }
+    if (!status.valid) {
+      return cb(null, status);
+    }
+    // If no errors have been triggered thus far,
+    // we should be fine
+    return cb(null, status);
+  }
+}
+
+function isValidName(name, cb) {
+  const status = {
+    valid: true,
+    message: ""
+  };
+
+  if (!validator.isLength(name, { min: 1, max: 500 })) {
+    status.valid = false;
+    status.message = "Name must be between 1 and 500 characters.";
+    return cb(null, status);
+  }
+
+  connection.query(
+    "SELECT * FROM users WHERE name = ?",
+    name,
+    (err, result) => {
+      if (err) {
+        return cb(err);
+      }
+
+      if (result.length > 0) {
+        status.valid = false;
+        status.message = "An account with that name already exists.";
+        return cb(null, status);
+      }
+
+      return cb(null, status);
+    }
+  );
+}
+
+function isValidEmail(email, cb) {
+  const status = {
+    valid: true,
+    message: ""
+  };
 
   if (!validator.isEmail(email)) {
-    valid = "email is not actually an email";
-  } else if (validator.isLength(email, { min: 100 })) {
-    valid = "email is too long";
-  } else {
-    connection.query(
-      "SELECT * FROM users WHERE email = ?",
-      email,
-      (err, result) => {
-        if (err) {
-          logger.error(err);
-          throw err;
-        } else if (result.length > 0) {
-          valid = "there is already an account with this email";
-        }
-      }
-    );
+    status.valid = false;
+    status.message = "This does not appear to be a valid email address.";
+    return cb(null, status);
   }
 
-  return valid;
+  if (!validator.isLength(email, { min: 1, max: 100 })) {
+    status.valid = false;
+    status.message = "Email must be between 1 and 100 characters.";
+    return cb(null, status);
+  }
+
+  queryUserByEmail(email, returnStatus);
+
+  function returnStatus(err, result) {
+    if (err instanceof NoUserExistsError) {
+      return cb(null, status);
+    }
+
+    if (err) {
+      return cb(err);
+    }
+
+    if (typeof result !== "undefined") {
+      status.valid = false;
+      status.message = "A user with that email already exists.";
+      return cb(null, status);
+    }
+  }
 }
 
-function isValidMCUser(mc_user) {
-  let valid = "";
+function isValidMCUser(mc_user, cb) {
+  const status = {
+    valid: true,
+    message: ""
+  };
 
-  if (validator.isLength(mc_user, { min: 100 })) {
-    valid = "username is too long";
-  } else {
-    connection.query(
-      "SELECT * FROM users WHERE minecraft_user = ?",
-      mc_user,
-      (err, result) => {
-        if (err) {
-          logger.error(err);
-          throw err;
-        } else if (result.length > 0) {
-          valid = "there is already an account with this minecraft username";
-        }
-      }
-    );
+  // See https://help.mojang.com/customer/en/portal/articles/928638-minecraft-usernames?b_id=5408
+  if (!validator.isLength(mc_user, { min: 3, max: 16 })) {
+    status.valid = false;
+    status.message = "Minecraft username must be between 3 and 16 characters";
+    cb(null, status);
   }
 
-  return valid;
+  if (!validator.matches(mc_user, /[A-Za-z0-9_]+/)) {
+    status.valid = false;
+    status.message =
+      "Minecraft username must contain only alphanumeric characcters and underscores.";
+    cb(null, status);
+  }
+
+  queryUserByMCUser(mc_user, returnStatus);
+
+  function returnStatus(err, result) {
+    if (err instanceof NoUserExistsError) {
+      return cb(null, status);
+    }
+
+    if (err) {
+      return cb(err);
+    }
+
+    if (typeof result !== "undefined") {
+      status.valid = false;
+      status.message = "A user with that Minecraft username already exists.";
+      return cb(null, status);
+    }
+  }
 }
 
 function queryUserByUserID(user_id, callback) {
   connection.query(
     "SELECT * FROM users WHERE user_id = ?",
     user_id,
-    (err, users) => {
+    (err, result) => {
       if (err) {
-        callback(err);
-      } else if (result.length == 0) {
-        callback("there are no users with this id");
-      } else {
-        callback(null, users[0]);
+        return callback(err);
       }
+      if (result.length === 0) {
+        return callback(
+          new NoUserExistsError("There are no users with this id")
+        );
+      }
+
+      return callback(null, result[0]);
     }
   );
 }
 
 function queryUserByEmail(email, callback) {
+  const normalizedEmail = email.toLowerCase();
+
   connection.query(
     "SELECT * FROM users WHERE email = ?",
-    email,
-    (err, users) => {
+    normalizedEmail,
+    (err, result) => {
       if (err) {
-        callback(err);
-      } else if (result.length == 0) {
-        callback("there are no users with this email");
-      } else {
-        callback(null, users[0]);
+        return callback(err);
       }
+
+      if (result.length === 0) {
+        return callback(
+          new NoUserExistsError("There are no users with this email")
+        );
+      }
+
+      return callback(null, result[0]);
     }
   );
 }
 
+/**
+ * Gets the user corresponding to the given Minecraft username
+ * @param {string} mc_user - The user's minecraft username
+ * @param {function} callback - The callback to be called when the search is finished
+ */
 function queryUserByMCUser(mc_user, callback) {
+  const normalizedMcUser = mc_user.toLowerCase();
+
   connection.query(
     "SELECT * FROM users WHERE minecraft_user = ?",
-    mc_user,
-    (err, users) => {
-      if (err) {
-        callback(err);
-      } else if (result.length == 0) {
-        callback("there are no users with this username");
-      } else {
-        callback(null, users[0]);
-      }
-    }
-  );
-}
-
-function changeBukkitPermissions(mc_user, perm_level) {
-  minecraftServer.stdin.write(`pex user ${mc_user} group add ${perm_level}\n`);
-}
-
-function changeUserPermissionLevel(user_id, new_perm_level) {
-  changeBukkitPermissions(mc_user, new_perm_level);
-
-  connection.query(
-    "UPDATE users SET perm_level = ? WHERE user_id = ?",
-    new_perm_level,
-    user_id,
+    normalizedMcUser,
     (err, result) => {
       if (err) {
-        logger.error(err);
-        throw err;
+        return callback(err);
       }
+
+      if (result.length === 0) {
+        return callback(
+          new NoUserExistsError(
+            "There are no users with this Minecraft username"
+          )
+        );
+      }
+
+      return callback(null, result[0]);
     }
   );
 }
 
-function getAllUsers() {
-  let result = null;
-  connection.query("SELECT * FROM users", (err, qresult) => {
+function changeUserPermissionLevel(user_id, new_perm_level, cb) {
+  queryUserByUserID(user_id, sendCommandToServer);
+
+  function sendCommandToServer(err, user) {
     if (err) {
-      logger.error(err);
-      throw err;
-    } else {
-      result = qresult;
+      return cb(err);
     }
-  });
-  return result;
+    const { minecraft_user } = user;
+    minecraftServer.stdin.write(
+      `pex user ${minecraft_user} group add ${new_perm_level}\n`
+    );
+
+    connection.query(
+      "UPDATE users SET perm_level = ? WHERE user_id = ?",
+      [new_perm_level, user_id],
+      cb
+    );
+  }
 }
 
-function logUserInfo(user_id, fingerprint, ip_address) {
+function getAllUsers(cb) {
+  connection.query("SELECT * FROM users", cb);
+}
+
+function logUserInfo(user_id, fingerprint, ip_address, cb) {
   connection.query(
     "INSERT INTO user_info (user_id, fingerprint, ip_address) VALUES (?, ?, ?)",
-    user_id,
-    fingerprint,
-    ip_address,
-    (err, qresult) => {
-      if (err) {
-        logger.error(err);
-        throw err;
-      }
-    }
+    [user_id, fingerprint, ip_address],
+    cb
   );
 }
 
-function changeMembershipStatus(user_id, mem_status, comment) {
+function changeMembershipStatus(user_id, mem_status, comment, cb) {
   connection.query(
     "UPDATE users SET membership_status = ? WHERE user_id = ?",
-    mem_status,
-    user_id,
-    (err, result) => {
-      if (err) {
-        logger.error(err);
-        throw err;
-      }
-    }
+    [mem_status, user_id],
+    insertIntoHistory
   );
 
-  connection.query(
-    "INSERT INTO membership_status_hist (user_id, status, comment) VALUES (?, ?, ?)",
-    user_id,
-    mem_status,
-    comment,
-    (err, res) => {
-      if (err) {
-        logger.error(err);
-        throw err;
-      }
+  function insertIntoHistory(err) {
+    if (err) {
+      return cb(err);
     }
-  );
+
+    connection.query(
+      "INSERT INTO membership_status_hist (user_id, status, comment) VALUES (?, ?, ?)",
+      [user_id, mem_status, comment],
+      cb
+    );
+  }
 }
 
 module.exports = {
