@@ -22,6 +22,8 @@ function readUserData(cb) {
 
 // Express middleware
 function isAuthorized(req, res, next) {
+  console.log("Is Authorized?" + req.session);
+
   queryUserByUserID(req.session.userId, (err, user) => {
     if (err || typeof user === "undefined") {
       // Redirect to home if not logged in
