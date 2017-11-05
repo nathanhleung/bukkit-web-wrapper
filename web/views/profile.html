@@ -64,17 +64,19 @@
                 <small class="text-muted">Earning Speed<br>Ƶ{{ minerData.hashrate }}/sec</small>
               </div>
               <br>
-              <button
-                type="button"
-                class="btn btn-primary"
-                v-if="!isMining && hashBalance !== 0"
-                v-on:click="transferEarnedBalance"
-                v-bind:disabled="transferring"
-              >
-                {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
-              </button>
-              <p>{{ error }}</p>
-              <small class="text-muted">After you finish a mining session, you can click this button to transfer your Ƶ's to your in-game balance.</small>
+              <div v-if="!isMining && hashBalance !== 0">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+
+                  v-on:click="transferEarnedBalance"
+                  v-bind:disabled="transferring"
+                >
+                  {{ transferring ? 'Transferring...' : 'Transfer Money to Game' }}
+                </button>
+                <p>{{ error }}</p>
+                <small class="text-muted">After you finish a mining session, you can click this button to transfer your Ƶ's to your in-game balance.</small>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
