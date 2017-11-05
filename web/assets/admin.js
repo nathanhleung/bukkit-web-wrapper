@@ -1,3 +1,6 @@
+/* eslint-env browser */
+/* global Vue */
+
 (async () => {
   const app = new Vue({
     el: "#admin-app",
@@ -18,10 +21,10 @@
         this.logs = data;
       },
       async runCommand() {
-        const command = this.command;
+        const { command } = this;
         // Clear form
         this.command = "";
-        const res = await fetch("/api/command", {
+        await fetch("/api/command", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

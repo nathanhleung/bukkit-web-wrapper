@@ -1,12 +1,12 @@
 // Set NODE_ENV to "test" to suppress logging
 process.env.NODE_ENV = "test";
 
-const request = require('supertest');
+const request = require("supertest");
 
-const app = require('./');
+const app = require("./");
 
-it('responds to GET /', () => {
+it("responds to GET /", () => {
   request(app)
-    .get('/')
+    .get("/")
     .expect(200, done);
 });

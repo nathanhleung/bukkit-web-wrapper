@@ -15,6 +15,7 @@ const path = require("path");
 
 // Causes a side effect which adds the Syslog
 // transport to the actual winston object
+// eslint-disable-next-line no-unused-expressions
 require("winston-syslog").Syslog;
 
 // Required to use syslog
@@ -22,10 +23,10 @@ winston.setLevels(winston.config.syslog.levels);
 
 let logger;
 
-if (process.env.NODE_ENV === 'test') {
+if (process.env.NODE_ENV === "test") {
   // Supress all logs in test environment
   logger = new winston.Logger({
-    transports: null,
+    transports: null
   });
 } else {
   logger = new winston.Logger({

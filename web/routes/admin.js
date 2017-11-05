@@ -3,18 +3,17 @@
  * restricted routes
  */
 
-const path = require("path");
 const fs = require("fs");
-const minecraftServer = require("./minecraft-server");
 
-const { minecraftLogFile } = require("./constants");
+const minecraftServer = require("../minecraft-server");
+const { minecraftLogFile } = require("../constants");
 
 /**
  * GET /admin
- * Sends back the public/admin.html file
+ * Sends back the admin view
  */
 function getAdmin(req, res) {
-  res.sendFile(path.join(__dirname, "public", "admin.html"));
+  return res.render("admin");
 }
 
 /**

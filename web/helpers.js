@@ -5,7 +5,6 @@
  */
 
 const fs = require("fs");
-const path = require("path");
 const _ = require("lodash");
 
 const { userDataFile } = require("./constants");
@@ -43,7 +42,7 @@ function findUserByKey(key, value, cb) {
       return cb(err);
     }
     const userIds = Object.keys(data);
-    const length = userIds.length;
+    const { length } = userIds;
     for (let i = 0; i < length; i += 1) {
       const userId = userIds[i];
       const user = data[userId];

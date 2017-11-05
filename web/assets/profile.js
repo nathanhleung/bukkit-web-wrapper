@@ -1,3 +1,6 @@
+/* eslint-env browser */
+/* global Vue _ moment fetch CoinHive */
+
 (async () => {
   let miner;
   let originalBalance = -1;
@@ -20,7 +23,7 @@
       },
       hashBalance: 0,
       transferring: false,
-      error: '',
+      error: ""
     },
     computed: {
       lastLogin() {
@@ -104,7 +107,7 @@
           this.getEarnedBalance();
         } else {
           this.transferring = false;
-          this.error = "An error occurred."
+          this.error = "An error occurred.";
         }
       }
     }

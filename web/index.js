@@ -8,20 +8,31 @@ const express = require("express");
 const path = require("path");
 const morgan = require("morgan"); // Logging utility
 const bodyParser = require("body-parser");
-const fs = require("fs");
 const session = require("express-session");
 const readline = require("readline");
 
 const { isAuthorized, isAdmin } = require("./helpers");
-const routes = require("./routes");
-const adminRoutes = require("./admin-routes");
-const minerRoutes = require("./miner-routes");
+const mainRoutes = require("./routes/main");
+const adminRoutes = require("./routes/admin");
+const minerRoutes = require("./routes/miner");
+const apiRoutes = require("./routes/api");
 const logger = require("./logger"); // custom logger function
 
-const minecraftServer = require('./minecraft-server');
+const minecraftServer = require("./minecraft-server");
 
 const app = express();
 app.set("port", process.env.PORT || 80);
+
+// Set view directory
+// (We're not using a template engine, so this isn't actually required,
+// but we're using it in the middleware below)
+app.set("views", path.join(__dirname, "views"));
+// Add "render" function to Response object
+app.use((req, res, next) => {
+  res.render = viewName =>
+    res.sendFile(path.join(app.get("views"), `${viewName}.html`));
+  next();
+});
 
 // Tell Morgan to generate Apache-style logs,
 // and send those logs to our custom logger
@@ -38,7 +49,7 @@ app.use(
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(
-  express.static(path.join(__dirname, "public"), {
+  express.static(path.join(__dirname, "assets"), {
     maxAge: "1y"
   })
 );
@@ -51,32 +62,23 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  if (req.session.userId) {
-    findUserById(req.session.userId, (err, user) => {
-      if (!err && typeof user !== "undefined") {
-        return res.redirect("/profile.html");
-      }
-      return res.sendFile(path.join(__dirname, "public", "index.html"));
-    });
-  } else {
-    return res.sendFile(path.join(__dirname, "public", "index.html"));
-  }
-});
+app.get("/", mainRoutes.getHome);
 
-app.post("/register", routes.postRegister);
+app.post("/register", mainRoutes.postRegister);
 
-app.post("/login", routes.postLogin);
+app.post("/login", mainRoutes.postLogin);
 
-app.get("/logout", routes.getLogout);
+app.get("/logout", mainRoutes.getLogout);
 
-app.get("/api/users-online", routes.getApiUsersOnline);
+app.get("/api/version", apiRoutes.getApiVersion);
 
-app.get("/api/profile", isAuthorized, routes.getApiProfile);
+app.get("/api/users-online", apiRoutes.getApiUsersOnline);
+
+app.get("/api/profile", isAuthorized, apiRoutes.getApiProfile);
 
 // this is probably dangerous bc of filesystem access
 // at least its read only
-app.get("/api/user", isAuthorized, routes.getApiUser);
+app.get("/api/user", isAuthorized, apiRoutes.getApiUser);
 
 app.get("/admin", isAdmin, adminRoutes.getAdmin);
 
@@ -98,7 +100,7 @@ app.post(
 
 app.get("*", (req, res) => {
   res.status(404);
-  res.sendFile(path.join(__dirname, "public", "404.html"));
+  return res.render("home");
 });
 
 // Start the server on the port set above
@@ -110,10 +112,10 @@ app.listen(app.get("port"), () => {
 // Accept input and send commands to server
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout,
+  output: process.stdout
 });
 
-rl.on('line', (line) => {
+rl.on("line", line => {
   minecraftServer.stdin.write(`${line.trim()}\n`);
 });
 

@@ -9,7 +9,6 @@
  */
 
 const { spawn } = require("child_process");
-const path = require("path");
 const { minecraftServerRoot, minecraftServerJarFile } = require("./constants");
 const logger = require("./logger");
 

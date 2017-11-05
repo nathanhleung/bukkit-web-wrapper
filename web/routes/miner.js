@@ -4,11 +4,9 @@ const path = require("path");
 const fs = require("fs");
 const yaml = require("js-yaml");
 
-const logger = require("./logger");
-const minecraftServer = require("./minecraft-server");
-const { findUserById } = require("./helpers");
-
-const { essentialsUserDataDir } = require("./constants");
+const logger = require("../logger");
+const { findUserById } = require("../helpers");
+const { essentialsUserDataDir } = require("../constants");
 
 function getApiUserHashBalance(req, res) {
   const data = {
@@ -112,7 +110,10 @@ function postApiUserHashWithdraw(req, res) {
   function updateUserBalance(username) {
     // Essentials makes all usernames lowercase in data files
     const normalizedUsername = username.toLowerCase();
-    const userDataFile = path.join(essentialsUserDataDir, `${normalizedUsername}.yml`);
+    const userDataFile = path.join(
+      essentialsUserDataDir,
+      `${normalizedUsername}.yml`
+    );
     try {
       const userData = yaml.safeLoad(fs.readFileSync(userDataFile, "utf8"));
       const { money } = userData;
