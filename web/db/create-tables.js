@@ -10,7 +10,7 @@ const async = require("async");
 const logger = require("../logger");
 const db = require("./db");
 
-function createTables() {
+function createTables(finalCallback) {
   const createTablesSqlStatements = fs
     .readFileSync(path.join(__dirname, "sql", "create-tables.sql"), "utf-8")
     .split("\n\n");
@@ -19,7 +19,8 @@ function createTables() {
     if (err) {
       return logger.error("There was an error creating the database tables.");
     }
-    return logger.debug("All database tables created!");
+    logger.debug("All database tables created!");
+    finalCallback();
   });
 
   function createTable(createTableSql, cb) {

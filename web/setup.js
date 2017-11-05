@@ -1,5 +1,6 @@
 const createTables = require("./db/create-tables");
 
-createTables();
-
-process.exit(0);
+createTables(() => {
+  // Exit after finishing
+  process.exit(0);
+});
