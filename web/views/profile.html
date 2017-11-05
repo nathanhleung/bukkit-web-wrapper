@@ -89,7 +89,11 @@
             <br>
             <div>
               <h2 class="display-4">Transfer Balance</h2>
-              <p class="lead" v-if="hashBalance !== 0">
+              <p class="lead" v-if="isMining">
+                Once you stop your mining session, you'll be able to transfer
+                your earnings to the game if you've earned over 300 Ƶs.
+              </p>
+              <p class="lead" v-if="hashBalance !== 0 && !isMining">
                 You've got a positive Ƶ balance, so you can transfer it to the game
                 with the button below.
               </p>
