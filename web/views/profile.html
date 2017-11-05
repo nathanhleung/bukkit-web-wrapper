@@ -50,7 +50,7 @@
                   'btn-success': !isMining,
                   'btn-danger': isMining,
                 }"
-                v-bind:disabled="id === ''"
+                v-bind:disabled="user_id === ''"
                 v-on:click="toggleMining"
               >
                 {{ isMining ? 'Stop' : 'Get Money' }}
