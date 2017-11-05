@@ -165,7 +165,18 @@ function postLogin(req, res) {
         });
       }
       req.session.userId = user.user_id;
-      return res.redirect("/profile");
+      // Don't redirect until after the session in-memory
+      // has been saved to the session store
+      req.session.save((err) => {
+        if (err) {
+          logger.error(err);
+          return res.json({
+            success: false,
+            message: "Failed to save session cookie."
+          })
+        }
+        return res.redirect("/profile");
+      });
     });
   });
 }
