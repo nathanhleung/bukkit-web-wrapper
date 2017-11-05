@@ -329,5 +329,6 @@ module.exports = {
   changeUserPermissionLevel,
   getAllUsers,
   logUserInfo,
-  changeMembershipStatus
+  changeMembershipStatus,
+  NoUserExistsError
 };

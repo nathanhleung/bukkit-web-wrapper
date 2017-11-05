@@ -1,12 +1,9 @@
 const request = require("request");
 const qs = require("qs");
-const path = require("path");
-const fs = require("fs");
-const yaml = require("js-yaml");
 
 const logger = require("../logger");
-const { findUserById } = require("../helpers");
-const { essentialsUserDataDir } = require("../constants");
+const minecraftServer = require("../minecraft-server");
+const { queryUserByUserID } = require("../db/queries");
 
 function getApiUserHashBalance(req, res) {
   const data = {
@@ -53,15 +50,15 @@ function getApiUserHashBalance(req, res) {
 function postApiUserHashWithdraw(req, res) {
   const { amount } = req.body;
 
-  findUserById(req.session.userId, (err, user) => {
+  queryUserByUserID(req.session.userId, (err, user) => {
     if (err) {
       logger.error(err);
       return res.json({
         success: false
       });
     }
-    const { username } = user;
-    withdrawFromCoinhive(username);
+    const { minecraft_user } = user;
+    withdrawFromCoinhive(minecraft_user);
   });
 
   function withdrawFromCoinhive(username) {
@@ -108,33 +105,10 @@ function postApiUserHashWithdraw(req, res) {
   }
 
   function updateUserBalance(username) {
-    // Essentials makes all usernames lowercase in data files
-    const normalizedUsername = username.toLowerCase();
-    const userDataFile = path.join(
-      essentialsUserDataDir,
-      `${normalizedUsername}.yml`
-    );
-    try {
-      const userData = yaml.safeLoad(fs.readFileSync(userDataFile, "utf8"));
-      const { money } = userData;
-
-      // 1000:1 ratio for hash to dollar conversion
-      if (typeof money === "undefined") {
-        userData.money = Number((amount / 1000).toFixed(3));
-      } else {
-        userData.money = Number(money) + Number((amount / 1000).toFixed(3));
-      }
-      fs.writeFileSync(userDataFile, yaml.safeDump(userData));
-
-      return res.json({
-        success: true
-      });
-    } catch (err) {
-      logger.error(err);
-      return res.json({
-        success: false
-      });
-    }
+    minecraftServer.stdin.write(`eco give ${username} ${amount / 1000}`);
+    return res.json({
+      success: true
+    });
   }
 }
 

@@ -12,7 +12,7 @@ const request = require("request");
 const pkg = require("../../package.json");
 const logger = require("../logger");
 
-const { findUserById } = require("../helpers");
+const { queryUserByUserID } = require("../db/queries");
 const { essentialsUserDataDir } = require("../constants");
 
 /**
@@ -34,15 +34,18 @@ function getApiVersion(req, res) {
  * and returns it in JSON format
  */
 function getApiProfile(req, res) {
-  findUserById(req.session.userId, (err, user) => {
+  queryUserByUserID(req.session.userId, (err, user) => {
     if (err) {
       logger.error(err);
-      throw err;
+      return res.json({
+        success: false,
+        message: "An error occurred"
+      });
     }
     return res.json({
       success: true,
       // Don't send back the hashed password
-      data: _.omit(user, ["password"])
+      data: _.omit(user, ["pass"])
     });
   });
 }
@@ -52,7 +55,7 @@ function getApiProfile(req, res) {
  * Reads the user's Minecraft player data file
  */
 function getApiUser(req, res) {
-  findUserById(req.session.userId, (err, user) => {
+  queryUserByUserID(req.session.userId, (err, user) => {
     if (err) {
       logger.error(err);
       throw err;
