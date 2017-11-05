@@ -60,8 +60,8 @@ function getApiUser(req, res) {
       logger.error(err);
       throw err;
     }
-    const { username } = user;
-    readDataFile(username);
+    const { minecraft_user } = user;
+    readDataFile(minecraft_user);
   });
 
   function readDataFile(username) {
