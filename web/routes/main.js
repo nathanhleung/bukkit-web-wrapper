@@ -114,7 +114,7 @@ function postLogin(req, res) {
     }
 
     // At this point, user is valid
-    bcrypt.compare(password, user.password, (err, matches) => {
+    bcrypt.compare(password, user.pass, (err, matches) => {
       if (err) {
         logger.error(err);
         throw err;
