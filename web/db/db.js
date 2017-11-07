@@ -24,4 +24,15 @@ db.connect(err => {
   }
 });
 
+db.on("error", err => {
+  logger.error(err);
+  if (err.fatal) {
+    db.connect(err => {
+      if (err) {
+        logger.err(err);
+      }
+    });
+  }
+});
+
 module.exports = db;
