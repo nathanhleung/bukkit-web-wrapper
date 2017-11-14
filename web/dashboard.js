@@ -10,8 +10,7 @@ const logger = require("./logger");
 const { onlineCountDataFile } = require("./constants");
 
 // Save every 5 minutes
-// "*/5 * * * *"
-const saveOnlineCountJob = schedule.scheduleJob("*/10 * * * * *", () => {
+const saveOnlineCountJob = schedule.scheduleJob("*/5 * * * *", () => {
   request.get(
     {
       url: "http://localhost/api/users-online"
