@@ -15,8 +15,8 @@ const db = mysql.createPool({
   database: process.env.DB_NAME
 });
 
-db.on('connection', (connection) => {
-  connection.on('error', (err) => {
+db.on("connection", connection => {
+  connection.on("error", err => {
     logger.error(err);
   });
 });

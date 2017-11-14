@@ -33,5 +33,7 @@ module.exports = {
   ),
   // The location of the log file where Bukkit writes
   // messages to
-  minecraftLogFile: path.join(minecraftServerRoot, "server.log")
+  minecraftLogFile: path.join(minecraftServerRoot, "server.log"),
+  // Dashboard data file
+  onlineCountDataFile: path.join(__dirname, "data", "online-count.csv")
 };

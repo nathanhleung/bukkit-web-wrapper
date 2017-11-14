@@ -14,7 +14,6 @@
     "setup": "node -r dotenv/config web/setup.js",
     "forever": "forever start -c \"yarn start\" ./",
     "watch": "nodemon --ignore web/public/ --exec \"yarn start\"",
-    "format": "prettier --write \"web/**/*.js\"",
     "lint": "eslint \"web/**/*.js\" --fix",
     "test": "jest"
   },
@@ -31,6 +30,7 @@
     "morgan": "^1.9.0",
     "mysql": "^2.15.0",
     "nbt": "^0.7.0",
+    "node-schedule": "^1.2.5",
     "qs": "^6.5.1",
     "request": "^2.83.0",
     "supertest": "^3.0.0",

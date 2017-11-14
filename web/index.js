@@ -16,6 +16,7 @@ const mainRoutes = require("./routes/main");
 const adminRoutes = require("./routes/admin");
 const minerRoutes = require("./routes/miner");
 const apiRoutes = require("./routes/api");
+const dashboardRoutes = require("./dashboard");
 const logger = require("./logger"); // custom logger function
 
 const minecraftServer = require("./minecraft-server");
@@ -88,6 +89,11 @@ app.post(
   isAuthorized,
   minerRoutes.postApiUserHashWithdraw
 );
+app.get(
+  "/api/dashboard/online-count",
+  dashboardRoutes.getApiDashboardOnlineCount
+);
+
 app.get("*", (req, res) => {
   res.status(404);
   return res.sendView("404");
