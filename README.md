@@ -21,7 +21,7 @@ By default, the web server listens on port 80, and the Bukkit server listens on 
 
 On a first run, run `yarn setup` to create the database tables.
 
-To run the server as a daemon (in the background), run `yarn forever`.
+To run the server as a daemon (in the background), run `yarn forever`. To stop the server, run `forever stopall` and then `killall node` `killall java`. Make sure you run `/stop` in Bukkit first to ensure data is not lost.
 
 ### Environment Variables
 `.env.example` contains an example environment file. To set environment variables, copy `.env.example` to `.env` and fill in desired environment variables.
