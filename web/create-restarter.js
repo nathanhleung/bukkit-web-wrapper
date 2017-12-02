@@ -1,11 +1,10 @@
 const { scheduleJob } = require("node-schedule");
 
 function createRestarter(minecraftServer) {
-  // Every day at 3AM stop the server
+  // Stop server every 2 hours
   // This will end the whole process (including web),
-  // forever will restart.
-  // Currently testing with every minute
-  return scheduleJob("0 * * * * *" /* "0 3 * * *" */, () => {
+  // and then forever will restart.
+  return scheduleJob("0 */2 * * *", () => {
     minecraftServer.stdin.write(`stop\n`);
   });
 }
