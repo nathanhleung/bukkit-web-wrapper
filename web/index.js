@@ -20,6 +20,10 @@ const dashboardRoutes = require("./dashboard");
 const logger = require("./logger"); // custom logger function
 
 const minecraftServer = require("./minecraft-server");
+const createRestarter = require("./create-restarter");
+
+// Starts up the restart job (restarts server at 3AM)
+createRestarter(minecraftServer);
 
 const app = express();
 app.set("port", process.env.PORT || 80);
