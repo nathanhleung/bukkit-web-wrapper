@@ -22,7 +22,9 @@ const logger = require("./logger"); // custom logger function
 const minecraftServer = require("./minecraft-server");
 const createRestarter = require("./create-restarter");
 
-// Starts up the restart job (restarts server at 3AM)
+logger.info("Starting Bukkit Web Wrapper...");
+
+// Starts up the restart job
 createRestarter(minecraftServer);
 
 const app = express();
