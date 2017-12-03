@@ -43,6 +43,12 @@ app.use((req, res, next) => {
   return next();
 });
 
+// Get real IP since we're behind NGINX
+morgan.token(
+  "remote-addr",
+  req => req.headers["x-forwarded-for"] || req.connection.remoteAddress
+);
+
 // Tell Morgan to generate Apache-style logs,
 // and send those logs to our custom logger
 // function
