@@ -34,10 +34,17 @@ function isAuthorized(req, res, next) {
 function isAdmin(req, res, next) {
   // Check if localhost
   // From https://github.com/expressjs/express/issues/2518
+
+  // THIS DOES NOT WORK ANYMORE SINCE WE ARE PROXYING THROUGH
+  // NGINX!!! IF YOU UNCOMMENT THIS ANYONE CAN ACCESS ADMIN
+  // PAGE!
+
+  /*
   const { remoteAddress } = req.connection;
   if (_.includes(["127.0.0.1", "::ffff:127.0.0.1", "::1"], remoteAddress)) {
     return next();
   }
+  */
 
   queryUserByUserID(req.session.userId, (err, user) => {
     if (err || typeof user === "undefined") {
