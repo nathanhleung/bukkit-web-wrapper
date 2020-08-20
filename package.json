@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "async": "^2.5.0",
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.15.5",
